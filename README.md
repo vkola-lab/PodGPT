@@ -232,6 +232,7 @@ If you find our work useful in your research, please consider citing it in your 
 ```
 
 # Contact
+**Core Contributor and Maintainer**: Shuyue Jia (Bruce), Subhrangshu Bit, Edward Searls, Pengrui Fan, and William M. Wang<br>
 If you have any questions, please drop us an email at [brucejia@bu.edu](brucejia@bu.edu), [sbit@bu.edu](sbit@bu.edu), and [nsearls@bu.edu](nsearls@bu.edu).
 
 # Acknowledgement
