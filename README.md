@@ -1,10 +1,15 @@
 # MedPodGPT
 Benchmarking Multilingual Medical Large Language Models (LLMs)
 
-[![Code License](https://img.shields.io/badge/Code%20License-MIT-green.svg)](CODE_LICENSE)
-[![Data License](https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red.svg)](DATA_LICENSE)
-[![Model Weight License](https://img.shields.io/badge/Model%20Weights%20License-Apache-yellow)](https://www.apache.org/licenses/LICENSE-2.0)
-[![Python 3.9+](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org/downloads/release/python-3100/)
+<p align="center">
+  <a href="https://github.com/vkola-lab/medpodgpt"> <img width="250px" src="MedPodGPT.png"></a> 
+  <br />
+  <br />
+  <a href="https://img.shields.io/badge/Code%20License-MIT-green.svg"><img alt="CODE_LICENSE" src="https://img.shields.io/badge/Code%20License-MIT-green.svg" /></a>
+  <a href="https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red.svg"><img alt="DATA_LICENSE" src="https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red.svg" /></a>
+  <a href="https://www.apache.org/licenses/LICENSE-2.0"><img alt="Model Weight License" src="https://img.shields.io/badge/Model%20Weights%20License-Apache-yellow" /></a>
+  <a href="https://www.python.org/downloads/release/python-3100/"><img alt="Python 3.10" src="https://img.shields.io/badge/python-3.10-blue.svg" /></a>
+</p>
 
 # Table of Contents
 - [Installation](#Installation)
