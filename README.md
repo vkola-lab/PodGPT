@@ -12,7 +12,7 @@
 </p>
 
 # 🎉 Announcements
-[2024.7.12] ![](./assets/new.gif) Our AI Platform [MedPodGPT](https://medpodgpt.org/) is available to authorized users. 
+[2024.7.12] ![](news.gif) Our AI Platform [MedPodGPT](https://medpodgpt.org/) is available to authorized users. 
 It is an online platform for deploying our latest multimodal foundation models for medical and clinical applications.
 
 # 📚 Table of Contents
