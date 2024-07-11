@@ -1,0 +1,587 @@
+[
+    {
+        "question": "In informing a couple that their newborn has Down syndrome, there is a specific, relatively limited amount of information that the consulting physician should give immediately. The rest can be discussed at a later time. Which of the following best explains the purpose of using this approach to disclosure?",
+        "choices": "(A) Allowing the couple's primary care physician to discuss most of the information with them (B) Allowing the parents time to tell other family members (C) Delaying parental distress until the information is completely disclosed (D) Disclosing the most important information so that it can be understood as fully as possible (E) Influencing the parents' course of action about what is medically most appropriate",
+        "answer_id": "D",
+        "meta_info": "step1",
+        "source": "Step 1 Free 119 Jan 2024",
+        "question_number": 23,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 31-year-old woman with a 5-year history of fatigue comes to the physician for an initial visit. She has seen four other physicians for the same condition within the past 6 months, but no abnormalities were found. She gives the physician a large folder that contains her medical records. She says, \"I can barely get out of bed most mornings, but nobody can figure out why because all of my tests turn out normal. I really think I have chronic fatigue syndrome. What do you know about this condition?\" The physician has not treated any patient with chronic fatigue syndrome before. Which of the following initial statements by the physician is most appropriate to establish rapport with this patient?",
+        "choices": "(A) \"From the size of the folder you brought, it looks like you've had very thorough examinations in the past.\" (B) \"I don't have much experience with chronic fatigue syndrome, but I'm committed to learning as much as I can about it.\" (C) \"I'm not familiar with chronic fatigue syndrome, except that many physicians don't think it's a real disease.\" (D) \"Let's start over from scratch. We'll need to repeat complete testing.\" (E) \"When nothing abnormal is found during thorough examinations and laboratory studies, there is often an underlying psychological cause of the symptoms.\"",
+        "answer_id": "B",
+        "meta_info": "step1",
+        "source": "Step 1 Free 119 Jan 2024",
+        "question_number": 54,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 22-year-old woman at 32 weeks\u2019 gestation comes to the office for a prenatal visit. Vital signs are within normal limits. Fundal height and fetal heart tones are also normal. At the end of the examination, the patient tells the physician that her friend is a certified lay midwife and has recently convinced her to have a home birth. The patient asks the physician if he would be the backup for the midwife in case of an emergency. Which of the following is the most appropriate initial response by the physician?",
+        "choices": "(A) \u201cI\u2019m sorry, but I would no longer be able to be your doctor if you pursue a home birth.\u201d (B) \u201cI would like to meet with your friend before I decide.\u201d (C) \u201cIf there\u2019s a problem, I could still act as your doctor if you arrive at the hospital in labor.\u201d (D) \u201cLet\u2019s set up an appointment next week to discuss your birth plan in detail.\u201d (E) \u201cPerhaps your midwife could act as your birth coach instead.\u201d",
+        "answer_id": "D",
+        "meta_info": "step1",
+        "source": "Step 1 Free 119 Jan 2024",
+        "question_number": 56,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 58-year-old man with chronic obstructive pulmonary disease comes to the clinic with his wife for a follow-up examination. He has smoked one pack of cigarettes daily for 35 years. He has tried to quit smoking twice but was unsuccessful both times. At today\u2019s visit, when the physician asks the patient about smoking cessation, he says he is not ready to do so. The patient\u2019s wife states her husband\u2019s smoking makes her cough and gives her chest tightness. Which of the following is the most appropriate physician statement?",
+        "choices": "(A) \"Are there any reasons why you might want to quit smoking?\" (B) \"Are you aware that your lung condition is chronic at this point?\" (C) \"I'm sure you don't want your wife to suffer as a result of your smoking.\" (D) \"The majority of your health issues would improve if you quit smoking.\" (E) \"Why haven't you been able to stay off cigarettes?\"",
+        "answer_id": "A",
+        "meta_info": "step1",
+        "source": "Step 1 Free 119 Jan 2024",
+        "question_number": 73,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 35-year-old woman, gravida 2, para 1, at 15 weeks\u2019 gestation is brought to the hospital in active labor. The physician care team confers and determines that the birth cannot be prevented and that the fetus will not survive. After explaining this fact to the patient, the patient says, \"I know it is a long shot, but I still want my baby resuscitated and everything done to save him.\" After empathizing with the patient, which of the following is the most appropriate initial response by the physician?",
+        "choices": "(A) \"I will ask for a second opinion.\" (B) \"I will call the father of the baby to get his opinion as well.\" (C) \"I will call for a medical ethics consultation.\" (D) \"I will do everything I can to save the baby.\" (E) \"I\u2019m very sorry, but the baby will not survive.\"",
+        "answer_id": "E",
+        "meta_info": "step1",
+        "source": "Step 1 Free 119 Jan 2024",
+        "question_number": 75,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 62-year-old man is admitted to the hospital for evaluation of abdominal pain. During the interview, he responds to the questions with a single word and sometimes with sarcastic answers. He does not engage in eye contact, and he frowns as he tells the physician that this is the third time he has been asked these questions. Which of the following is the most appropriate response by the physician?",
+        "choices": "(A) \"Can you tell me more about your abdominal pain?\" (B) \"I understand that you do not feel well, but I need to get a history here.\" (C) \"I'll come back once you've calmed down, and we can talk more then.\" (D) \"Listen, if you choose not to cooperate, I'm not going to be able to help you.\" (E) \"You sound upset. Tell me a little more about that.\"",
+        "answer_id": "E",
+        "meta_info": "step1",
+        "source": "Step 1 Free 119 Jan 2020",
+        "question_number": 26,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 68-year-old woman with end-stage renal disease comes to the office for a follow-up examination. She has required hemodialysis for the past year. Initially, she did well, but within the past 3 months, she has been admitted to the hospital for fluid overload because of poor adherence to fluid and salt restrictions. She says, \"I'm so sick of being on dialysis. Following the restrictions is really hard.\" Which of the following is the most appropriate initial response by the physician?",
+        "choices": "(A) \"I imagine being on dialysis is frustrating, but you don't want to die from kidney disease, do you?\" (B) \"I know that this is challenging, but do you remember how difficult it is to be hospitalized?\" (C) \"It is tough to change your diet and fluid intake, but what sorts of things were you doing at first when you were following the recommendations?\" (D) \"Making these changes is so difficult. Can you imagine how good you will feel once you make the changes again?\" (E) \"This is very hard to do, but you may have an easier time if you met with the dietician again.\" ",
+        "answer_id": "C",
+        "meta_info": "step1",
+        "source": "Step 1 Free 119 Jan 2020",
+        "question_number": 30,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 45-year-old woman comes to the office because of a 6-month history of hot flashes, night sweats, and insomnia. She has not had a menstrual period during this time. She thinks she is going through menopause and asks the physician if there are any medications that will alleviate her symptoms. Physical examination shows no abnormalities. The result of a urine pregnancy test is negative. The physician explains that hormone therapy likely will help and explains the risks to the patient. Which of the following is the next most appropriate physician statement?",
+        "choices": "(A) \"Could you tell me your thoughts about the hormone treatment option we have discussed?\" (B) \"I have many patients with similar symptoms, and everyone responds to hormone therapy differently.\" (C) \"I will give you some written information to review, and then I can answer any remaining questions.\" (D) \"If your symptoms are really severe, the risk of hormone therapy may be worth it.\u201d (E) \"Would you like me to tell you what I think you should do?\"",
+        "answer_id": "A",
+        "meta_info": "step1",
+        "source": "Step 1 Free 119 Jan 2020",
+        "question_number": 34,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 26-year-old woman comes to a busy emergency department because of a 2-day history of runny nose. She has no history of major medical illness and takes no medications. Her vital signs are within normal limits. The patient has to wait 6 hours before she is seen by a physician. She is angry with the staff and says the only reason she had to wait this long is because she does not have insurance. In addition to apologizing to the patient, which of the following is the most appropriate opening remark by the physician?",
+        "choices": "(A) \"It is harsh to suggest that you waited because you don\u2019t have insurance, but how can we help you feel better today?\" (B) \"It sounds like you are angry; shall I come back in a few minutes?\" (C) \"Our wait time has nothing to do with insurance, so let\u2019s talk abo ut the reason you are here.\" (D) \"The reason you waited so long is because we need to triage by severity.\" (E) \"Thank you for waiting. How can I help you today?\"",
+        "answer_id": "E",
+        "meta_info": "step1",
+        "source": "Step 1 Free 119 Jan 2020",
+        "question_number": 46,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 75-year-old woman with type 2 diabetes mellitus and hypertension is brought to the office by her daughter because of a 4-month history of loss of appetite. The patient has had a 6.8-kg (15-lb) weight loss during this time. She immigrated to the USA from Argentina 35 years ago. She is fluent in Spanish and has limited English language proficiency. The patient\u2019s daughter is bilingual. The physician studied Spanish in high school. The clinic receptionist is bilingual. A certified interpreter is not available at the clinic, but a telephone interpreter service is available. Which of the following is the most appropriate person to serve as an interpreter for this patient encounter?",
+        "choices": "(A) Bilingual staff member (B) Patient\u2019s daughter (C) Physician (D) Telephone interpreter",
+        "answer_id": "D",
+        "meta_info": "step1",
+        "source": "Step 1 Free 119 Jan 2020",
+        "question_number": 50,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 19-year-old man with asthma comes to a new physician for an initial examination. He has been treated in the emergency department multiple times during the past 7 months because of acute exacerbations of asthma. The patient says that he has received care only from emergency department physicians on an almost monthly basis during the past 4 years, and he has managed his symptoms with inhaled \u03b2 2-adrenergic agonists. The patient says, \"All the doctors I've seen just don't understand me. They keep prescribing inhalers that don't work, including that steroid inhaler they gave me recently.\" He has no other history of major medical illness. He does not appear to be in respiratory distress. Mild end-expiratory wheezing is heard over all lung fields. Which of the following is the most appropriate statement by the physician at this time?",
+        "choices": "(A) \"Are you sure that you're taking your medications appropriately?\" (B) \"I'm confident that I can help you with your asthma. I will order pulmonary function tests to see exactly what the problem is.\" (C) \"Tell me what you know about the steroid inhalers and how they are supposed to work.\" (D) \"Your asthma seems particularly difficult to control. I'd like to refer you to an asthma specialist.\" (E) \"You're probably allergic to something at your home, so we'll need to figure out what that is before your asthma can get better.\"",
+        "answer_id": "C",
+        "meta_info": "step1",
+        "source": "Step 1 Free 119 Jan 2020",
+        "question_number": 76,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 74-year-old man with mild chronic obstructive pulmonary disease comes to the physician for a follow-u p examination. Current medications include a short- acting \u03b2 2-adrenergic agonist by metered-dose inhaler as needed. Physical examination shows no abnormalities. At the end of the examination, he tells the physician, \"I enjoy coming to see you because you remind me of my daughter. She died 35 years ago this month.\" He has been a patient of this physician for 5 years. Which of the following is the most appropriate response by the physician?",
+        "choices": "(A) \"I may have to refer you to another physician who doesn't remind you of your daughter so you can focus more on your medical condition and its treatment.\" (B) \"I'd like to refer you to a grief counselor so that you can work out your unresolved feelings about your daughter's death.\" (C) \"I'm sorry you lost your daughter. Unfortunately, since we only have a limited amount of time, we must now move on to your medical condition.\" (D) \"That makes me feel a little uncomfortable. I hope you understand.\" (E) \"You must miss your daughter very much. Tell me about her.\"",
+        "answer_id": "E",
+        "meta_info": "step1",
+        "source": "Step 1 Free 119 Jan 2020",
+        "question_number": 117,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 42 -year-old man comes to the physician for a follow -up examination. Four months ago, he underwent repair of a Dupuytren contracture. Physical examination shows decreased range of motion in the affected hand. The patient is upset that his hand has not fully healed, and he files a malpractice suit against the physician. Which of the following is the most likely precipitating factor in this patient's decision to file a malpractice suit?",
+        "choices": "(A) The patient's perception that the physician is incompetent (B) The patient's perception that the physician is uncaring (C) The patient's socioeconomic status (D) The physician's amount of experience in the medical field (E) The physician's inability to screen out problem patients",
+        "answer_id": "B",
+        "meta_info": "step1",
+        "source": "Step 1 Free 117 Feb 2019",
+        "question_number": 54,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 22 -year-old woman contacts a medical student and asks if he would like to join her for dinner. The student met the woman when he was assigned to her care during her 2 -week hospitalization for treatment of major depressive disorder. He has not treated or seen the patient since she was discharged from the hospital. He is attracted to this former patient and would be interested in dating her. Which of the following is the most appropriate action by the medical student regarding this patient's invitation?",
+        "choices": "(A) He can date her because he was a medical student, not a physician, when he contributed to her care (B) He can date her because she is no longer his patient (C) He can date her, but only after at least 1 year has passed since he treated her (D) He cannot date her because she was once his psychiatric patient (E) He cannot date her unless she agrees never to seek care at his hospital in the future",
+        "answer_id": "D",
+        "meta_info": "step1",
+        "source": "Step 1 Free 117 Feb 2019",
+        "question_number": 58,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 35-year-old woman comes to the office because of a 3-day history of severe right back pain. She has not had any fever, chills, or weight loss. She has no history of major medical illness. Musculoskeletal and neurologic examinations show no abnormalities. When told that her examination is normal, the patient becomes tearful and demands an MRI of her back because her mother just died from breast cancer metastatic to bone and she fears that she may also have cancer. The patient already contacted her insurance company, who told her that if she has neurologic abnormalities an MRI may be covered by her plan. The patient asks the physician to order the MRI indicating that she has neurologic findings. Which of the following is the most appropriate initial action by the physician?",
+        "choices": "(A) Advise the patient to change insurance companies as soon as she is able so that she can receive more comprehensive medical care (B) Explain that the patient does not need the MRI and that it is not appropriate to misrepresent her examination findings (C) Immediately inform the patient's insurance company about what the patient has asked the physician to do (D) Order the MRI as the patient requests (E) Recommend that the patient pay for the MRI out-of-pocket in order to ease her worry",
+        "answer_id": "B",
+        "meta_info": "step1",
+        "source": "Step 1 Free 117 Feb 2019",
+        "question_number": 100,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 37 -year-old man with type 1 diabetes mellitus is admitted to the hospital because of inadequate control of his glucose concentrations for the past 2 months. Despite his poor control, he demands that he be discharged. He reports that he has had a 3-month history of fatigue, irritability, and feelings of hopelessness. He says that he has been noncompliant with his diabetic regimen, adding, \"Sometimes I forget.\" He has be en avoiding his family and friends because he is not in the mood to see them but admits that he is lonely. He did not get out of bed for 2 days, which prompted his wife to call an ambulance and have him admitted to the hospital. Prior to admission to the h ospital, his only medication was insulin, although he often missed doses. He does not drink alcohol. He is 168 cm (5 ft 6 in) tall and weighs 100 kg (220 lb); BMI is 36 kg/m2. His temperature is 37\u00b0C (98.6\u00b0F), pulse is 68/min, respirations are 18/min, and blood pressure is 150/85 mmHg. Physical examination shows no abnormalities. On mental status examination, he is tired and has a restricted affect. There is no evidence of suicidal ideation. Cognition is intact. His fasting serum glucose concentration is 1 20 mg/dL. Which of the following is the most appropriate next step in management?",
+        "choices": "(A) Adhere to the patient's wishes and discuss home-care options (B) Adhere to the patient's wishes on the condition that he agree to home nursing care (C) Schedule neuropsy chological testing (D) Seek a court order to appoint a legal guardian (E) Involuntarily hold the patient in the hospital",
+        "answer_id": "A",
+        "meta_info": "step2",
+        "source": "Step 2 Free 120 May 2018",
+        "question_number": 8,
+        "question_type": "ethics"
+    },
+    {
+        "question": "Three days after hospitalization for diabetic ketoacidosis, an 87 -year-old woman refuses insulin injections. She says that her medical condition has declined so much that she no longer wishes to go on living; she is nearly blind and will likely require bilateral leg amputations. She reports that she has always been an active person and does not see how her life will be of value anymore. She has no family and most of her friends are sick or deceased. On mental status examination, she is alert and cooperative. She accurately describes her medical history and understands the consequences of refusing insulin. There is no evidence of depression. She dismisses any attempts by the physician to change her mind, saying that the physician is too young to understand her situation. She says, \"I know I will die, and this is what I want.\" Which of the following is the most appropriate next step in management?",
+        "choices": "(A) Discharge the patient after she has signed an \"against medical advice\" form (B) Seek a court order to appoint a legal guardian (C) Offer insulin but allow the patient to refuse it (D) Admit to the psychiatric unit (E) Administer insulin against the patient's wishes",
+        "answer_id": "C",
+        "meta_info": "step2",
+        "source": "Step 2 Free 120 May 2018",
+        "question_number": 54,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A previously healthy 32 -year-old man is brought to the emergency department after being found unconscious on the floor at his workplace. On arrival, he is obtunded. He is intubated and mechanical ventilation is begun. Examination shows flaccid paralysis on the right. A CT scan of the head shows a large evolving cerebral infarction on the left. Carotid duplex ultrasonography shows dissection of the left carotid artery. After receiving intensive medical care for 6 hours, the patient develops decerebrate posturing and becomes hemodynamically unstable. Vasopressor therapy is begun. A second CT scan of the head shows a massive left hemispheric cerebral infarction with severe edema and herniation. The physician determines that surgical intervention is not indicated because of the patient's poor prognosis. The patient's driver's license indicates that he wishes to be an organ donor. The physician meets with the patient's family and informs them about the patient's prognosis, and they are devastated. During the meeting, they say that they were unaware of his willingness to be an organ donor and agree that he should not receive cardiopulmonary resuscitation. Which of the following is the most appropriate next step with respect to organ donation?",
+        "choices": "(A) Arrange for the regional organ procurement organization to address the issue with the patient's family (B) Delay further consideration of the issue until after 24 hours of aggressive care (C) Delay further consideration of the issue until the family seems ready (D) Initiate organ donation at this time",
+        "answer_id": "A",
+        "meta_info": "step2",
+        "source": "Step 2 Free 120 May 2018",
+        "question_number": 63,
+        "question_type": "ethics"
+    },
+    {
+        "question": "An investigator would like to decrease the incidence of type 2 diabetes mellitus among adult patients with risk factors including obesity, decreased physical activity, and family history of diabetes mellitus. A total of 200 men and women aged 30 to 64 years will be enrolled in a regular exercise program for 6 months. A nurse reviews the details of the study with each participant, and each participant signs an informed consent form. One month after the study begins, one of the participants asks to drop out of the study. Which of the following represents the most appropriate next step by this study participant?",
+        "choices": "(A) Complete the study because she signed the consent form (B) Discuss withdrawal with the institutional review board (C) Negotiate her withdrawal with the principal investigator (D) Wait to withdraw until after the investigator consults with an ethics team (E) Withdraw from the study now",
+        "answer_id": "E",
+        "meta_info": "step2",
+        "source": "Step 2 Free 120 March 2021",
+        "question_number": 8,
+        "question_type": "ethics"
+    },
+    {
+        "question": "An 85- year-old man with severe dementia, Alzheimer type, is admitted to the hospital because of a nonhealing ulcer on his right second toe. He lives in a nursing care facility and has been bedridden for the past 3 years. He has type 2 diabetes mellitus, hypertension, and peripheral vascular disease. His medications are metformin, amlodipine, and aspirin. Noninvasive vascular studies of the lower extremities show marked bilateral vascular disease. Subsequent peripheral angiography shows severe stenoses of the right superficial femoral and the left common iliac arteries. The patient undergoes uncomplicated placement of two sequential vascular stents in the superficial femoral artery and placement of an additional stent in the left common iliac artery. The type of stents used was recently approved by the US Food and Drug Administration and has been heavily marketed as a long -lasting solution to restenosis. Each stent costs the hospital $15,000. Alternatives to this approach include amputation of the toe, balloon angioplasty, and use of less expensive stents. Which of the following best describes the public policy implications of this scenario?",
+        "choices": "(A) Absence of resource stewardship (B) Ageism (C) Health care disparities (D) Health care fraud and abuse (E) Lack of access to care",
+        "answer_id": "A",
+        "meta_info": "step2",
+        "source": "Step 2 Free 120 March 2021",
+        "question_number": 21,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 62 -year-old woman with myasthenia gravis comes to the office because of a 2- week history of falling. She says her legs \"give out\" once daily; she falls to the ground but does not hit her head. She took pyridostigmine until 2 weeks ago when she decided that it no longer worked. Respirations are 30/min. Examination shows a hypophonic nasal voice and ptosis bilaterally. Muscle strength is 2/5 in all extremities. The patient is told that she is in imminent danger of respiratory compromise and that she should be admitted to the hospital. She says she knows her breathing could pose a problem, but she hates hospitals and does not want to undergo more tests or therapy. She asks if she can have a prescription for her former medication and if she can go home. Which of the following is the most appropriate next step in management?",
+        "choices": "(A) Assessment of medical decision -making capacity (B) Electromyography and nerve conduction studies (C) Involuntary hospital admission (D) Oxygen therapy by nasal canula (E) Pulmonary function testing",
+        "answer_id": "A",
+        "meta_info": "step2",
+        "source": "Step 2 Free 120 March 2021",
+        "question_number": 22,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 45 -year-old woman is hospitalized for management of Staphylococcus aureus endocarditis with persistent bacteremia. The patient is discussed during interdisciplinary rounds, which includes physicians, nurses, pharmacists, and social workers. During rounds, a pharmacy student notices that the patient missed two doses of her scheduled antibiotic last week but is unsure why. The physician and nurse are unaware of these missed doses, and the student does not mention her observation. Which of the following measures is most likely to improve communication within this interdisciplin ary health care team?",
+        "choices": "(A) Conduct interdisciplinary rounds in a quieter location (B) Encourage questions from all team members (C) Implement a checklist for standardizing patient rounds (D) Use computers during rounds to review medications",
+        "answer_id": "B",
+        "meta_info": "step2",
+        "source": "Step 2 Free 120 March 2021",
+        "question_number": 32,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 17 -year-old girl is brought to the physician by her parents because they are concerned she is using illicit drugs. They report that, \u201cshe just isn\u2019t herself anymore.\u201d She has no history of serious illness and takes no medications. She is upset about being \u201ctricked\u201d to come to the doctor. Physical examination shows no abnormalities. On mental status examination, she has an angry mood and anxious affect. The patient\u2019s parents privately request a toxicology screening for their daughter but ask that she be told that her blood will be taken to \u201ccheck her thyroid gland.\u201d After discussing the parents\u2019 wish for secrecy, which of the following is the most appropriate next step in management?",
+        "choices": "(A)Comply with the parents\u2019 wishes (B) Inform the parents that everything the patient tells the physician is confidential (C) Inform the parents that if the patient\u2019s toxicology screening is positive, it must be reported to the police (D) Inform the parents that the physician cannot deceive the patient",
+        "answer_id": "D",
+        "meta_info": "step2",
+        "source": "Step 2 Free 120 March 2021",
+        "question_number": 38,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 22-year-old primigravid woman at 10 weeks\u2019 gestation comes to the emergency department (ED) because of a 3-day history of persistent vomiting. She is treated with intravenous hydration, pyridoxine, and doxylamine. As the resident physician prepares the patient for discharge, he asks who will be picking her up from the ED. She says her husband will be arriving soon and asks if the hospital staff can refer to her symptoms as a \u201cstomach flu.\u201d She does not want anyone to mention to her husband that she is pregnant because the pregnancy resulted from an oral contraceptive failure and \u201che is not expecting this.\u201d Which of the following is the most appropri ate next question to ask this patient?",
+        "choices": "(A) \u201cAre finances tight at home?\u201d (B) \u201cHow do you think he will react?\u201d (C) \u201cIs there somebody else who can pick you up?\u201d (D) \u201cWas there a problem with your birth control?\u201d (E) \u201cWill he try to force you to do something you aren\u2019t comfortable with?\u201d",
+        "answer_id": "B",
+        "meta_info": "step2",
+        "source": "Step 2 Free 120 March 2021",
+        "question_number": 41,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A chief medical officer at a hospital has received several reports that one of her colleagues, a 64 -year-old male surgeon, has \u201cnot been acting like himself\u201d recently. An administrative assistant says that during the past 6 months, the surgeon\u2019s dictations have become hard to follow and appear to be missing information; previously, they were comprehensive and easy to transcribe. The assistant adds that after the surgeon missed three meetings in a row during the past 2 months, he asked her to send him a text message 5 minutes before the next meeting to let him know its location. Previously, he was always in attendance and on time for meetings. A senior resident also has noted unusual behavior by the surgeon; the resident says that while on rounds 3 days ago, the surgeon listed incorrect indications for a specific surgical procedure. A scrub nurse reported that the surgeon used unsterile practices three times during a 2-hour procedure today. The chief medical officer meets with the surgeon and asks him about these reported incidents. The surgeon says that \u201cnothing is wrong\u201d and the people who reported him are angry with him for various reasons and \u201care trying to stir up trouble.\u201d Which of the following is the most appropriateaction for the chief medical officer to take?",
+        "choices": "(A) Accept the surgeon\u2019s answer and only pursue further action if there is another complaint (B) Determine whether other staff have noticed anything different about the surgeon\u2019s behavior (C) Inform the surgeon that he should consider retirement (D) Instruct the surgeon to take a temporary leave of absence and undergo a medical evaluation",
+        "answer_id": "D",
+        "meta_info": "step2",
+        "source": "Step 2 Free 120 March 2021",
+        "question_number": 55,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 32-year-old man comes to the office for a follow -up examination 2 months after he was diagnosed with hypertension. He arrives late for the appointment, stating that he had to make sure no one followed him here because some \"drug dealers\" are after him. He insists that he be seen in an examination room with no windows. He says he is \"fine\" but is reluctant to answer questions because \"doctors hold everything against me.\" He doubts his diagnosis and says, \"Doctors and drug companies are in cahoots trying to get my money.\" He refuses to speak with the office manager about his bill because he thinks \"she looks at me funny and makes nasty remarks about me behind my back.\" He says he has no history of psychiatric illness; his medical record indicates that he has made similar statements during the past 7 years concerning doctors and office staff but he always refused to elaborate on his statements. His medications are metoprolol and hydrochlorothiazide. He does not drink alcohol or use illicit drugs. Vital signs are within normal limits. Physical and neurologic examinations show no abnormalities. Results of screening laboratory studies are within the reference ranges. Which of the following is the most appropriate next step in management?",
+        "choices": "(A) Begin clonazepam therapy (B) Begin risperidone therapy (C) Begin sertraline therapy (D) Determine whether the patient has friends or family who can monitor him at home (E) Determine whether the patient has had thoughts of harming others (F) Determine whether the patient is adherent to his medication",
+        "answer_id": "E",
+        "meta_info": "step2",
+        "source": "Step 2 Free 120 March 2021",
+        "question_number": 59,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 13-month-old boy is brought to a small rural emergency department (ED) near his family's community because of an erythematous, edematous mass in his perianal area that is hot to touch. He has no history of serious illness and receives no medications. Growth and development are appropriate for age. Vaccinations are up-to-date. He is at th e 50th percentile for length and weight. Temperature is 39.4\u00b0C (103.0\u00b0F), pulse is 160/min, and respirations are 36/min. Examination shows fluctuance and exquisite tenderness to palpation of the perianal mass. Oral acetaminophen and a dose of oral cephalexin are administered, and the parents are told that their child\u2019s case is beyond the capabilities of the hospital. They are referred to the nearest hospital with a pediatric service, a suburbanhospital 50 miles away. The suburban hospital is contacted regarding the referral and a pediatric surgeon accepts transfer of the patient. When the patient is brought to the ED of the suburban hospital, a triage nurse obtains his oral temperature of 37.7\u00b0C (99.8\u00b0F) and pulse of 126/min. The nurse notes that the family has no health insurance and states that the case is beyond the capabilities of the hospital. The nurse recommends taking the patient to the ED of a downtown university hospital 4 miles away. The parents follow this recommendation, and the patient undergoes incision and drainage of the abscess at the downtown hospital later that day. Which of the following is the mostaccurate characterization of this patient's pattern of care?",
+        "choices": "(A) The patient received appropriate care under the circumstances (B) The pediatric surgeon at the suburban hospital should have insisted on personally examining the patient and draining the abscess (C) The rural hospital should have sent the patient directly to the downtown university hospital (D) The suburban hospital executed unethical but legal conduct in this case (E) The suburban hospital violated the Emergency Medical Treatment and Active Labor Act (EMTALA)",
+        "answer_id": "E",
+        "meta_info": "step2",
+        "source": "Step 2 Free 120 March 2021",
+        "question_number": 66,
+        "question_type": "ethics"
+    },
+    {
+        "question": "An 8 -year-old boy is brought to the emergency department (ED) by ambulance 45 minutes after he was struck by a car while riding his bicycle. He did not lose consciousness but has multiple rib fractures with depression of the left anterior chest wall. His parents have been notified and are on their way to the hospital. On the patient's arrival to the ED, his temperature is 37.2\u00b0C (99.0\u00b0F), pulse is 180/min, respirations are 36/min, and blood pressure is 65/30 mmHg. The abdomen is distended with exquisite tenderness to palpation. A rapid intravenous infusion of 0.9% saline is begun. CT scans are quickly obtained and show a disrupted spleen and an abdominal cavity filled with free fluid. The parents arrive at the hospital and are informed that their son needs an emergency laparotomy and splenectomy to control the internal bleeding. A saline infusion is continued to support the patient's blood pressure. The parents provide consent to proceed with the operation but refuse to consent to transfusion of blood or blood products, regardless of consequences, because of their religious beliefs. As the patient is transferred to the operating room, his pulse is 210/min and blood pressure is 50/20 mmHg. Hemoglobin concentration is 3.8 g/dL. The surgeon agrees with the anesthesiologist that the patient will die without transfusion of blood and plasma. Which of the following is the most appropriate action?",
+        "choices": "(A) Contact the national organization of the parents\u2019 religion and insist that the parents speak with a representative on the phone regarding the matter (B) Contact the parents\u2019 religious advisor to request help in acquiring consent for blood transfusion (C) Proceed with the blood transfusion while obtaining an emergency telephone court order (D) Proceed with the operation and abide by the parents\u2019 wishes that no blood products be used (E) Transfer the patient by ambulance immediately to a bloodless surgical center",
+        "answer_id": "C",
+        "meta_info": "step2",
+        "source": "Step 2 Free 120 March 2021",
+        "question_number": 77,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 76-year-old woman, who is receiving home hospice care because of end -stage metastatic lung cancer diagnosed 1 month ago, is examined at home at the request of her family because of a 3- hour history of labored breathing despite receiving 100% oxygen at 5 L/min via face mask. Pulse is 92/min, respirations are 18/min, and blood pressure is 105/62 mmHg. Pulse oximetry on 100% oxygen via face mask shows an oxygen saturation of 85%. The patient appears cachectic and is in mild distress, showing increased work of breathing with prominent sternocleidomastoid muscles and inter mittent agonal respirations. Which of the following is the most appropriate next step in management?",
+        "choices": "(A) Administer intravenous morphine (B) Admit the patient to the hospital for further evaluation (C) Initiate a propofol infusion (D) Transition the patient to noninvasive positive pressure ventilation (E) No further action is indicated",
+        "answer_id": "A",
+        "meta_info": "step2",
+        "source": "Step 2 Free 120 March 2021",
+        "question_number": 82,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 72-year-old woman is evaluated in the acute rehabilitation facility where she has been receiving physical therapy since sustaining a stroke 2 weeks ago that resulted in moderate left hemiparesis. A swallowing study obtained on admission to the facility showed no abnormalities and she has been progressing well with her rehabilitation. She is able to walk with the aid of a walker and assistant, has no speech impairment, and tolerates a regular diet. Medical history also is notable for well -controlled hypertension and hyperlipidemia. Medications are lisinopril, simvastatin, and daily aspirin. Temperature is 37.0\u00b0C (98.6\u00b0F), pulse is 72/min and regular, respirations are 12/min, and blood pressure is 130/80 mmHg. Cardiopulmonary examination shows no abnormalities. Cranial nerves are intact. Muscle strength in the extremities is 4/5 on the left and 5/5 on the right. Sensation is intact bilaterally. Standardized assessment of cognitive function shows no abnormalities. For the past 2 days, the patient has insisted that she is well enough to go home despite not being fully cleared to do so by her physical therapist and physiatrist, who want her to stay for 1 more week to try to advance from the walker to a cane. The patient lives with her daughter, son-in-law, and grandson, and has a bedroom on the main floor of the house with no need to use stairs. The daughter works as a stay-at-home mother. Which of the following is the most appropriate next step in management?",
+        "choices": "(A) Discharge the patient with a plan for home health care and physical therapy (B) Inform the patient that she would need to sign out against medical advice (C) Inform the patient that transfer to a long-term care facility is most suitable for her (D) Request psychiatric evaluation of the patient's decision- making capacity",
+        "answer_id": "A",
+        "meta_info": "step2",
+        "source": "Step 2 Free 120 March 2021",
+        "question_number": 91,
+        "question_type": "ethics"
+    },
+    {
+        "question": "Three days after an operation for uterine cancer, a hospitalized 67-year-old woman develops edema of the right lower extremity. Doppler ultrasonography shows a deep venous thrombosis (DVT). Review of the patient's record indicates that no DVT prophylaxis was initiated perioperatively. Which of the following is the best approach to prevent a similar adverse event in the future?",
+        "choices": "(A) Conduct a nursing in-service regar ding DVT prophylaxis (B) Develop an institutional policy with standardized orders for DVT prophylaxis (C) Encourage early ambulation during the postoperative period (D) Prescribe low-molecular-weight heparin for all postoperative patients (E) No intervention indicated because this is an isolated case and does not occur frequently",
+        "answer_id": "B",
+        "meta_info": "step2",
+        "source": "Step 2 Free 120 March 2021",
+        "question_number": 98,
+        "question_type": "ethics"
+    },
+    {
+        "question": "An 18-year-old man is being prepared to undergo left temporal craniotomy for meningioma. General anesthesia has been administered. The surgeon reviews the patient's most recent MRI findings, which are hanging on a view box in the operating room, and prepares to clip the hair from the patient's right scalp. The circulating nurse is concerned because the signed operative consent form indicates a left temporal craniotomy. Which of the following is the most appropriate course of action for the circulating nurse?",
+        "choices": "(A) No action is required (B) Review the MRI to determine the correct operative site (C) Ask the surgeon to continue the operation only after the discrepancy is resolved (D) Change the operative consent to match the surgeon's actions (E) Call the waiting room to confirm the correct operative site with the patient's parents (F) Write a postoperative incident report only",
+        "answer_id": "C",
+        "meta_info": "step2",
+        "source": "Step 2 Free 120 March 2021",
+        "question_number": 100,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 45-year-old woman returns to the office to discuss results of a fine-needle aspiration biopsy of a 0.5- cm right breast mass obtained 1 week ago. She is unaccompanied. Medical history is unremarkable and she takes no medications. Her mother and maternal aunt were diagnosed with breast cancer at the ages of 45 and 52 years, respectively. Physical examination discloses no palpable axillary nodes. The biopsy specimen showed malignant cells. The patient is counseled that she has an excellent chance of cure with lumpectomy and radiation therapy. She adamantly refuses this treatment plan and states that she will try natural therapies, including megavitamins and herbal remedies instead. After exploring the reasons behind the patient's decision, which of the following is the most appropriate response?",
+        "choices": "(A) Advise the patient that there is no proof that these alternative therapies work and that she is essentially throwing her life away (B) Agree to the alternative therapies and schedule a follow -up visit in 6 months (C) Ask the patient if she would be willing to return to the office in 2 weeks to discuss treatment options again (D) Inform the patient that she will be referred to another physician based on her treatment decision",
+        "answer_id": "C",
+        "meta_info": "step2",
+        "source": "Step 2 Free 120 March 2021",
+        "question_number": 119,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 70-year-old woman is admitted to the hospital because of a 1- hour history of shortness of breath. She has lung cancer and dementia, Alzheimer type, and has had a decline in mental status during the past month. She lives with her boyfriend of 20 years; he has cared for her and has taken care of the home since she was diagnosed with dementia 2 years ago. She has one adult son who lives out of state, but she speaks to him on the phone daily. The patient's neighbor, who is a nurse and a long- term friend, takes her to all medical appointments and ensures she takes her medications appropriately. The patient is unable to understand the poor prognosis of her condition. She has not designated a health care power of attorney. Which of the following is the most appropriate person to make medical decisions for this patient?",
+        "choices": "(A) Boyfriend (B) Neighbor (C) Patient (D) Physician (E) Son",
+        "answer_id": "E",
+        "meta_info": "step2",
+        "source": "Step 2 Free 120 July 2023",
+        "question_number": 5,
+        "question_type": "ethics"
+    },
+    {
+        "question": "Which of the following is most likely to bias the results of this study?",
+        "choices": "(A) Earlier diagnosis of relapse in patients receiving methadone maintenance therapy (B) Exclusion criteria of studies used for the review (C) Likelihood that more trials with positive results will be published (D) Source of funding (E) Variety of sample sizes of the included trials",
+        "answer_id": "C",
+        "meta_info": "step2",
+        "source": "Step 2 Free 120 July 2023",
+        "question_number": 19,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 57-year-old man is brought to the emergency department by ambulance 30 minutes after he had loss of consciousness. His wife says he was making dinner when he fell on the kitchen floor. He has hypertension and his only medication is lisinopril. He has no history of operative procedures. En route, his temperature was 37.2\u00b0C (99.0\u00b0F), pulse was 90/min, respirations were 10/min and labored, and blood pressure was 180/100 mmHg. Pulse oximetry on 40% oxygen by face mask showed an oxygen saturation of 99%. On arrival, he is unresponsive. His Glasgow Coma Scale score is 3. He is intubated and mechanically ventilated. Temperature is 37.2\u00b0C (99.0\u00b0F), pulse is 90/min, ventilatory rate is 10/min, and blood pressure is 180/100 mmHg. Pulse oxime try on an F IO2 of 0.4 shows an oxygen saturation of 98%. On examination, Doll's eye (oculocephalic) maneuver shows absent eye movements, and the corneal reflex is absent. On ice-water caloric testing, there is no nystagmus or deviation of the eyes toward the ear being irrigated. CT scan of the head shows a ruptured cerebral aneurysm. When the patient's wife is notified of the patient's condition, she says he wanted to be an organ donor but does not have an advance directive. Which of the following is the most appropriate next step in management?",
+        "choices": "(A) Consult with the hospital ethics committee (B) Contact the organ bank for potential donation (C) Determine if there are any patients awaiting organ donation in the hospital (D) Explain that the patient is not a candidate for organ donation because he does not have an advance directive (E) Explain that the patient is not a candidate for organ donation because of his history of hypertension",
+        "answer_id": "B",
+        "meta_info": "step2",
+        "source": "Step 2 Free 120 July 2023",
+        "question_number": 20,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 2-year-old girl is brought to the office by her parents for a well-child examination. She was adopted 2 months ago. She has no history of serious illness and receives no medications. Vital signs are within normal limits. Examination shows no abnormalities. After the examination, the parents ask when they should tell their daughter about the adoption. Which of the following is the most appropriate advice regarding the best time to tell this patient?",
+        "choices": "(A) After she turns 18 years of age (B) As early as possible, even if she cannot process the whole experience (C) Once the seal on the adoption records has been lifted (D) Right before she is enrolled in kindergarten (E) When she learns that she is not biologically related to her parents",
+        "answer_id": "B",
+        "meta_info": "step2",
+        "source": "Step 2 Free 120 July 2023",
+        "question_number": 31,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A surgical intensive care unit observes that the number of days that patients have central venous catheters in place and the number of bloodstream infections have been increasing. A multidisciplinary team from the unit would like to decrease the number of days that central venous catheters are in place in order to improve performance in this area. Which of the following is the most appropriate next step?",
+        "choices": "(A) Ask clinical providers in the unit to identify what they believe to be the most common factors leading to nonremoval of central venous catheters (B) Change all central venous catheters every 5 days (C) Place stickers on all intensive care unit doors reminding staff to reassess the need for a central line (D) Plan a randomized controlled trial to test the effects of a reminder to reassess the need for a central line on a daily goals sheet implemented during rounds",
+        "answer_id": "A",
+        "meta_info": "step2",
+        "source": "Step 2 Free 120 July 2023",
+        "question_number": 32,
+        "question_type": "ethics"
+    },
+    {
+        "question": "An 87- year-old man is admitted to the hospital because of a 4-day history of moderate abdominal cramps, nausea, and vomiting. He has not had a bowel movement or passed gas in the past 24 hours. He has colon cancer metastatic to the lungs, liver, and peritoneum. Eighteen months ago, he underwent a low anterior resection for T3N2 rectal cancer. Six months ago, exploratory laparotomy showed diffuse carcinomatosis and bowel obstruction, and an ileotransverse bypass was performed. The patient and his family were informed of the findings and advised that he would not be a candidate for a laparotomy in the future because there would be no surgical options to treat another obstruction. The patient has no other history of serious illness. Medications are 5 -fluorouracil and bevacizumab. Temperature is 37.2\u00b0C (99.0\u00b0F), pulse is 100/min, respirations are 20/min, and blood pressure is 130/80 mmHg. The abdomen is distended and mildly tender to palpation. There are no peritoneal signs. CT scan of the abdomen shows a mid-jejunal small-bowel obstruction, multiple intraperitoneal tumor deposits, and ascites. The physician recommends insertion of nasogastric and percutaneous endoscopic gastrostomy tubes. The patient and his family request that the patient undergo a laparotomy and intestinal bypass. Which of the following is the most appropriate next step in management?",
+        "choices": "(A) Abide by the wishes of the patient and his family (B) Alter the chemotherapy regimen (C) Explain the futility of the operation to the patient and his family (D) Offer to transfer the patient to another facility (E) Suggest external beam radiation therapy",
+        "answer_id": "C",
+        "meta_info": "step2",
+        "source": "Step 2 Free 120 July 2023",
+        "question_number": 35,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 47 -year-old woman is scheduled to undergo right knee arthroscopy and partial medial meniscectomy. Medical history is otherwise unremarkable. At her preoperative examination 2 weeks ago, her surgeon discussed the risks and benefits of the procedure, and both parties signed the operative consent form. On the patient's arrival at the hospital, the paperwork is reviewed. She is taken into the operating room and sedated, and the anesthesiology team starts a spinal anesthetic. After the patient's right lower extremity is prepped for the procedure, a surgical pause is taken to review the patient's name and consent form and to confirm the site of surgery. The operating room team is unable to locate the consent form for review. No markings are present on the patient's extremities to indicate the site of the procedure. The surgeon says that he remembers reviewing the consent form with the patient and seeing her sign it. The patient's husband is in the waiting room. Which of the following is the most appropriate course of action?",
+        "choices": "(A) Ask the patient if she recalls signing the consent form and, if so, proceed with the operation (B) Ask the patient to sign a new consent form and proceed with the operation (C) Do not proceed, and remove the patient from the operating room (D) Obtain verbal consent from the patient's husband before proceeding with the operation (E) Proceed with the operative procedure as planned",
+        "answer_id": "C",
+        "meta_info": "step2",
+        "source": "Step 2 Free 120 July 2023",
+        "question_number": 39,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 67 -year-old man is evaluated in the intensive care unit. He has end -stage pancreatic cancer and was hospitalized 3 days ago for treatment of pneumonia. Respirations are 6/min. Pulse oximetry on 100% oxygen by face mask shows an oxygen saturation of 78%. Examination shows feeble respiratory efforts; he is using accessory muscles of respiration. On mental status examination, the patient is oriented to person but not to place or time. If the patient is not endotracheally intubated and mechanically ventilated, he will die within hours. His wife says the patient recently told her that he would never want mechanical ventilation, but they never completed paperwork regarding his wishes. His daughter insists that he be mechanically ventilated. Which of the following is the most appropriate action for the physician to take?",
+        "choices": "(A) Perform endotracheal intubation and begin mechanical ventilation (B) Perform endotracheal intubation and then consult the hospital ethics committee regarding mechanical ventilation (C) Perform endotracheal intubation only (D) Provide palliative therapy only (E) Seek a court order to assign a legal guardian",
+        "answer_id": "D",
+        "meta_info": "step2",
+        "source": "Step 2 Free 120 July 2023",
+        "question_number": 61,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 75-year-old man is admitted to the hospital because of a 3- day history of fever. He has type 2 diabetes mellitus, hypertension, and chronic obstructive pulmonary disease. One year ago, he had a stroke with residual right lower extremity hemiparesis. Medications are amlodipine, tiotropium, metformin, glimepiride, lisinopril, and aspirin. He does not drink alcoholic beverages and has smoked one pack of cigarettes daily for 50 years. The patient is widowed, lives alone, and has three adult children. He is not in acute distress. He is 178 cm (5 ft 10 in) tall and weighs 82 kg (180 lb); BMI is 26 kg/m2. Temperature is 39.2\u00b0C (102.6\u00b0F), pulse is 110/min, respirations are 22/min, and blood pressure is 150/90 mmHg. Pulse oximetry on room air shows an oxygen saturation of 96%. Scattered end -expiratory wheezes are heard. There is dense hemiparesis of the right lower extremity. Appropriate therapy is initiated, and 3 days later, the patient's condition has improved. He is awake, alert, and conversing with one of his sons about current events. Temperature is 37.2\u00b0C (99.0\u00b0F), pulse is 72/min, and blood pressure is 130/82 mmHg. Discharge plans are discussed with the patient, his son, the physician, and a physical therapist. The physical therapist says the patient would be best cared for in a nursing care facility. The patient acknowledges that a nursing facility would provide better care for him but says he would prefer to remain at home with a visiting nurse. Once outside the patient's room, his son says, \"I have his power of attorney. Don't listen to him. He needs to be in a nursing home.\" Which of the following is the most appropriate next step?",
+        "choices": "(A) Inform the son that the decision is the patient's to make, regardless of the medical team's recommendation (B) Reassure the son that the patient will be admitted to a nursing care facility in accordance with the physical therapist's recommendation (C) Refrain from making any decisions until a family meeting with the son and siblings is arranged to discuss the matter (D) Request psychiatric evaluation of the patient's mental competency (E) Request to review the legal documentation designating the son as having power of attorney",
+        "answer_id": "A",
+        "meta_info": "step2",
+        "source": "Step 2 Free 120 July 2023",
+        "question_number": 66,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A colleague of a 47 -year-old physician who is conducting patient evaluations during afternoon walk -in clinic hours notices that the physician appears groggy, has slurred speech, and smells of alcohol. Earlier in the day, the physician had attended a celebratory lunch for the graduation of one of the clinic's employees from nursing school. The colleague has not witnessed similar findings in the physician in the past. The physician is scheduled to work at the clinic for the next 4 hours. A physician assistant is present at the clinic and typically aids the physician with evaluating patients. Which of the following is the most appropriate action for the colleague to take at this time?",
+        "choices": "(A) Allow the physician to finish his time at the clinic, but raise concern about the episode at the next physicians' staff meeting (B) Ask the office administrator to cancel the remainder of the clinic hours (C) Ask the physician assistant to examine the physician's patients and discharge them before the physician has a chance to examine them (D) Confront the physician and ask him to leave the clinic (E) Report the physician to the clinic administrator and conduct the remainder of the clinic hours without him (F) Report the physician to the state medical board",
+        "answer_id": "E",
+        "meta_info": "step2",
+        "source": "Step 2 Free 120 July 2023",
+        "question_number": 74,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A hospital with a large intensive care unit (ICU) would like to improve communication among team members who care for patients with complex conditions. Research has shown that team communication is most effective when one clinician is designated as the team leader and assumes responsibility for directing the care. The team leader ensures that all team members share a common understanding of the patient and openly discuss their views about the case. The common understanding includes the patient\u2019s diagnosis, prognosis, and care plan. This allows the team to quickly recognize when new data deviate from the expected and then reassess the team's approach to the patient. Which of the following is the most appropriate method for maintaining a common mental model among all team members?",
+        "choices": "(A) Conduct weekly structured team briefings and daily huddles (B) Educate all team members on protocols for common illnesses (C) Have the team leader discuss the case with each team member individually on a regular basis (D) Maintain a consistent team of intensivists in the ICU (E) Maintain a disease-specific ICU",
+        "answer_id": "A",
+        "meta_info": "step2",
+        "source": "Step 2 Free 120 July 2023",
+        "question_number": 90,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 77- year-old woman is brought to the emergency department by her son because of a 3- day history of pain in her right wrist. The patient has advanced dementia, Alzheimer type, and is unable to provide her medical history. She is completely dependent on her son, with whom she lives and who is her only caregiver. The son says he is unaware of any trauma to the patient's wrist. The son says the patient has no other history of serious illness. Her only medication is memantine. She is nonverbal and has a flat affect. She appears unkempt and to have poor hygiene. Temperature is 36.7\u00b0C (98.1\u00b0F), pulse is 82/min and regular, respiratio ns are 18/min, and blood pressure is 150/90 mmHg. The patient moans when the physician touches her right wrist. Examination shows multiple bruises over both forearms and wrists. The remainder of the examination shows no abnormalities. X- ray of the right wrist shows a distal radial fracture; the fracture is treated with cast immobilization. Which of the following is the most appropriate next step in management?",
+        "choices": "(A) Admit the patient to the hospital for further evaluation (B) Arrange for placement of the patient in a nursing care facility (C) Contact adult protective services (D) Provide phone numbers of nearby nursing care facilities (E) Recommend further evaluation at a clinic specializing in geriatric patients",
+        "answer_id": "C",
+        "meta_info": "step2",
+        "source": "Step 2 Free 120 July 2023",
+        "question_number": 107,
+        "question_type": "ethics"
+    },
+    {
+        "question": "An 85-year-old man with severe dementia, Alzheimer type, is admitted to the hospital because of a nonhealing ulcer on his right second toe. He lives in a nursing care facility and has been bedridden for the past 3 years. He has type 2 diabetes mellitus, hypertension, and peripheral vascular disease. His medications are metformin, amlodipine, and aspirin. Noninvasive vascular studies of the lower extremities show marked bilateral vascular disease. Subsequent peripheral angiography shows severe stenoses of the right superficial femoral and the left common iliac arteries. The patient undergoes uncomplicated placement of two sequential vascular stents in the superficial femoral artery and placement of an additional stent in the left common iliac artery. The type of stents used was recently approved by the US Food and Drug Administration and has been heavily marketed as a long-lasting solution to restenosis. Each stent costs the hospital $15,000. Alternatives to this approach include amputation of the toe, balloon angioplasty, and use of less expensive stents. Which of the following best describes the public policy implications of this scenario?",
+        "choices": "(A) Absence of resource stewardship (B) Ageism (C) Health care disparities (D) Health care fraud and abuse (E) Lack of access to care",
+        "answer_id": "A",
+        "meta_info": "step2",
+        "source": "Step 2 Free 120 April 2022",
+        "question_number": 21,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A chief medical officer at a hospital has received several reports that one of her colleagues, a 64-year-old male surgeon, has not been acting like himself recently. An administrative assistant says that during the past 6 months, the surgeon\u2019s dictations have become hard to follow and appear to be missing information; previously, they were comprehensive and easy to transcribe. The assistant adds that after the surgeon missed three meetings in a row during the past 2 months, he asked her to send him a text message 5 minutes before the next meeting to let him know its location. Previously, he was always in attendance and on time for meetings. A senior resident also has noted unusual behavior by the surgeon; the resident says that while on rounds 3 days ago, the surgeon listed incorrect indications for a specific surgical procedure. A scrub nurse reported that the surgeon used unsterile practices three times during a 2-hour procedure today. The chief medical officer meets with the surgeon and asks him about these reported incidents. The surgeon says that nothing is wrong and the people who reported him are angry with him for various reasons and are trying to stir up trouble. Which of the following is the most appropriate action for the chief medical officer to take?",
+        "choices": "(A) Accept the surgeon\u2019s answer and only pursue further action if there is another complaint (B) Determine whether other staff have noticed anything different about the surgeon\u2019s behavior (C) Inform the surgeon that he should consider retirement (D) Instruct the surgeon to take a temporary leave of absence and undergo a medical evaluation",
+        "answer_id": "D",
+        "meta_info": "step2",
+        "source": "Step 2 Free 120 April 2022",
+        "question_number": 55,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 13-month-old boy is brought to a small rural emergency department (ED) near his family's community because of an erythematous, edematous mass in his perianal area that is hot to touch. He has no history of serious illness and receives no medications. Growth and development are appropriate for age. Vaccinations are up-to-date. He is at the 50th percentile for length and weight. Temperature is 39.4\u00b0C (103.0\u00b0F), pulse is 160/min, and respirations are 36/min. Examination shows fluctuance and exquisite tenderness to palpation of the perianal mass. Oral acetaminophen and a dose of oral cephalexin are administered, and the parents are told that their child\u2019s case is beyond the capabilities of the hospital. They are referred to the nearest hospital with a pediatric service, a suburban hospital 50 miles away. The suburban hospital is contacted regarding the referral and a pediatric surgeon accepts transfer of the patient. When the patient is brought to the ED of the suburban hospital, a triage nurse obtains his oral temperature of 37.7\u00b0C (99.8\u00b0F) and pulse of 126/min. The nurse notes that the family has no health insurance and states that the case is beyond the capabilities of the hospital. The nurse recommends taking the patient to the ED of a downtown university hospital 4 miles away. The parents follow this recommendation, and the patient undergoes incision and drainage of the abscess at the downtown hospital later that day. Which of the following is the most accurate characterization of this patient's pattern of care?",
+        "choices": "(A) The patient received appropriate care under the circumstances (B) The pediatric surgeon at the suburban hospital should have insisted on personally examining the patient and draining the abscess (C) The rural hospital should have sent the patient directly to the downtown university hospital (D) The suburban hospital executed unethical but legal conduct in this case (E) The suburban hospital violated the Emergency Medical Treatment and Active Labor Act (EMTALA)",
+        "answer_id": "E",
+        "meta_info": "step2",
+        "source": "Step 2 Free 120 April 2022",
+        "question_number": 66,
+        "question_type": "ethics"
+    },
+    {
+        "question": "An 8-year-old boy is brought to the emergency department (ED) by ambulance 45 minutes after he was struck by a car while riding his bicycle. He did not lose consciousness but has multiple rib fractures with depression of the left anterior chest wall. His parents have been notified and are on their way to the hospital. On the patient's arrival to the ED, his temperature is 37.2\u00b0C (99.0\u00b0F), pulse is 180/min, respirations are 36/min, and blood pressure is 65/30 mmHg. The abdomen is distended with exquisite tenderness to palpation. A rapid intravenous infusion of 0.9% saline is begun. CT scans are quickly obtained and show a disrupted spleen and an abdominal cavity filled with free fluid. The parents arrive at the hospital and are informed that their son needs an emergency laparotomy and splenectomy to control the internal bleeding. A saline infusion is continued to support the patient's blood pressure. The parents provide consent to proceed with the operation but refuse to consent to transfusion of blood or blood products, regardle ss of consequences, because of their religious beliefs. As the patient is transferred to the operating room, his pulse is 210/min and blood pressure is 50/20 mmHg. Hemoglobin concentration is 3.8 g/dL. The surgeon agrees with the anesthesiologist that the patient will die without transfusion of blood and plasma. Which of the following is the most appropriate action?",
+        "choices": "(A) Contact the national organization of the parents\u2019 religion and insist that the parents speak with a representative on the phone regarding the matter (B) Contact the parents\u2019 religious advisor to request help in acquiring consent for blood transfusion (C) Proceed with the blood transfusion while obtaining an emergency telephone court order (D) Proceed with the operation and abide by the pare nts\u2019 wishes that no blood products be used (E) Transfer the patient by ambulance immediately to a bloodless surgical center",
+        "answer_id": "C",
+        "meta_info": "step2",
+        "source": "Step 2 Free 120 April 2022",
+        "question_number": 77,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 45-year-old woman returns to the office to discuss results of a fine-needle aspiration biopsy of a 0.5- cm right breast mass obtained 1 week ago. She is unaccompanied. Medical history is unremarkable and she takes no medications. Her mother and maternal aunt were diagnosed with breast cancer at the ages of 45 and 52 years, respectively. Physical examination discloses no palpable axillary nodes. The biopsy specimen showed malignant cells. The patient is counseled that she has an excellent chance of cure with lumpectomy and radiation therapy. She adamantly refuses this treatment plan and states that she will try natural therapies, including megavitamins and herbal remedies instead. After exploring the reasons behind the patient's decision, which of the following is the most appropriate response?",
+        "choices": "(A) Advise the patient that there is no proof that these alternative therapies work and that she is essentially throwing her life away (B) Agree to the alternative therapies and schedule a follow-up visit in 6 months (C) Ask the patient if she would be willing to return to the office in 2 weeks to discuss treatment options again (D) Inform the patient that she will be referred to another physician based on her treatment decision",
+        "answer_id": "C",
+        "meta_info": "step2",
+        "source": "Step 2 Free 120 April 2022",
+        "question_number": 119,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 45-year-old limousine driver comes to the office for an initial appointment because he would like you to fill out and sign a legal document at the request of his attorney. The patient states th at he is filing a lawsuit against the limousine company that employs him because he developed post-traumatic stress disorder following a motor vehicle collision. He appears irritable and tense as he provides his history. He relays his symptoms by reading them aloud from a written list. At this time, which of the following is the most appropriate approach toward confirming the underlying diagnosis of this patient?",
+        "choices": "(A) Administer amobarbital and then interview the patient (B) Ask the patient to provide a narrative with detailed description of the incident and of his symptoms (C) Interview the patient under hypnosis (D) Interview the patient while paying close attention to his willingness to make eye contact (E) Tell the patient he is exhibiting behaviors that are suggestive of maling ering and see how he responds",
+        "answer_id": "B",
+        "meta_info": "step3",
+        "source": "Step 3 Free 137 Nov 2020",
+        "question_number": 18,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 33-year-old male physician reports for a shift in the emergency department. A nurse alerts you that he noticed a faint odor of alcohol near the physician. When approached, the physician appears tired and more disheveled than usual. There is an odor of alcohol on his breath. He is a skilled and talented physician with no known history of substance or alcohol use disorder. He is married with three children, and his wife is pregnant with twins. The physician was recently hired and has had no actions on his license by any state medical board. Which of the following is the most appropriate next step?",
+        "choices": "(A) Ask the physician if he is sober, and if he says yes, allow him to complete his shift (B) Explain to the physician that you suspect he is intoxicated and ask him to submit to a blood sample to check his blood alcohol concentration (C) Relieve the physician of duty and alert the hospital's patient safety officer (D) Tell the physician that you can cover the remainder of the shift alone, so that he can sleep in his office (E) Tell the physician you detect alcohol on his breath, and he needs to go home and should not return until he is sober",
+        "answer_id": "C",
+        "meta_info": "step3",
+        "source": "Step 3 Free 137 Nov 2020",
+        "question_number": 46,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 35-year-old woman comes to the office for follow-up of chronic pelvic pain. The patient has had deep pelvic pain since undergoing total abdominal hysterectomy and radiation therapy for treatment of cervical cancer 5 years ago. She reports constant, severe aching pain; she rates the pain at its maximum as a 10 on a 10 \u2011point scale. The pain worsens during intercourse. All subsequent cancer follow-up has been negative. Medical history otherwise is unremarkable. The patient has taken oxycodone for her pain for 3 years, but she now reports that the oxycodone only partially relieves her pain. She requests either an increased dose of oxycodone or a change in her prescription to controlled- release morphine, which was recently given to her by a friend. She has smoked one pack of cigarettes daily for the past 15 years. She does not drink alcoholic beverages. BMI is 18 kg/m2. She appears lethargic. She is oriented to person, place, and time but speaks slowly with slurred speech. Vital signs are normal. Examination of the skin shows no abnormalities. Pupils are pinpoint and react sluggishly. Which of the following is the most appropriate next step in management?",
+        "choices": "(A) Inform the patient that she must find a new physician (B) Maintain the dose of oxycodone and add naproxen (C) Order a urine toxicology screening (D) Report the patient's unauthorized drug use to the police (E) Switch oxycodone to sustained-release morphine",
+        "answer_id": "C",
+        "meta_info": "step3",
+        "source": "Step 3 Free 137 Nov 2020",
+        "question_number": 49,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 35-year-old woman comes to the office for follow-up of chronic pelvic pain. The patient has had deep pelvic pain since undergoing total abdominal hysterectomy and radiation therapy for treatment of cervical cancer 5 years ago. She reports constant, severe aching pain; she rates the pain at its maximum as a 10 on a 10 \u2011point scale. The pain worsens during intercourse. All subsequent cancer follow-up has been negative. Medical history otherwise is unremarkable. The patient has taken oxycodone for her pain for 3 years, but she now reports that the oxycodone only partially relieves her pain. She requests either an increased dose of oxycodone or a change in her prescription to controlled- release morphine, which was recently given to her by a friend. She has smoked one pack of cigarettes daily for the past 15 years. She does not drink alcoholic beverages. BMI is 18 kg/m2. She appears lethargic. She is oriented to person, place, and time but speaks slowly with slurred speech. Vital signs are normal. Examination of the skin shows no abnormalities. Pupils are pinpoint and react sluggishly. Urine toxicology screening is positive for diazepam, methadone, and oxycodone. The patient returns to the office 1 week later to discuss these results. Which of the following is the most appropriate opening remark?",
+        "choices": "(A) \"I am concerned that you are abusing pain medicine. I would like for you to consider a substance abuse treatment program.\" (B) \"I cannot be your physician any longer because of your drug abuse. I'm going to give you 30 days to find a new physician.\" (C) \"I would like to know where you have been getting the methadone and diazepam that you are taking.\" (D) \"The test showed that you take other drugs that I have not prescribed to you. I must report this to the police.\"",
+        "answer_id": "A",
+        "meta_info": "step3",
+        "source": "Step 3 Free 137 Nov 2020",
+        "question_number": 50,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 37-year-old man is admitted to the hospital for treatment for cocaine dependency. He says he has tried repeatedly to abstain from cocaine use but lives in a part of town where there are heavy drug sales. He did not like his hospital outpatient group but liked his single session at a 12-step program for cocaine dependency. Vital signs are temperature 37.0\u00b0C (98.6\u00b0F), pulse 70/min, respirations 16/min, and blood pressure 125/85 mmHg. He appears thin. Physical examination discloses good muscle strength and no focal neurologic deficits. The patient is using insurance coverage through his wife but does not wish for his diagnosis to be disclosed to anyone. He is on probation after a conviction for aggravated robbery 3 years ago. There is also a warrant for his arrest for assault and battery. After listening to his requests and weighing your obligations, you should disclose this patient's diagnosis only to which of the following?",
+        "choices": "(A) His 12-step program sponsor (B) His probation officer (C) His wife (D) Insurance company (E) Police",
+        "answer_id": "D",
+        "meta_info": "step3",
+        "source": "Step 3 Free 137 Nov 2020",
+        "question_number": 54,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 19-year-old woman is referred to the office by her counselor for evaluation of possible depression. The counselor describes the patient as polite, conscientious, cooperative, open to therapy, and always present and on time for her weekly sessions. The patient's relationship with her high school boyfriend ended 6 months ago. She had dated him through high school, and he had \"looked out for her as a friend\" since the 6th grade. She says, \"I feel helpless and don't know what to do without him.\" She admits that she often cannot make decisions, such as whether to go to college. She says, \"I always mess things up.\" She is still sad and often tearful about her ex-boyfriend, but she has not had alterations in her sleep habits, appetite, weight, or energy level. She has not had any thoughts about death. Medical history is unremarkable and she takes no medications. BMI is 24 kg/m2. Vital signs are normal and physical examination discloses no abnormalities. Which of the following is the most appropriate initial response to this patient's self-deprecating description?",
+        "choices": "(A) \"College is full of many great once-in-a-lifetime opportunities. You should go.\" (B) \"Everyone makes mistakes. In your case, though, that doesn't mean you always mess things up.\" (C) \"If you find your self needing some guidance, call me.\" (D) \"You're overreacting. You just need to give it a little more time.\"",
+        "answer_id": "B",
+        "meta_info": "step3",
+        "source": "Step 3 Free 137 Nov 2020",
+        "question_number": 60,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 25-year-old man with Down syndrome and mild intellectual developmental diso rder is brought to the office by his parents. He is their only child, and they are concerned that his current lifestyle is increasing his risk for coronary artery disease and stroke. The patient has a systolic murmur and also underwent surgical repair of an atrial septal defect at 1 year of age. He has smoked one pack of cigarettes daily for 5 years. He lives in a group home and works about 25 hours each week in a fast-food restaurant. He has a few friends and is romantically involved with a woman from his church group. The patient is 157 cm (5 ft 2 in) tall and weighs 91 kg (200 lb); BMI is 36 kg/m2. Vital signs are normal. A grade 2/6 systolic murmur is heard best at the apex. The parents would like him to stop smoking and follow a healthier diet, and they feel the only way to monitor and control his behavior is for him to move back into their home. They request your assistance in obtaining legal guardianship of their son. Which of the following is the most appropriate initial recommendation?",
+        "choices": "(A) Advise the parents not to influence their son's decision in this matter (B) Arrange for evaluation of their son's competency (C) Enroll their son in a smoking cessation program (D) Initiate a family meeting to discuss the parents' concerns with their son (E) Obtain legal advice regarding guardianship",
+        "answer_id": "D",
+        "meta_info": "step3",
+        "source": "Step 3 Free 137 Nov 2020",
+        "question_number": 73,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 71-year-old woman with a 15-year history of severe chronic obstructive pulmonary disease (COPD) is admitted to the intensive care unit for treatment of an acute COPD exacerbation. The patient has been receiving home oxygen therapy for the past 3 years; FEV 11 year ago was 27%. She has a do-not-resuscitate order stating that she does not want cardiopulmonary resuscitation, with no specific comment on intubation. Her daughter, who is not present, has power of attorney for the patient's health care decisions, although the patient has made all decisions in the past. Medical history also is significant for hypertension. Medications are lisinopril and hydrochlorothiazide, as well as inhaled tiotropium, albuterol, and fluticasone. The patient is intubated and mechanical ventilation is begun. She is treated with antibiotics, corticosteroids, and nebulized bronchodilators. Her condition gradually improves and she is extubated 4 days later. Within 2 hours of extubation, the patient becomes short of breath and has difficulty clearing her secretions. She is not using accessory muscles of respiration. Temperature is 37.0\u00b0C (98.6\u00b0F), pulse is 98/min, respirations are 25/min, and blood pressure is 168/98 mmHg. Oxygen saturation is 89% on oxygen at 6 L/min. The patient is alert, fully oriented, and conversant. Results of arterial blood gas analys is are shown: PO2 61 mmHg, PCO2 55 mmHg, pH 7.32. An attempt is made to manage the patient with noninvasive positive pressure ventilation, but the patient reports discomfort caused by the mask and requests that it be removed. When initially asked, she declines to be reintubated. Which of the following is the most appropriate next step in management?",
+        "choices": "(A) Clearly state to the patient that if she again declines intubation when offered to her one more time, she will receive comfort care only (B) Contact the patient's daughter to request additional information regarding the patient's previous feelings regarding intubation (C) Explain to the patient that because her advance directive is confusing, discussing her options would be helpful (D) Proceed with reintubating the patient (E) Request psychiatric evaluation of the patient's capacity to make health care decisions",
+        "answer_id": "C",
+        "meta_info": "step3",
+        "source": "Step 3 Free 137 Dec 2023",
+        "question_number": 4,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 12-year-old girl with a seizure disorder is brought to the emergency department 40 minutes after her aunt found her unconscious in her backyard. The aunt reports that the patient is visiting her for the summer. On arrival, the patient is awa ke but drowsy. She says she is embarrassed because she forgot to bring her anticonvulsant medication from home. She requests that you not call her mother \"because she will yell and get angry.\" Temperature is 37.0\u00b0C (98.6\u00b0F), pulse is 74/min, respirations are 16/min, and blood pressure is 100/70 mmHg. Physical examination shows no focal neurologic deficits. The patient requests that she receive one dose of carbamazepine now and that she be given a prescription to fill at the nearby pharmacy. Which of the following is the most appropriate next step?",
+        "choices": "(A) Administer the dose of carbamazepine and provide a prescription (B) Administer the dose of carbamazepine but do not provide a prescription (C) Attempt to contact the mother for permission to treat before proceeding (D) Do not contact the mother but request that the aunt sign a consent form (E) Provide a prescription, but do not administer the dose of carbamazepine",
+        "answer_id": "C",
+        "meta_info": "step3",
+        "source": "Step 3 Free 137 Dec 2023",
+        "question_number": 28,
+        "question_type": "ethics"
+    },
+    {
+        "question": "Patient Information Age: 16 years. Gender: M. Self-identified Race/Ethnicity: unspecified. Site of Care: office. The patient is brought for a well-child visit. The patient\u2019s mother is concerned because his grades have declined from B\u2019s and C\u2019s to C\u2019s and D\u2019s during the past year. She says he has been having difficulty concentrating in school and asks the physician to write a prescription for methylphenidate. Medical history is unremarkable and the patient takes no medications. The mother has a history of major depressive disorder treated with sertraline. The patient\u2019s maternal grandfather, uncle, and cousin have alcohol use disorder. The physician asks the patient\u2019s mother to leave the examination room. When alone with the physician, the patient says he has smoked cannabis at least three times weekly during the past 6 months. He often smokes with friends in the morning before school starts. He does not drink alcoholic beverages or take prescription drugs or other substances. Physical examination shows no abnormalities. On mental status examination, he reports no depressive symptoms or thoughts of harming himself. Urine toxicology screening is positive for \u03949-tetrahydrocannabinol. After the examination, the patient becomes distressed and says, \u201cYou cannot tell my mother about the marijuana. This is confidential.\u201d Which of the following is the most appropriate initial physician response?",
+        "choices": "(A) \u201cI am worried about your cannabis use, so I recommend that you decrease your cannabis use and see me again in 4 weeks for a repeat urine test.\u201d (B) \u201cI can give you a telephone number for enrollment in a substance abuse treatment program.\u201d (C) \u201cCannabis is bad for your brain, so let me tell you how 12-step programs can help you stop using cannabis.\u201d (D) \u201cBecause you are not actually unsafe, this discussion is between the two of us.\u201d (E) \u201cWe need to discuss how cannabis affects your functioning. How can I help you tell your mother?\u201d",
+        "answer_id": "E",
+        "meta_info": "step3",
+        "source": "Step 3 Free 137 Dec 2023",
+        "question_number": 46,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 77-year-old man is admitted to the hospital because of a 2-week history of gangrene of the right foot. Three years ago, he underwent a left transmetatarsal amputation. During hospitalization, he required intubation and mechanical ventilation for 2 weeks because of sepsis. He then spent 2 months in an acute rehabilitation facility. Medical history also is remarkable for type 2 diabetes mellitus, peripheral vascular disease, and hypertension. His medications are insulin, irbesartan, hydrochlorothiazide, and aspirin. He is widowed, lives alone, and keeps in contact with his two sons. He has a living will, and his younger son is designated health care proxy. The patient is alert and fully oriented. Temperature is 38.4\u00b0C (101.1\u00b0F), pulse is 90/min and regular, respirations are 12/min, and blood pressure is 156/90 mmHg. Oxygen saturation is 96% on room air. There is a 5 \u00d7 6-cm ulcer with black margins over the plantar surface of the right foot; malodorous, white-green exudate; and visible bone in the center of the ulcer. Popliteal fossa pulses are decreased and posterior tibial pulses are absent bilaterally. Antibiotic therapy is begun. The patient is informed that he requires amputation of the right leg below the knee. He declines amputation, saying, \"I don't ever want to go through what I went through before with my left foot.\" He is told that the potential risks for not proceeding with amputation are loss of the entire right lower extremity and death. He still refuses the procedure. Which of the following is the most appropriate action for this physician to take?",
+        "choices": "(A) Abide by the patient's wishes (B) Consult the hospital bioethics department (C) Obtain consent for amputation from both sons (D) Obtain consent for amputation from the courts (E) Obtain consent for amputation from the younger son (F) Review any additional instructions in the patient\u2019s living will",
+        "answer_id": "A",
+        "meta_info": "step3",
+        "source": "Step 3 Free 137 Dec 2023",
+        "question_number": 47,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 60-year-old woman, who lives alone, is brought to the emergency department on a Friday evening by her next-door neighbor who says the patient has fallen several times during the past several days. An emergency department record from a visit 1 year ago for a minor laceration indicates that the patient has Parkinson disease with mild dementia, bipolar disorder, and hypertension. Her brother fills her weekly medication organizer, but he is overseas on a business trip for the week. The patient is unable to remember which medications she takes and whether there have been any changes recently to her medication regimen. The neighbor was unable to locate her pill organizer in her home, and the patient thinks her brother keeps her pill bottles at his house to prevent her from inadvertently taking extra doses. She has her brother's address on a card in her wallet, along with the names and phone numbers of her primary care physician, psychiatrist, and pharmacy. The medical record from her visit 1 year ago shows that her medications included clonazepam, clonidine, and lithium carbonate. Doses of each medication are also listed. Attempts to contact the patient's primary care physician and psychiatrist for more detailed medication history have been unsuccessful. Which of the following is the most appropriate initial approach to managing the patient's medications?",
+        "choices": "(A) Ask the police to enter the brother's house to locate the patient's pill bottles (B) Contact the patient's pharmacy to obtain information on her current medications (C) Observe the patient closely while continuing to try to reach her psychiatrist (D) Order the medications as listed in the emergency department records from her previous visit (E) Order serum concentrations of the medications listed on the previous emergency department record, then prescribe doses of the medications in accordance with those concentrations",
+        "answer_id": "B",
+        "meta_info": "step3",
+        "source": "Step 3 Free 137 Dec 2023",
+        "question_number": 57,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 78-year-old woman, who was admitted to the hospital 3 days ago because of worsening renal failure, has become increasingly lethargic and nonresponsive. Medical history is significant for type 2 diabetes mellitus, hypertension, and stroke 1 year ago with residual right-sided weakness and slurred speech. Medications include insulin, aspirin, and furosemide. On admission, the patient was alert with mildly slurred speech; she was oriented to person, place, and time. Physical examination disclosed decreased motor strength and muscle atrophy in the right upper and lower extremities. Results of laboratory studies showed a serum urea nitrogen concentration of 82 mg/dL and a creatinine concentration of 6.1 mg/dL. Hemodialysis was recommended but the patient declined and expressed an understanding that she would die without the intervention. In addition, she requested a do-not-attempt resuscitation (DNAR) order. This was documented in her medical record and her code status was changed to DNR. Serum urea nitrogen concentration now is 130 mg/dL. She has had no urine output during the past 48 hours. The patient's daughter arrives and states that she is named as the surrogate decision maker by her mother's advance directive. The daughter insists that hemodialysis be initiated and the code status be changed to full code. Which of the following is the most appropriate course of action?",
+        "choices": "(A) Continue current management; do not initiate hemodialysis (B) Initiate hemodialysis and change the code status to full code until the patient is more alert (C) Initiate hemodialysis but keep the code status as DNAR until the patient is more alert (D) Obtain consent from the patient's daughter to initiate all medically indicated interventions",
+        "answer_id": "A",
+        "meta_info": "step3",
+        "source": "Step 3 Free 137 Dec 2023",
+        "question_number": 59,
+        "question_type": "ethics"
+    },
+    {
+        "question": "An 88-year-old woman is transferred to the emergency department from the nursing care facility where she resides 4 hours after facility staff noted that the patient had rectal bleeding. Medical history is significant for long-standing dementia secondary to multiple prior strokes, coronary artery disease, hypertension, hypercholesterolemia, and chronic renal disease. Medications include 81-mg aspirin, simvastatin, lisinopril, and hydrochlorothiazide. On arrival in the emergency department, temperature is 37.2\u00b0C (98.9\u00b0F), pulse is 102/min, respirations are 20/min, and blood pressure is 105/60 mmHg. Oxygen saturation is 95% on room air. The patient is awake but is not oriented to person, place, or time. She is unable to speak coherently and becomes agitated and combative when a physical examination is attempted. Which of the following is the most appropriate initial intervention?",
+        "choices": "(A) Administer lorazepam and proceed with physical examination (B) Contact the patient's health care proxy to discuss how to proceed (C) Place the patient in soft wrist restraints and proceed with physical examination (D) Schedule outpatient flexible sigmoidoscopy and discharge the patient",
+        "answer_id": "B",
+        "meta_info": "step3",
+        "source": "Step 3 Free 137 Dec 2023",
+        "question_number": 60,
+        "question_type": "ethics"
+    },
+    {
+        "question": "A 27-year-old woman, gravida 1, para 1, has a meeting with her physician and a lactation consultant in the hospital 1 day after uncomplicated spontaneous vaginal delivery of a 3572-g (7-lb 14-oz) female newborn at 38 weeks' gestation. Pregnancy was uncomplicated. The patient has good social support. Counseling is provided. The patient has begun to produce colostrum, and the newborn latches well. The patient says she is interested in breast-feeding and is convinced that breast milk will be best for her baby, but she is worried about how long she will be able to breast-feed because she plans to return to work as soon as possible. Her job involves packing boxes in an assembly line, and she often must work for multiple hours without a break. Her employer expects her back to work in 4 weeks. Which of the following is the most appropriate recommendation?",
+        "choices": "(A) Advise continuing breast-feeding now and discussing with her employer a schedule that will allow her to pump during work hours (B) Encourage the patient to focus on breast-feeding and find a new job once her infant is ready to discontinue breast-feeding (C) Recommend that the patient not breast-feed her infant (D) Remind the patient that she needs to concern herself with what is best for her baby's care (E) Suggest using both breast-feeding and bottle-feeding so the transition to work is easier for the baby",
+        "answer_id": "A",
+        "meta_info": "step3",
+        "source": "Step 3 Free 137 Dec 2023",
+        "question_number": 84,
+        "question_type": "ethics"
+    }
+]
