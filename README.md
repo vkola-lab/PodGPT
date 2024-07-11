@@ -11,7 +11,11 @@
   <a href="https://www.python.org/downloads/release/python-3100/"><img alt="Python 3.10" src="https://img.shields.io/badge/python-3.10-blue.svg" /></a>
 </p>
 
-# Table of Contents
+# 🎉 Announcements
+[2024.7.12] ![](./assets/new.gif) Our AI Platform [MedPodGPT](https://medpodgpt.org/) is available to authorized users. 
+It is an online platform for deploying our latest multimodal foundation models for medical and clinical applications.
+
+# 📚 Table of Contents
 - [Installation](#Installation)
 - [Quick Start](#Quick-Start)
   - [Train Lightweight Models](#Train-Lightweight-Models)
