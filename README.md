@@ -14,6 +14,7 @@
 # 🎉 Announcements
 [2024.7.12] ![](news.gif) Our AI Platform [MedPodGPT](https://medpodgpt.org/) is available to authorized users. 
 It is an online platform for deploying our latest multimodal foundation models for medical and clinical applications.
+Please try it out if you are interested!
 
 # 📚 Table of Contents
 - [Installation](#Installation)
