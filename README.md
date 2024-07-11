@@ -1,5 +1,7 @@
-# MedPodGPT
+<p align="center">
+  <h1>MedPodGPT</h1>
 Benchmarking Multilingual Medical Large Language Models (LLMs)
+</p>
 
 <p align="center">
   <a href="https://github.com/vkola-lab/medpodgpt"> <img width="250px" src="MedPodGPT.png"></a> 
