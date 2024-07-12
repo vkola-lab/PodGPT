@@ -80,7 +80,8 @@ python main_quantization.py
 ```
 
 # Performance Evaluation
-we use [inference_pretrain.py](https://github.com/vkola-lab/medpodgpt/blob/main/inference/inference_pretrain.py) 
+All inferences are conducted using the [vLLM engine](https://github.com/vllm-project/vllm).
+We use [inference_pretrain.py](https://github.com/vkola-lab/medpodgpt/blob/main/inference/inference_pretrain.py) 
 and [inference_single_model.py](https://github.com/vkola-lab/medpodgpt/blob/main/inference/inference_single_model.py)
 for larger models (>8B) 
 and [inference_sequential.py](https://github.com/vkola-lab/medpodgpt/blob/main/inference/inference_sequential.py) 
