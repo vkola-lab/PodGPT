@@ -11,11 +11,13 @@
 </p>
 
 # 🎉 Announcements
-[2024.7.12] ![](figures/news.gif) Our AI Platform [MedPodGPT](https://medpodgpt.org/) is available to authorized users. 
+[2024.7.12] ![](figures/news.gif) Our AI Platform [**MedPodGPT**](https://medpodgpt.org/) 
+is available to authorized users. 
 It is an online platform for deploying our latest multimodal foundation models for medical and clinical applications.
 Please try it out if you are interested!
 
-[2024.7.12] ![](figures/news.gif) Our [**preprint**](https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v1) is available online!
+[2024.7.12] ![](figures/news.gif) Our [**preprint**](https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v1) 
+is available online! Please check it!
 
 [2024.7.12] We are releasing a new benchmark encompassing the latest USMLE Step 1, Step 2, Step 3, and Ethics 
 to further advance the filed.
