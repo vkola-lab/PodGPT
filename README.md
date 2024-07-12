@@ -1,7 +1,7 @@
 <h1 align="center">MedPodGPT</h1>
 <h4 align="center">Benchmarking Multilingual Medical Large Language Models (LLMs)</h4>
 <p align="center">
-  <a href="https://github.com/vkola-lab/medpodgpt"> <img width="250px" src="MedPodGPT.png"></a> 
+  <a href="https://github.com/vkola-lab/medpodgpt"> <img width="250px" src="figures/MedPodGPT.png"></a> 
   <br />
   <br />
   <a href="https://img.shields.io/badge/Code%20License-MIT-green.svg"><img alt="CODE_LICENSE" src="https://img.shields.io/badge/Code%20License-MIT-green.svg" /></a>
@@ -11,7 +11,7 @@
 </p>
 
 # 🎉 Announcements
-[2024.7.12] ![](news.gif) Our AI Platform [MedPodGPT](https://medpodgpt.org/) is available to authorized users. 
+[2024.7.12] ![](figures/news.gif) Our AI Platform [MedPodGPT](https://medpodgpt.org/) is available to authorized users. 
 It is an online platform for deploying our latest multimodal foundation models for medical and clinical applications.
 Please try it out if you are interested!
 
