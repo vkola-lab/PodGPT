@@ -87,10 +87,7 @@ and [inference_sequential.py](https://github.com/vkola-lab/medpodgpt/blob/main/i
 for smaller models (2B/7B/8B). 
 Please check [here](https://github.com/vkola-lab/medpodgpt/tree/main/inference) for more information.
 > [!NOTE]
-> **[1] LLaMA 3 8B on Hindi MMLU Benchmarks**:<br>
-    Please modify [these lines](https://github.com/vkola-lab/medpodgpt/blob/main/utils/benchmark_utils.py#L15-L18).<br>
-    Because most responses are in mixed English-Hindi or English, we used `कृपया प्रश्न का उत्तर हिंदी में दें और सीधे सबसे अच्छे विकल्प के साथ जवाब दें:` (Please answer the question in Hindi and directly answer the best option:) to guide the model.<br><br>
-> **[2] Mistral 7B on Hindi MMLU Benchmarks**:<br>
+> **Mistral 7B on Hindi MMLU Benchmarks**:<br>
     Please un-comment [this line](https://github.com/vkola-lab/medpodgpt/blob/main/utils/eval_small_utils.py#L65).<br>
     To address the issue of repeated content in some responses, we applied a repetition_penalty during inference.
 
@@ -99,6 +96,12 @@ We simply use `Directly answer the best option:` instead of `Answer:` to better 
 and to easier extract the best option from the responses.<br>
 Please modify [these lines](https://github.com/vkola-lab/medpodgpt/blob/main/utils/benchmark_utils.py#L5-L21) 
 if you wanna try other prompts.
+
+> [!NOTE]
+> **LLaMA 3 8B on Hindi MMLU Benchmarks**:<br>
+    Please modify [these lines](https://github.com/vkola-lab/medpodgpt/blob/main/utils/benchmark_utils.py#L15-L18).<br>
+    Because most responses are in mixed English-Hindi or English, we used `कृपया प्रश्न का उत्तर हिंदी में दें और सीधे सबसे अच्छे विकल्प के साथ जवाब दें:` (Please answer the question in Hindi and directly answer the best option:) to guide the model.<br><br>
+
 ```python
 english_prompt = "Directly answer the best option:"
 english_prompt_pubmedqa = "Directly answer yes/no/maybe:"
