@@ -29,6 +29,7 @@ Check our database [here](https://github.com/vkola-lab/medpodgpt/tree/main/bench
   - [Single GPU For Lightweight Models](#Single-GPU-For-Lightweight-Models)
   - [Distributed GPUs For Heavy Models](#Distributed-GPUs-For-Heavy-Models)
   - [OpenAI ChatGPT Support](#OpenAI-ChatGPT-Support)
+- [Benchmarks and Results](#Benchmarks-and-Results)
 - [Automatic Speech Recognition](#Automatic-Speech-Recognition)
 - [Dataset Builder](#Dataset-Builder)
 - [Upload and Download Models](#Upload-and-Download-Models)
@@ -116,6 +117,17 @@ Please enter your OpenAI API Key [here](https://github.com/vkola-lab/medpodgpt/b
 ```shell
 python inference_chatgpt.py
 ```
+
+# Benchmarks and Results
+## Performance on In-domain Benchmarks
+<p align="center">
+  <a href="https://github.com/vkola-lab/medpodgpt"> <img src="figures/Table-2.png"></a> 
+</p>
+
+## Zero-shot Cross-lingual Performance
+<p align="center">
+  <a href="https://github.com/vkola-lab/medpodgpt"> <img src="figures/Table-3.png"></a> 
+</p>
 
 # Automatic Speech Recognition
 In the [scripts folder](https://github.com/vkola-lab/medpodgpt/tree/main/scripts), 
