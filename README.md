@@ -24,7 +24,7 @@ Check our database [here](https://github.com/vkola-lab/medpodgpt/tree/main/bench
 - [Quick Start](#Quick-Start)
   - [Train Lightweight Models](#Train-Lightweight-Models)
   - [Train Heavy Models](#Train-Heavy-Models)
-  - [Train Quantized Models](#Train-Quantized-Models)
+  - [Train Quantized Large Models](#Train-Quantized-Large-Models)
 - [Performance Evaluation](#Performance-Evaluation)
   - [Single GPU For Lightweight Models](#Single-GPU-For-Lightweight-Models)
   - [Distributed GPUs For Heavy Models](#Distributed-GPUs-For-Heavy-Models)
