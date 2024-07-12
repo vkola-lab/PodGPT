@@ -151,6 +151,10 @@ python inference_single_model.py --id 35166
 ## 🤖 OpenAI ChatGPT Support
 We also offer support for running OpenAI ChatGPT inference using API.
 Please enter your OpenAI API Key [here](https://github.com/vkola-lab/medpodgpt/blob/main/config_chatgpt.yml#L18).
+> [!WARNING]  
+> Please note that OpenAI ChatGPT API is extremely expensive.<br>
+> Please only use it if you have a budget for it!
+
 ```shell
 python inference_chatgpt.py
 ```
@@ -162,7 +166,6 @@ The podcasts data used for the continual pre-training of **MedPodGPT**:
 </p>
 
 # 🏆 Benchmarks and Results
-
 ## Performance on In-domain Benchmarks
 <p align="center">
   <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v1"> <img src="figures/Table-2.png"></a> 
