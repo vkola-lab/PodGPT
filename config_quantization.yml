@@ -2,9 +2,9 @@
 model_name : "shuyuej/MedLLaMA3-70B-BASE-MODEL-QUANT"
 
 # Dataset info
-# English podcasts (7,359 episodes): shuyuej/English-Pretraining-Dataset
-# Spanish podcasts (1,283 episodes): shuyuej/Spanish-Pretraining-Dataset
-# French podcasts (569 episodes): shuyuej/French-Pretraining-Dataset
+# English podcasts: shuyuej/English-Pretraining-Dataset
+# Spanish podcasts: shuyuej/Spanish-Pretraining-Dataset
+# French podcasts: shuyuej/French-Pretraining-Dataset
 # Multilingual podcasts: shuyuej/Multilingual-Pretraining-Dataset
 dataset_hf : "shuyuej/Multilingual-Pretraining-Dataset"
 
