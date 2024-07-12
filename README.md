@@ -15,6 +15,10 @@
 It is an online platform for deploying our latest multimodal foundation models for medical and clinical applications.
 Please try it out if you are interested!
 
+[2024.7.12] We are releasing a new benchmark encompassing the latest USMLE Step 1, Step 2, Step 3, and Ethics 
+to further advance the filed.
+Check our database [here](https://github.com/vkola-lab/medpodgpt/tree/main/benchmark/english_usmle).
+
 # 📚 Table of Contents
 - [Installation](#Installation)
 - [Quick Start](#Quick-Start)
@@ -151,15 +155,15 @@ python download_model.py --repo "shuyuej/DrGemma2B" --repo_type "model" --save_d
 At the root of the project, you will see:
 
 ```text
-├── config_chatgpt.yml
-├── config_large.yml
-├── config_quantization.yml
-├── config_small.yml
+├── requirements.txt
+├── main_small.py
 ├── main_large.py
 ├── main_quantization.py
-├── main_small.py
+├── config_small.yml
+├── config_large.yml
+├── config_quantization.yml
+├── config_chatgpt.yml
 ├── lib
-│   ├── README.md
 │   ├── data_manager.py
 │   ├── evaluation_chatgpt.py
 │   ├── evaluation_large.py
@@ -168,92 +172,40 @@ At the root of the project, you will see:
 │   ├── model_loader_quantization.py
 │   └── model_loader_small.py
 ├── inference
-│   ├── README.md
 │   ├── inference_chatgpt.py
 │   ├── inference_large.sh
 │   ├── inference_pretrain.py
 │   ├── inference_sequential.py
 │   └── inference_single_model.py
 ├── download_files
-│   ├── README.md
 │   ├── download_model_from_hf.py
 │   └── download_model_to_local.py
 ├── quantization
-│   ├── README.md
 │   ├── quantization.py
-│   └── upload_quantization_model.py
+│   └── upload_quantized_model.py
 ├── scripts
-│   ├── README.md
 │   ├── audio2text.py
-│   ├── database_builder.py
 │   ├── download_model.py
+│   ├── upload_model.py
+│   ├── database_builder.py
 │   └── merge_database.py
-├── setup.cfg
-├── upload_model.py
-├── requirements.txt
 ├── benchmark
-│   ├── README.md
 │   ├── chinese_cmmlu
-│   │   ├── anatomy.csv
-│   │   ├── clinical_knowledge.csv
-│   │   ├── college_medicine.csv
-│   │   ├── genetics.csv
-│   │   ├── nutrition.csv
-│   │   ├── traditional_chinese_medicine.csv
-│   │   └── virology.csv
 │   ├── chinese_mcmle
-│   │   └── MedQA-MCMLE.jsonl
 │   ├── english_medexpqa
-│   │   └── test.en.casimedicos.rag.jsonl
 │   ├── english_medmcqa
-│   │   └── MedMCQA_test.json
 │   ├── english_medqa
-│   │   └── MedQA_USMLE_test.jsonl
 │   ├── english_mmlu
-│   │   ├── anatomy_test.csv
-│   │   ├── clinical_knowledge_test.csv
-│   │   ├── college_biology_test.csv
-│   │   ├── college_medicine_test.csv
-│   │   ├── medical_genetics_test.csv
-│   │   └── professional_medicine_test.csv
 │   ├── english_pubmedqa
-│   │   └── PubMedQA_test.json
 │   ├── english_usmle
-│   │   ├── USMLE_STEP_1.json
-│   │   ├── USMLE_STEP_2.json
-│   │   ├── USMLE_STEP_3.json
-│   │   └── USMLE_ethics.json
 │   ├── french_medexpqa
-│   │   └── test.fr.casimedicos.rag.jsonl
 │   ├── french_medmcqa
-│   │   └── FrenchMedMCQA-test.json
 │   ├── french_mmlu
-│   │   ├── mmlu_French_test_anatomy_test.csv
-│   │   ├── mmlu_French_test_clinical_knowledge_test.csv
-│   │   ├── mmlu_French_test_college_biology_test.csv
-│   │   ├── mmlu_French_test_college_medicine_test.csv
-│   │   ├── mmlu_French_test_medical_genetics_test.csv
-│   │   └── mmlu_French_test_professional_medicine_test.csv
 │   ├── hindi_mmlu
-│   │   ├── mmlu_Hindi_test_anatomy_test.csv
-│   │   ├── mmlu_Hindi_test_clinical_knowledge_test.csv
-│   │   ├── mmlu_Hindi_test_college_biology_test.csv
-│   │   ├── mmlu_Hindi_test_college_medicine_test.csv
-│   │   ├── mmlu_Hindi_test_medical_genetics_test.csv
-│   │   └── mmlu_Hindi_test_professional_medicine_test.csv
 │   ├── spanish_headqa
-│   │   └── HEAD-QA-test.json
 │   ├── spanish_medexpqa
-│   │   └── test.es.casimedicos.rag.jsonl
 │   └── spanish_mmlu
-│       ├── mmlu_Spanish_test_anatomy_test.csv
-│       ├── mmlu_Spanish_test_clinical_knowledge_test.csv
-│       ├── mmlu_Spanish_test_college_biology_test.csv
-│       ├── mmlu_Spanish_test_college_medicine_test.csv
-│       ├── mmlu_Spanish_test_medical_genetics_test.csv
-│       └── mmlu_Spanish_test_professional_medicine_test.csv
 └── utils
-    ├── README.md
     ├── answer_utils.py
     ├── benchmark_utils.py
     ├── eval_chatgpt_utils.py
