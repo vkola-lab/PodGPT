@@ -35,7 +35,7 @@ def download_hf_files(repo_id, repo_type="model", save_dir="./"):
         local_dir=save_dir,
         # This is my Hugging Face `read` token. Please replace it to yours.
         # https://huggingface.co/settings/tokens
-        token="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"
+        token="YOUR_HUGGING_FACE_READ_TOKEN"
     )
 
 
