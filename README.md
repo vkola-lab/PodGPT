@@ -30,6 +30,9 @@ Check our database [here](https://github.com/vkola-lab/medpodgpt/tree/main/bench
   - [Distributed GPUs For Heavy Models](#Distributed-GPUs-For-Heavy-Models)
   - [OpenAI ChatGPT Support](#OpenAI-ChatGPT-Support)
 - [Benchmarks and Results](#Benchmarks-and-Results)
+  - [Benchmarks Description](#Benchmarks-Description)
+  - [Performance on In-domain Benchmarks](#Performance-on-In-domain-Benchmarks)
+  - [Zero-shot Cross-lingual Performance](#Zero-shot-Cross-lingual-Performance)
 - [Automatic Speech Recognition](#Automatic-Speech-Recognition)
 - [Dataset Builder](#Dataset-Builder)
 - [Upload and Download Models](#Upload-and-Download-Models)
@@ -119,6 +122,50 @@ python inference_chatgpt.py
 ```
 
 # Benchmarks and Results
+## Benchmarks Description
+
+| Language  |       Benchmark Datasets       | Description |
+|:---------:|:------------------------------:|:-----------:|
+| English 	 |            MedExpQA            |             |
+|     	     |        MedMCQA        	        |             |  
+|     	     |        MedQA         	         |             |           
+|     	     |        PubMedQA       	        |             |             
+|     	     |        Anatomy        	        |             |            
+|     	     |      College Biology    	      |      	      |             
+|     	     |      College Medicine   	      |      	      |             
+|     	     |      Medical Genetics   	      |      	      |             
+|     	     |    Professional Medicine 	     |      	      |           
+| French  	 |      FrenchMedMCQA     	       |      	      |           
+|     	     |        MedExpQA       	        |      	      |            
+|     	     |        Anatomy        	        |      	      |           
+|     	     |     Clinical Knowledge  	      |      	      |           
+|     	     |      College Biology    	      |      	      |           
+|     	     |      College Medicine   	      |      	      |            
+|     	     |      Medical Genetics   	      |      	      |            
+|     	     |    Professional Medicine 	     |      	      |            
+| Spanish 	 |        HeadQA        	         |      	      |            
+|     	     |        MedExpQA       	        |      	      |            
+|     	     |        Anatomy        	        |      	      |            
+|     	     |     Clinical Knowledge  	      |      	      |            
+|     	     |      College Biology    	      |      	      |           
+|     	     |      College Medicine   	      |      	      |           
+|     	     |      Medical Genetics   	      |      	      |           
+|     	     |    Professional Medicine 	     |      	      |            
+| Chinese 	 |     MedQA-MCMLE         	      |             |           
+|     	     |      Anatomy           	       |      	      |           
+|     	     |   Clinical Knowledge      	    |      	      |            
+|     	     |    College Medicine       	    |      	      |           
+|     	     |    Medical Genetics       	    |      	      |           
+|     	     |    Medical Nutrition      	    |      	      |           
+|     	     | Traditional Chinese Medicine 	 |      	      |           
+|     	     |      Virology           	      |      	      |           
+| Hindi  	  |      Anatomy           	       |      	      |           
+|     	     |   Clinical Knowledge      	    |      	      |           
+|     	     |    College Biology       	     |      	      |           
+|     	     |    College Medicine       	    |      	      |           
+|     	     |    Medical Genetics       	    |      	      |           
+|     	     |   Professional Medicine    	   |      	      |           
+
 ## Performance on In-domain Benchmarks
 <p align="center">
   <a href="https://github.com/vkola-lab/medpodgpt"> <img src="figures/Table-2.png"></a> 
