@@ -22,51 +22,51 @@ to further advance the filed.
 Check our database [here](https://github.com/vkola-lab/medpodgpt/tree/main/benchmark/english_usmle).
 
 # 📚 Table of Contents
-- [Installation](#Installation)
-- [Quick Start](#Quick-Start)
-  - [Train Lightweight Models](#Train-Lightweight-Models)
-  - [Train Heavy Models](#Train-Heavy-Models)
-  - [Train Quantized Large Models](#Train-Quantized-Large-Models)
-- [Performance Evaluation](#Performance-Evaluation)
-  - [Prompt Format](#Prompt-Format)
-  - [Single GPU For Lightweight Models](#Single-GPU-For-Lightweight-Models)
-  - [Distributed GPUs For Heavy Models](#Distributed-GPUs-For-Heavy-Models)
-  - [OpenAI ChatGPT Support](#OpenAI-ChatGPT-Support)
-- [Dataset Description](#Dataset-Description)
-- [Benchmarks and Results](#Benchmarks-and-Results)
+- [Installation](#-Installation)
+- [Quick Start](#-Quick-Start)
+  - [Train Lightweight Models](#-Train-Lightweight-Models)
+  - [Train Heavy Models](#-Train-Heavy-Models)
+  - [Train Quantized Large Models](#-Train-Quantized-Large-Models)
+- [Performance Evaluation](#-Performance-Evaluation)
+  - [Prompt Format](#-Prompt-Format)
+  - [Single GPU For Lightweight Models](#-Single-GPU-For-Lightweight-Models)
+  - [Distributed GPUs For Heavy Models](#-Distributed-GPUs-For-Heavy-Models)
+  - [OpenAI ChatGPT Support](#-OpenAI-ChatGPT-Support)
+- [Dataset Description](#-Dataset-Description)
+- [Benchmarks and Results](#-Benchmarks-and-Results)
   - [Benchmarks Description](#Benchmarks-Description)
   - [Performance on In-domain Benchmarks](#Performance-on-In-domain-Benchmarks)
   - [Zero-shot Cross-lingual Performance](#Zero-shot-Cross-lingual-Performance)
-- [Automatic Speech Recognition](#Automatic-Speech-Recognition)
-- [Dataset Builder](#Dataset-Builder)
-- [Upload and Download Models](#Upload-and-Download-Models)
-- [Structure of the Code](#Structure-of-the-Code)
-- [Citation](#Citation)
-- [Contact](#Contact)
-- [Contribution](#Contribution)
-- [Acknowledgement](#Acknowledgement)
+- [Automatic Speech Recognition](#-Automatic-Speech-Recognition)
+- [Dataset Builder](#-Dataset-Builder)
+- [Upload and Download Models](#-Upload-and-Download-Models)
+- [Structure of the Code](#-Structure-of-the-Code)
+- [Citation](#-Citation)
+- [Contact](#-Contact)
+- [Contribution](#-Contribution)
+- [Acknowledgement](#-Acknowledgement)
 
-# Installation
+# 💻 Installation
 ```shell
 pip install -r requirements.txt
 ```
 
-# Quick Start
-## Train Lightweight Models
+# 🚀 Quick Start
+## 🐣 Train Lightweight Models
 For lightweight models (2B, 7B, and 8B), we optimize the entire model. 
 Please check and setup hyper-parameters in [config_small.yml](https://github.com/vkola-lab/medpodgpt/blob/main/config_small.yml).
 ```shell
 python main_small.py
 ```
 
-## Train Heavy Models
+## 🐥 Train Heavy Models
 For lager and heavy models (>8B), we optimize the Low-rank Adapter (LoRA).
 Please check and setup hyper-parameters in [config_large.yml](https://github.com/vkola-lab/medpodgpt/blob/main/config_large.yml).
 ```shell
 python main_large.py
 ```
 
-## Train Quantized Large Models
+## 🐤 Train Quantized Large Models
 We also provide support for quantizing larger models, _e.g._, LLaMA 3 70B model, using the [GPTQ](https://arxiv.org/abs/2210.17323) algorithm and then optimizing the LoRA.
 The large models can be deployed on consumer GPUs after quantization.
 ```shell
@@ -81,7 +81,7 @@ Lastly, we optimize the LoRA module,
 python main_quantization.py
 ```
 
-# Performance Evaluation
+# 📊 Performance Evaluation
 All inferences are conducted using the [vLLM engine](https://github.com/vllm-project/vllm).
 We use [inference_pretrain.py](https://github.com/vkola-lab/medpodgpt/blob/main/inference/inference_pretrain.py) 
 and [inference_single_model.py](https://github.com/vkola-lab/medpodgpt/blob/main/inference/inference_single_model.py)
@@ -94,7 +94,7 @@ Please check [here](https://github.com/vkola-lab/medpodgpt/tree/main/inference) 
     Please un-comment [this line](https://github.com/vkola-lab/medpodgpt/blob/main/utils/eval_small_utils.py#L65).<br>
     To address the issue of repeated content in some responses, we applied a repetition_penalty during inference.
 
-## Prompt Format
+## 📜 Prompt Format
 We simply use `Directly answer the best option:` instead of `Answer:` to better guide LLMs to generate the best option 
 and to easier extract the best option from the responses.<br>
 Please modify [these lines](https://github.com/vkola-lab/medpodgpt/blob/main/utils/benchmark_utils.py#L5-L21) 
@@ -114,7 +114,7 @@ spanish_prompt = "Responde directamente con la mejor opción:"
 chinese_prompt = "直接回答最优选项:"
 ```
 
-## Single GPU For Lightweight Models
+## 🔧 Single GPU For Lightweight Models
 > [!IMPORTANT]
 > Please note that if you wanna conduct model inference using multiple GPUs, the GPUs' memory cannot be successfully released. 
 > Please modify [these lines](https://github.com/vkola-lab/medpodgpt/blob/main/utils/eval_small_utils.py#L84-L85)
@@ -127,7 +127,7 @@ Please note that we use `--eval_pretrain` to indicate whether to evaluate the or
 python inference_sequential.py --eval_pretrain True --id 35166 52749 70332 87915
 ```
 
-## Distributed GPUs For Heavy Models
+## 🛠️ Distributed GPUs For Heavy Models
 **Sequentially** evaluate the performance of the original pre-trained model and all the checkpoints.<br>
 Special Notice: Please change the `checkpoint IDs` and `CUDA_VISIBLE_DEVICES` 
 in the [inference_large.sh](https://github.com/vkola-lab/medpodgpt/blob/main/inference/inference_large.sh) file.
@@ -148,20 +148,20 @@ Please note that `--id` is the checkpoint id.
 python inference_single_model.py --id 35166
 ```
 
-## OpenAI ChatGPT Support
+## 🤖 OpenAI ChatGPT Support
 We also offer support for running OpenAI ChatGPT inference using API.
 Please enter your OpenAI API Key [here](https://github.com/vkola-lab/medpodgpt/blob/main/config_chatgpt.yml#L18).
 ```shell
 python inference_chatgpt.py
 ```
 
-# Dataset Description
+# 📚 Dataset Description
 The podcasts data used for the continual pre-training of **MedPodGPT**:
 <p align="center">
   <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v1"> <img src="figures/Table-1.png"></a> 
 </p>
 
-# Benchmarks and Results
+# 🏆 Benchmarks and Results
 
 ## Performance on In-domain Benchmarks
 <p align="center">
@@ -173,14 +173,14 @@ The podcasts data used for the continual pre-training of **MedPodGPT**:
   <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v1"> <img src="figures/Table-3.png"></a> 
 </p>
 
-# Automatic Speech Recognition
+# 🎯 Automatic Speech Recognition
 In the [scripts folder](https://github.com/vkola-lab/medpodgpt/tree/main/scripts), 
 we provide Automatic Speech Recognition (ASR) support.
 ```shell
 python audio2text.py
 ```
 
-# Dataset Builder
+# ⚒️ Dataset Builder
 We used the following codes to pre-process our transcripts and generate training dataset.
 Please check [these lines](https://github.com/vkola-lab/medpodgpt/blob/main/scripts/database_builder.py#L236-L242) 
 for different languages support.
@@ -191,7 +191,7 @@ python database_builder.py
 python merge_database.py
 ```
 
-# Upload and Download Models
+# 🛠️ Upload and Download Models
 In the [scripts folder](https://github.com/vkola-lab/medpodgpt/tree/main/scripts), 
 we offer support for both uploading and downloading models.
 
@@ -205,7 +205,7 @@ To download your model or files from Hugging Face repo,
 python download_model.py --repo "shuyuej/DrGemma2B" --repo_type "model" --save_dir "./save_folder"
 ```
 
-# Structure of the Code
+# 🖼️ Structure of the Code
 At the root of the project, you will see:
 
 ```text
@@ -273,7 +273,7 @@ At the root of the project, you will see:
     └── utils.py
 ```
 
-# Citation
+# 🙏 Citation
 If you find our work useful in your research, please consider citing it in your publications. We provide a BibTeX entry below.
 
 ```bibtex
@@ -291,7 +291,7 @@ If you find our work useful in your research, please consider citing it in your 
 }
 ```
 
-# Contact
+# 📧 Contact
 **Core Contributor and Maintainer**: <br>
 - [Shuyue Jia](https://github.com/SuperBruceJia)
 - [Subhrangshu Bit](https://github.com/SubhrangshuBit)
@@ -306,11 +306,11 @@ If you find our work useful in your research, please consider citing it in your 
 
 If you have any questions, please drop us an email at [brucejia@bu.edu](brucejia@bu.edu), [sbit@bu.edu](sbit@bu.edu), and [nsearls@bu.edu](nsearls@bu.edu).
 
-# Contribution
+# 🔨 Contribution
 We always welcome contributions to help make **MedPodGPT** Library better. 
 If you would like to contribute, please submit a [pull request](https://github.com/vkola-lab/medpodgpt/pulls).
 
-# Acknowledgement
+# 🙌 Acknowledgement
 The **MedPodGPT** Library is created and maintained by the Kolachalama Lab at Boston University.
 
 <a href="https://www.bu.edu/"> <img width="250" src="https://raw.githubusercontent.com/SuperBruceJia/promptcraft/main/bu.png"></a>
