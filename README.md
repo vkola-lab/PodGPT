@@ -94,6 +94,10 @@ Please check [here](https://github.com/vkola-lab/medpodgpt/tree/main/inference) 
     To address the issue of repeated content in some responses, we applied a repetition_penalty during inference.
 
 ### Single GPU For Lightweight Models
+> [!IMPORTANT]
+> You can always conduct model inference using multiple GPUs.
+> Please modify [these lines](https://github.com/vkola-lab/medpodgpt/blob/main/utils/eval_small_utils.py#L84-L85).
+
 #### inference_sequential.py
 **Sequentially** evaluate the performance of multiple checkpoints (models).<br>
 Please note that we use `--eval_pretrain` to indicate whether to evaluate the original pre-trained model.
