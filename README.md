@@ -108,20 +108,20 @@ spanish_prompt = "Responde directamente con la mejor opción:"
 chinese_prompt = "直接回答最优选项:"
 ```
 
-### Single GPU For Lightweight Models
+## Single GPU For Lightweight Models
 > [!IMPORTANT]
 > Please note that if you wanna conduct model inference using multiple GPUs, the GPUs' memory cannot be successfully released. 
 > Please modify [these lines](https://github.com/vkola-lab/medpodgpt/blob/main/utils/eval_small_utils.py#L84-L85) 
 and make use of [this `sh` file](https://github.com/vkola-lab/medpodgpt/blob/main/inference/inference_large.sh).
 
-#### inference_sequential.py
+### inference_sequential.py
 **Sequentially** evaluate the performance of multiple checkpoints (models).<br>
 Please note that we use `--eval_pretrain` to indicate whether to evaluate the original pre-trained model.
 ```shell
 python inference_sequential.py --eval_pretrain True --id 35166 52749 70332 87915
 ```
 
-### Distributed GPUs For Heavy Models
+## Distributed GPUs For Heavy Models
 **Sequentially** evaluate the performance of the original pre-trained model and all the checkpoints.<br>
 Special Notice: Please change the `checkpoint IDs` and `CUDA_VISIBLE_DEVICES` 
 in the [inference_large.sh](https://github.com/vkola-lab/medpodgpt/blob/main/inference/inference_large.sh) file.
@@ -129,20 +129,20 @@ in the [inference_large.sh](https://github.com/vkola-lab/medpodgpt/blob/main/inf
 sh inference_large.sh
 ```
 
-#### inference_pretrain.py
+### inference_pretrain.py
 **Only** evaluate the performance of the original pre-trained model.
 ```shell
 python inference_pretrain.py
 ```
 
-#### inference_single_model.py
+### inference_single_model.py
 **Only** evaluate the performance of a single checkpoint (model).<br>
 Please note that `--id` is the checkpoint id.
 ```shell
 python inference_single_model.py --id 35166
 ```
 
-### OpenAI ChatGPT Support
+## OpenAI ChatGPT Support
 We also offer support for running OpenAI ChatGPT inference using API.
 Please enter your OpenAI API Key [here](https://github.com/vkola-lab/medpodgpt/blob/main/config_chatgpt.yml#L18).
 ```shell
