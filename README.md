@@ -53,7 +53,7 @@ python main_small.py
 
 ## Train Heavy Models
 For lager and heavy models (>8B), we optimize the Low-rank Adapter (LoRA).
-Please check and setup hyper-parameters in [config_small.yml](https://github.com/vkola-lab/medpodgpt/blob/main/config_large.yml).
+Please check and setup hyper-parameters in [config_large.yml](https://github.com/vkola-lab/medpodgpt/blob/main/config_large.yml).
 ```shell
 python main_large.py
 ```
