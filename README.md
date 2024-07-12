@@ -1,7 +1,7 @@
 <h1 align="center">MedPodGPT</h1>
 <h4 align="center">Benchmarking Multilingual Medical Large Language Models (LLMs)</h4>
 <p align="center">
-  <a href="https://github.com/vkola-lab/medpodgpt"> <img width="250px" src="figures/MedPodGPT.png"></a> 
+  <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v1"> <img width="250px" src="figures/MedPodGPT.png"></a> 
   <br />
   <br />
   <a href="https://img.shields.io/badge/Code%20License-MIT-green.svg"><img alt="CODE_LICENSE" src="https://img.shields.io/badge/Code%20License-MIT-green.svg" /></a>
@@ -115,8 +115,8 @@ chinese_prompt = "直接回答最优选项:"
 ## Single GPU For Lightweight Models
 > [!IMPORTANT]
 > Please note that if you wanna conduct model inference using multiple GPUs, the GPUs' memory cannot be successfully released. 
-> Please modify [these lines](https://github.com/vkola-lab/medpodgpt/blob/main/utils/eval_small_utils.py#L84-L85) 
-and make use of [this `sh` file](https://github.com/vkola-lab/medpodgpt/blob/main/inference/inference_large.sh).
+> Please modify [these lines](https://github.com/vkola-lab/medpodgpt/blob/main/utils/eval_small_utils.py#L84-L85)
+> and make use of [this `sh` file](https://github.com/vkola-lab/medpodgpt/blob/main/inference/inference_large.sh).
 
 ### inference_sequential.py
 **Sequentially** evaluate the performance of multiple checkpoints (models).<br>
@@ -156,104 +156,19 @@ python inference_chatgpt.py
 # Dataset Description
 The podcasts data used for the continual pre-training of **MedPodGPT**:
 <p align="center">
-  <a href="https://github.com/vkola-lab/medpodgpt"> <img src="figures/Table-1.png"></a> 
+  <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v1"> <img src="figures/Table-1.png"></a> 
 </p>
 
 # Benchmarks and Results
 
-[//]: # (## Benchmarks Description)
-
-[//]: # ()
-[//]: # (| **Language**  |     **Benchmark Datasets**     | **Description** |)
-
-[//]: # (|:-------------:|:------------------------------:|:---------------:|)
-
-[//]: # (| **English** 	 |            MedExpQA            |                 |)
-
-[//]: # (|       	       |        MedMCQA        	        |                 |  )
-
-[//]: # (|       	       |        MedQA         	         |                 |           )
-
-[//]: # (|       	       |        PubMedQA       	        |                 |             )
-
-[//]: # (|       	       |        Anatomy        	        |                 |            )
-
-[//]: # (|       	       |      College Biology    	      |        	        |             )
-
-[//]: # (|       	       |      College Medicine   	      |        	        |             )
-
-[//]: # (|       	       |      Medical Genetics   	      |        	        |             )
-
-[//]: # (|       	       |    Professional Medicine 	     |        	        |           )
-
-[//]: # (| **French**  	 |      FrenchMedMCQA     	       |        	        |           )
-
-[//]: # (|       	       |        MedExpQA       	        |        	        |            )
-
-[//]: # (|       	       |        Anatomy        	        |        	        |           )
-
-[//]: # (|       	       |     Clinical Knowledge  	      |        	        |           )
-
-[//]: # (|       	       |      College Biology    	      |        	        |           )
-
-[//]: # (|       	       |      College Medicine   	      |        	        |            )
-
-[//]: # (|       	       |      Medical Genetics   	      |        	        |            )
-
-[//]: # (|       	       |    Professional Medicine 	     |        	        |            )
-
-[//]: # (| **Spanish** 	 |        HeadQA        	         |        	        |            )
-
-[//]: # (|       	       |        MedExpQA       	        |        	        |            )
-
-[//]: # (|       	       |        Anatomy        	        |        	        |            )
-
-[//]: # (|       	       |     Clinical Knowledge  	      |        	        |            )
-
-[//]: # (|       	       |      College Biology    	      |        	        |           )
-
-[//]: # (|       	       |      College Medicine   	      |        	        |           )
-
-[//]: # (|       	       |      Medical Genetics   	      |        	        |           )
-
-[//]: # (|       	       |    Professional Medicine 	     |        	        |            )
-
-[//]: # (| **Chinese** 	 |     MedQA-MCMLE         	      |                 |           )
-
-[//]: # (|       	       |      Anatomy           	       |        	        |           )
-
-[//]: # (|       	       |   Clinical Knowledge      	    |        	        |            )
-
-[//]: # (|       	       |    College Medicine       	    |        	        |           )
-
-[//]: # (|       	       |    Medical Genetics       	    |        	        |           )
-
-[//]: # (|       	       |    Medical Nutrition      	    |        	        |           )
-
-[//]: # (|       	       | Traditional Chinese Medicine 	 |        	        |           )
-
-[//]: # (|       	       |      Virology           	      |        	        |           )
-
-[//]: # (| **Hindi**  	  |      Anatomy           	       |        	        |           )
-
-[//]: # (|       	       |   Clinical Knowledge      	    |        	        |           )
-
-[//]: # (|       	       |    College Biology       	     |        	        |           )
-
-[//]: # (|       	       |    College Medicine       	    |        	        |           )
-
-[//]: # (|       	       |    Medical Genetics       	    |        	        |           )
-
-[//]: # (|       	       |   Professional Medicine    	   |        	        |           )
-
 ## Performance on In-domain Benchmarks
 <p align="center">
-  <a href="https://github.com/vkola-lab/medpodgpt"> <img src="figures/Table-2.png"></a> 
+  <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v1"> <img src="figures/Table-2.png"></a> 
 </p>
 
 ## Zero-shot Cross-lingual Performance
 <p align="center">
-  <a href="https://github.com/vkola-lab/medpodgpt"> <img src="figures/Table-3.png"></a> 
+  <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v1"> <img src="figures/Table-3.png"></a> 
 </p>
 
 # Automatic Speech Recognition
@@ -360,11 +275,17 @@ At the root of the project, you will see:
 If you find our work useful in your research, please consider citing it in your publications. We provide a BibTeX entry below.
 
 ```bibtex
-@article{jia2024medpodgpt,
-  title   = {{MedPodGPT}: A Multilingual Audio-augmented Large Language Model for Medical Research and Education},
-  author  = {Shuyue Jia, Subhrangshu Bit, Edward Searls, Lindsey A. Claus, Pengrui Fan, Varuna H. Jasodanand, Meagan V. Lauber, Divya Veerapaneni, William M. Wang, Rhoda Au, Vijaya B. Kolachalama},
-  journal = {medRxiv}
-  year    = {2024},
+@article {Jia2024medpodgpt,
+	author       = {Jia, Shuyue and Bit, Subhrangshu and Searls, Edward and Claus, Lindsey and Fan, Pengrui and Jasodanand, Varuna H. and Lauber, Meagan V. and Veerapaneni, Divya and Wang, William M. and Au, Rhoda and Kolachalama, Vijaya B},
+	title        = {{MedPodGPT}: A multilingual audio-augmented large language model for medical research and education},
+	elocation-id = {2024.07.11.24310304},
+	year         = {2024},
+	doi          = {10.1101/2024.07.11.24310304},
+	publisher    = {Cold Spring Harbor Laboratory Press},
+	abstract     = {The proliferation of medical podcasts has generated an extensive repository of audio content, rich in specialized terminology, diverse medical topics, and expert dialogues. Here we introduce a computational framework designed to enhance large language models (LLMs) by leveraging the informational content of publicly accessible medical podcast data. This dataset, comprising over 4,300 hours of audio content, was transcribed to generate over 39 million text tokens. Our model, MedPodGPT, integrates the varied dialogue found in medical podcasts to improve understanding of natural language nuances, cultural contexts, and medical knowledge. Evaluated across multiple benchmarks, MedPodGPT demonstrated an average improvement of 2.31\% over standard open-source benchmarks and showcased an improvement of 2.58\% in its zero-shot multilingual transfer ability, effectively generalizing to different linguistic contexts. By harnessing the untapped potential of podcast content, MedPodGPT advances natural language processing, offering enhanced capabilities for various applications in medical research and education.Competing Interest StatementV.B.K. is on the scientific advisory board for Altoida Inc. and serves as a consultant to AstraZeneca. R.A. is a scientific advisor to Signant Health and NovoNordisk. The remaining authors declare no competing interests.Funding StatementNational Institutes of HealthAuthor DeclarationsI confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.YesI confirm that all necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived, and that any patient/participant/sample identifiers included were not known to anyone (e.g., hospital staff, patients or participants themselves) outside the research group so cannot be used to identify individuals.YesI understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).Yes I have followed all appropriate research reporting guidelines, such as any relevant EQUATOR Network research reporting checklist(s) and other pertinent material, if applicable.YesAll data produced are available online at https://github.com/vkola-lab/MedPodGPT.https://github.com/vkola-lab/MedPodGPT},
+	URL          = {https://www.medrxiv.org/content/early/2024/07/12/2024.07.11.24310304},
+	eprint       = {https://www.medrxiv.org/content/early/2024/07/12/2024.07.11.24310304.full.pdf},
+	journal      = {medRxiv}
 }
 ```
 
