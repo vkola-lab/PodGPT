@@ -95,8 +95,9 @@ Please check [here](https://github.com/vkola-lab/medpodgpt/tree/main/inference) 
 
 ### Single GPU For Lightweight Models
 > [!IMPORTANT]
-> You can always conduct model inference using multiple GPUs.
-> Please modify [these lines](https://github.com/vkola-lab/medpodgpt/blob/main/utils/eval_small_utils.py#L84-L85).
+> Please note that if you wanna conduct model inference using multiple GPUs, the GPUs' memory cannot be successfully released. 
+> Please modify [these lines](https://github.com/vkola-lab/medpodgpt/blob/main/utils/eval_small_utils.py#L84-L85) 
+and make use of [this file](https://github.com/vkola-lab/medpodgpt/blob/main/inference/inference_large.sh).
 
 #### inference_sequential.py
 **Sequentially** evaluate the performance of multiple checkpoints (models).<br>
