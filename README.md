@@ -124,47 +124,47 @@ python inference_chatgpt.py
 # Benchmarks and Results
 ## Benchmarks Description
 
-| Language  |       Benchmark Datasets       | Description |
-|:---------:|:------------------------------:|:-----------:|
-| English 	 |            MedExpQA            |             |
-|     	     |        MedMCQA        	        |             |  
-|     	     |        MedQA         	         |             |           
-|     	     |        PubMedQA       	        |             |             
-|     	     |        Anatomy        	        |             |            
-|     	     |      College Biology    	      |      	      |             
-|     	     |      College Medicine   	      |      	      |             
-|     	     |      Medical Genetics   	      |      	      |             
-|     	     |    Professional Medicine 	     |      	      |           
-| French  	 |      FrenchMedMCQA     	       |      	      |           
-|     	     |        MedExpQA       	        |      	      |            
-|     	     |        Anatomy        	        |      	      |           
-|     	     |     Clinical Knowledge  	      |      	      |           
-|     	     |      College Biology    	      |      	      |           
-|     	     |      College Medicine   	      |      	      |            
-|     	     |      Medical Genetics   	      |      	      |            
-|     	     |    Professional Medicine 	     |      	      |            
-| Spanish 	 |        HeadQA        	         |      	      |            
-|     	     |        MedExpQA       	        |      	      |            
-|     	     |        Anatomy        	        |      	      |            
-|     	     |     Clinical Knowledge  	      |      	      |            
-|     	     |      College Biology    	      |      	      |           
-|     	     |      College Medicine   	      |      	      |           
-|     	     |      Medical Genetics   	      |      	      |           
-|     	     |    Professional Medicine 	     |      	      |            
-| Chinese 	 |     MedQA-MCMLE         	      |             |           
-|     	     |      Anatomy           	       |      	      |           
-|     	     |   Clinical Knowledge      	    |      	      |            
-|     	     |    College Medicine       	    |      	      |           
-|     	     |    Medical Genetics       	    |      	      |           
-|     	     |    Medical Nutrition      	    |      	      |           
-|     	     | Traditional Chinese Medicine 	 |      	      |           
-|     	     |      Virology           	      |      	      |           
-| Hindi  	  |      Anatomy           	       |      	      |           
-|     	     |   Clinical Knowledge      	    |      	      |           
-|     	     |    College Biology       	     |      	      |           
-|     	     |    College Medicine       	    |      	      |           
-|     	     |    Medical Genetics       	    |      	      |           
-|     	     |   Professional Medicine    	   |      	      |           
+| **Language**  |     **Benchmark Datasets**     | **Description** |
+|:-------------:|:------------------------------:|:---------------:|
+| **English** 	 |            MedExpQA            |                 |
+|       	       |        MedMCQA        	        |                 |  
+|       	       |        MedQA         	         |                 |           
+|       	       |        PubMedQA       	        |                 |             
+|       	       |        Anatomy        	        |                 |            
+|       	       |      College Biology    	      |        	        |             
+|       	       |      College Medicine   	      |        	        |             
+|       	       |      Medical Genetics   	      |        	        |             
+|       	       |    Professional Medicine 	     |        	        |           
+| **French**  	 |      FrenchMedMCQA     	       |        	        |           
+|       	       |        MedExpQA       	        |        	        |            
+|       	       |        Anatomy        	        |        	        |           
+|       	       |     Clinical Knowledge  	      |        	        |           
+|       	       |      College Biology    	      |        	        |           
+|       	       |      College Medicine   	      |        	        |            
+|       	       |      Medical Genetics   	      |        	        |            
+|       	       |    Professional Medicine 	     |        	        |            
+| **Spanish** 	 |        HeadQA        	         |        	        |            
+|       	       |        MedExpQA       	        |        	        |            
+|       	       |        Anatomy        	        |        	        |            
+|       	       |     Clinical Knowledge  	      |        	        |            
+|       	       |      College Biology    	      |        	        |           
+|       	       |      College Medicine   	      |        	        |           
+|       	       |      Medical Genetics   	      |        	        |           
+|       	       |    Professional Medicine 	     |        	        |            
+| **Chinese** 	 |     MedQA-MCMLE         	      |                 |           
+|       	       |      Anatomy           	       |        	        |           
+|       	       |   Clinical Knowledge      	    |        	        |            
+|       	       |    College Medicine       	    |        	        |           
+|       	       |    Medical Genetics       	    |        	        |           
+|       	       |    Medical Nutrition      	    |        	        |           
+|       	       | Traditional Chinese Medicine 	 |        	        |           
+|       	       |      Virology           	      |        	        |           
+| **Hindi**  	  |      Anatomy           	       |        	        |           
+|       	       |   Clinical Knowledge      	    |        	        |           
+|       	       |    College Biology       	     |        	        |           
+|       	       |    College Medicine       	    |        	        |           
+|       	       |    Medical Genetics       	    |        	        |           
+|       	       |   Professional Medicine    	   |        	        |           
 
 ## Performance on In-domain Benchmarks
 <p align="center">
