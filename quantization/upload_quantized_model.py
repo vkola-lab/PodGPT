@@ -49,7 +49,7 @@ def main(api, args, hf_write_token):
 
 if __name__ == "__main__":
     # Example Usage:
-    # python upload_quantization_model.py \
+    # python upload_quantized_model.py \
     # --repo "shuyuej/MedLLaMA3-70B-BASE-MODEL-QUANT" \
     # --folder_path "./gptq_model"
     parser = ArgumentParser(description='User arguments')

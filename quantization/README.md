@@ -2,7 +2,7 @@
 First, in the project home directory, please copy and paste these files,
 ```shell
 cp -r ./quantization/quantization.py ./
-cp -r ./quantization/upload_quantization_model.py ./
+cp -r ./quantization/upload_quantized_model.py ./
 ```
 
 ## Conduct quantization based on GPTQ algorithm
@@ -12,7 +12,7 @@ python quantization.py "./save_folder" "./gptq_model" "medical" --bits 4 --group
 
 ## Upload the quantized model to Hugging Face
 ```shell
-python upload_quantization_model.py --repo "shuyuej/MedLLaMA3-70B-BASE-MODEL-QUANT" --folder_path "./gptq_model"
+python upload_quantized_model.py --repo "shuyuej/MedLLaMA3-70B-BASE-MODEL-QUANT" --folder_path "./gptq_model"
 ```
 
 ## Change the model config files

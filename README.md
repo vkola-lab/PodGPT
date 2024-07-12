@@ -1,6 +1,5 @@
 <h1 align="center">MedPodGPT</h1>
 <h4 align="center">Benchmarking Multilingual Medical Large Language Models (LLMs)</h4>
-
 <p align="center">
   <a href="https://github.com/vkola-lab/medpodgpt"> <img width="250px" src="MedPodGPT.png"></a> 
   <br />
@@ -27,6 +26,8 @@ Please try it out if you are interested!
   - [Distributed GPUs For Heavy Models](#Distributed-GPUs-For-Heavy-Models)
 - [Structure of the Code](#Structure-of-the-Code)
 - [Citation](#Citation)
+- [Contact](#Contact)
+- [Contribution](#Contribution)
 - [Acknowledgement](#Acknowledgement)
 
 # Installation
@@ -36,28 +37,28 @@ pip install -r requirements.txt
 
 # Quick Start
 ## Train Lightweight Models
-For smaller models (2B, 7B, and 8B), we optimize the entire model. 
+For lightweight models (2B, 7B, and 8B), we optimize the entire model. 
 Please check and setup hyper-parameters in [config_small.yml](https://github.com/vkola-lab/medpodgpt/blob/main/config_small.yml).
 ```shell
 python main_small.py
 ```
 
 ## Train Heavy Models
-For lager models (>8B), we optimize the Low-rank Adapter (LoRA).
+For lager and heavy models (>8B), we optimize the Low-rank Adapter (LoRA).
 Please check and setup hyper-parameters in [config_small.yml](https://github.com/vkola-lab/medpodgpt/blob/main/config_large.yml).
 ```shell
 python main_large.py
 ```
 
 ## Train Quantized Models
-We also support quantization of larger models and then optimize the LoRA.
-The algorithm we use is the [GPTQ](https://arxiv.org/abs/2210.17323).
+We also provide support for quantizing larger models using the [GPTQ](https://arxiv.org/abs/2210.17323) algorithm and then optimizing the LoRA.
+The large models can be deployed on consumer GPUs after quantization.
 ```shell
 python quantization.py "./save_folder" "./gptq_model" "medical" --bits 4 --group_size 128 --desc_act 1 --dtype float16
 ```
 Then, we need to upload the model to Hugging Face,
 ```shell
-python upload_quantization_model.py --repo "shuyuej/MedLLaMA3-70B-BASE-MODEL-QUANT" --folder_path "./gptq_model"
+python upload_quantized_model.py --repo "shuyuej/MedLLaMA3-70B-BASE-MODEL-QUANT" --folder_path "./gptq_model"
 ```
 Lastly, we optimize the LoRA module,
 ```shell
@@ -231,7 +232,7 @@ If you find our work useful in your research, please consider citing it in your 
 @article{jia2024medpodgpt,
   title   = {{MedPodGPT}: A Multilingual Audio-augmented Large Language Model for Medical Research and Education},
   author  = {Shuyue Jia, Subhrangshu Bit, Edward Searls, Lindsey A. Claus, Pengrui Fan, Varuna H. Jasodanand, Meagan V. Lauber, Divya Veerapaneni, William M. Wang, Rhoda Au, Vijaya B. Kolachalama},
-  journal = {MedRxiv},
+  journal = {medRxiv}
   year    = {2024},
 }
 ```
@@ -245,6 +246,10 @@ If you find our work useful in your research, please consider citing it in your 
 - [William M. Wang](https://github.com/bomas7)
 
 If you have any questions, please drop us an email at [brucejia@bu.edu](brucejia@bu.edu), [sbit@bu.edu](sbit@bu.edu), and [nsearls@bu.edu](nsearls@bu.edu).
+
+# Contribution
+We always welcome contributions to help make **MedPodGPT** Library better. 
+If you would like to contribute, please submit a [pull request](https://github.com/vkola-lab/medpodgpt/pulls).
 
 # Acknowledgement
 The **MedPodGPT** Library is created and maintained by the Kolachalama Lab at Boston University.
