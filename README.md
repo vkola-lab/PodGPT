@@ -95,8 +95,10 @@ Please check [here](https://github.com/vkola-lab/medpodgpt/tree/main/inference) 
     To address the issue of repeated content in some responses, we applied a repetition_penalty during inference.
 
 ## Prompt Format
-We use `Directly answer the best option:` instead of `Answer:` to better guide LLMs to generate the best option and 
-to easier extract the best option from the responses
+We simply use `Directly answer the best option:` instead of `Answer:` to better guide LLMs to generate the best option 
+and to easier extract the best option from the responses.<br>
+Please modify [these lines](https://github.com/vkola-lab/medpodgpt/blob/main/utils/benchmark_utils.py#L5-L21) 
+if you wanna try other prompts.
 ```python
 english_prompt = "Directly answer the best option:"
 english_prompt_pubmedqa = "Directly answer yes/no/maybe:"
