@@ -165,15 +165,15 @@ At the root of the project, you will see:
 ├── config_chatgpt.yml
 ├── lib
 │   ├── data_manager.py
-│   ├── evaluation_chatgpt.py
-│   ├── evaluation_large.py
-│   ├── evaluation_small.py
+│   ├── model_loader_small.py
 │   ├── model_loader_large.py
 │   ├── model_loader_quantization.py
-│   └── model_loader_small.py
+│   ├── evaluation_small.py
+│   ├── evaluation_large.py
+│   └── evaluation_chatgpt.py
 ├── inference
-│   ├── inference_chatgpt.py
 │   ├── inference_large.sh
+│   ├── inference_chatgpt.py
 │   ├── inference_pretrain.py
 │   ├── inference_sequential.py
 │   └── inference_single_model.py
