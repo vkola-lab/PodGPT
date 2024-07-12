@@ -24,6 +24,7 @@ Please try it out if you are interested!
 - [Performance Evaluation](#Performance-Evaluation)
   - [Single GPU For Lightweight Models](#Single-GPU-For-Lightweight-Models)
   - [Distributed GPUs For Heavy Models](#Distributed-GPUs-For-Heavy-Models)
+  - [OpenAI ChatGPT Support](#OpenAI-ChatGPT-Support)
 - [Automatic Speech Recognition](#Automatic-Speech-Recognition)
 - [Dataset Builder](#Dataset-Builder)
 - [Upload and Download Models](#Upload-and-Download-Models)
@@ -106,6 +107,13 @@ python inference_pretrain.py
 Please note that `--id` is the checkpoint id.
 ```shell
 python inference_single_model.py --id 35166
+```
+
+### OpenAI ChatGPT Support
+We also offer support for running OpenAI ChatGPT inference using API.
+Please enter your OpenAI API Key [here](https://github.com/vkola-lab/medpodgpt/blob/main/config_chatgpt.yml#L18).
+```shell
+python inference_chatgpt.py
 ```
 
 # Automatic Speech Recognition
