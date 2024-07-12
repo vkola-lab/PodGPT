@@ -40,22 +40,21 @@ pip install -r requirements.txt
 
 # Quick Start
 ## Train Lightweight Models
-For lightweight models ($2$B, $7$B, and $8$B), we optimize the entire model. 
+For lightweight models (2B, 7B, and 8B), we optimize the entire model. 
 Please check and setup hyper-parameters in [config_small.yml](https://github.com/vkola-lab/medpodgpt/blob/main/config_small.yml).
 ```shell
 python main_small.py
 ```
 
 ## Train Heavy Models
-For lager and heavy models (>$8$B), we optimize the Low-rank Adapter (LoRA).
+For lager and heavy models (>8B), we optimize the Low-rank Adapter (LoRA).
 Please check and setup hyper-parameters in [config_small.yml](https://github.com/vkola-lab/medpodgpt/blob/main/config_large.yml).
 ```shell
 python main_large.py
 ```
 
 ## Train Quantized Large Models
-We also provide support for quantizing larger models, _e.g._, LLaMA 3 $70$B model, using the [GPTQ](https://arxiv.
-org/abs/2210.17323) algorithm and then optimizing the LoRA.
+We also provide support for quantizing larger models, _e.g._, LLaMA 3 70B model, using the [GPTQ](https://arxiv.org/abs/2210.17323) algorithm and then optimizing the LoRA.
 The large models can be deployed on consumer GPUs after quantization.
 ```shell
 python quantization.py "./save_folder" "./gptq_model" "medical" --bits 4 --group_size 128 --desc_act 1 --dtype float16
@@ -70,8 +69,8 @@ python main_quantization.py
 ```
 
 # Performance Evaluation
-we use `inference_pretrain.py` and `inference_single_model.py` for larger models (>$8$B) 
-and `inference_sequential.py` for smaller models ($2$B/$7$B/$8$B).
+we use `inference_pretrain.py` and `inference_single_model.py` for larger models (>8B) 
+and `inference_sequential.py` for smaller models (2B/7B/8B).
 
 First, in the project home directory, please copy and paste the inference files,
 ```shell
