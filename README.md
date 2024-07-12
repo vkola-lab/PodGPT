@@ -74,16 +74,12 @@ python main_quantization.py
 ```
 
 # Performance Evaluation
-we use `inference_pretrain.py` and `inference_single_model.py` for larger models (>8B) 
-and `inference_sequential.py` for smaller models (2B/7B/8B).
-
-First, in the project home directory, please copy and paste the inference files,
-```shell
-cp -r ./inference/inference_sequential.py ./
-cp -r ./inference/inference_large.sh ./
-cp -r ./inference/inference_pretrain.py ./
-cp -r ./inference/inference_single_model.py ./
-```
+we use [inference_pretrain.py](https://github.com/vkola-lab/medpodgpt/blob/main/inference/inference_pretrain.py) 
+and [inference_single_model.py](https://github.com/vkola-lab/medpodgpt/blob/main/inference/inference_single_model.py)
+for larger models (>8B) 
+and [inference_sequential.py](https://github.com/vkola-lab/medpodgpt/blob/main/inference/inference_sequential.py) 
+for smaller models (2B/7B/8B). 
+Please check [here](https://github.com/vkola-lab/medpodgpt/tree/main/inference) for more information.
 
 ### Single GPU For Lightweight Models
 #### inference_sequential.py
@@ -95,7 +91,8 @@ python inference_sequential.py --eval_pretrain True --id 35166 52749 70332 87915
 
 ### Distributed GPUs For Heavy Models
 **Sequentially** evaluate the performance of the original pre-trained model and all the checkpoints.<br>
-Special Notice: Please change the checkpoint IDs and CUDA_VISIBLE_DEVICES in the `inference_large.sh` file.
+Special Notice: Please change the `checkpoint IDs` and `CUDA_VISIBLE_DEVICES` 
+in the [inference_large.sh](https://github.com/vkola-lab/medpodgpt/blob/main/inference/inference_large.sh) file.
 ```shell
 sh inference_large.sh
 ```
@@ -129,7 +126,8 @@ python audio2text.py
 
 # Dataset Builder
 We used the following codes to pre-process our transcripts and generate training dataset.
-Please check [these lines](https://github.com/vkola-lab/medpodgpt/blob/main/scripts/database_builder.py#L236-L242) for different languages support. 
+Please check [these lines](https://github.com/vkola-lab/medpodgpt/blob/main/scripts/database_builder.py#L236-L242) 
+for different languages support.
 ```shell
 python database_builder.py
 ```
@@ -141,12 +139,12 @@ python merge_database.py
 In the [scripts folder](https://github.com/vkola-lab/medpodgpt/tree/main/scripts), 
 we offer support for both uploading and downloading models.
 
-To upload your checkpoints to your Hugging Face model repo,
+To upload your checkpoints to Hugging Face model repo,
 ```shell
 python upload_model.py --repo "shuyuej/DrGemma2B" --id 35166 52749 70332 87915
 ```
 
-To download your model or files from Hugging Face,
+To download your model or files from Hugging Face repo,
 ```shell
 python download_model.py --repo "shuyuej/DrGemma2B" --repo_type "model" --save_dir "./save_folder"
 ```
