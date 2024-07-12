@@ -90,7 +90,7 @@ Please check [here](https://github.com/vkola-lab/medpodgpt/tree/main/inference) 
   Please modify [these lines](https://github.com/vkola-lab/medpodgpt/blob/main/utils/benchmark_utils.py#L15-L18).<br>
   Because most responses are in mixed English-Hindi or English, 
   we used `कृपया प्रश्न का उत्तर हिंदी में दें और सीधे सबसे अच्छे विकल्प के साथ जवाब दें:` 
-  (Please answer the question in Hindi and directly answer the best option:) to guide the model.<br>
+  (Please answer the question in Hindi and directly answer the best option:) to guide the model.<br><br>
 > [2] Mistral 7B on Hindi MMLU Benchmarks:<br>
   Please un-comment [this line](https://github.com/vkola-lab/medpodgpt/blob/main/utils/eval_small_utils.py#L65).<br>
   To address the issue of repeated content in some responses, we applied a repetition_penalty during inference.
