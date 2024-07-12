@@ -27,15 +27,24 @@ from argparse import ArgumentParser
 
 from huggingface_hub import snapshot_download
 
+from utils.utils import load_config
 
-def download_hf_files(repo_id, repo_type="model", save_dir="./"):
+
+def download_hf_files(repo_id, repo_type="model", save_dir="./", hf_read_token=None):
+    """
+    Download Hugging Face files, including models
+    :param repo_id: your Hugging Face repo ID
+    :param repo_type: the type of your repo, i.e., model or dataset
+    :param save_dir: the local save path
+    :param hf_read_token: your Hugging Face read token
+    """
     snapshot_download(
         repo_id=repo_id,
         repo_type=repo_type,
         local_dir=save_dir,
         # This is my Hugging Face `read` token. Please replace it to yours.
         # https://huggingface.co/settings/tokens
-        token="YOUR_HUGGING_FACE_READ_TOKEN"
+        token=hf_read_token
     )
 
 
@@ -48,5 +57,14 @@ if __name__ == "__main__":
     parser.add_argument("--save_dir", type=str, default='./save_folder', help="local save path")
     args = parser.parse_args()
 
+    # Load the configuration
+    config = load_config(file_name="config_small.yml")
+    hf_read_token = config.get("hf_read_token")
+
     # Download the Checkpoints
-    download_hf_files(repo_id=args.repo, repo_type=args.repo_type, save_dir=args.save_dir)
+    download_hf_files(
+        repo_id=args.repo,
+        repo_type=args.repo_type,
+        save_dir=args.save_dir,
+        hf_read_token=hf_read_token
+    )

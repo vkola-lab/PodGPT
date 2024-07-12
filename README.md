@@ -24,6 +24,9 @@ Please try it out if you are interested!
 - [Performance Evaluation](#Performance-Evaluation)
   - [Single GPU For Lightweight Models](#Single-GPU-For-Lightweight-Models)
   - [Distributed GPUs For Heavy Models](#Distributed-GPUs-For-Heavy-Models)
+- [Automatic Speech Recognition](#Automatic-Speech-Recognition)
+- [Dataset Builder](#Dataset-Builder)
+- [Upload and Download Models](#Upload-and-Download-Models)
 - [Structure of the Code](#Structure-of-the-Code)
 - [Citation](#Citation)
 - [Contact](#Contact)
@@ -103,6 +106,37 @@ python inference_pretrain.py
 Please note that `--id` is the checkpoint id.
 ```shell
 python inference_single_model.py --id 35166
+```
+
+# Automatic Speech Recognition
+In the [scripts folder](https://github.com/vkola-lab/medpodgpt/tree/main/scripts), 
+we provide Automatic Speech Recognition (ASR) support.
+```shell
+python audio2text.py
+```
+
+# Dataset Builder
+We used the following codes to pre-process our transcripts and generate training dataset.
+Please check [these lines](https://github.com/vkola-lab/medpodgpt/blob/main/scripts/database_builder.py#L236-L242) for different languages support. 
+```shell
+python database_builder.py
+```
+```shell
+python merge_database.py
+```
+
+# Upload and Download Models
+In the [scripts folder](https://github.com/vkola-lab/medpodgpt/tree/main/scripts), 
+we offer support for both uploading and downloading models.
+
+To upload your checkpoints to your Hugging Face model repo,
+```shell
+python upload_model.py --repo "shuyuej/DrGemma2B" --id 35166 52749 70332 87915
+```
+
+To download your model or files from Hugging Face,
+```shell
+python download_model.py --repo "shuyuej/DrGemma2B" --repo_type "model" --save_dir "./save_folder"
 ```
 
 # Structure of the Code
