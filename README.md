@@ -85,6 +85,15 @@ for larger models (>8B)
 and [inference_sequential.py](https://github.com/vkola-lab/medpodgpt/blob/main/inference/inference_sequential.py) 
 for smaller models (2B/7B/8B). 
 Please check [here](https://github.com/vkola-lab/medpodgpt/tree/main/inference) for more information.
+> [!NOTE]
+> LLaMA 3 8B on Hindi MMLU Benchmarks:
+  Please modify [these lines](https://github.com/vkola-lab/medpodgpt/blob/main/utils/benchmark_utils.py#L15-L18).
+  Because most responses are in mixed English-Hindi or English, 
+  we used `कृपया प्रश्न का उत्तर हिंदी में दें और सीधे सबसे अच्छे विकल्प के साथ जवाब दें:` 
+  (Please answer the question in Hindi and directly answer the best option:) to guide the model.
+> Mistral 7B on Hindi MMLU Benchmarks:
+  Please un-comment [this line](https://github.com/vkola-lab/medpodgpt/blob/main/utils/eval_small_utils.py#L65).
+  To address the issue of repeated content in some responses, we applied a repetition_penalty during inference.
 
 ### Single GPU For Lightweight Models
 #### inference_sequential.py
