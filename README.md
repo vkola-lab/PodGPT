@@ -26,6 +26,7 @@ Check our database [here](https://github.com/vkola-lab/medpodgpt/tree/main/bench
   - [Train Heavy Models](#Train-Heavy-Models)
   - [Train Quantized Large Models](#Train-Quantized-Large-Models)
 - [Performance Evaluation](#Performance-Evaluation)
+  - [Prompt Format](#Prompt-Format)
   - [Single GPU For Lightweight Models](#Single-GPU-For-Lightweight-Models)
   - [Distributed GPUs For Heavy Models](#Distributed-GPUs-For-Heavy-Models)
   - [OpenAI ChatGPT Support](#OpenAI-ChatGPT-Support)
@@ -92,6 +93,18 @@ Please check [here](https://github.com/vkola-lab/medpodgpt/tree/main/inference) 
 > **[2] Mistral 7B on Hindi MMLU Benchmarks**:<br>
     Please un-comment [this line](https://github.com/vkola-lab/medpodgpt/blob/main/utils/eval_small_utils.py#L65).<br>
     To address the issue of repeated content in some responses, we applied a repetition_penalty during inference.
+
+## Prompt Format
+We use `Directly answer the best option:` instead of `Answer:` to better guide LLMs to generate the best option and 
+to easier extract the best option from the responses
+```python
+english_prompt = "Directly answer the best option:"
+english_prompt_pubmedqa = "Directly answer yes/no/maybe:"
+hindi_prompt = "सीधे सबसे अच्छे विकल्प के साथ जवाब दें:"
+french_prompt = "Répondez directement avec la meilleure option:"
+spanish_prompt = "Responde directamente con la mejor opción:"
+chinese_prompt = "直接回答最优选项:"
+```
 
 ### Single GPU For Lightweight Models
 > [!IMPORTANT]
