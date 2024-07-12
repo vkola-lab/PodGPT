@@ -239,6 +239,11 @@ If you find our work useful in your research, please consider citing it in your 
 - [Pengrui Fan](https://github.com/pengrui26)
 - [William M. Wang](https://github.com/bomas7)
 
+**Database Contributor and Maintainer**: <br>
+- [Lindsey A. Claus](https://scholar.google.com/citations?user=bENmp-UAAAAJ&hl=en)
+- [Divya Veerapaneni](https://sites.google.com/view/divyav/research?authuser=0)
+- [Meagan V. Lauber](https://scholar.google.com/citations?user=t_QKUhEAAAAJ&hl=en)
+
 If you have any questions, please drop us an email at [brucejia@bu.edu](brucejia@bu.edu), [sbit@bu.edu](sbit@bu.edu), and [nsearls@bu.edu](nsearls@bu.edu).
 
 # Contribution
