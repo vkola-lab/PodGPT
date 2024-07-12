@@ -29,6 +29,7 @@ Check our database [here](https://github.com/vkola-lab/medpodgpt/tree/main/bench
   - [Single GPU For Lightweight Models](#Single-GPU-For-Lightweight-Models)
   - [Distributed GPUs For Heavy Models](#Distributed-GPUs-For-Heavy-Models)
   - [OpenAI ChatGPT Support](#OpenAI-ChatGPT-Support)
+- [Dataset Description](#Dataset-Description)
 - [Benchmarks and Results](#Benchmarks-and-Results)
   - [Benchmarks Description](#Benchmarks-Description)
   - [Performance on In-domain Benchmarks](#Performance-on-In-domain-Benchmarks)
@@ -120,6 +121,12 @@ Please enter your OpenAI API Key [here](https://github.com/vkola-lab/medpodgpt/b
 ```shell
 python inference_chatgpt.py
 ```
+
+# Dataset Description
+The podcasts data used for the continual pre-training of **MedPodGPT**:
+<p align="center">
+  <a href="https://github.com/vkola-lab/medpodgpt"> <img src="figures/Table-1.png"></a> 
+</p>
 
 # Benchmarks and Results
 
