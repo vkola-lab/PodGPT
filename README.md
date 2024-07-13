@@ -4,7 +4,7 @@
   <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v1"> <img width="250px" src="figures/MedPodGPT.png"></a> 
   <br />
   <br />
-  <a href="https://img.shields.io/badge/Code%20License-MIT-green.svg"><img alt="CODE_LICENSE" src="https://img.shields.io/badge/Code%20License-MIT-green.svg" /></a>
+  <a href="https://img.shields.io/badge/Code%20License-AGPL3.0-green.svg"><img alt="CODE_LICENSE" src="https://img.shields.io/badge/Code%20License-AGPL3.0-green.svg" /></a>
   <a href="https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red.svg"><img alt="DATA_LICENSE" src="https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red.svg" /></a>
   <a href="https://www.apache.org/licenses/LICENSE-2.0"><img alt="Model Weight License" src="https://img.shields.io/badge/Model%20Weights%20License-Apache-yellow" /></a>
   <a href="https://www.python.org/downloads/release/python-3100/"><img alt="Python 3.10" src="https://img.shields.io/badge/python-3.10-blue.svg" /></a>
