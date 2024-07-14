@@ -36,6 +36,7 @@ Check our database [here](https://github.com/vkola-lab/medpodgpt/tree/main/bench
   - [Benchmarks Description](#Benchmarks-Description)
   - [Performance on In-domain Benchmarks](#Performance-on-In-domain-Benchmarks)
   - [Zero-shot Cross-lingual Performance](#Zero-shot-Cross-lingual-Performance)
+- [Real-world Deployment](#-Real-world-Deployment)
 - [Automatic Speech Recognition](#-Automatic-Speech-Recognition)
 - [Dataset Builder](#-Dataset-Builder)
 - [Upload and Download Models](#-Upload-and-Download-Models)
@@ -174,6 +175,11 @@ The podcasts data used for the continual pre-training of **MedPodGPT**:
 <p align="center">
   <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v1"> <img src="figures/Table-3.png"></a> 
 </p>
+
+# 🔥 Real-world Deployment
+For real-world deployment, please refer to 
+the [vLLM Distributed Inference and Serving](https://docs.vllm.ai/en/latest/serving/distributed_serving.html) 
+and [OpenAI Compatible Server](https://docs.vllm.ai/en/latest/serving/openai_compatible_server.html).
 
 # 🎯 Automatic Speech Recognition
 In the [scripts folder](https://github.com/vkola-lab/medpodgpt/tree/main/scripts), 
