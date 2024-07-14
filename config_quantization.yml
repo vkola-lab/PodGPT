@@ -6,7 +6,7 @@ model_name : "shuyuej/MedLLaMA3-70B-BASE-MODEL-QUANT"
 # Spanish podcasts: shuyuej/Spanish-Pretraining-Dataset
 # French podcasts: shuyuej/French-Pretraining-Dataset
 # Multilingual podcasts: shuyuej/Multilingual-Pretraining-Dataset
-dataset_hf : "shuyuej/Multilingual-Pretraining-Dataset"
+dataset_hf : "shuyuej/MedPodGPT-Demo-Data"
 
 # This is my Hugging Face `read` and `write` tokens. Please replace it to yours.
 # `read` token: for downloading models
