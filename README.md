@@ -373,4 +373,4 @@ We always welcome contributions to help make **MedPodGPT** Library better.
 If you would like to contribute, please submit a [pull request](https://github.com/vkola-lab/medpodgpt/pulls).
 
 # 🙌 Acknowledgement
-The **MedPodGPT** Library is created and maintained by the Kolachalama Laboratory.
+The **MedPodGPT** Library is created and maintained by the [Kolachalama Laboratory](https://vkola-lab.github.io/).
