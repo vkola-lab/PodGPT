@@ -11,6 +11,7 @@
 </p>
 
 # 🎉 Announcements
+## Medical LLMs in your pocket!
 [2024.7.14] ![](figures/news.gif) Our AI Platform [**MedPodGPT**](https://medpodgpt.org/) is publicly available. 
 It is an online platform for deploying our latest multimodal foundation models for medical and clinical applications.
 Please try it out if you are interested!
@@ -19,8 +20,6 @@ Please try it out if you are interested!
 
 [2024.7.12] We are releasing a new benchmark encompassing the latest USMLE Step 1, Step 2, Step 3, and Ethics to further advance the filed.
 Check our database [here](https://github.com/vkola-lab/medpodgpt/tree/main/benchmark/english_usmle).
-
-[2024.7.11] We open-sourced the [source codes](https://github.com/vkola-lab/medpodgpt) of our **MedPodGPT**: **medical LLMs in your pocket** and **benchmarking multilingual medical LLMs**.
 
 # 📚 Table of Contents
 - [Installation](#-Installation)
