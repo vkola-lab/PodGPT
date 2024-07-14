@@ -188,7 +188,7 @@ and [OpenAI Compatible Server](https://docs.vllm.ai/en/latest/serving/openai_com
 
 # 🎯 Automatic Speech Recognition
 In the [scripts folder](https://github.com/vkola-lab/medpodgpt/tree/main/scripts), 
-we provide Automatic Speech Recognition (ASR) support.
+we provide Automatic Speech Recognition (ASR) service.
 ```shell
 python audio2text.py
 ```
