@@ -35,7 +35,7 @@ Check our database [here](https://github.com/vkola-lab/medpodgpt/tree/main/bench
   - [OpenAI ChatGPT Support](#-OpenAI-ChatGPT-Support)
 - [Dataset Description](#-Dataset-Description)
 - [Benchmarks and Results](#-Benchmarks-and-Results)
-  - [Benchmarks Description](#Benchmarks-Description)
+  - [Benchmarks Description](#Multilingual-Benchmarks-Description)
   - [Performance on In-domain Benchmarks](#Performance-on-In-domain-Benchmarks)
   - [Zero-shot Cross-lingual Performance](#Zero-shot-Cross-lingual-Performance)
 - [Real-world Deployment](#-Real-world-Deployment)
@@ -174,7 +174,7 @@ The podcasts data used for the continual pre-training of **MedPodGPT**:
 
 # 🏆 Benchmarks and Results
 
-## Benchmarks Description
+## Multilingual Benchmarks Description
 We utilized a comprehensive set of medical benchmarks from the most widely spoken languages in the world, 
 including **_English_**, **_Mandarin_**, **_French_**, **_Spanish_**, and **_Hindi_**.
 
