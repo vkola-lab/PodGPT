@@ -171,6 +171,52 @@ The podcasts data used for the continual pre-training of **MedPodGPT**:
 </p>
 
 # 🏆 Benchmarks and Results
+
+## Benchmarks Description
+
+| Dataset                           | Language | # examples (test) | # of choices | Link                                                                                     | Ref                                         |
+| --------------------------------- | -------- | ----------------- | ------------ | ---------------------------------------------------------------------------------------- | ------------------------------------------- |
+| MedExpQA                          | English  | 125               | 5            | [Link](https://huggingface.co/datasets/HiTZ/MedExpQA/viewer/en/test)                     | [Paper](https://arxiv.org/abs/2404.05590)   |
+|                                   | French   | 125               | 5            | [Link](https://huggingface.co/datasets/HiTZ/MedExpQA/viewer/fr/test)                     | [Paper](https://arxiv.org/abs/2404.05590)   |
+|                                   | Spanish  | 125               | 5            | [Link](https://huggingface.co/datasets/HiTZ/MedExpQA)                                    | [Paper](https://arxiv.org/abs/2404.05590)   |
+| MedMCQA                           | English  | 4183              | 4            | [Link](https://drive.google.com/uc?export=download&id=15VkJdq5eyWIkfb_aoD3oS8i4tScbHYky) | [Paper](https://arxiv.org/abs/2203.14371)   |
+|                                   | French   | 622               | 5            | [Link](https://github.com/qanastek/FrenchMedMCQA)                                        | [Paper](https://hal.science/hal-03824241v1) |
+| MedQA                             | English  | 1273              | 4            | [Link](https://drive.google.com/file/d/1ImYUSLk9JbgHXOemfvyiDiirluZHPeQw/view)           | [Paper](https://arxiv.org/abs/2009.13081)   |
+|                                   | Chinese  | 3426              | 4            | [Link](https://drive.google.com/file/d/1ImYUSLk9JbgHXOemfvyiDiirluZHPeQw/view)           | [Paper](https://arxiv.org/abs/2009.13081)   |
+| PubMedQA                          | English  | 1000              | 3            | [Link](https://github.com/pubmedqa/pubmedqa?tab=readme-ov-file)                          | [Paper](https://arxiv.org/abs/1909.06146)   |
+| MMLU - Anatomy                    | English  | 135               | 4            | [Link](https://www.kaggle.com/datasets/lizhecheng/mmlu-dataset)                          | [Paper](https://arxiv.org/abs/2009.03300)   |
+|                                   | French   | 135               | 4            | [Link](https://huggingface.co/datasets/FreedomIntelligence/MMLU_French)                  | [Paper](https://arxiv.org/abs/2403.03640)   |
+|                                   | Spanish  | 135               | 4            | [Link](https://huggingface.co/datasets/FreedomIntelligence/MMLU_Spanish)                 | [Paper](https://arxiv.org/abs/2403.03640)   |
+|                                   | Chinese  | 148               | 4            | [Link](https://huggingface.co/datasets/haonan-li/cmmlu)                                  | [Paper](https://arxiv.org/abs/2306.09212)   |
+|                                   | Hindi    | 135               | 4            | [Link](https://huggingface.co/datasets/FreedomIntelligence/MMLU_Hindi)                   | [Paper](https://arxiv.org/abs/2403.03640)   |
+| MMLU-Clinical Knowledge           | English  | 265               | 4            | [Link](https://www.kaggle.com/datasets/lizhecheng/mmlu-dataset)                          | [Paper](https://arxiv.org/abs/2009.03300)   |
+|                                   | French   | 265               | 4            | [Link](https://huggingface.co/datasets/FreedomIntelligence/MMLU_French)                  | [Paper](https://arxiv.org/abs/2403.03640)   |
+|                                   | Spanish  | 265               | 4            | [Link](https://huggingface.co/datasets/FreedomIntelligence/MMLU_Spanish)                 | [Paper](https://arxiv.org/abs/2403.03640)   |
+|                                   | Chinese  | 237               | 4            | [Link](https://huggingface.co/datasets/haonan-li/cmmlu)                                  | [Paper](https://arxiv.org/abs/2306.09212)   |
+|                                   | Hindi    | 265               | 4            | [Link](https://huggingface.co/datasets/FreedomIntelligence/MMLU_Hindi)                   | [Paper](https://arxiv.org/abs/2403.03640)   |
+| MMLU-College Biology              | English  | 144               | 4            | [Link](https://www.kaggle.com/datasets/lizhecheng/mmlu-dataset)                          | [Paper](https://arxiv.org/abs/2009.03300)   |
+|                                   | French   | 144               | 4            | [Link](https://huggingface.co/datasets/FreedomIntelligence/MMLU_French)                  | [Paper](https://arxiv.org/abs/2403.03640)   |
+|                                   | Spanish  | 144               | 4            | [Link](https://huggingface.co/datasets/FreedomIntelligence/MMLU_Spanish)                 | [Paper](https://arxiv.org/abs/2403.03640)   |
+|                                   | Hindi    | 144               | 4            | [Link](https://huggingface.co/datasets/FreedomIntelligence/MMLU_Hindi)                   | [Paper](https://arxiv.org/abs/2403.03640)   |
+| MMLU-College Medicine             | English  | 173               | 4            | [Link](https://www.kaggle.com/datasets/lizhecheng/mmlu-dataset)                          | [Paper](https://arxiv.org/abs/2009.03300)   |
+|                                   | French   | 173               | 4            | [Link](https://huggingface.co/datasets/FreedomIntelligence/MMLU_French)                  | [Paper](https://arxiv.org/abs/2403.03640)   |
+|                                   | Spanish  | 173               | 4            | [Link](https://huggingface.co/datasets/FreedomIntelligence/MMLU_Spanish)                 | [Paper](https://arxiv.org/abs/2403.03640)   |
+|                                   | Chinese  | 273               | 4            | [Link](https://huggingface.co/datasets/haonan-li/cmmlu)                                  | [Paper](https://arxiv.org/abs/2306.09212)   |
+|                                   | Hindi    | 173               | 4            | [Link](https://huggingface.co/datasets/FreedomIntelligence/MMLU_Hindi)                   | [Paper](https://arxiv.org/abs/2403.03640)   |
+| MMLU-Medical Genetics             | English  | 100               | 4            | [Link](https://www.kaggle.com/datasets/lizhecheng/mmlu-dataset)                          | [Paper](https://arxiv.org/abs/2009.03300)   |
+|                                   | French   | 100               | 4            | [Link](https://huggingface.co/datasets/FreedomIntelligence/MMLU_French)                  | [Paper](https://arxiv.org/abs/2403.03640)   |
+|                                   | Spanish  | 100               | 4            | [Link](https://huggingface.co/datasets/FreedomIntelligence/MMLU_Spanish)                 | [Paper](https://arxiv.org/abs/2403.03640)   |
+|                                   | Chinese  | 176               | 4            | [Link](https://huggingface.co/datasets/haonan-li/cmmlu)                                  | [Paper](https://arxiv.org/abs/2306.09212)   |
+|                                   | Hindi    | 100               | 4            | [Link](https://huggingface.co/datasets/FreedomIntelligence/MMLU_Hindi)                   | [Paper](https://arxiv.org/abs/2403.03640)   |
+| MMLU-Professional Medicine        | English  | 272               | 4            | [Link](https://www.kaggle.com/datasets/lizhecheng/mmlu-dataset)                          | [Paper](https://arxiv.org/abs/2009.03300)   |
+|                                   | French   | 272               | 4            | [Link](https://huggingface.co/datasets/FreedomIntelligence/MMLU_French)                  | [Paper](https://arxiv.org/abs/2403.03640)   |
+|                                   | Spanish  | 272               | 4            | [Link](https://huggingface.co/datasets/FreedomIntelligence/MMLU_Spanish)                 | [Paper](https://arxiv.org/abs/2403.03640)   |
+|                                   | Hindi    | 272               | 4            | [Link](https://huggingface.co/datasets/FreedomIntelligence/MMLU_Hindi)                   | [Paper](https://arxiv.org/abs/2403.03640)   |
+| MMLU-Traditional Chinese Medicine | Chinese  | 185               | 4            | [Link](https://huggingface.co/datasets/haonan-li/cmmlu)                                  | [Paper](https://arxiv.org/abs/2306.09212)   |
+| MMLU-Virology                     | Chinese  | 169               | 4            | [Link](https://huggingface.co/datasets/haonan-li/cmmlu)                                  | [Paper](https://arxiv.org/abs/2306.09212)   |
+| Head-QA                           | Spanish  | 2742              | 4            | [Link](https://huggingface.co/datasets/dvilares/head_qa)                                 | [Paper](https://aclanthology.org/P19-1092/) |
+
+
 ## Performance on In-domain Benchmarks
 <p align="center">
   <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v1"> <img src="figures/Table-2.png"></a> 
