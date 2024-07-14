@@ -373,6 +373,4 @@ We always welcome contributions to help make **MedPodGPT** Library better.
 If you would like to contribute, please submit a [pull request](https://github.com/vkola-lab/medpodgpt/pulls).
 
 # 🙌 Acknowledgement
-The **MedPodGPT** Library is created and maintained by the Kolachalama Lab at Boston University.
-
-<a href="https://www.bu.edu/"> <img width="250" src="https://raw.githubusercontent.com/SuperBruceJia/promptcraft/main/bu.png"></a>
+The **MedPodGPT** Library is created and maintained by the Kolachalama Laboratory.
