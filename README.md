@@ -175,6 +175,8 @@ The podcasts data used for the continual pre-training of **MedPodGPT**:
 # 🏆 Benchmarks and Results
 
 ## Benchmarks Description
+We utilized a comprehensive set of medical benchmarks from the most widely spoken languages in the world, 
+including **_English_**, **_Mandarin_**, **_French_**, **_Spanish_**, and **_Hindi_**.
 
 |  *Language*   |               *Dataset*                | *# test examples* | *# of choices* |                                          *Link*                                          |                    *Ref*                    |
 |:-------------:|:--------------------------------------:|:-----------------:|:--------------:|:----------------------------------------------------------------------------------------:|:-------------------------------------------:|
