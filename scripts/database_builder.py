@@ -100,10 +100,7 @@ def main(folder_path, tokenizer_name, language):
     :param tokenizer_name: which tokenizer to use
     :param language: the language of the text files, i.e., english, spanish, or french
     """
-    tokenizer = AutoTokenizer.from_pretrained(
-        tokenizer_name,
-        token="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"
-    )
+    tokenizer = AutoTokenizer.from_pretrained(tokenizer_name)
 
     num_long = 0
     cutting_ratio = 0.95
