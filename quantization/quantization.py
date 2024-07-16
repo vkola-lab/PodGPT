@@ -41,7 +41,7 @@ from auto_gptq import AutoGPTQForCausalLM, BaseQuantizeConfig
 
 def get_medical_data(nsamples, seed, seqlen, tokenizer):
     """
-    Load and tokenize the Multilingual podcasts: `shuyuej/Multilingual-Pretraining-Dataset`.
+    Load and tokenize the Multilingual podcasts: `shuyuej/MedPodGPT-Demo-Data`.
     :param nsamples: number of samples
     :param seed: random seed
     :param seqlen: sequence length
@@ -52,9 +52,8 @@ def get_medical_data(nsamples, seed, seqlen, tokenizer):
     # Use this dataset in
     # https://github.com/AutoGPTQ/AutoGPTQ/issues/179#issuecomment-1611257490
     data = load_dataset(
-        "shuyuej/Multilingual-Pretraining-Dataset",
+        "shuyuej/MedPodGPT-Demo-Data",
         split="train",
-        token="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"
     )
     datalist = [' \n' if s == '' else s for s in data['text']]
 
@@ -244,7 +243,7 @@ if __name__ == "__main__":
     elif args.dataset == 'c4':
         traindataset = get_c4(128, 0, args.seqlen, tokenizer)
     elif args.dataset == 'medical':
-        traindataset = get_medical_data(128, 0, args.seqlen, tokenizer)
+        traindataset = get_medical_data(96, 0, args.seqlen, tokenizer)
     else:
         logger.error(f"Unsupported dataset: {args.dataset}")
         raise ValueError(f"Unsupported dataset: {args.dataset}")
