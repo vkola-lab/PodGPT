@@ -135,9 +135,10 @@ fp16 : False
 # NVIDIA architecture or using CPU (use_cpu) or Ascend NPU. This is an experimental API and it may change.
 bf16 : True
 
-# Pack multiple short examples in the same input sequence to increase efficiency
+# Choose which GPU to use
 device_map : "auto"
-# The number of GPUs for vLLM Engine
+
+# The number of GPUs and GPU utilization for the vLLM Engine
 # https://docs.vllm.ai/en/latest/serving/distributed_serving.html
 num_gpus_vllm : 4
 gpu_utilization_vllm : 0.95
