@@ -130,5 +130,5 @@ fp16 : False
 # NVIDIA architecture or using CPU (use_cpu) or Ascend NPU. This is an experimental API and it may change.
 bf16 : True
 
-# Pack multiple short examples in the same input sequence to increase efficiency
+# Choose which GPU to use
 device_map : "auto"
