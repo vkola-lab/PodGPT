@@ -7,7 +7,7 @@ cp -r ./quantization/upload_quantized_model.py ./
 
 ## Conduct quantization based on GPTQ algorithm
 ```shell
-python quantization.py "./save_folder" "./gptq_model" "medical" --bits 4 --group_size 128 --desc_act 1 --dtype float16
+python quantization.py "./save_folder" "./gptq_model" "medical" --bits 4 --group_size 128 --desc_act 1 --dtype float16 --seqlen 2048
 ```
 
 ## Upload the quantized model to Hugging Face
