@@ -101,7 +101,7 @@ def quantize(repo, bits, group_size, act_order):
 
 if __name__ == "__main__":
     # Example Usage:
-    # python quantization_HF.py --repo "CohereForAI/c4ai-command-r-v01" --bits 4 --group_size 128
+    # python quantization_HF.py --repo "meta-llama/Meta-Llama-3-70B-Instruct" --bits 4 --group_size 128
     parser = argparse.ArgumentParser(description="Quantize LLMs using GPTQ Algorithm")
     parser.add_argument("--repo", type=str, help="The pretrained model ID.")
     parser.add_argument("--bits", default=4, type=int, help="Number of bits for quantization.")
