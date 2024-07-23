@@ -2,12 +2,19 @@
 First, in the project home directory, please copy and paste these files,
 ```shell
 cp -r ./quantization/quantization.py ./
+cp -r ./quantization/quantization_HF.py ./
 cp -r ./quantization/upload_quantized_model.py ./
 ```
 
 ## Conduct quantization based on GPTQ algorithm
+For `quantization.py`, we are using Python [AutoGPTQ](https://github.com/AutoGPTQ/AutoGPTQ) package to conduct quantization.
 ```shell
 python quantization.py "./save_folder" "./gptq_model" "medical" --bits 4 --group_size 128 --desc_act 1 --dtype float16 --seqlen 2048
+```
+
+For `quantization_HF.py`, we are using Hugging Face [transformers](https://github.com/huggingface/transformers) package to conduct quantization.
+```shell
+python quantization_HF.py --repo "meta-llama/Meta-Llama-3-70B-Instruct" --bits 4 --group_size 128
 ```
 
 ## Upload the quantized model to Hugging Face
