@@ -71,13 +71,22 @@ python main_large.py
 ## 🐤 Train Quantized Large Models
 We also provide support for quantizing larger models, _e.g._, LLaMA 3 70B model, using the [GPTQ](https://arxiv.org/abs/2210.17323) algorithm and then optimizing the LoRA.
 The large models can be deployed on consumer GPUs after quantization.
+
+We can directly use the Hugging Face [transformers](https://github.com/huggingface/transformers) package to conduct quantization.
+```shell
+python quantization_HF.py --repo "meta-llama/Meta-Llama-3-70B-Instruct" --bits 4 --group_size 128
+```
+
+Alternatively, we also provide a quantization script by using the Python [AutoGPTQ](https://github.com/AutoGPTQ/AutoGPTQ) package.
 ```shell
 python quantization.py "./save_folder" "./gptq_model" "medical" --bits 4 --group_size 128 --desc_act 1 --dtype float16 --seqlen 2048
 ```
+
 Then, we need to upload the model to Hugging Face,
 ```shell
 python upload_quantized_model.py --repo "shuyuej/MedLLaMA3-70B-BASE-MODEL-QUANT" --folder_path "./gptq_model"
 ```
+
 Lastly, we optimize the LoRA module,
 ```shell
 python main_quantization.py
