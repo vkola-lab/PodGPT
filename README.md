@@ -79,7 +79,7 @@ python quantization_HF.py --repo "meta-llama/Meta-Llama-3-70B-Instruct" --bits 4
 
 Alternatively, we also provide a quantization script by using the Python [AutoGPTQ](https://github.com/AutoGPTQ/AutoGPTQ) package.
 ```shell
-python quantization.py "./save_folder" "./gptq_model" "medical" --bits 4 --group_size 128 --desc_act 1 --dtype float16 --seqlen 2048
+python quantization.py "./save_folder" "./gptq_model" "medical" --bits 4 --group_size 128 --desc_act 1 --dtype float16 --seqlen 2048 --damp 0.01
 ```
 
 Then, we need to upload the model to Hugging Face,
