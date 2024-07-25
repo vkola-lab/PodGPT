@@ -23,7 +23,7 @@ python upload_quantized_model.py --repo "shuyuej/MedLLaMA3-70B-BASE-MODEL-QUANT"
 ```
 
 ## Change the model config files
-In the `config.json` file, please change the "architectures" to `LLaMAForCausalLM`.<br>
+In the `config.json` file, please change the "architectures" to `LLaMAForCausalLM` if it is a LLaMA model.<br>
 We don't specifically automatically upload the tokenizer files.<br>
 Please manually download them from Hugging Face official repo and upload them to your repo.
 
