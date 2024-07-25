@@ -26,3 +26,11 @@ python upload_quantized_model.py --repo "shuyuej/MedLLaMA3-70B-BASE-MODEL-QUANT"
 In the `config.json` file, please change the "architectures" to `LLaMAForCausalLM`.<br>
 We don't specifically automatically upload the tokenizer files.<br>
 Please manually download them from Hugging Face official repo and upload them to your repo.
+
+## Model Split
+We also provide a script to split a large SafeTensor file into smaller shards.<be>
+The large file will be saved into 5GB shards and a `model.safetensors.index.json` will also be saved.
+```shell
+python model_split.py --large_file "gptq_model/model.safetensors" --output_dir "split_model" --max_size_gb 5
+```
+
