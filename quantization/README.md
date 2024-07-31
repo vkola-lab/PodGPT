@@ -9,7 +9,7 @@ cp -r ./quantization/upload_quantized_model.py ./
 ## Conduct quantization based on GPTQ algorithm
 For `quantization.py`, we are using Python [AutoGPTQ](https://github.com/AutoGPTQ/AutoGPTQ) package to conduct quantization.
 ```shell
-python quantization.py "./save_folder" "./gptq_model" "medical" --bits 4 --group_size 128 --desc_act 1 --dtype float16 --seqlen 2048 --damp 0.01
+python quantization.py "meta-llama/Meta-Llama-3-70B-Instruct" "./gptq_model" "medical" --bits 4 --group_size 128 --desc_act 1 --dtype float16 --seqlen 2048 --damp 0.01
 ```
 
 For `quantization_HF.py`, we are using Hugging Face [transformers](https://github.com/huggingface/transformers) package to conduct quantization.
@@ -33,4 +33,3 @@ The large file will be saved into 5GB shards and a `model.safetensors.index.json
 ```shell
 python model_split.py --large_file "gptq_model/model.safetensors" --output_dir "split_model" --max_size_gb 5
 ```
-
