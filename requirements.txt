@@ -16,6 +16,6 @@ vllm-flash-attn
 nltk
 fraction
 PyYAML
-typing_extensions==4.7.1
+typing_extensions==4.8.0
 openai==0.28
 auto-gptq==0.6.0
