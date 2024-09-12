@@ -1,7 +1,7 @@
 <h1 align="center">PodGPT</h1>
 <h4 align="center">Benchmarking Multilingual Medical Large Language Models (LLMs)</h4>
 <p align="center">
-  <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v1"> <img width="250px" src="figures/MedPodGPT.png"></a> 
+  <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v1"> <img width="250px" src="figures/PodGPT.png"></a> 
   <br />
   <br />
   <a href="https://img.shields.io/badge/Code%20License-AGPL3.0-green.svg"><img alt="CODE_LICENSE" src="https://img.shields.io/badge/Code%20License-AGPL3.0-green.svg" /></a>
@@ -18,9 +18,9 @@ Please try it out if you are interested!
 [2024.7.12] ![](figures/news.gif) Our [**preprint**](https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v1) is available online! Please check it!
 
 [2024.7.12] We are releasing a new benchmark encompassing the latest USMLE Step 1, Step 2, Step 3, and Ethics to further advance the filed.
-Check our database [here](https://github.com/vkola-lab/medpodgpt/tree/main/benchmark/english_usmle).
+Check our database [here](https://github.com/vkola-lab/PodGPT/tree/main/benchmark/english_usmle).
 
-[2024.7.11] We open-sourced the [source codes](https://github.com/vkola-lab/medpodgpt) of our **PodGPT**: **LLMs in your pocket** and **benchmarking multilingual LLMs**.
+[2024.7.11] We open-sourced the [source codes](https://github.com/vkola-lab/PodGPT) of our **PodGPT**: **LLMs in your pocket** and **benchmarking multilingual LLMs**.
 
 # 📚 Table of Contents
 - [Installation](#-Installation)
@@ -56,14 +56,14 @@ pip install -r requirements.txt
 # 🚀 Quick Start
 ## 🐣 Train Lightweight Models
 For lightweight models (2B, 7B, and 8B), we optimize the entire model. 
-Please check and setup hyper-parameters in [config_small.yml](https://github.com/vkola-lab/medpodgpt/blob/main/config_small.yml).
+Please check and setup hyper-parameters in [config_small.yml](https://github.com/vkola-lab/PodGPT/blob/main/config_small.yml).
 ```shell
 python main_small.py
 ```
 
 ## 🐥 Train Heavy Models
 For lager and heavy models (>8B), we optimize the Low-rank Adapter (LoRA).
-Please check and setup hyper-parameters in [config_large.yml](https://github.com/vkola-lab/medpodgpt/blob/main/config_large.yml).
+Please check and setup hyper-parameters in [config_large.yml](https://github.com/vkola-lab/PodGPT/blob/main/config_large.yml).
 ```shell
 python main_large.py
 ```
@@ -94,26 +94,26 @@ python main_quantization.py
 
 # 📊 Performance Evaluation
 All inferences are conducted using the [vLLM engine](https://github.com/vllm-project/vllm).
-We use [inference_pretrain.py](https://github.com/vkola-lab/medpodgpt/blob/main/inference/inference_pretrain.py) 
-and [inference_single_model.py](https://github.com/vkola-lab/medpodgpt/blob/main/inference/inference_single_model.py)
+We use [inference_pretrain.py](https://github.com/vkola-lab/PodGPT/blob/main/inference/inference_pretrain.py) 
+and [inference_single_model.py](https://github.com/vkola-lab/PodGPT/blob/main/inference/inference_single_model.py)
 for larger models (>8B) 
-and [inference_sequential.py](https://github.com/vkola-lab/medpodgpt/blob/main/inference/inference_sequential.py) 
+and [inference_sequential.py](https://github.com/vkola-lab/PodGPT/blob/main/inference/inference_sequential.py) 
 for smaller models (2B/7B/8B). 
-Please check [here](https://github.com/vkola-lab/medpodgpt/tree/main/inference) for more information.
+Please check [here](https://github.com/vkola-lab/PodGPT/tree/main/inference) for more information.
 > [!NOTE]
 > **Mistral 7B on Hindi MMLU Benchmarks**:<br>
-    Please un-comment [this line](https://github.com/vkola-lab/medpodgpt/blob/main/utils/eval_small_utils.py#L65).<br>
+    Please un-comment [this line](https://github.com/vkola-lab/PodGPT/blob/main/utils/eval_small_utils.py#L65).<br>
     To address the issue of repeated content in some responses, we applied a repetition_penalty during inference.
 
 ## 📜 Prompt Format
 We simply use `Directly answer the best option:` instead of `Answer:` to better guide LLMs to generate the best option 
 and to easier extract the best option from the responses.<br>
-Please modify [these lines](https://github.com/vkola-lab/medpodgpt/blob/main/utils/benchmark_utils.py#L5-L21) 
+Please modify [these lines](https://github.com/vkola-lab/PodGPT/blob/main/utils/benchmark_utils.py#L5-L21) 
 if you wanna try other prompts.
 
 > [!NOTE]
 > **LLaMA 3 8B on Hindi MMLU Benchmarks**:<br>
-    Please modify [these lines](https://github.com/vkola-lab/medpodgpt/blob/main/utils/benchmark_utils.py#L15-L18).<br>
+    Please modify [these lines](https://github.com/vkola-lab/PodGPT/blob/main/utils/benchmark_utils.py#L15-L18).<br>
     Because most responses are in mixed English-Hindi or English, we used `कृपया प्रश्न का उत्तर हिंदी में दें और सीधे सबसे अच्छे विकल्प के साथ जवाब दें:` (Please answer the question in Hindi and directly answer the best option:) to guide the model.<br><br>
 
 ```python
@@ -128,8 +128,8 @@ chinese_prompt = "直接回答最优选项:"
 ## 🔧 Single GPU For Lightweight Models
 > [!IMPORTANT]
 > Please note that if you wanna conduct model inference using multiple GPUs, the GPUs' memory cannot be successfully released. 
-> Please modify [these lines](https://github.com/vkola-lab/medpodgpt/blob/main/utils/eval_small_utils.py#L84-L85)
-> and make use of [this `sh` file](https://github.com/vkola-lab/medpodgpt/blob/main/inference/inference_large.sh).
+> Please modify [these lines](https://github.com/vkola-lab/PodGPT/blob/main/utils/eval_small_utils.py#L84-L85)
+> and make use of [this `sh` file](https://github.com/vkola-lab/PodGPT/blob/main/inference/inference_large.sh).
 
 ### inference_sequential.py
 **Sequentially** evaluate the performance of multiple checkpoints (models).<br>
@@ -141,7 +141,7 @@ python inference_sequential.py --eval_pretrain True --id 35166 52749 70332 87915
 ## 🛠️ Distributed GPUs For Heavy Models
 **Sequentially** evaluate the performance of the original pre-trained model and all the checkpoints.<br>
 Special Notice: Please change the `checkpoint IDs` and `CUDA_VISIBLE_DEVICES` 
-in the [inference_large.sh](https://github.com/vkola-lab/medpodgpt/blob/main/inference/inference_large.sh) file.
+in the [inference_large.sh](https://github.com/vkola-lab/PodGPT/blob/main/inference/inference_large.sh) file.
 ```shell
 sh inference_large.sh
 ```
@@ -161,7 +161,7 @@ python inference_single_model.py --id 35166
 
 ## 🤖 OpenAI ChatGPT Support
 We also offer support for running OpenAI ChatGPT inference using API.
-Please enter your OpenAI API Key [here](https://github.com/vkola-lab/medpodgpt/blob/main/config_chatgpt.yml#L18).
+Please enter your OpenAI API Key [here](https://github.com/vkola-lab/PodGPT/blob/main/config_chatgpt.yml#L18).
 > [!WARNING]  
 > Please note that OpenAI ChatGPT API is extremely expensive.<br>
 > Please only use it if you have a budget for it!
@@ -171,9 +171,8 @@ python inference_chatgpt.py
 ```
 
 # 📚 Dataset Description
-Please follow our instructions to [transcribe your own podcasts](https://github.com/vkola-lab/medpodgpt/blob/main/scripts/audio2text.py) 
-and [build your own dataset](https://github.com/vkola-lab/medpodgpt/blob/main/scripts/database_builder.py).
-
+Please follow our instructions to [transcribe your own podcasts](https://github.com/vkola-lab/PodGPT/blob/main/scripts/audio2text.py) 
+and [build your own dataset](https://github.com/vkola-lab/PodGPT/blob/main/scripts/database_builder.py).
 
 # 🏆 Benchmarks and Results
 
@@ -239,7 +238,7 @@ the [vLLM Distributed Inference and Serving](https://docs.vllm.ai/en/latest/serv
 and [OpenAI Compatible Server](https://docs.vllm.ai/en/latest/serving/openai_compatible_server.html).
 
 # 🎯 Automatic Speech Recognition
-In the [scripts folder](https://github.com/vkola-lab/medpodgpt/tree/main/scripts), 
+In the [scripts folder](https://github.com/vkola-lab/PodGPT/tree/main/scripts), 
 we provide Automatic Speech Recognition (ASR) service.
 ```shell
 python audio2text.py
@@ -247,7 +246,7 @@ python audio2text.py
 
 # ⚒️ Dataset Builder
 We used the following codes to pre-process our transcripts and generate training dataset.
-Please check [these lines](https://github.com/vkola-lab/medpodgpt/blob/main/scripts/database_builder.py#L236-L242) 
+Please check [these lines](https://github.com/vkola-lab/PodGPT/blob/main/scripts/database_builder.py#L236-L242) 
 for different languages support.
 ```shell
 python database_builder.py
@@ -257,7 +256,7 @@ python merge_database.py
 ```
 
 # 🛠️ Upload and Download Models
-In the [scripts folder](https://github.com/vkola-lab/medpodgpt/tree/main/scripts), 
+In the [scripts folder](https://github.com/vkola-lab/PodGPT/tree/main/scripts), 
 we offer support for both uploading and downloading models.
 
 To upload your checkpoints to Hugging Face model repo,
@@ -373,8 +372,8 @@ If you find our work useful in your research, please consider citing it in your 
 If you have any questions, please drop us an email at [brucejia@bu.edu](brucejia@bu.edu), [sbit@bu.edu](sbit@bu.edu), and [nsearls@bu.edu](nsearls@bu.edu).
 
 # 🔨 Contribution
-We always welcome contributions to help make **MedPodGPT** Library better. 
-If you would like to contribute, please submit a [pull request](https://github.com/vkola-lab/medpodgpt/pulls).
+We always welcome contributions to help make **PodGPT** Library better. 
+If you would like to contribute, please submit a [pull request](https://github.com/vkola-lab/PodGPT/pulls).
 
 # 🙌 Acknowledgement
-The **MedPodGPT** Library is created and maintained by the [Kolachalama Laboratory](https://vkola-lab.github.io/).
+The **PodGPT** Library is created and maintained by the [Kolachalama Laboratory](https://vkola-lab.github.io/).
