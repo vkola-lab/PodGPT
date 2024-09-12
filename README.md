@@ -171,15 +171,9 @@ python inference_chatgpt.py
 ```
 
 # 📚 Dataset Description
-For now, we released a [demo dataset](https://huggingface.co/datasets/shuyuej/MedPodGPT-Demo-Data) 
-for you to run the codes. Please follow our instructions 
-to [transcribe your own podcasts](https://github.com/vkola-lab/medpodgpt/blob/main/scripts/audio2text.py) 
+Please follow our instructions to [transcribe your own podcasts](https://github.com/vkola-lab/medpodgpt/blob/main/scripts/audio2text.py) 
 and [build your own dataset](https://github.com/vkola-lab/medpodgpt/blob/main/scripts/database_builder.py).
 
-The podcasts data used for the continual pre-training of **MedPodGPT**:
-<p align="center">
-  <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v1"> <img src="figures/Table-1.png"></a> 
-</p>
 
 # 🏆 Benchmarks and Results
 
