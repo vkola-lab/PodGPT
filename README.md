@@ -348,7 +348,6 @@ If you find our work useful in your research, please consider citing it in your 
 	year         = {2024},
 	doi          = {10.1101/2024.07.11.24310304},
 	publisher    = {Cold Spring Harbor Laboratory Press},
-	abstract     = {The proliferation of medical podcasts has generated an extensive repository of audio content, rich in specialized terminology, diverse medical topics, and expert dialogues. Here we introduce a computational framework designed to enhance large language models (LLMs) by leveraging the informational content of publicly accessible medical podcast data. This dataset, comprising over 4,300 hours of audio content, was transcribed to generate over 39 million text tokens. Our model, MedPodGPT, integrates the varied dialogue found in medical podcasts to improve understanding of natural language nuances, cultural contexts, and medical knowledge. Evaluated across multiple benchmarks, MedPodGPT demonstrated an average improvement of 2.31\% over standard open-source benchmarks and showcased an improvement of 2.58\% in its zero-shot multilingual transfer ability, effectively generalizing to different linguistic contexts. By harnessing the untapped potential of podcast content, MedPodGPT advances natural language processing, offering enhanced capabilities for various applications in medical research and education.},
 	URL          = {https://www.medrxiv.org/content/early/2024/07/12/2024.07.11.24310304},
 	eprint       = {https://www.medrxiv.org/content/early/2024/07/12/2024.07.11.24310304.full.pdf},
 	journal      = {medRxiv}
