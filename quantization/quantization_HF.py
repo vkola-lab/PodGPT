@@ -98,6 +98,23 @@ def quantize(repo, bits, group_size, act_order):
     model.save_pretrained(f"{repo}_{bits}bit")
     tokenizer.save_pretrained(f"{repo}_{bits}bit")
 
+    # Create the index file for the quantized model
+    state_dict = model.state_dict()
+    total_size = sum(tensor.numel() * tensor.element_size() for tensor in state_dict.values())
+
+    # Index file content
+    index = {
+        "metadata": {
+            "total_size": total_size,
+        },
+        "weight_map": {key: "model.safetensors" for key in state_dict.keys()},  # Map all weights to a single file
+    }
+
+    index_file_path = os.path.join(model_save_path, "model.safetensors.index.json")
+    with open(index_file_path, "w") as f:
+        json.dump(index, f, indent=2)
+    print("Saved index file to", index_file_path)
+
 
 if __name__ == "__main__":
     # Example Usage:
