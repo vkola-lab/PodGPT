@@ -30,7 +30,7 @@ class AudioDataset(Dataset):
         self.file_dir = file_dir
         self.audio_files = [
             os.path.join(self.file_dir, filename) for filename in os.listdir(self.file_dir)
-            if (filename.endswith(".mp3") or filename.endswith(".m4a") or filename.endswith(".wav"))
+            if filename.endswith((".mp3", ".m4a", ".wav"))
         ]
 
     def __len__(self):
