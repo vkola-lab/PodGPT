@@ -15,7 +15,7 @@
 It is an online platform for deploying our latest multimodal foundation models for education and research.
 Please try it out if you are interested!
 
-[2024.7.12] ![](figures/news.gif) Our [**preprint**](https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v1) is available online! Please check it!
+[2024.7.12] ![](figures/news.gif) Our [**preprint**](https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v2) is available online! Please check it!
 
 [2024.7.12] We are releasing a new benchmark encompassing the latest USMLE Step 1, Step 2, Step 3, and Ethics to further advance the filed.
 Check our database [here](https://github.com/vkola-lab/PodGPT/tree/main/benchmark/english_usmle).
