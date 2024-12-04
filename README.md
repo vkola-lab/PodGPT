@@ -23,6 +23,7 @@ Check our database [here](https://github.com/vkola-lab/PodGPT/tree/main/benchmar
 [2024.7.11] We open-sourced the [source codes](https://github.com/vkola-lab/PodGPT) of our **PodGPT**: **LLMs in your pocket** and **benchmarking multilingual LLMs**.
 
 # 📚 Table of Contents
+- [PodGPT](#-PodGPT)
 - [Installation](#-Installation)
 - [Quick Start](#-Quick-Start)
   - [Train Lightweight Models](#-Train-Lightweight-Models)
@@ -47,6 +48,12 @@ Check our database [here](https://github.com/vkola-lab/PodGPT/tree/main/benchmar
 - [Contact](#-Contact)
 - [Contribution](#-Contribution)
 - [Acknowledgement](#-Acknowledgement)
+
+# ❤️ PodGPT
+Our proposed **PodGPT** computational framework for research and education
+<p align="center">
+  <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v2"> <img src="figures/PodGPT-Framework.png"></a> 
+</p>
 
 # 💻 Installation
 ```shell
