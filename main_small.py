@@ -3,7 +3,7 @@
 #
 # GNU Affero General Public License v3.0 License
 #
-# MedPodGPT: A multilingual audio-augmented large language model for medical research and education
+# PodGPT: An Audio-augmented Large Language Model for Research and Education
 # Copyright (C) 2024 Kolachalama Laboratory at Boston University
 
 import os
@@ -96,3 +96,4 @@ if __name__ == "__main__":
     print(yaml.dump(config, default_flow_style=False), '\n\n')
     main(config=config)
     sys.stdout = sys.__stdout__
+    
