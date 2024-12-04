@@ -226,9 +226,6 @@ for different languages support.
 ```shell
 python database_builder.py
 ```
-```shell
-python merge_database.py
-```
 
 # 🛠️ Upload and Download Models
 In the [scripts folder](https://github.com/vkola-lab/PodGPT/tree/main/scripts), 
