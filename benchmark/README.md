@@ -1,1 +1,1 @@
-All the benchmarks are put here.
+We put all the benchmarks here.

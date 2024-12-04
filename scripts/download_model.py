@@ -3,7 +3,7 @@
 #
 # GNU Affero General Public License v3.0 License
 #
-# MedPodGPT: A multilingual audio-augmented large language model for medical research and education
+# PodGPT: An Audio-augmented Large Language Model for Research and Education
 # Copyright (C) 2024 Kolachalama Laboratory at Boston University
 
 from argparse import ArgumentParser
@@ -13,7 +13,7 @@ from huggingface_hub import snapshot_download
 from utils.utils import load_config
 
 
-def download_hf_files(repo_id, repo_type="model", save_dir="./", hf_read_token=None):
+def main(repo_id, repo_type="model", save_dir="./", hf_read_token=None):
     """
     Download Hugging Face files, including models
     :param repo_id: your Hugging Face repo ID
@@ -45,7 +45,7 @@ if __name__ == "__main__":
     hf_read_token = config.get("hf_read_token")
 
     # Download the Checkpoints
-    download_hf_files(
+    main(
         repo_id=args.repo,
         repo_type=args.repo_type,
         save_dir=args.save_dir,

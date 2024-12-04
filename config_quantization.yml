@@ -2,11 +2,7 @@
 model_name : "shuyuej/MedLLaMA3-70B-BASE-MODEL-QUANT"
 
 # Dataset info
-# English podcasts: shuyuej/English-Pretraining-Dataset
-# Spanish podcasts: shuyuej/Spanish-Pretraining-Dataset
-# French podcasts: shuyuej/French-Pretraining-Dataset
-# Multilingual podcasts: shuyuej/Multilingual-Pretraining-Dataset
-dataset_hf : "shuyuej/MedPodGPT-Demo-Data"
+dataset_hf : "shuyuej/PodGPT-Demo-Data"
 
 # This is my Hugging Face `read` and `write` tokens. Please replace it to yours.
 # `read` token: for downloading models
@@ -25,61 +21,6 @@ lora_r : 16
 lora_alpha : 32
 # Dropout probability for LoRA layers
 lora_dropout : 0.1
-
-# Dataset path
-# English Benchmarks
-english_medqa : "./benchmark/english_medqa/MedQA_USMLE_test.jsonl"
-english_pubmedqa : "./benchmark/english_pubmedqa/PubMedQA_test.json"
-english_medmcqa : "./benchmark/english_medmcqa/MedMCQA_test.json"
-english_usmle_step1 : "./benchmark/english_usmle/USMLE_STEP_1.json"
-english_usmle_step2 : "./benchmark/english_usmle/USMLE_STEP_2.json"
-english_usmle_step3 : "./benchmark/english_usmle/USMLE_STEP_3.json"
-english_usmle_ethics : "./benchmark/english_usmle/USMLE_ethics.json"
-english_mmlu_anatomy : "./benchmark/english_mmlu/anatomy_test.csv"
-english_mmlu_clinical_knowledge : "./benchmark/english_mmlu/clinical_knowledge_test.csv"
-english_mmlu_college_biology : "./benchmark/english_mmlu/college_biology_test.csv"
-english_mmlu_college_medicine : "./benchmark/english_mmlu/college_medicine_test.csv"
-english_mmlu_medical_genetics : "./benchmark/english_mmlu/medical_genetics_test.csv"
-english_mmlu_professional_medicine : "./benchmark/english_mmlu/professional_medicine_test.csv"
-english_medexpqa : "./benchmark/english_medexpqa/test.en.casimedicos.rag.jsonl"
-
-# Chinese Benchmarks
-chinese_mcmle : "./benchmark/chinese_mcmle/MedQA-MCMLE.jsonl"
-chinese_cmmlu_anatomy : "./benchmark/chinese_cmmlu/anatomy.csv"
-chinese_cmmlu_clinical_knowledge : "./benchmark/chinese_cmmlu/clinical_knowledge.csv"
-chinese_cmmlu_college_medicine : "./benchmark/chinese_cmmlu/college_medicine.csv"
-chinese_cmmlu_genetics : "./benchmark/chinese_cmmlu/genetics.csv"
-chinese_cmmlu_nutrition : "./benchmark/chinese_cmmlu/nutrition.csv"
-chinese_cmmlu_tcm: "./benchmark/chinese_cmmlu/traditional_chinese_medicine.csv"
-chinese_cmmlu_virology : "./benchmark/chinese_cmmlu/virology.csv"
-
-# French Benchmarks
-french_medmcqa : "./benchmark/french_medmcqa/FrenchMedMCQA-test.json"
-french_mmlu_anatomy : "./benchmark/french_mmlu/mmlu_French_test_anatomy_test.csv"
-french_mmlu_clinical_knowledge : "./benchmark/french_mmlu/mmlu_French_test_clinical_knowledge_test.csv"
-french_mmlu_college_biology : "./benchmark/french_mmlu/mmlu_French_test_college_biology_test.csv"
-french_mmlu_college_medicine : "./benchmark/french_mmlu/mmlu_French_test_college_medicine_test.csv"
-french_mmlu_medical_genetics : "./benchmark/french_mmlu/mmlu_French_test_medical_genetics_test.csv"
-french_mmlu_professional_medicine : "./benchmark/french_mmlu/mmlu_French_test_professional_medicine_test.csv"
-french_medexpqa : "./benchmark/french_medexpqa/test.fr.casimedicos.rag.jsonl"
-
-# Spanish Benchmarks
-spanish_headqa : "./benchmark/spanish_headqa/HEAD-QA-test.json"
-spanish_mmlu_anatomy : "./benchmark/spanish_mmlu/mmlu_Spanish_test_anatomy_test.csv"
-spanish_mmlu_clinical_knowledge : "./benchmark/spanish_mmlu/mmlu_Spanish_test_clinical_knowledge_test.csv"
-spanish_mmlu_college_biology : "./benchmark/spanish_mmlu/mmlu_Spanish_test_college_biology_test.csv"
-spanish_mmlu_college_medicine : "./benchmark/spanish_mmlu/mmlu_Spanish_test_college_medicine_test.csv"
-spanish_mmlu_medical_genetics : "./benchmark/spanish_mmlu/mmlu_Spanish_test_medical_genetics_test.csv"
-spanish_mmlu_professional_medicine : "./benchmark/spanish_mmlu/mmlu_Spanish_test_professional_medicine_test.csv"
-spanish_medexpqa : "./benchmark/spanish_medexpqa/test.es.casimedicos.rag.jsonl"
-
-# Hindi Benchmarks
-hindi_mmlu_anatomy : "./benchmark/hindi_mmlu/mmlu_Hindi_test_anatomy_test.csv"
-hindi_mmlu_clinical_knowledge : "./benchmark/hindi_mmlu/mmlu_Hindi_test_clinical_knowledge_test.csv"
-hindi_mmlu_college_biology : "./benchmark/hindi_mmlu/mmlu_Hindi_test_college_biology_test.csv"
-hindi_mmlu_college_medicine : "./benchmark/hindi_mmlu/mmlu_Hindi_test_college_medicine_test.csv"
-hindi_mmlu_medical_genetics : "./benchmark/hindi_mmlu/mmlu_Hindi_test_medical_genetics_test.csv"
-hindi_mmlu_professional_medicine : "./benchmark/hindi_mmlu/mmlu_Hindi_test_professional_medicine_test.csv"
 
 # Saving path
 result_dir : "./results"

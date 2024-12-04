@@ -1,18 +1,23 @@
 # coding=utf-8
 #
+# GNU Affero General Public License v3.0 License
+#
+# PodGPT: An Audio-augmented Large Language Model for Research and Education
+# Copyright (C) 2024 Kolachalama Laboratory at Boston University
+#
 # LICENSE OF THE FOLLOWING MODELS
-#
-# GEMMA TERMS OF USE
-# https://ai.google.dev/gemma/terms
-#
-# LLAMA 2 COMMUNITY LICENSE AGREEMENT
-# https://github.com/facebookresearch/llama/blob/main/LICENSE
 #
 # LLAMA 3 COMMUNITY LICENSE AGREEMENT
 # https://llama.meta.com/llama3/license/
 #
+# LLAMA 3.1 COMMUNITY LICENSE AGREEMENT
+# https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE
+#
 # Mistral LICENSE
 # https://www.apache.org/licenses/LICENSE-2.0
+#
+# GEMMA TERMS OF USE
+# https://ai.google.dev/gemma/terms
 
 import torch
 from transformers import (

@@ -3,7 +3,7 @@
 #
 # GNU Affero General Public License v3.0 License
 #
-# MedPodGPT: A multilingual audio-augmented large language model for medical research and education
+# PodGPT: An Audio-augmented Large Language Model for Research and Education
 # Copyright (C) 2024 Kolachalama Laboratory at Boston University
 
 from argparse import ArgumentParser

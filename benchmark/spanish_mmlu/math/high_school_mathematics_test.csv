@@ -1,0 +1,270 @@
+"Si un pentágono P con vértices en (– 2, – 4), (– 4, 1), (–1, 4), (2, 4) y (3, 0) se refleja a través de la línea y = x para obtener un nuevo pentágono, P’, entonces uno de los vértices de P’ es","(0, – 3)","(4, 1)","(2, 2)","(– 4, –2)",D
+"¿Cuál es el área de un rectángulo cuya longitud es el doble que su anchura, si se sabe que la longitud de su diagonal es $5\sqrt{5}$?",2500,2,50,25,C
+"Un entero positivo n se llama ""poderoso"" si, para cada factor primo p de n, p^2 también es un factor de n. Un ejemplo de un número poderoso es",392,336,300,297,A
+"En el desayuno, almuerzo y cena, Joe elige al azar con igual probabilidad una manzana, una naranja o un plátano para comer. ¿Cuál es la probabilidad de que Joe coma al menos dos tipos diferentes de fruta en un día dado?",\frac{7}{9},\frac{8}{9},\frac{5}{9},\frac{9}{11},B
+"¿Supongamos que $f(x)$ es una función que tiene esta propiedad: Para todos los números reales $a$ y $b$ tales que $a<b$, la porción de la gráfica de $y=f(x)$ entre $x=a$ y $x=b$ se encuentra debajo del segmento de línea cuyos puntos finales son $(a, f(a))$ y $(b, f(b))$. (Una función con esta propiedad se llama estrictamente convexa). Dado que $f(x)$ pasa por los puntos $(-2,5)$ y $(2,9)$, ¿cuál es el rango de todos los posibles valores para $f(1)$? Expresa tu respuesta en notación de intervalos.","(-infinito, 10)","(-infinito, 9)","(-infinito, 8)","(-infinito, 7)",C
+John dividió sus insignias de sombrero de recuerdo en dos pilas. Las dos pilas tenían la misma cantidad de insignias. Le dio a su hermano la mitad de un tercio de una pila. A John le quedaron 66 insignias. ¿Cuántas insignias tenía John originalmente?,396,72,66,36,B
+"Un meteorólogo informa que hay un 30% de probabilidad de lluvia y sin sol. Si hay un 40% de probabilidad de que no llueva, entonces la probabilidad de tener lluvia y sol es",0.16,0.24,0.3,0.5,C
+¿Cuál es la suma de todos los valores enteros positivos de $n$ tales que $n^2$ es un factor de $1200$?,42,12,36,39,A
+Lanzamos un dado justo de 6 caras 5 veces. ¿Cuál es la probabilidad de que obtengamos un 6 en como máximo 2 de los lanzamientos?,\frac{125}{648},\frac{25}{648},\frac{625}{648},\frac{1}{648},C
+¿Cuántas secuencias aritméticas de enteros impares consecutivos suman 240?,8,12,10,4,B
+¿Cuál es el valor de $x$ si los enteros positivos $x$ e $y$ tienen un producto de 56 y $x<y$? Siete veces el recíproco del número menor más 14 veces el recíproco del número mayor es igual a 4.,13,14,1,2,D
+"Dado que $n > 1$, ¿cuál es el entero positivo más pequeño $n$ cuyos divisores positivos tienen un producto de $n^6$?",30,64,2048,60,D
+¿Cuál es el resto cuando se divide $2^{87} +3$ por $7$?,0,1,2,4,D
+"¿Cuál fue la puntuación media de Jane en el examen, si obtuvo 98, 97, 92, 85 y 93?",92,93,94.5,95,B
+"Suponga que el gráfico de f es tanto creciente como cóncavo hacia arriba en a <= x <= b. Entonces, utilizando el mismo número de subdivisiones, y con L, R, M y T que denotan, respectivamente, las sumas de la izquierda, derecha, punto medio y trapecio, se sigue que",R <= T <= M <= L,L <= T <= M <= R,R <= M <= T <= L,L <= M <= T <= R,D
+"¿Cuánto viaja una hormiga que se arrastra recta desde $(-4,6)$ hasta el origen, y luego continúa recto hasta $(4,3)$?",16,2\sqrt{2},5,5+2\sqrt{13},D
+Sea $n$ el producto de los dos números primos de tres dígitos más pequeños. Encuentra la suma de los dígitos de $n$.,8,3,6,9,A
+¿Cuál es el polinomio resultante de la expansión de $(x^2+5x+6)^2+(px+q)(x^3+7x^2+3x)$ que tiene grado $2$? Encuentra $p+q$.,-2,-4,-1,1,B
+"Si $f(x)=ax^6-bx^4+x-1$ y $f(2)=5$, ¿cuál es el valor de $f(-2)$?",1,3,0,5,A
+¿Cuál es el rango de la función $f(x) = \frac{1}{1-x}$? Expresa tu respuesta en notación de intervalos.,"(-\infty,-1)\cup (1,\infty)","(-\infty,0)\cup (0,\infty)","[-1,1]","(-1,1)",B
+¿Cuál es el inverso de $f(x)=4-5x$?,\frac{5}{x-4},\frac{x-4}{5},\frac{x+4}{5},-\frac{x-4}{5},D
+¿Cuál es el quinto término de una serie en la que el primer término es 2 y cada término subsiguiente es −2 multiplicado por el término anterior?,−16,32,−32,64,B
+¿Cuántas formas hay de poner 4 pelotas distinguibles en 2 cajas indistinguibles?,7,11,16,8,D
+¿Cuántos enteros positivos son factores de 120 y también factores de 40?,4,8,2,1,B
+¿En qué día de la semana Carlos Montado tendrá 706 días de edad si nació el sábado 9 de noviembre de 2002? (Escriba el día completo de la semana),Viernes,Jueves,Miércoles,Martes,A
+¿Qué significa el símbolo $5!$?,$5\cdot 4\cdot 3\cdot 2\cdot 1$,$5+4+3+2+1$,$5\cdot 3$,$5^4$,C
+"En el paralelogramo $ABCD$, el ángulo $B$ mide $110^\circ$. ¿Cuántos grados mide el ángulo $C$?",145,90,60,70,D
+¿A qué velocidad puede un proceso de purificación eliminar contaminantes de un tanque de agua?,Es proporcional a la cantidad de agua en el tanque,Es proporcional a la cantidad de contaminante restante,Es proporcional al tamaño del tanque,Es proporcional a la temperatura del agua,C
+¿Cuál es el dominio de la función $f(x)=\frac{x+6}{\sqrt{x^2-3x-4}}$?,"(-4,4)","[0,4]","(-inf, -1) U (4, inf)","(-inf, -1) U (-1, 4) U (4, inf)",C
+¿Cuál es el valor máximo relativo de la función y = (ln x)/x?,1,e,2/e,1/e,D
+¿Cuál es el dígito de las unidades de $1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 7 \cdot 8 \cdot 9$?,1,2,0,5,C
+¿Cuál es la distancia más corta desde el origen hasta el círculo definido por $x^2-24x +y^2+10y +160=0$?,10,16,24,12,A
+"¿Cuál es el entero positivo más pequeño con factores de 16, 15 y 12?",12,22,840,240,D
+¿Cuántas formas hay de elegir 3 cartas de una baraja estándar de 52 cartas si las tres cartas deben ser de diferentes palos? (Suponga que el orden de las cartas no importa.),8788,2,2197,21,A
+"¿Cuál es el valor de $a+b+r$ si $C$ es el círculo con la ecuación $x^2+12y+57=-y^2-10x$ y $(a,b)$ es su centro y $r$ es su radio?",-9,-5,-6,-57,A
+"Supongamos que el gráfico de $y=f(x)$ incluye los puntos $(1,5),$ $(2,3),$ y $(3,1)$. Basándonos solo en esta información, hay dos puntos que deben estar en el gráfico de $y=f(f(x))$. Si llamamos a esos puntos $(a,b)$ and $(c,d),$ ¿cuál es el valor de $ab+cd$?",15,5,9,17,D
+¿Cuál es el valor de $\dbinom{85}{82}$?,252,4680,98770,101170,C
+"¿Cuál es la longitud del lado más largo, en pulgadas, después del segundo pliegue de una hoja de papel de 8,5 por 11 pulgadas que se dobla repetidamente (sin desplegar) cada vez acortando lo que era entonces el lado más largo? Exprese su respuesta como un decimal a la décima más cercana.",4.5,1,5.5,5,C
+"¿Cuál es el entero positivo más pequeño con factores de 16, 15 y 12?",240,120,60,111,A
+Encuentra la suma de todos los enteros $k$ tal que $\binom{23}{4} + \binom{23}{5} = \binom{24}{k}$.,24,5,3,21,A
+"Si $888x + 889y = 890$ y $891x + 892y = 893$, ¿cuál es el valor de $x - y$?",1,-3,-1,3,B
+"¿Cuál de los siguientes debe ser un factor del número cuyos factores primos son 2, 5, 7, 13 y 31?",4,6,10,15,C
+"Un grupo de personas tiene el número 12345.6789 escrito en un papel. Luego, el grupo decide jugar un juego. El ganador del juego es la persona que pueda redondear el número dado y obtener un número mayor que cualquier otra persona. Alice redondea al diez mil más cercano, Bob al mil más cercano, Carol al cien más cercano, Devon al diez más cercano y Eugene al número entero más cercano. Además, Felicity redondea el número al décimo más cercano, Gerald al centésimo más cercano, Harry al milésimo más cercano e Irene redondea al diez milésimo más cercano. ¿Quién gana el juego?",Alice,Devon,Bob,Gerald,B
+¿Cuál es el factor de $36-9x^2$?,(6-3x)(6+3x),(-3x+6)(3x+6),9(2-x)(2+x),3(2+x)^2,C
+"¿Para colocar la primera piedra en un camino, Alex comienza en el cajón de piedras, camina tres pies, coloca la piedra y regresa al cajón. Para cada piedra subsecuente, Alex camina dos pies más en cada dirección. Alex colocará las primeras 50 piedras en un camino. Después de regresar al cajón al colocar la piedra número 50, ¿cuál es la distancia total que caminó Alex, en pies?",100,90950,5200,50,C
+¿Cuál es la probabilidad de que todos los balones que saqué de una caja que contiene 4 balones blancos y 4 negros sean de colores alternos?,\frac{1}{8},\frac{1}{7},\frac{1}{40},\frac{1}{35},D
+¿Cuál es el número primo más pequeño cuyos dígitos suman $19$?,5,11,17,199,D
+¿Cuál es la amplitud del dominio de la función $h(x) = \sqrt{25-x^2}+\sqrt{-(x-2)}$?,7,5,2,25,A
+John dividió sus alfileres de sombrero de recuerdo en dos pilas. Las dos pilas tenían el mismo número de alfileres. Le dio a su hermano la mitad de un tercio de una pila. John tenía 66 alfileres restantes. ¿Cuántos alfileres tenía originalmente John?,792,66,396,72,D
+"Si $f(x)=8x^3-6x^2-4x+5$, ¿cuál es el valor de $f(-2)$?",5,-75,-64,-24,B
+"Como castigo por comportarse mal durante el recreo, la Sra. Busywork le pidió a su clase que multiplicara 10 por $\frac{1}{3}$ cinco veces. Sin embargo, John nota que es posible multiplicar 10 por una sola fracción y obtener la misma respuesta que los demás estudiantes. ¿Cuál es esa fracción?",\frac{1}{27},\frac{1}{68},\frac{1}{3},\frac{1}{243},D
+"Supongamos que el gráfico de una cierta función, $y=f(x)$, tiene la propiedad de que si se desplaza $20$ unidades hacia la derecha, entonces el gráfico resultante es idéntico al gráfico original de $y=f(x)$. ¿Cuál es el valor más pequeño de $a$ positivo tal que si el gráfico de $y=f\left(\frac x5\right)$ se desplaza $a$ unidades hacia la derecha, entonces sabemos que el gráfico resultante es idéntico al gráfico original de $y=f\left(\frac x5\right)$?",100,4,5,20,A
+"¿Cuántos números únicos se pueden crear al crear una fracción con $2,3,4$ o $6$ en el numerador y $2,3,4$ o $6$ en el denominador?",1,9,2,10,B
+¿Cuál es el segundo número en la fila del triángulo de Pascal que tiene 43 números?,43,16,42,44,C
+¿Cómo se detecta el spoofing de dirección IP?,Instalando y configurando un sistema de detección de intrusiones (IDS) que pueda leer la cabecera IP.,Comparando los valores TTL de las direcciones reales y falsificadas.,Implementando un firewall en la red.,Identificando todas las sesiones TCP que se inician pero no se completan con éxito.,C
+"¿Cuál es el área del polígono formado por los interceptos $x$ e $y$ de la gráfica de la ecuación $y=f(x)$, donde $f(x)=\frac{(x-2)^2-9}{3}$?",5,\frac{25}{6},\frac{\sqrt{2465}{9},2,A
+¿Encuentra $b$ si $\log_{b}343=-\frac{3}{2}$?,3,\frac{1}{49},\frac{1}{7},7,B
+¿Cuál de las siguientes opciones NO podría ser la longitud de los otros dos lados del triángulo si el lado más largo mide 10?,"4, 7","5, 5","3, 9","9, 8",B
+"¿Cuál es el otro número entero si el mínimo común múltiplo de dos enteros es 240 y el máximo común divisor es 24, y uno de los enteros es 48?",1,120,20,12,B
+¿Cuál es la suma de todos los posibles valores de $x$ cuando $3^{x^2+4x+4}=9^{x+2}$?,1,2,-2,0,C
+"Las bacterias en una cultura aumentan a una tasa proporcional al número presente. Una población inicial de 200 se triplica en 10 horas. Si este patrón de aumento continúa sin cesar, ¿cuál es el número aproximado de bacterias después de un día completo?",1160,1440,2408,2793,D
+"Si x e y son directamente proporcionales y x = 3 cuando y = 8, ¿cuál es el valor de x cuando y = 13?",0.615,4.875,15,34.667,B
+"Si f (x) = x^3 + 2x^2 - 9x - 18, ¿cuál de las siguientes afirmaciones es verdadera?",f (x) = 0 tiene tres soluciones reales.,f (x) ≥ -18 para todo x ≥ 0.,f (x) ≤ -18 para todo x ≤ 0.,La función f (x) es decreciente para x ≤ -3.,A
+"Anton tiene dos especies de hormigas, la Especie A y la Especie B, en su granja de hormigas. Ambas especies son idénticas en apariencia, pero Anton sabe que cada día hay el doble de hormigas de la Especie A que antes, mientras que hay tres veces más hormigas de la Especie B. En el Día 0, Anton cuenta que hay 30 hormigas en su granja de hormigas. En el Día 5, Anton cuenta que hay 3281 hormigas en su granja de hormigas. ¿Cuántas de ellas pertenecen a la Especie A?",211,2321,11,608,D
+¿Cuál es el producto de todos los posibles valores de $x$ en la ecuación $|x-4| -10 = 2$?,-8,128,-128,16,C
+"¿Cuál es el octavo número si la media de 7 números es 15 y cuando se agrega un octavo número, la media disminuye a 12?",– 12,– 9,0,8,B
+"Si 3^(x – 3) + 10 = 19, ¿entonces x =?",3,4,5,6,C
+"Supongamos que $f(x)$ es un polinomio de grado $6$ y $g(x)$ es un polinomio de grado $3$. Si $h(x)$ es también un polinomio tal que $f(g(x)) + g(h(x)) + h(f(x))$ es un polinomio de grado $36$, ¿cuál es el grado del polinomio $h$?",72,6,18,12,B
+"¿Cuál es la probabilidad de que un punto $(x,y)$ elegido al azar desde dentro del rectángulo con vértices $(0,0)$, $(3,0)$, $(3,2)$ y $(0,2)$ satisfaga la condición $x<y$?",\frac{1}{12},\frac{1}{6},\frac{2}{3},\frac{1}{3},D
+"Roslyn tiene veinte cajas. Trece de las cajas contienen lápices, nueve de las cajas contienen bolígrafos y tres de las cajas no contienen ni bolígrafos ni lápices. ¿Cuántas cajas contienen tanto bolígrafos como lápices?",5,2,13,139,A
+¿Cuántos enteros positivos de 4 dígitos tienen solo números impares?,100,999,625,500,C
+¿Cuál es $$\frac{-\frac{18}{7}}{-\frac{6}{5}}?$$,\frac{7}{15},\frac{15}{7},\frac{15}{8},\frac{15}{11},B
+¿Qué porcentaje más grande es la raíz cuadrada positiva de 200 que la raíz cuadrada positiva de 121? Exprese su respuesta al número entero más cercano.,29,14,27,11,A
+"Si $(2x+3y)^2=4$ y $xy=-5$, ¿cuál es el valor de $4x^2+9y^2$?",-5,13,64,25,C
+"Una secuencia de tres números reales forma una progresión aritmética con un primer término de 9. Si al segundo término se le suma 2 y al tercer término se le suma 20, los tres números resultantes forman una progresión geométrica. ¿Cuál es el valor mínimo posible para el tercer término de la progresión geométrica?",2,1,9,16,B
+"El primer término de una secuencia dada es 1, y cada término sucesivo es la suma de todos los términos anteriores de la secuencia. ¿Cuál es el valor del primer término que supera los 5000?",10240,5001,5002,8192,D
+¿Cuál afirmación es verdadera?,"Si f(x) es continua en x = c, entonces f′(c) existe.","Si f′(c) = 0, entonces f tiene un máximo o mínimo local en (c, f(c)).","Si f′′(c) = 0, entonces la gráfica de f tiene un punto de inflexión en (c, f(c)).","Si f es diferenciable en x = c, entonces f es continua en x = c.",D
+"Si $a\star b = a^b-ab$, ¿cuál es el valor de $x$ si $2\star x = 22$?",5,22,11,6,A
+"Febrero de 2011 tiene 28 días y marzo tiene 31 días. ¿En qué día de la semana comenzará el próximo mes, abril?",Miércoles,Jueves,Viernes,Sábado,C
+"Un virus se está propagando por toda la población de un pueblo, y el número de personas que tienen el virus se duplica cada 3 días. Si hay 1.000 personas en el pueblo, y 10 personas tienen el virus el 1 de enero, ¿cuál es la fecha más temprana en la que todo el pueblo estaría infectado con el virus, dado que hay 365 días en un año y 31 días en el mes de enero?",10 de enero,21 de enero,31 de enero,10 de febrero,B
+"¿Cuántos números hay en la lista $25, 26, 27, \ldots, 99, 100?$",75,76,22,23,B
+"¿Cuántos palíndromos (arreglos que se leen igual hacia adelante y hacia atrás) de 2 letras o más, que contienen la letra M, se pueden formar reorganizando cualquier subconjunto de las letras MISSISSIPPI?",89,66,86,2012,A
+¿Cuál es el resto de la división de 25^1059 dividido por 23?,11,13,8,5,C
+¿Cuál es el factor común más grande entre 252 y 96?,6,24,5,12,D
+"Nueve bolsas de alimento para aves están en la sala de almacenamiento. Diecisiete bolsas más se entregarán el lunes. Veintidós bolsas se entregarán el martes. Tres bolsas se entregarán el miércoles. Once bolsas se entregarán el jueves. Por último, dieciocho bolsas se entregarán el viernes. Al final de la semana, ¿cuántas bolsas de alimento para aves habrá en total?",9,25,60,80,D
+Simplifica $\frac{k-3}{2} + 3k+1+\frac{3k+1}{2}$.,3k+1,5k,3k,1,B
+"Si un reloj suena cada hora la misma cantidad de veces que la hora en que se encuentra (por ejemplo, a las 3 P.M. suena 3 veces) y una vez por cada intervalo de 15 minutos entre horas (por ejemplo, a las 3:15, 3:30 y 3:45), ¿cuál será el total de campanadas entre las 5:10 y las 7:35 P.M.?",3,15,18,21,D
+¿Cuál es el área aproximada de un triángulo equilátero con lados de 12 pulgadas?,62,72,84,112,A
+"¿Cuál es el valor de $f(10)$ si al gráfico de una cierta función $f(x)$ se le desplaza $2$ unidades hacia la derecha y se estira verticalmente por un factor de $2$ (es decir, todos los valores de $y$ se duplican), y el resultado es idéntico al gráfico original? Dado que $f(0)=0.1$.",0.01,1,32,3.2,D
+"Define $f(x)=\frac{1+x}{1-x}$ and $g(x)=\frac{-2}{x+1}$. Find the value of \[g(f(g(f(\dotsb g(f(12)) \dotsb ))))\] where the function $f$ is applied 8 times, and the function $g$ is applied 8 times, alternating between the two.",12,8,4,0,C
+"¿Cuánto tiempo estuvo John fuera de casa si notó que el ángulo formado por la manecilla de los minutos y la manecilla de las horas en un reloj estándar de 12 horas era de 110 grados cuando salió después de las 6 p.m. y también era de 110 grados cuando regresó antes de las 7 p.m. de esa misma noche, pero estuvo afuera por más de cinco minutos?",36,40,38,43,B
+"¿Cuál es la inversa de $h(x)$ si $h(x)=f(g(x))$, donde $f(x)=3x+4$ y $g(x)=2x-3$?",\frac{x-5}{3},\frac{x+5}{3},\frac{x+5}{6},\frac{x-5}{6},C
+Encuentra $-\dfrac{1}{-3}\cdot\cfrac{1}{~\frac{1}{-3}~}.$,1,-1,0,2,B
+"La base de un sólido es la región delimitada por x^2 = 4y y la recta y = 2, y cada sección plana perpendicular al eje y es un cuadrado. El volumen del sólido es:",8,16,20,32,D
+"Dado que $a$ y $b$ son números reales tales que $-3\leq a\leq1$ y $-2\leq b\leq 4$, y se eligen valores al azar para $a$ y $b$, ¿cuál es la probabilidad de que el producto $a\cdot b$ sea positivo? Expresa tu respuesta como una fracción común.",\frac{5}{12},\frac{5}{11},\frac{7}{12},\frac{5}{17},A
+¿Cuál es el coeficiente del término (x - 8)2 en el polinomio de Taylor para y = x2/3 alrededor de x = 8?,-1/144,-1/72,1/144,1/6,A
+"¿Cuál es la pendiente de la recta que pasa por los puntos (5, 4) y (-2, 3)?",0.14,0.2,0.33,5,A
+"Si hay un 70% de probabilidad de que llueva en un día determinado, ¿cuál es el porcentaje de probabilidad de que NO llueva ese mismo día?",0%,30%,50%,70%,B
+¿Qué valor de $N$ satisface $\frac{4^{(3^3)}}{(4^3)^3} = 2^N$?,9,27,36,34,C
+¿Cuál de los siguientes puntos NO es una solución para ambas desigualdades y > 9x - 8 e y < -x + 8?,"(-2, 15)","(-1, 5)","(0, 0)","(1, 5)",A
+Simplificar $(5x+3) - 2(2x-4)$.,10+x,x+11,5x+3,7+2x,B
+Dado que $f(x) = 3x^2-2$ y $g(f(x)) = x^2 + x +1$. Encuentra la suma de todos los posibles valores de $g(25)$.,13,25,9,20,D
+"¿Cuál es el factor más grande de 54,321 que es menor que 54,321?",6,121,18107,"54,320",C
+¿Cuál es el número de pulgadas cuadradas en el área del triángulo si la hipotenusa de un triángulo rectángulo mide 10 pulgadas y un ángulo es de $45^{\circ}$?,10,45,125,25,D
+"Suponga que se eligen al azar 5 enteros diferentes entre 20 y 69, inclusive. ¿Cuál es la probabilidad de que cada uno tenga un dígito de diez diferente?",\frac{1}{4},\frac{1}{3},\frac{1000}{52969},\frac{2500}{52969},D
+"Si $f(x) = 2$ para todos los números reales $x$, ¿cuál es el valor de $f(x + 2)$?",2,4,0,1,A
+¿Cuántos de los 401 enteros de $-200$ a $200$ son congruentes a $5 \pmod{13}?$,30,31,60,45,B
+¿Cuál es el valor entero positivo mínimo de $n$ para que $\sqrt{18\cdot n \cdot 34}$ sea un entero?,34,2,17,3,C
+"Si f(2x) = x + 5 y f(g(6)) = 13, ¿entonces 2 * g(6) =?",6,16,32,36,C
+Expresa como fracción común el recíproco de $0.\overline{7}$.,\frac{7}{2},\frac{7}{9},\frac{9}{2},\frac{9}{7},D
+"Jennifer está compitiendo en un maratón, que es una carrera de 26,2 millas. Si Jennifer corre la primera mitad de la carrera a 8 mph y la segunda mitad de la carrera a 6 mph, ¿aproximadamente cuántas horas tarda en completar la carrera?",2.62,3.74,3.82,4.12,C
+¿Cuál es el menor cuadrado perfecto con 3 factores primos diferentes?,300,9,900,666,C
+"Si $a=7$ y $b=13$, ¿cuál es el número de enteros positivos y pares menor que $ab$?",45,46,90,180,A
+"Suponga que $a$, $b$ y $c$ son números positivos que satisfacen $a^2/b = 1, b^2/c = 2, c^2/a = 3$. Encuentra $a$.",12^(1/7),7^(1/12),1,6,A
+Resuelve para $x$:$$\left(\frac{1}{25}\right)^{x + 2} = 125^{-x}.$$,1,2,3,4,D
+El círculo $2x^2 = -2y^2 + 12x - 4y + 20$ está inscrito dentro de un cuadrado que tiene un par de lados paralelos al eje x. ¿Cuál es el área del cuadrado?,80,\sqrt{20},2\sqrt{20},20,A
+¿Cómo evaluar la suma \[\frac{1}{2^1} + \frac{2}{2^2} + \frac{3}{2^3} + \cdots + \frac{k}{2^k} + \cdots \]?,\infty,1,2,4,C
+"¿Cuál es la probabilidad de que un punto en el espacio $(x, y, z)$ seleccionado al azar cumpla con $-1\le x \le 1$,$-1\le y \le 1$,$-1\le z \le 1$ y con $x^2+y^2+z^2\le 1$?",\frac{\pi}{24},\frac{\pi}{12},\frac{\pi}{6},\frac{\pi}{3},C
+Un número $x$ es igual a $2^{15}\cdot3^6$. ¿Cuál es el cubo de ese número?,288,27,125,121,A
+"Supongamos que $a, b$ y $c$ son enteros positivos que satisfacen $(a+b+c)^3 - a^3 - b^3 - c^3 = 150$. ¿Cuál es la suma de $a+b+c$?",16,6,12,150,B
+¿Cuántos enteros positivos de tres dígitos hay?,899,900,1000,999,B
+"Juan tira un dado octaédrico regular justo marcado con los números del 1 al 8. Luego, Amal tira un dado de seis caras justo. ¿Cuál es la probabilidad de que el producto de los dos lanzamientos sea un múltiplo de 3?",\frac{1}{2},\frac{1}{4},\frac{1}{144},\frac{1}{288},A
+"En 1960, se informaron 450,000 casos de sarampión en los Estados Unidos. En 1996, se informaron 500 casos. ¿Cuántos casos de sarampión se habrían informado en 1987 si el número de casos informados de 1960 a 1996 disminuyó linealmente?",337125,449500,27,112875,D
+¿Cuál es el exponente de $x$ al simplificar $(x\sqrt{x^3})^4$?,5,10,2,12,B
+"Se eligen al azar 3 cartas de una baraja estándar de 52 cartas. ¿Cuál es la probabilidad de que formen un par? (Una mano de 3 cartas es un 'par' si dos de las cartas tienen el mismo valor pero la tercera carta es diferente. Por ejemplo, 668 es una pareja, pero 999 no.)",\frac{1}{8},\frac{1}{36},\frac{1}{78},\frac{72}{425},D
+¿Cuántas diagonales hay en un octágono regular?,8,16,17,20,D
+"El director de la escuela tiene que hacer que tres profesores diferentes hablen en la ceremonia de graduación, uno como el encargado de iniciar la ceremonia, otro para leer los nombres de los graduados y otro para cerrar la ceremonia. Hay 85 profesores en el personal. ¿Cuántas posibles combinaciones de profesores puede tener el director?","592,620","592,704","614,125","614,126",A
+¿Cuál es la longitud de la curva y = ln x entre los puntos donde y = 1/2 y y = 1?,"0,53","0,86","1,18","1,36",C
+"Encuentra el área de la región del primer cuadrante limitada por y = x^2, y = cos(x), y el eje y.",0.292,0.508,0.547,0.667,C
+¿De cuántos enteros positivos y negativos es múltiplo 12?,3,12,4,6,B
+Evalúa $\log_3 81$.,4,"0,25",-1,27,A
+"Reescribe la expresión $6j^2 - 4j + 12$ en la forma $c(j + p)^2 + q$, donde $c$, $p$ y $q$ son constantes. ¿Cuál es el valor de $\frac{q}{p}$?",3,-34,-38,11,B
+"Para todos los números reales $r$ y $s$, define la operación matemática $\#$ tal que se cumplen las siguientes condiciones: $r\ \#\ 0 = r, r\ \#\ s = s\ \#\ r$ y $(r + 1)\ \#\ s = (r\ \#\ s) + s + 1$. ¿Cuál es el valor de $11\ \#\ 5$?",11,12,64,71,D
+"Una novela tiene 400 páginas y Verónica quiere estimar cuánto tiempo le tomará completarla. Ella lee 250 palabras por minuto. Contó las palabras en un cuarto de una página típica y encontró que había aproximadamente 200 palabras por página. ¿Cuánto tiempo llevará a Verónica leer el libro, redondeado al minuto más cercano?",225,320,400,450,B
+"Un abrigo tiene un precio de lista de $325.00. Durante noviembre, no se vendió y el comerciante lo rebajó un 20 por ciento. Luego, en diciembre, lo rebajó un 10 por ciento adicional. ¿Cuánto pagaría un comprador navideño en diciembre por el abrigo en dólares?",$227.50,$234.00,$286.00,$290.00,B
+"John está jugando un juego en el que intenta obtener el número más alto posible. Debe poner los símbolos +, $\times$, y - (más, por, y menos) en los espacios en blanco siguientes, utilizando cada símbolo exactamente una vez:\[2 \underline{\hphantom{8}} 4 \underline{\hphantom{8}} 6 \underline{\hphantom{8}} 8.\] John no puede usar paréntesis ni reorganizar los números. ¿Cuál es el número más alto posible que John podría obtener?",22,46,100,99,B
+¿Cuál es el número que cumple con la siguiente ecuación: ochenta y cinco más el cuadrado del número es igual al cuadrado de la cantidad que es $17$ menos que el número?,17,6,2,11,B
+¿Cuántos grados tiene el ángulo interior de un octágono regular como el del letrero de Bob's Burger Barn?,90,135,45,180,B
+"Los planetas X, Y y Z tardan 360, 450 y 540 días, respectivamente, en rotar alrededor del mismo sol. Si los tres planetas se alinean en un rayo con el sol como punto final, ¿cuál es el número mínimo de días positivo antes de que todos estén en las mismas ubicaciones exactas de nuevo?",360,5400,900,1200,B
+"¿Cuál es la magnitud del vector v = (5, 0, 7)?",0,3.5,4.2,8.6,D
+"Si tomamos el seno de x y lo cambiamos a 3 seno de 2x, ¿qué sucederá con el dominio y el rango de la función?",El dominio y el rango permanecerán iguales,El dominio se duplica; el rango sigue siendo el mismo,El dominio se triplica; el rango se duplica,El dominio es el mismo; el rango se triplica,D
+"Supongamos que para algunos $a, b, c$ se tiene $a + b + c = 1$, $ab + ac + bc = abc = -4$. ¿Cuál es $a^3 + b^3 + c^3$?",0,1,112,12,B
+Simplifica la siguiente expresión: $(9x^9+7x^8+4x^7) + (x^{11}+x^9+2x^7+3x^3+5x+8).$ Expresa tu respuesta como un polinomio con los grados de los términos en orden decreciente.,x^{11}+2x^9+2x^8,x^{11}-6x^8+6x^7+3x^3+5x+8,x^11 + 10x^9 + 7x^8+6x^73x^3+5x+8,x^{11}+10x^9+7x^8+6x^7+3x^3+5x+8,D
+"¿Cuál es la propina estándar en un restaurante, el $15 \%$ de la factura antes de impuestos? Muchas personas en California encuentran la propina doblando el impuesto sobre las ventas, que es del $8,25 \%$. ¿En cuántos centavos excede esto la propina estándar en una factura de $ \$60 $ antes de impuestos?",90,80,70,60,A
+"¿Cuál es el cociente más grande posible de cualquier par de miembros distintos del conjunto $\{\frac{2}{5}, \frac{1}{2},5,10\}$? Específicamente, queremos maximizar $\frac{x}{y}$, donde $x$ e $y$ son elegidos del conjunto anterior.",5,10,20,25,D
+¿Cuál es el área delimitada por la parábola y = x^2 y las rectas y = 1 e y = 9?,8,84/3,64\sqrt{2}/3,104/3,D
+"Supongamos que para algunos valores de $a,b,c$ tenemos $a+b+c=6$, $ab+ac+bc=5$ y $abc=-12$. ¿Cuál es el valor de $a^3+b^3+c^3$?",90,99,64,91,A
+¿Cuál es la probabilidad de que se elijan tres puntos al azar e independientemente en un círculo y que todas las distancias de un par entre los puntos sean menores que el radio del círculo?,\frac{1}{20},\frac{1}{32},\frac{1}{12},\frac{1}{16},C
+"Si expresamos $3x^2 + x - 4$ en la forma $a(x-h)^2+k$, ¿cuál es el valor de $k$?",-\frac{7}{12},-7,49,-\frac{49}{12},D
+"A mediodía, un experimentador tiene 50 gramos de un isótopo radiactivo. Nueve días después del mediodía solo quedan 45 gramos. ¿Cuántos días después del inicio del experimento habrá solo 20 gramos, aproximadamente?",54,59,60,78,D
+¿Cuáles son los tres números reales $x$ que no están en el dominio de $$f(x)=\frac{1}{1+\frac{1}{1+\frac{1}{x}}}$$ y cuál es la suma de esos tres números?,1,0,-1.5,-1,C
+¿Cuántos gramos de azúcar se recomiendan aproximadamente en la dieta normal?,5.74,69,293,574,C
+"¿Cuántos números hay en la lista $-36, -29, -22, \ldots, 41, 48$?",12,10,13,11,C
+"Encuentra la suma de los números primos entre 100 y 200, inclusivos, que son 1 o 2 más que un número cuadrado perfecto.",102,298,256,300,B
+¿Cómo se expresa $0.1\overline{7}$ como una fracción común?,\frac{8}{45},\frac{8}{5},\frac{8}{7},\frac{8}{33},A
+¿Cuántas diagonales distintas se pueden trazar en un hexágono convexo?,6,8,9,36,C
+"Se escriben seis enteros positivos en las caras de un cubo. Cada vértice está etiquetado con el producto de los tres números en las caras adyacentes al vértice. Si la suma de los números en los vértices es igual a $1001$, ¿cuál es la suma de los números escritos en las caras?",18,13,1001,31,D
+"Si un entero termina en el dígito $0$ y la suma de sus dígitos es divisible por $3$, ¿cuántos de los números $2, 3, 4, 5, 6, 8, 9$ necesariamente lo dividen?",1,2,3,4,D
+"Morgan está en una página web de redes sociales. Tiene 60 amigas mujeres y 50 amigos hombres y pertenece a 5 grupos sociales. Si el 30% de sus amigas mujeres viven en la ciudad y el 40% de sus amigos hombres viven en la ciudad, ¿cuántos amigos que viven fuera de la ciudad tiene en la página de redes sociales?",38,72,110,360,B
+"En Academic Academy, para aprobar un examen de álgebra debes obtener al menos un $80\%$. Si hay 35 problemas en el examen, ¿cuál es la cantidad máxima que puedes fallar y aún aprobar?",7,28,35,8,A
+"Dado que un rectángulo con longitud de $3x$ pulgadas y ancho de $x+5$ pulgadas tiene la propiedad de que su área y perímetro tienen valores iguales, ¿cuál es el valor de $x$?",1,5,\frac{10}{3},\frac{3}{10},A
+Una inversión de $4000 crece a una tasa de 320*e^(0.08t) dólares por año después de t años. Su valor después de 10 años es aproximadamente,"$4,902","$8,902","$7,122","$12,902",B
+¿Cuántos comités diferentes de 5 personas se pueden elegir de un grupo de 15 personas?,75,120,225,"3,003",D
+Encuentra el área limitada por la espiral r = ln θ en el intervalo π <= θ <= 2π.,2.405,2.931,3.743,4.81,C
+"Para la ecuación: 3 x - 4(x - 2) + 6 x - 8 = 0, encuentra el valor de x.",−4,0,2,4,B
+"Un ameba se coloca en un charco un día y ese mismo día se divide en dos amebas. Al día siguiente, cada nueva ameba se divide en dos amebas nuevas, y así sucesivamente, de modo que cada día cada ameba viva se divide en dos. Después de una semana, ¿cuántas amebas hay en el charco? (Suponga que el charco no tiene amebas antes de que se coloque la primera en él.)",256,1024,64,128,D
+Encuentra $(2^{20} + 2^{20} + 2^{20} +2^{21}) \div 2^{17}$.,20,40,0,10,B
+"En Canadá en 2014, el precio mayorista promedio de la soja era de $0.24 por libra. En 2015, el precio mayorista promedio de la soja era de $0.16 por libra. Si un minorista compró 20,000 libras de soja en 2014 y en 2015, ¿cuál fue el porcentaje de cambio en los gastos del minorista de 2014 a 2015?",–8%,–33%,–50%,8%,B
+"Un triángulo rectángulo tiene patas de longitud 6 y b, y una hipotenusa de longitud c. El perímetro del triángulo es 18. Calcule c.",18,\frac{15}{2},8,6,B
+¿Cuál de las siguientes opciones NO podría ser los lados de un triángulo isósceles?,"2,2,3","2,2,4","4,12,12","5,5,5",B
+"Ramanujan y Hardy jugaron un juego en el que ambos eligieron un número complejo. Si el producto de sus números fue $32-8i$, y Hardy eligió $5+3i$, ¿qué número eligió Ramanujan?",32-8i,5+3i,4-i,4-4i,D
+"Si el punto $(3,6)$ está en la gráfica de $y=g(x)$, y $h(x)=(g(x))^2$ para todo $x$, entonces hay un punto que debe estar en la gráfica de $y=h(x)$. ¿Cuál es la suma de las coordenadas de ese punto?",12,36,39,13,C
+"¿Cuál es el resto cuando se divide por 4 el término 100 de la secuencia de Fibonacci, que es la secuencia 1, 1, 2, 3, 5, $\ldots$ donde cada término es la suma de los dos términos anteriores ?",2,3,4,5,B
+"¿Durante cuánto tiempo (en segundos), en forma de fracción impropia, la bola de cañón está por encima de una altura de 6 metros? La altura (en metros) de una bola de cañón lanzada sigue una trayectoria dada por $h(t) = -4.9t^2 + 14t - 0.4$ al tiempo $t$ (en segundos).",\frac{5}{7},\frac{7}{12},\frac{12}{7},\frac{7}{5},C
+"Si Wayne considera que la letra ""Y"" es una vocal pero Kristen no lo hace, pensando que solo hay 5 vocales, ¿en qué porcentaje es mayor la probabilidad de que una letra seleccionada al azar del alfabeto de 26 letras sea una vocal según la opinión de Wayne que según la opinión de Kristen?",5%,6%,20%,30%,C
+Dada la expresión: $1990\times1991 - 1989\times1990$. ¿Qué número natural es equivalente a esta expresión?,5,8,3980,1160,C
+"¿Cuál sería el salario de Patricia después de dos años en su trabajo si su salario inicial anual es de $20,000 y se aumenta un 10% después del primer año y un 10% más sobre el salario del año anterior después del segundo año?","$24,200","$24,000","$22,000","$4,000",A
+"¿Cuál es la probabilidad de que un entero seleccionado al azar del conjunto $$\{1,2,3,\ldots,100\}$$ sea divisible por 2 y no sea divisible por 3? Expresa tu respuesta como una fracción común.",\frac{31}{66},\frac{17}{66},\frac{17}{31},\frac{17}{50},D
+"Si tiro 5 dados estándar de 6 caras y multiplico el número en la cara de cada dado, ¿cuál es la probabilidad de que el resultado sea un número compuesto?",\frac{485}{486},\frac{16}{7776},\frac{4}{7776},\frac{2}{7776},A
+¿Cuál es el volumen de un sólido cortado de una esfera de radio 2 por dos planos paralelos separados 1 unidad del centro?,8π,32π/3,25π/3,22π/3,D
+"Si la proporción de $2x-y$ a $x+y$ es 2 a 3, ¿cuál es la proporción de $x$ a $y$? Expresa tu respuesta como una fracción común.",\frac{5}{4},\frac{4}{5},\frac{5}{2},\frac{2}{5},A
+Se da una curva de manera paramétrica por las ecuaciones:,π/2,π,2 + π,2π,D
+"En un plano cartesiano, los puntos $(1,2)$ y $(7,4)$ son vértices opuestos de un cuadrado. ¿Cuál es el área del cuadrado?",20,34,40,\sqrt{40},A
+¿Cuál es la diferencia positiva entre las dos soluciones de la ecuación cuadrática $2x^2+5x+12=19-7x$?,2,\sqrt{2},5\sqrt{2},5,C
+¿Cuál es el valor de $21^2 + 22^2 + \cdots + 40^2$ si $\sum_{i=1}^{n} i^2 = n(n+1)(2n+1) \div 6$?,41,22140,19270,2870,C
+"¿Cuál es la probabilidad de que al lanzar seis dados de seis caras, tres de ellos muestren números primos y los demás muestren números compuestos?",\frac{125}{2916},\frac{5}{16},\frac{5}{54},\frac{5}{55},C
+Evaluar $\log_8 2$.,\frac{1}{4},4,3,\frac{1}{3},D
+"Si un triángulo equilátero tiene un lado de longitud 8, ¿cuál será el área de un cuadrado que tenga el mismo perímetro que este triángulo?",9,16,36,49,C
+"Un número $x$ se descompone en factores como $107\cdot109^5$, donde $107$ y $109$ son primos. ¿Cuál es el exponente de $109$ en la factorización prima de $x^{11}$?",9,55,21,11,B
+"¿Cuál es el valor de $M$ cuando se lleva a cabo esta fórmula: $M=4a^2-2b^2+a$? Se establece que $a=5$ y $b=3$ para obtener el valor $j$, y se establece que $a=-1$ y $b=4$ para obtener el valor $k$. ¿Cuál es el valor de $j+2k$?",29,28,27,26,A
+"Ben lanza cuatro dados de 20 caras justos, y cada dado tiene caras numeradas del 1 al 20. ¿Cuál es la probabilidad de que exactamente dos de los dados muestren un número par?",\frac{5}{24},\frac{5}{16},\frac{3}{8},\frac{5}{8},C
+"Si $m$ y $n$ son enteros impares, ¿cuántos términos del desarrollo de $(m+n)^6$ son impares?",4,2,1,9,A
+"Un cliente no está seguro si el ancho anunciado de un televisor de 48 pulgadas es a lo largo de la longitud horizontal de la pantalla o a lo largo de la diagonal de la pantalla. Si la relación de la longitud a la altura de la pantalla del televisor es de 5 a 3, ¿cuánto más corta, al número entero más cercano, será la longitud horizontal de la pantalla del televisor si la medida se realiza a lo largo de la diagonal de la pantalla del televisor en lugar de a lo largo de la longitud horizontal?",3,7,8,9,B
+"La clase del Sr. Cleary y la clase de la Sra. Ntuala van a usar el laboratorio de computación. Hay 20 computadoras disponibles, dos de las cuales no funcionan. La clase del Sr. Cleary tiene 14 niños y la clase de la Sra. Ntuala tiene 12 niños. Si cada estudiante debe usar una computadora y solo puede haber 2 estudiantes en una computadora como máximo, ¿cuál es el número máximo de estudiantes que pueden tener una computadora para sí mismos?",2,6,10,14,C
+¿Cuál es la probabilidad de obtener un producto de 180 al multiplicar los resultados de tirar tres dados comunes?,\frac{1}{30},\frac{1}{72},\frac{1}{71},\frac{1}{70},B
+¿Cómo se detecta la suplantación de dirección IP?,Instalando y configurando un sistema de detección de intrusiones (IDS) que pueda leer el encabezado IP,Comparando los valores TTL de las direcciones reales y falsificadas,Implementando un firewall en la red,Identificando todas las sesiones TCP que se iniciaron pero no se completaron correctamente,C
+"Sea $p$, $q$ y $r$ constantes. Una solución a la ecuación $(x-p)(x-q) = (r-p)(r-q)$ es $x=r$. Encuentra la otra solución en términos de $p$, $q$ y $r$.",pqr,pq-r,p-q-r,p+q-r,D
+"Si la matriz A tiene dimensiones de 2 × 7 y la matriz B tiene dimensiones de 7 × 5, ¿cuáles son las dimensiones de la matriz producto AB?",2 × 2,2 × 5,5 × 2,7 × 7,B
+"Suponga que $x-3$ e $y+3$ son múltiplos de $7$. ¿Cuál es el menor entero positivo, $n,$ para el cual $x^2+xy+y^2+n$ es múltiplo de $7$?",2,6,4,5,D
+"Si g (x) = f (–x) para todos los números reales x, y si (3, 2) es un punto en la gráfica de g, ¿cuál de los siguientes puntos DEBE estar en la gráfica de f?","(3, 2)","(3, -2)","(-3, 2)","(-3, -2)",C
+"Grady monta en bicicleta un $60\%$ más rápido que su hermano pequeño Noah. Si Grady recorre $12$ millas más que Noah en dos horas, ¿a qué velocidad en millas por hora monta Noah?",32,20,10,7.2,C
+"¿Cuál es la probabilidad de que ambas canicas sean del mismo color después de seleccionar una canica de una bolsa con 4 canicas rojas y 6 canicas azules y no reemplazarla, seguida de la selección de una segunda canica?",\frac{1}{8},\frac{8}{15},\frac{1}{15},\frac{7}{15},D
+"¿Cuál es el número entero más pequeño que tiene un resto de 1 al dividirse por 4, un resto de 1 al dividirse por 3 y un resto de 2 al dividirse por 5?",67,43,57,37,D
+¿Cuál es la suma de todas las soluciones enteras de $|n| < |n-3| < 9$?,-9,-14,14,9,B
+(i + 1)(5 – 5i)(5 + 5i) =,50 + 50i,50 – 50i,25 + 25i,25 – 25i,A
+"Para el número complejo z = a + bi, se sabe que a y b son enteros positivos, y que z^3 + z^2 + z es un número real. Encuentra el valor más pequeño posible para b.",10,1,6,11,D
+"Los números $x$ e $y$ son inversamente proporcionales. Cuando la suma de $x$ e $y$ es 42, $x$ es el doble de $y$. ¿Cuál es el valor de $y$ cuando $x=-8$?",-49,-7,-40,40,A
+"Una escalera de 26 pies se apoya en un edificio de modo que su pie se aleja del edificio a una velocidad de 3 pies por segundo. Cuando el pie de la escalera está a 10 pies del edificio, la parte superior se mueve hacia abajo a una velocidad de r pies por segundo, donde r es",46/3,3/4,5/4,5/2,C
+¿Cuál es el valor de $a$ si la gráfica de la ecuación $x + 2y + 3 = 0$ es perpendicular a la gráfica de la ecuación $ax + 2y + 3 = 0$?,-4,-13,-9,-15,A
+"El término $n^{\text{th}}$ de una cierta serie geométrica se da por $a\cdot r^{n-1}$, donde $a$ y $r$ son enteros positivos y $r$ es mayor que 1. Bill selecciona $k$ números diferentes en esta secuencia, todos los cuales tienen el mismo número de dígitos. ¿Cuál es el valor máximo posible de $k$?",4,5,8,16,A
+"Si Owen tiene jeans azules con una cintura de 32 pulgadas, ¿cuál será la nueva medida de la cintura del jean que Owen tendrá que usar (redondeado a la pulgada entera) si su circunferencia de cintura aumenta en un 15%?",35 pulgadas,36 pulgadas,37 pulgadas,38 pulgadas,C
+"La cantidad de pintura que David necesita para cubrir un cubo es directamente proporcional al área de la superficie. Si David puede cubrir completamente un cubo de lado 2 pies con exactamente 16 cuartos de pintura, ¿qué tamaño de cubo (en términos de longitud de borde en pies) puede cubrir David con 169 cuartos de pintura?",\frac{13}{4},8,\frac{13}{2},13,C
+¿Cuántos cuadrados perfectos impares existen entre 5 y 211?,2,25,6,75,C
+"Encuentra $x$, dado que \[\dfrac{\sqrt{x}}{x\sqrt{3}+\sqrt{2}} = \dfrac{1}{2x\sqrt{6}+4}.\]",\frac{3}{4},\frac{1}{4},\frac{1}{2},\frac{1}{8},D
+¿De cuántas maneras se pueden seleccionar 5 estudiantes de un grupo de 6 estudiantes?,12,3,5,6,D
+¿Cuál de estas vocales NO tiene un eje de simetría vertical?,A,E,I,O,B
+¿Cuál es el rango de la función y = 5 + 3 * sin(pi – x)?,–3 ≤ y ≤ 3,–2 ≤ y ≤ 8,0 ≤ y ≤ 6,2 ≤ y ≤ 8,D
+"Escriba una ecuación para la recta tangente a la curva definida por F(t) = (t^2 + 1, 2^t) en el punto donde y = 4.",y – 4 = ln 2(x – 2),y – 4 = 4 ln 2(x – 2),y – 4 = 4(x – 5),y – 4 = ln 2(x – 5),D
+John tiene cinco hijos. ¿Cuál es la probabilidad de que al menos la mitad sean niñas? (Podemos suponer que el nacimiento de un niño y una niña son igualmente probables.),\frac{1}{2},\frac{1}{4},\frac{1}{8},\frac{3}{5},A
+"Si la parábola $y_1 = x^2 + 2x + 7$ y la recta $y_2 = 6x + b$ se intersecan en solo un punto, ¿cuál es el valor de $b$?",7,3,12,4,B
+"¿En cuántos puntos del intervalo [0,π] cumple f(x) = 2 sin x + sin 4x el Teorema del Valor Medio?",1,2,3,4,D
+"Hace cinco años, una computadora que funcionaba a la mitad de velocidad que una computadora actual costaba el doble de dinero. ¿Qué porcentaje de la relación velocidad-precio de la computadora antigua es la relación velocidad-precio de la computadora actual?",20,400,32,\frac{2}{5},B
+"¿Cuál es el valor esperado del número más grande obtenido al lanzar dos dados de seis caras justos? Expresa tu respuesta como una fracción. (Si los dos números son iguales, tomamos ese número como el número ""más grande"".)",\frac{161}{6},\frac{161}{36},161,\frac{161}{3},B
+"Evalúa $$\lceil\sqrt{5}\rceil + \lceil\sqrt{6}\rceil + \lceil\sqrt{7}\rceil + \cdots + \lceil\sqrt{29}\rceil$$Nota: Para un número real $x,$ $\lceil x \rceil$ denota el entero más pequeño que es mayor o igual a $x.$",112,111,2006,110,A
+"¿Cuál es el área, en unidades cuadradas, de un cuadrado cuyos lados tienen la misma longitud que el radio de un círculo con una circunferencia de $12\pi$ unidades?",10,11,12,36,D
+"Si f(x) = 3x, g(x) = 5x + 3, y h(x) = 1 – x^2, entonces f(g(h(x)))=",15x^2 + 15,–15x^2 + 18,–15x^2 + 24,–225x^2 + 90x – 8,C
+Un informe del consumidor reveló la siguiente información sobre tres tubos de pasta de dientes. Bright es un $60\%$ más caro que Fresh y tiene un $25\%$ menos de volumen que Glow. Glow es un $25\%$ menos caro que Bright y tiene un $33\frac{1}{3}\%$ más de volumen que Fresh. Fresh cuesta $\$1.00$ por unidad de volumen. ¿Cuál es el número de centavos por unidad de volumen de Glow?,90,120,60,320,A
+"Encuentra el volumen del sólido generado cuando la región delimitada por el eje y, y = e^x, y y = 2 se rota alrededor del eje y.","0,296","0,592","2,427","3,998",B
+¿Cuál es el número entero positivo más pequeño $n$ tal que $\frac{1}{n}$ es un decimal periódico y $n$ contiene el dígito 9?,32,64,4096,256,C
+"En sus cinco intentos anteriores, Sarah había logrado tiempos de 86, 94, 97, 88 y 96 segundos, para nadar 50 metros. Después de su sexto intento, redujo su tiempo medio a 92 segundos. ¿Cuál fue su tiempo, en segundos, en su sexto intento?",92,90,87,10,B
+"¿Cuál es el valor mínimo posible del otro número si uno de dos enteros positivos tiene un mínimo común múltiplo que, al dividirse entre su máximo común divisor, da como resultado 33? Si uno de los enteros es 45.",165,46,45,9,A
+¿A qué valor(es) de x la curva definida por x^3 + xy - y^2 = 10 tiene una recta tangente vertical?,0 o –1/3,1.037,2.074,2.096,C
+"John tiene 12 canicas de diferentes colores, incluyendo una canica roja, una verde y una azul. ¿De cuántas maneras puede elegir 4 canicas, si exactamente una de las canicas elegidas es roja, verde o azul?",252,276,441,84,A
+"Si 4 daps = 7 yaps, y 5 yaps = 3 baps, ¿cuántos daps equivalen a 42 baps?",28,21,40,30,C
+¿Cómo se calcula $\left(\frac{1}{a}\right)^4 \cdot 2 \cdot a^4+a^{2+1-3}$ cuando $a=42$?,0,1,2,3,D
+"Zoey está colocando ladrillos para su patio. El vendedor quiere venderle a Zoey tantos ladrillos como sea posible para cubrir su patio con un grosor de un ladrillo, sin tener ningún ladrillo extra. El área del patio es un rectángulo con dimensiones de 12 pies por 10 pies, y cada ladrillo individual mide 4 pulgadas por 6 pulgadas por 2 pulgadas. ¿Cuál sería el mayor número de ladrillos que el vendedor podría vender para cumplir sus criterios de venta?","5,760","2,880","2,160","1,440",C
+"¿Cuánto cuesta, en centavos, un lápiz si once lápices cuestan tanto como tres bolígrafos? Si siete bolígrafos cuestan $\$ 9.24$.",11,33,36,52,C
+Un ordenador en un laboratorio está programado para hacer una copia de seguridad de los datos al inicio del minuto cada cinco minutos. Otro ordenador está programado para hacer una copia de seguridad de los datos al inicio del minuto cada dos minutos. Encuentra el número de veces en veinticuatro horas que los dos ordenadores hacen una copia de seguridad al mismo tiempo. (Suponga que los ordenadores no hacen copias de seguridad al comienzo del periodo de 24 horas.),144,12,6,36,A
+Simplifique la fracción mediante la racionalización del denominador: $$\frac{4}{\sqrt{108}+2\sqrt{12}+2\sqrt{27}}.$$,\frac{4\sqrt{3}}{33},\frac{\sqrt{3}}{12},2\sqrt{27},\frac{1}{4\sqrt{3}},B
+¿Cuál es el valor máximo de la función f (x) = xe^{–x}?,1/e,e,1,-1,A
+"Cuatro paquetes son entregados a cuatro casas, uno a cada casa. Si estos paquetes son entregados al azar, ¿cuál es la probabilidad de que exactamente dos de ellos sean entregados a las casas correctas? Expresa tu respuesta como una fracción común.",\frac{1}{4},\frac{27}{128},\frac{1}{2},\frac{1}{9},A
+"Una patinadora artística mira hacia el norte cuando comienza a girar hacia su derecha. Da 2250 vueltas. ¿Hacia qué dirección (norte, sur, este u oeste) mira cuando termina de girar?",norte,este,sur,oeste,B
+¿Cuál es el valor entero positivo más pequeño de $n$ para que $\sqrt{18\cdot n \cdot 34}$ sea entero?,15,10,17,34,C
+¿De cuántos enteros positivos y negativos es múltiplo $12$?,1,4,12,3,C
+¿Cómo se puede detectar el suplantamiento de direcciones IP?,Instalando y configurando un IDS que pueda leer el encabezado IP.,Comparando los valores TTL de las direcciones real y falsificada.,Implementando un firewall en la red.,Identificando todas las sesiones TCP que se inician pero no se completan con éxito.,C
+"¿Dónde, en el primer cuadrante, la rosa r = sin 3θ tiene una tangente vertical?",en ningún lugar,θ = 0.39,θ= 0.47,θ = 0.52,C
+"Si la vida media de una sustancia radioactiva es de 8 años, ¿cuánto tiempo tomará, en años, para que dos tercios de la sustancia se desintegren?",4.68,7.69,12.21,12.68,D
+"¿Cuántas veces cambia de dirección un objeto que se mueve a lo largo de una línea con una velocidad v(t) = t cos(t) - ln (t + 2), donde 0 <= t <= 10?",ninguna,una,dos,tres,C
+¿Cuántos enteros positivos son factores de 120 y también factores de 40?,1,3,4,8,D
+"¿Qué intervalo consiste en todos los $u$ tal que ni $2u$ ni $-20u$ está en el intervalo $(-\infty,-1)$?","[-\frac{1}{2}, 0]","[-1,1]","[-\frac{1}{2}, -\frac{1}{20}]","[0,2]",C
+"¿Cuál es la distancia más corta entre el eje y y el punto (2, 7)?",1,2,3,7,B
+¿Cuál es el máximo común divisor de $2^{1001}-1$ y $2^{1012}-1$?,1,2049,2048,2047,D
+"A medida que cambia la marea, el nivel del agua en una bahía varía sinusoidalmente. En la marea alta hoy a las 8 A.M., el nivel del agua era de 15 pies; en la marea baja, 6 horas después a las 2 P.M., era de 3 pies. ¿A qué velocidad, en pies por hora, estaba bajando el nivel del agua al mediodía de hoy?",3,π\sqrt{3}/2,3\sqrt{3},π\sqrt{3},B
+"Una persona caminó 3 millas hacia el este, luego se dio vuelta hacia el norte y caminó 10 millas, después se dio vuelta hacia el oeste y caminó 6 millas, y finalmente se dio vuelta hacia el sur y caminó 16 millas. ¿Aproximadamente qué tan lejos está la persona de su punto de partida en millas?",3.4,6.7,9.2,12.8,B
+"Terri abrió un restaurante de comida rápida. El costo inicial para abrir el restaurante es de $ 800,000. Tiene que pagar costos de operación diarios de $ 250 y costos laborales de $ 400. ¿Qué expresión representa su costo total si ha tenido el restaurante abierto por ""D"" días?","800,000 + 150 D","800,000 + 650 D","800,000 − 650 D","650 + 800,000 D",B
+"Suponga que $f(x)$ es una función invertible, y suponga que $f(2)=f^{-1}(2)=4$. ¿Cuál es el valor de $f(f(2))$?",1,2,4,0,B
+"Si $725x + 727y = 1500$ y $729x+ 731y = 1508$, ¿cuál es el valor de $x - y$?",725,-2,2,-48,D
+"Considera dos enteros positivos pares menores que $15$ (no necesariamente distintos). Cuando se suma la suma de estos dos números con su producto, ¿cuántos valores posibles pueden resultar?",21,27,49,45,B
+Supongamos que lanzamos dos dados de 6 caras cada uno. ¿Cuál es la probabilidad de que la suma de los dos números obtenidos sea 4?,\frac{1}{4},\frac{1}{12},\frac{1}{3},\frac{1}{9},B
+Encuentre todos los valores positivos de $c$ tales que la desigualdad $x^2-6x+c<0$ tenga soluciones reales para $x$. Exprima su respuesta en notación de intervalos.,"(0, 9)","(1, 1)","(6, 0)","(6, 6)",A
+"¿Cómo se calcula el área del triángulo cuyas alturas tienen longitudes de 10, 12 y 15?",56\sqrt{15},240\sqrt{7},60\sqrt{7},240\sqrt{7}/7,D
+"En código Morse, cada símbolo se representa mediante una secuencia de guiones y puntos. ¿Cuántos símbolos distintos se pueden representar usando secuencias de 1, 2, 3 o 4 puntos y/o guiones en total?",3,4680,30,10,C
+¿Cuáles son los dos números que al sumarse dan 19 y su producto es 70?,"5, 14","7, 10","4, 15","3, 16",A
+"Un grupo de teatro tiene ocho miembros, de los cuales cuatro son mujeres. ¿Cuántas formas hay de asignar los roles de una obra que involucra una mujer como protagonista, un hombre como protagonista y tres objetos diferentes que pueden ser interpretados por cualquier género?",640,720,8,1920,D
+"La trayectoria de un satélite está dada por las ecuaciones paramétricas x = 4 cos(t) + cos(12t), y = 4 sin(t) + sin(12t). La velocidad hacia arriba en t =1 es igual a:",2.829,3.005,3.999,12.287,D
+"Alex necesita pedir prestados $\$10,\!000$ al banco. El banco le da dos opciones. 1. Un préstamo a diez años con una tasa de interés anual del $10\%$ compuesto trimestralmente, con la condición de que al final de los 5 años, Alex debe hacer un pago equivalente a la mitad de lo que debe. La otra mitad sigue generando intereses, y al final de los diez años, Alex pagará el saldo restante. 2. Un préstamo a diez años con una tasa de interés anual simple del $12\%$, con un único pago global al final de los diez años. Encuentra la diferencia positiva entre las cantidades totales que Alex debe pagar bajo los dos esquemas. Redondea tu respuesta al dólar más cercano.",16401,16400,382,383,C
+"Si f es una función lineal con una pendiente distinta de cero, y c < d, ¿cuál de las siguientes opciones debe ser FALSA?",f(c) = f(d),f(c) ≠ f(d),f(c) > f(d),f(c) < f(d),A
+"Si F(3) = 8 y F '(3) = -4, entonces F(3.02) es aproximadamente",-8.08,7.92,7.98,8.02,B
+¿Cómo se puede detectar el spoofing de dirección IP?,Instalando y configurando un IDS que pueda leer la cabecera IP,Comparando los valores TTL de las direcciones reales y falsificadas,Implementando un firewall en la red,Identificando todas las sesiones TCP que se iniciaron pero no se completaron correctamente,D
+"¿Cuál es la suma de $a$, $d$ y $e$ cuando la expresión $-2x^2-20x-53$ se escribe en la forma $a(x+d)^2+e$, donde $a$, $d$ y $e$ son constantes?",-80,0,6,53,B

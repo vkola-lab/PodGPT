@@ -3,7 +3,7 @@
 #
 # GNU Affero General Public License v3.0 License
 #
-# MedPodGPT: A multilingual audio-augmented large language model for medical research and education
+# PodGPT: An Audio-augmented Large Language Model for Research and Education
 # Copyright (C) 2024 Kolachalama Laboratory at Boston University
 
 import argparse
@@ -16,7 +16,7 @@ from huggingface_hub import login
 from utils.utils import load_config
 
 
-def load_medical_data():
+def dataset_loader():
     """
     Load and tokenize the `Multilingual podcasts: shuyuej/Multilingual-Pretraining-Dataset` dataset.
     :return dataset: the loaded dataset
@@ -45,17 +45,12 @@ def prepare_dataset(dataset, tokenizer, seqlen: int = 2048, nsamples: int = 128)
     for i in range(nsamples):
         input_ids = enc[:, i * seqlen: (i + 1) * seqlen]
         attention_mask = torch.ones_like(input_ids)
-        dataset.append(
-            {
-                "input_ids": input_ids,
-                "attention_mask": attention_mask
-            }
-        )
+        dataset.append({"input_ids": input_ids, "attention_mask": attention_mask})
 
     return dataset
 
 
-def quantize(repo, bits, group_size, act_order):
+def main(repo, bits, group_size, act_order, hf_read_token):
     """
     Quantize the model and save the quantized weights.
     :param repo: the model id
@@ -68,7 +63,7 @@ def quantize(repo, bits, group_size, act_order):
     tokenizer = AutoTokenizer.from_pretrained(repo)
 
     # Load the dataset
-    dataset = load_medical_data()
+    dataset = dataset_loader()
     dataset = prepare_dataset(dataset, tokenizer)
 
     # Config the GPTQ algorithm
@@ -86,10 +81,9 @@ def quantize(repo, bits, group_size, act_order):
         quantization_config=gptq_config,
         # Please install FlashAttention by using `pip install flash-attn`
         # attn_implementation="flash_attention_2",
-        # Please use your Hugging Face READ Token
-        # `read` token: for downloading models
-        # For your information: https://huggingface.co/settings/tokens
-        # token="YOUR_HUGGING_FACE_READ_TOKEN",
+        # This is my Hugging Face `read` token. Please replace it to yours.
+        # https://huggingface.co/settings/tokens
+        token=hf_read_token,
         # device_map="auto"
     )
     model.config.quantization_config.dataset = None
@@ -119,19 +113,23 @@ def quantize(repo, bits, group_size, act_order):
 if __name__ == "__main__":
     # Example Usage:
     # python quantization_HF.py --repo "meta-llama/Meta-Llama-3-70B-Instruct" --bits 4 --group_size 128
-    parser = argparse.ArgumentParser(description="Quantize LLMs using GPTQ Algorithm")
+    parser = argparse.ArgumentParser(description="Quantize LLMs using the GPTQ Algorithm.")
     parser.add_argument("--repo", type=str, help="The pretrained model ID.")
     parser.add_argument("--bits", default=4, type=int, help="Number of bits for quantization.")
     parser.add_argument("--group_size", default=128, type=int, help="Group size for quantization.")
     parser.add_argument("--act_order", action="store_true", help="Enable act-order")
     args = parser.parse_args()
+
+    # Load the configuration
+    config = load_config(file_name="config_quantization.yml")
+    hf_read_token = config.get("hf_read_token")
     
     # Conduct the GPTQ quantization
-    quantize(
+    main(
         config=config,
         model_id=args.model_id,
         bits=args.bits,
         group_size=args.group_size,
-        act_order=args.act_order
+        act_order=args.act_order,
+        hf_read_token=hf_read_token,
     )
-    

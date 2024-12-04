@@ -1,1 +1,1 @@
-Model loader, data manager, and evaluation codes are put here.
+We put the model loader, data manager, and evaluation codes here.

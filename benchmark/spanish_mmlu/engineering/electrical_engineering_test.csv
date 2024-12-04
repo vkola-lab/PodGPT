@@ -1,0 +1,145 @@
+¿Cuál es el criterio de Barkhausen para un oscilador?,La ganancia en lazo debe ser unitaria,La ganancia en lazo debe ser menor que la unidad,La fase de una señal de retroalimentación con respecto a la entrada debe ser de 0° o 360°,Ambos A y C,D
+El método del potenciómetro para medir la tensión de CC es más preciso que la medición directa usando un voltímetro porque,Carga el circuito de forma moderada.,Carga el circuito al máximo.,Utiliza un galvanómetro de centro cero en lugar de un voltímetro.,No carga el circuito en absoluto.,D
+¿Cuál de estos conjuntos de compuertas lógicas se designan como compuertas universales?,"NOR, NAND.","XOR, NOR, NAND.","OR, NOT, AND.","NOR, NAND, XNOR.",A
+"Un circuito controlado por un solo pulso de fase tiene una resistencia R y una carga de contrafuerza de E de 400 sin (314 t) como voltaje de origen. Para una carga de contrafuerza de 200 V, el rango de control del ángulo de disparo es",30° a 150°.,30° a 180°.,60° a 120°.,60° a 180°.,A
+¿Cómo se llama la caja que indica el efecto de las entradas en el subsistema de control?,Caja de datos.,Caja lógica.,Caja de decisión.,Caja de estado.,C
+"¿Cuál es el campo eléctrico en el espacio entre dos placas metálicas infinitas paralelas, cargadas con la misma densidad de carga superficial de la misma polaridad?",Igual al producido por una placa.,Doble del campo producido por una placa.,Dependiente de las coordenadas de los puntos del campo.,Cero.,D
+¿Cuál debería ser la resistencia en el circuito de la bobina móvil de un vatímetro dinamométrico?,Baja.,Muy baja.,Alta.,Casi cero.,C
+Cuales son los requisitos necesarios de un oscilador?,Estabilidad de amplitud,Estabilidad de frecuencia,Estabilidad de poder,Ambos A y B,D
+¿Cuál es el voltaje normal utilizado en el calentamiento direccional?,1.5 KV.,15 KV.,33 KV.,66 KV.,A
+¿Para qué se utilizan los osciladores LC?,Para producir una forma de onda con una frecuencia que oscila entre 1 MHz y 500 MHz,Para producir una forma de onda con una frecuencia que oscila entre 100 KHz y 500 MHz,Para producir una forma de onda con una frecuencia que oscila entre 1 KHz y 1 MHz,Para producir una forma de onda con una frecuencia que oscila entre 1 MHz y 100 GHz,A
+¿Qué es necesario que tenga un diodo en funcionamiento?,Alta resistencia tanto en polarización directa como inversa,"Baja resistencia en polarización directa, y alta resistencia en polarización inversa","Alta resistencia en polarización directa, y baja resistencia en polarización inversa",Baja resistencia tanto en polarización directa como inversa,B
+¿Cuál es el nombre del material fluorescente que proporciona fluorescencia de color rojo?,Silicato de zinc.,Silicato de calcio.,Sulfuro de zinc.,Silicato de magnesio.,D
+¿Cuántos bits se necesitan para almacenar un dígito BCD?,1,2,3,4,D
+¿Para qué se utiliza el conmutador en un generador DC?,Para recolectar corriente,Reducir pérdidas,Aumentar la eficiencia,Convertir la corriente del armadura AC en DC,D
+1 F es teóricamente igual a,1 ohm de resistencia,relación de 1 V a 1 C,relación de 1 C a 1 V,ninguno de estos,C
+¿Cuántas entradas tendrá la tabla de verdad de una compuerta NAND de 3 entradas?,3,6,8,9,C
+"En el sistema de números decimales, ¿qué es el MSD?",El primer dígito de izquierda a derecha,El primer dígito de derecha a izquierda,El dígito del medio,El promedio de todos los dígitos,A
+"En Diseños de Lógica Digital, GAL significa",Lógica de Avance General,Matriz de Lógica General,Lógica de Avance Genérica,Matriz de Lógica Genérica,D
+"En el microprocesador Intel 8085A, se hace que la señal ALE sea alta para",Permitir que el bus de datos se utilice como bus de dirección de orden inferior,Registrar los datos D0-D7 desde el bus de datos,Desactivar el bus de datos,Lograr todas las funciones mencionadas anteriormente,A
+"Para una compuerta SCR, ¿cuál es la resistencia de la fuente de la compuerta si la característica del cátodo es una línea recta de 130, la tensión del volumen de fuente disparada es de 15 V y la disipación de potencia permitida de la compuerta es de 0.5 W?",111.9 ohmios,11.19 ohmios,108 ohmios,115 ohmios,A
+El concepto de control V/f de los inversores que impulsan motores de inducción resulta en,operación de torque constante,inversión de velocidad,reducción de pérdida magnética,eliminación de armónicos,A
+¿Cuál es la energía almacenada en el campo magnético de un solenoide de 30 cm de largo y 3 cm de diámetro enrollado con 1000 vueltas de alambre que transporta una corriente de 10 amperios?,"0,015 joule.","0,15 joule.","0,015 joule.","1,15 joule.",B
+"Mientras opera en suministros de frecuencia variable, el motor de CA requiere voltaje variable para",proteger el aislamiento.,evitar el efecto de saturación.,mejorar las capacidades del inversor.,proteger el tiristor de dV / dt.,B
+¿Cuáles de los siguientes devanados son necesarios en caso de todas las máquinas de corriente continua?,devanado cerrado,devanado en serie,devanado en paralelo,devanado tipo abierto,A
+Los osciladores controlados por voltaje de relajación se utilizan para generar,Onda sinusoidal,Onda triangular,Onda diente de sierra,Ambas B y C,D
+¿Cuál es la frecuencia de suministro generalmente empleada para la calefacción por corrientes de Foucault de alta frecuencia?,1 KHz.,5 KHz.,10 MHz.,10 KHz a 400 KHz.,D
+"En el modo de alternancia, ¿qué valores tiene un flip-flop JK?","J = 0, K = 0.","J = 1, K = 1.","J = 0, K = 1.","J = 1, K = 0.",B
+¿Por qué los motores eléctricos son cada vez más populares?,Todas las opciones son correctas.,Proporcionan un control suave y fácil.,Son más baratos en coste.,Son simples y fiables.,A
+Un chopper de paso ascendente tiene un voltaje de entrada de 110 V y un voltaje de salida de 150 V. El valor del ciclo de trabajo es,"0,32.","0,67.","0,45.","0,27.",B
+¿Cuántos dígitos tiene el sistema numérico binario?,0,1,2,10,C
+"La frecuencia crítica más baja se debe al polo y puede estar presente en el origen o cerca del origen, ¿entonces cuál es el tipo de red?",LC.,RL.,RC.,Cualquiera de los anteriores.,C
+¿Cuáles son las ventajas del sistema de control de bucle abierto?,sencillo y económico.,preciso.,confiable.,todos los anteriores.,A
+"La tensión inducida en un inductor se representa como,",el producto de su inductancia y la corriente que lo atraviesa.,la relación entre su inductancia y la corriente que lo atraviesa.,la relación entre la corriente que lo atraviesa y su inductancia.,el producto de su inductancia y la tasa de cambio de corriente que lo atraviesa.,D
+Si se necesita convertir un número hexadecimal a binario. ¿Cuántos bits habrá por cada dígito hexadecimal?,1,2,4,8,C
+¿Dónde tiene lugar la inducción de calor?,En materiales conductores pero no magnéticos.,En materiales conductores que pueden ser magnéticos o no magnéticos.,En materiales aislantes.,En materiales conductores y magnéticos.,B
+"En una máquina de corriente continua con devanado en paralelo, el número de conductores es 100 y el número de caminos paralelos es 10. Encuentra la distancia media",10,100,50,1,A
+¿Cuál es la unidad del flujo magnético?,Newton,Ampere vuelta,Weber,Tesla,C
+"En un puente equilibrado, si se intercambian las posiciones del detector y la fuente, el puente sigue siendo equilibrado. ¿Qué teorema explica esto?",Teorema de reciprocidad,Teorema de Thevenin,Teorema de Norton,Teorema de compensación,A
+Se dice que un flip-flop D es transparente cuando,la salida es BAJA,la salida es ALTA,la salida sigue al reloj,la salida sigue la entrada,D
+Un patrón de Lissajous en un osciloscopio tiene 5 tangencias horizontales y 2 verticales. La frecuencia de la entrada horizontal es de 100 Hz. ¿Cuál será la frecuencia de la entrada vertical?,500 Hz.,250 Hz.,400 Hz.,625 Hz.,B
+El control de velocidad mediante la variación del flujo de campo resulta en,un accionamiento de potencia constante.,un accionamiento de par constante.,un accionamiento de potencia variable.,ninguna de las anteriores.,A
+¿Qué tipo de memoria usa un transistor y un capacitor como unidad básica de memoria?,SRAM,DRAM,Ambas SRAM y DRAM,Ninguna,B
+"¿Cuál será el número de lámparas, cada una con 300 lúmenes, necesarias para obtener una iluminancia promedio de 50 lux en una habitación rectangular de 4m * 3m?",2,4,5,6,A
+"Si la salida del sistema tiene un efecto sobre la cantidad de entrada, entonces el sistema es",sistema de control de lazo abierto.,sistema de control de lazo cerrado.,ya sea A o B.,ninguno de los anteriores.,B
+"Una señal sinusoidal es una señal analógica, porque",puede tener varios valores entre los picos negativos y positivos,es negativa durante medio ciclo,es positiva durante medio ciclo,tiene valores tanto positivos como negativos,A
+¿Qué significa FM?,Modulación frecuente.,Modulación de frecuencia.,Modulador de frecuencia.,Modulador frecuente.,B
+¿Cuál es otro nombre para stack?,Memoria FIFO,Memoria flash,Memoria LIFO,Memoria LILO,C
+"En el sistema de Ward-Leonard, ¿cuál es el límite inferior de la velocidad impuesto por?",La resistencia de campo.,La resistencia del rotor.,El magnetismo residual del generador.,Ninguno de los anteriores.,C
+¿Cuál es otro nombre para el oscilador Colpitts?,Oscilador de circuito de tanque,Oscilador LC,Oscilador de circuito resonante,Todas las anteriores,D
+¿Cuál es la corriente de sobretensión de un SCR con una calificación de corriente de sobretensión de medio ciclo de 3000 A para una fuente de suministro de 50 Hz?,1500 A.,6000 A.,2121.32 A.,4242.64 A.,C
+¿Qué ubicación de almacenamiento de propósito especial emplean tanto la ALU como la sección de control de la CPU?,Almacenamiento en búfer,Decodificadores,Acumuladores,Registros,C
+¿Qué son los errores sistemáticos?,Errores ambientales.,Errores de observación.,Errores instrumentales.,todos los anteriores.,D
+¿Cuáles son las desventajas de un sistema de control de bucle abierto?,Inexacto.,Poco confiable.,Ambas A y B.,Ninguna de las anteriores.,C
+¿Qué sucede cuando se polariza inversamente un diodo (unión p-n)?,Se convierte en un interruptor encendido,Se comporta como un diodo Zener,Actúa como un capacitor,Se convierte en un interruptor apagado,D
+¿En qué se lleva a cabo el efecto piezoeléctrico?,En un filtro compuesto.,En un filtro de cristal.,En una derivada de m.,En un prototipo de constante k.,B
+¿En qué depende la resistividad del conductor?,Área del conductor.,Longitud del conductor.,Tipo de material.,Ninguna de estas opciones.,C
+¿Cuál es el cambio más pequeño en la variable medida al cual el instrumento responderá?,Resolución.,Precisión.,Exactitud.,Sensibilidad.,A
+"En comunicaciones electrónicas, ¿qué significa ""AM""?",Modificación de amplificador,Método de amplitud,Modulación de amplitud,Método de amperio,C
+¿Qué sistema también se conoce como sistema de control automático?,Sistema de control de lazo abierto,Sistema de control de lazo cerrado,Ya sea A o B,Ni A ni B,B
+¿Cómo se llama un PLD combinatorio con un arreglo AND fijo y un arreglo OR programable?,PLD,PROM,PAL,PLA,B
+¿Qué tiene un instrumento de tipo nulo en comparación con un instrumento de tipo desviado?,Una sensibilidad más baja.,Una respuesta más rápida.,Una mayor precisión.,Todos los anteriores.,C
+"Si se duplica la longitud del cable, su capacitancia C será",un cuarto.,la mitad.,doble.,sin cambios.,C
+¿Cómo se llaman los electrones en el material de tipo p de un semiconductor?,Ya sea portadores minoritarios o portadores mayoritarios,Portadores minoritarios,Portadores mayoritarios,Portadores de valencia,B
+________ es la impureza más perjudicial en los materiales magnéticos,Carbono.,Azufre.,Oxígeno.,Nitrógeno.,A
+Los osciladores controlados por voltaje se utilizan comúnmente en,Moduladores de pulso Moduladores de frecuencia Bucles de reloj de fase,Moduladores de frecuencia,Bucles de reloj de fase,Todas las anteriores,D
+¿Por qué es necesario el suministro de baja frecuencia para los hornos de inducción de núcleo directo?,"Con el suministro de frecuencia normal, las fuerzas electromagnéticas causan una grave acción de agitación en el metal fundido.",El acoplamiento magnético entre el circuito primario y secundario es deficiente.,Ambos A y B.,Ninguno de los anteriores.,C
+"En los medidores de bobina móvil, la amortiguación se proporciona mediante:",el marco de aluminio de la bobina.,el resorte de la bobina unido a la móvil.,el disco de corriente de Foucault.,la paleta de amortiguación en la cámara hermética.,A
+¿Cuál es la cantidad análoga al elemento de masa en la analogía fuerza-voltaje?,Resistencia.,Inductancia.,Capacitancia.,Todas las anteriores.,B
+¿Qué tipo de sensibilidad tiene un latch?,De nivel y de flanco,De flanco,De nivel,Ninguna,C
+¿Qué se utiliza para proteger el SCR de la sobrecorriente?,Disyuntor y fusible.,Disipador de calor.,Circuito amortiguador.,Dispositivo de pinzamiento de voltaje.,A
+¿Cuáles son los errores principalmente causados ​​por errores humanos?,Error bruto.,Error instrumental.,Error observacional.,Error sistemático.,A
+¿Cuál es la cantidad análoga eléctrica para el amortiguador en la analogía fuerza-corriente?,resistencia.,conductancia.,inductancia.,capacitancia.,B
+¿Cuál lámpara tiene el mejor Índice de Reproducción Cromática (IRC)?,LED,Fluorescente,Incandescente,Vapor de sodio a alta presión,C
+¿Cuál es la disipación de energía en un inductor ideal?,Máxima,Mínima,Cero,Un valor finito,C
+"¿Para trabajo intermitente, qué horno es adecuado?",Horno sin núcleo.,Horno de arco indirecto.,Cualquiera de los anteriores.,Ninguno de los anteriores.,B
+"En la soldadura por resistencia eléctrica, el material del electrodo debe tener",conductividades eléctricas más altas.,conductividades térmicas más altas.,suficiente resistencia para soportar alta presión a temperaturas elevadas.,todo lo anterior.,D
+¿Cuáles de los siguientes son elementos pasivos?,Resistor,Bulb,Ambos,Ninguno de estos.,C
+La principal ventaja del calentamiento dieléctrico es que,el calentamiento ocurre en el material mismo.,el calentamiento ocurre debido a la alta frecuencia.,se puede utilizar para la desecación de explosivos.,Ninguna de las anteriores.,A
+Los materiales utilizados en el disipador de calor deben tener,alta conductividad térmica.,gran área de superficie.,alto punto de fusión.,Todas estas opciones.,D
+"Si el conductor es estático y el campo está variando, ¿se inducirá una fuerza electromotriz?",fuerza electromotriz virtualmente inducida.,fuerza electromotriz dinámicamente inducida.,fuerza electromotriz estática inducida.,ninguna de estas opciones.,C
+"Cuál es el nivel de cortocircuito en la barra colectora si cuatro alternadores idénticos, cada uno con una potencia nominal de 20 MVA, 11 KV y una reactancia subtransitoria del 16%, están funcionando en paralelo?",500 MVA,400 MVA,125 MVA,100 MVA,A
+"Según el modelo de Bohr, un electrón gana o pierde energía sólo al",moverse más rápido o más lento en una órbita permitida.,saltar de una órbita permitida a otra.,ser completamente removido de un átomo.,saltar de un átomo a otro átomo.,B
+Un buffer de tres estados tiene los siguientes estados de salida,"1, 0, flotante","Alto, bajo, flotante",Ambos A y B,"Establecer, restablecer, detener",C
+¿Por medio de qué elementos se obtienen los sistemas de translación mecánica?,Elemento de masa,Elemento de resorte,Amortiguador,Todos los anteriores,D
+"Si se conectan en paralelo cuatro capacitores de 40 µF, la capacitancia equivalente del sistema será",160 µF,10 µF,40 µF,5 µF,A
+"La resistencia de un conductor de diámetro d y longitud l es R Ω. Si se divide por la mitad el diámetro y se duplica su longitud, la resistencia será",R Ω,2R Ω,4R Ω,8R Ω,C
+Un inversor de puente completo de una sola fase puede operar en modo de conmutación de carga en caso de que la carga consista en,RL.,RLC subamortiguado.,RLC sobreamortiguado.,RLC críticamente amortiguado.,B
+¿Qué es un microprocesador ALU?,Unidad de control y ALU en un solo chip.,Memoria y ALU en un solo chip.,Unidad de registro y dispositivo de entrada/salida en un solo chip.,Unidad de registro y unidad de control en un solo chip.,D
+"Para obtener un valor alto de capacitancia, la permitividad del medio dieléctrico debe ser",baja,cero,alta,unidad,C
+¿Cuál es el método más utilizado en las mediciones directas del método de deflexión?,El que consume menos tiempo.,El más simple.,El más simple y que consume menos tiempo.,El más preciso.,C
+Los instrumentos puramente mecánicos no se pueden utilizar para mediciones dinámicas debido a que tienen,alta inercia.,tiempo de respuesta más alto.,constante de tiempo grande.,todo lo anterior.,D
+¿Cuáles son las ventajas de tener una tensión de transmisión más alta?,Se aumenta la capacidad de transferencia de energía de la línea de transmisión,Se reducen las pérdidas en la línea de transmisión,Se reduce el área de la sección transversal y el volumen del conductor,Todas las anteriores,D
+"Bajo una condición de sobretensión, ¿cuál es la impedancia ofrecida por el dispositivo de protección de voltaje?",Alta.,Baja.,Moderada.,Infinita.,B
+¿Dónde ocurre el máximo esfuerzo eléctrico en un cable largo compuesto por un conductor redondo y suave que corre por encima y paralelo al suelo (asumido como un plano conductor grande) con una alta tensión entre el conductor y el suelo?,En la superficie inferior del conductor.,En la superficie superior del conductor.,En la superficie del suelo.,A mitad de camino entre el conductor y el suelo.,A
+En una máquina de corriente continua se utiliza un devanado de onda de 6 polos. ¿Cuántas vías paralelas hay?,6,4,2,1,C
+¿Cuál de los siguientes es un dispositivo digital?,Regulador de un ventilador,Microfono,Resistencia de un material,Interruptor de luz,D
+La potencia instantánea en un inductor es proporcional a:,El producto de la corriente instantánea y la tasa de cambio de corriente.,El cuadrado de la corriente instantánea.,El cuadrado de la tasa de cambio de corriente.,La temperatura del inductor.,A
+¿Cuál de los siguientes es un transductor de desplazamiento variable?,tacómetro,potenciómetro,sincros,ninguno de los anteriores,B
+Cuál será la capacitancia equivalente del sistema si cinco capacitores de 5 µF se conectan en serie?,5 µF,25 µF,10 µF,1 µF,D
+La susceptibilidad es negativa para,sustancias no magnéticas.,sustancias diamagnéticas.,sustancias ferromagnéticas.,ninguna de las anteriores.,B
+Cuál es la función principal de un oscilador?,Genera oscilaciones sinusoidales,Genera formas de onda no sinusoidales,Genera oscilaciones sostenidas con amplitud constante y frecuencia específica,Ninguna de las anteriores,C
+¿Cómo deben ser las superficies metálicas para la soldadura por resistencia eléctrica?,Ásperas.,Limpia.,Humedecidas.,De color.,B
+¿Cuál será la corriente de retención de un SCR si su corriente de retención es de 20 mA?,23 mA.,40 mA.,10 mA.,60 mA.,C
+"En la analogía de fuerza-corriente, la cantidad análoga eléctrica para el desplazamiento (x) es",voltaje.,inductancia.,capacitancia.,flujo.,D
+¿Cómo se puede lograr el circuito de retroalimentación en un oscilador?,Acoplamiento resistivo entre entrada y salida,Acoplamiento capacitivo entre entrada y salida,Acoplamiento inductivo entre entrada y salida,Cualquiera de los métodos anteriores o una combinación de ellos,D
+"La frecuencia crítica más baja se debe a cero y puede estar presente en el origen o más cerca del origen, entonces el tipo de circuito es",Circuito LC.,Circuito RC.,Circuito RLC.,Circuito RL.,D
+¿Cuál es el valor de la constante dieléctrica del aire?,Menos de 1,0.,1.,ninguna de estas opciones,C
+La variación de temperatura es una,Cantidad digital,Cantidad analógica,Ya sea una cantidad digital o analógica,Ninguna,B
+La iluminación en un punto 5 metros debajo de una lámpara es de 6 lux. ¿Cuál es la potencia de la lámpara?,30,140.,150.,200.,C
+"Para una máquina cc, ¿cuáles son los valores de resistencia en derivación y resistencia de armadura?",altos y altos,altos y bajos,bajos y bajos,bajos y altos,B
+¿Cómo afectará el cambio en el área transversal del conductor en un campo magnético?,La reluctancia del conductor.,La resistencia del conductor.,Ambas (A) y (B) de la misma manera.,Ninguna de las anteriores.,C
+¿Qué se utiliza en SCR para proteger contra altos valores de dV / dt (variación de voltaje por unidad de tiempo)?,Circuito de amortiguamiento.,Fusible.,Circuito ecualizador.,Interruptor automático.,A
+¿Cómo se llaman los conjuntos de comandos en un programa que no se traducen en instrucciones de máquina durante el proceso de ensamblaje?,Mnemotécnicos,Directivas,Identificadores,Operandos,B
+¿Cuál es la velocidad de transmisión de datos en la red 4G de telecomunicaciones?,386 kbps - 2 mbps.,2 mbps.,2 mbps – 1 gbps.,100 mbps - 1 gbps.,D
+¿Cuál(es) de las siguientes es/son elemento(s) activo(s)?,Fuente de voltaje,Fuente de corriente,Ambos,Ninguno de estos.,C
+¿Cuál es la cantidad análoga eléctrica para el elemento de resorte (K) en la analogía fuerza-voltaje?,L,R,1/C,C,C
+¿De qué consta un oscilador de cristal de cuarzo?,Sólo de frecuencia resonante en serie.,Sólo de frecuencia resonante en paralelo.,Ambas frecuencias resonantes en serie y paralelo.,Ni frecuencia resonante en serie ni paralelo.,C
+¿Cuáles de los siguientes osciladores se utilizan para aplicaciones de baja frecuencia (LF)?,Osciladores LC,Osciladores RC,"Ambos, Osciladores LC y RC",Ninguno,B
+"El ángulo sólido subtendido por un área de 2400 cm^2 en la superficie de una esfera de diámetro 1,2 m es",3 / 2.,1 / 3.,2 / 3.,2 / 5.,C
+¿Qué es el error relativo?,La relación entre el error absoluto y el valor real.,El error absoluto.,El error verdadero.,Ninguna de las anteriores.,A
+"Si la corriente de retención de un tiristor es de 2 mA, ¿cuál debería ser la corriente de retención?","0,01 A.","0,002 A.","0,009 A.","0,004 A.",D
+"En un Intel 8085A, ¿cuál es el primer ciclo de máquina de una instrucción?",Un ciclo de búsqueda de código de operación,Un ciclo de lectura de memoria,Un ciclo de escritura de memoria,Un ciclo de lectura de E/S,A
+¿Cuáles son las desventajas de un sistema de control de lazo cerrado?,Reduce la ganancia general.,Es complejo y costoso.,Respuesta oscilatoria.,Todas las anteriores.,D
+"Si los polos y ceros están dispuestos alternativamente en el eje real negativo, ¿qué tipo/s de red es/son?",Red LC.,Red RC.,Red RL.,Ambas 2 y 3.,D
+¿Cómo se relacionan la magnetización y el campo aplicado en los materiales ferromagnéticos?,De manera sinusoidal.,No linealmente.,Linealmente.,De forma parabólica.,B
+¿Para qué se utilizan láminas delgadas en una máquina?,Para reducir las pérdidas por corriente de Foucault,Para reducir las pérdidas por histéresis,Ambas opciones A y B,Para reducir las pérdidas de cobre,A
+"Una superficie metálica con un radio de 1 metro y una densidad de carga superficial de 20 coulombs / m2 está contenida en un cubo de 10 m de lado. La desplazamiento eléctrico total hacia afuera, normal a la superficie del cubo, es",40π coulombs.,80π coulombs.,10π coulombs.,ninguno de estos.,B
+En el sistema binario el primer dígito (bit) de derecha a izquierda se llama,"LSB, Bit Menos Significativo","MSB, Bit Más Significativo",Primer Bit,Último Bit,A
+"En el método de medición de potencia de dos vatímetros, si la potencia total se mide solo con un vatímetro, entonces el factor de potencia del sistema es",0.,0.5.,1.,ninguno de los anteriores.,B
+Un voltímetro de 0 a 100 V tiene una precisión garantizada del 2 % de la lectura a escala completa. El voltaje medido por el voltímetro es de 75 V. El error límite es en porcentaje:,"3,33 %.","2,66 %.",2 %.,1 %.,B
+¿Cuál(es) de los siguientes métodos se utilizan para la compensación reactiva o de voltaje?,condensador de derivación,condensador en serie,control de excitación de generación,todos los anteriores,D
+El ROM programado durante el proceso de fabricación se llama,MROM,PROM,EPROM,EEPROM,A
+¿Cuál/es es/son el/los nombre/s de los registros de 16 bits en el procesador 8085?,puntero de pila.,contador de programa.,ambos A y B.,ninguno de ellos.,C
+¿Cómo se puede aumentar la estabilidad de una línea de transmisión?,Condensador de derivación,Condensador de serie,Reactancia de derivación,Ambos A y B,D
+¿Para qué se utiliza el circuito snubber con SCR?,En serie.,En paralelo.,Ya sea en serie o en paralelo.,Antiparalelo.,B
+¿Cómo se determina el número de anillos en el modelo de Bohr de cualquier elemento?,Número de columna en la tabla periódica.,Masa atómica.,Número de fila en la tabla periódica.,Número atómico.,C
+Silicio y germanio son elementos ________.,trivalentes,pentavalentes,hexavalentes,tetravalentes,D
+¿Cuántos pines de salida tiene el microprocesador 8085?,27.,40.,21.,19.,A
+"Si P es la potencia de un sistema conectado en estrella, ¿cuál será la potencia de un sistema equivalente conectado en delta?",P,3P,P/3,Ninguna de las anteriores,A
+¿Qué osciladores son fáciles de fabricar en un IC monolítico?,Oscilador de cristal.,Oscilador de Hartley.,Oscilador de puente Wien.,Oscilador de relajación.,D
+"Si todos los elementos de una red en particular son lineales, ¿entonces se cumpliría el teorema de superposición cuando la excitación es?",Solo corriente continua,Solo corriente alterna,Ya sea corriente alterna o corriente continua,Un impulso,C
+¿Cuál es el factor de retroalimentación de un oscilador de puente Wien usando un amplificador operacional?,1/3,1/4,1/2,1,C
+¿Cuál es la longitud del ciclo de bus en 8086/8088?,"Seis ciclos de reloj: T1, T2, T3, T4 y dos estados de espera","Cuatro ciclos de reloj: T1, T2, T3, T4 y un número indeterminado de ciclos de espera denotados por Tw","Tres ciclos de reloj: T1, T2, T3 y un número indeterminado de ciclos de espera denotados por Tw","Cinco ciclos de reloj: T1, T2, T3, T4, T5 y dos ciclos de espera denotados por Tw",C
+¿Cuál de las siguientes opciones no es un oscilador sinusoidal?,Oscilador LC,Oscilador de desplazamiento de fase RC,Oscilador de relajación,Oscilador de cristal,C
+"Una alambre que lleva corriente es curvado en forma de un bucle circular. Entonces, el campo magnético alrededor de cada parte del alambre será",paralelo al plano del alambre.,perpendicular al circunferencia del alambre.,paralelo a la mitad de la porción y perpendicular a la otra mitad.,ninguna de las anteriores.,A

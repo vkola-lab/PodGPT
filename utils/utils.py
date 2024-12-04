@@ -1,6 +1,65 @@
 # coding=utf-8
+#
+# GNU Affero General Public License v3.0 License
+#
+# PodGPT: An Audio-augmented Large Language Model for Research and Education
+# Copyright (C) 2024 Kolachalama Laboratory at Boston University
 
+import gc
 import yaml
+import contextlib
+
+import torch
+from transformers import AutoModelForCausalLM, AutoTokenizer
+
+
+def download_pretrained_model(config):
+    """
+    Initialize model
+    :param config: the YAML configuration file
+    """
+    model_name = config.get("model_name")
+    hf_read_token = config.get("hf_read_token")
+    save_dir = config.get("save_dir")
+
+    # Load the base model
+    model = AutoModelForCausalLM.from_pretrained(
+        model_name,
+        use_auth_token=hf_read_token,
+        torch_dtype=torch.bfloat16,
+        device_map="cpu",
+    )
+
+    # Load tokenizer
+    tokenizer = AutoTokenizer.from_pretrained(
+        model_name,
+        return_tensors="pt",
+        use_fast=False,
+        use_auth_token=hf_read_token,
+        device_map="cpu",
+    )
+
+    if "llama" in model_name.lower() or "mistralai" in model_name.lower():
+        tokenizer.pad_token = tokenizer.eos_token
+
+    # Print the number of parameters
+    print_parameters(model=model)
+
+    # Save the tokenizer
+    tokenizer.save_pretrained(save_dir)
+    print('Successfully save the tokenizer!')
+
+    # Save the pre-trained model
+    model.save_pretrained(save_dir)
+    print('Successfully save the model!\n\n')
+
+    # Clean the cache
+    del model
+    del tokenizer
+    with contextlib.suppress(AssertionError):
+        torch.distributed.destroy_process_group()
+    gc.collect()
+    torch.cuda.empty_cache()
 
 
 def stop_token_list():

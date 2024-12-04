@@ -16,7 +16,7 @@ from datetime import datetime
 from huggingface_hub import login
 
 from lib.model_loader_small import model_loader, trainer_loader
-from lib.evaluation_small import evaluation
+from lib.evaluation import evaluation
 from lib.data_manager import data_loader
 from utils.utils import CustomStream, load_config
 

@@ -3,12 +3,17 @@
 #
 # GNU Affero General Public License v3.0 License
 #
-# MedPodGPT: A multilingual audio-augmented large language model for medical research and education
+# PodGPT: An Audio-augmented Large Language Model for Research and Education
 # Copyright (C) 2024 Kolachalama Laboratory at Boston University
-#
-# ACKNOWLEDGEMENT
-# mistralai/Mistral-Large-Instruct-2407
+
+####################################################################################
+
+# SPECIAL NOTICE
+# THE CODES ARE PROVIDED AND OPEN-SOURCED BY TIMOTHEE LACROIX AT Mistral AI
 # https://huggingface.co/mistralai/Mistral-Large-Instruct-2407/blob/main/test.py
+# THE CODES ARE MODIFIED BY THE TEAM FROM THE KOLACHALAMA LAB AT BOSTON UNIVERSITY
+
+####################################################################################
 
 import os
 import json
@@ -55,7 +60,7 @@ def save_state_dict(state_dict: Dict[str, torch.Tensor], save_directory: str, ma
             json.dump(index, f, indent=2)
 
 
-def split_safetensor(input_file: str, output_dir: str, max_size_gb: int):
+def main(input_file: str, output_dir: str, max_size_gb: int):
     """
     Splits a large SafeTensor file into smaller shards and saves them to the specified directory.
     :param input_file: The path to the input SafeTensor file.
@@ -83,5 +88,5 @@ if __name__ == "__main__":
                         help="The maximum size of each shard in gigabytes.")
     args = parser.parse_args()
 
-    # Split the SafeTensor file into shards
-    split_safetensor(args.input_file, args.output_dir, args.max_size_gb)
+    # Split the safetensor file into shards
+    main(args.input_file, args.output_dir, args.max_size_gb)

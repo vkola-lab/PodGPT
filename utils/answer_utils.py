@@ -1,4 +1,9 @@
 # coding=utf-8
+#
+# GNU Affero General Public License v3.0 License
+#
+# PodGPT: An Audio-augmented Large Language Model for Research and Education
+# Copyright (C) 2024 Kolachalama Laboratory at Boston University
 
 import re
 
@@ -156,6 +161,9 @@ def extract_answer_for_spanish(completion, option_range="a-eA-E"):
     # Remove "*" from the sentence
     completion = completion.replace("*", "\n")
 
+    # Remove "la" ("the" in English) from the sentence
+    completion = completion.replace("la", " ")
+
     # Replace some French words to English
     completion = completion.replace("respuesta", "answer")
     completion = completion.replace("correcta", "correct answer")
@@ -180,6 +188,14 @@ def extract_answer_for_hindi(completion, option_range="a-eA-E"):
     """
     # Remove "*" from the sentence
     completion = completion.upper().replace("*", "\n")
+
+    # Replace Hindi words to English
+    completion = completion.replace("उत्तर", "answer")
+    completion = completion.replace("विकल्प", "option")
+    completion = completion.replace("पसंद", "choice")
+    completion = completion.replace("सही", "correct")
+    completion = completion.replace("होगा", "would be")
+    completion = completion.replace("है", "is")
 
     # Define the translation dictionary
     translation_dict = {
@@ -230,6 +246,7 @@ def extract_answer(completion, option_range="a-eA-E"):
     patterns = [
         # Matches "A.", "B.", etc. at the beginning of a line
         re.compile(rf'^([{option_range}])\.'),
+
         # Matches "correct answer is (A)" and similar formats
         re.compile(rf'[cC]orrect answer is[^{potential_letters}]*\(([{option_range}])\)[^{potential_letters}]'),
         re.compile(rf'[cC]orrect answer is[^{potential_letters}]*\[([{option_range}])\][^{potential_letters}]'),
@@ -241,6 +258,18 @@ def extract_answer(completion, option_range="a-eA-E"):
         re.compile(rf'[cC]orrect answer is[^{potential_letters}]*\{{([{option_range}])\}}'),
         re.compile(rf'[cC]orrect answer is[^{potential_letters}]*([{option_range}])\)'),
         re.compile(rf'[cC]orrect answer is[^{potential_letters}]*([{option_range}])$'),
+
+        # Matches "best answer is (A)" and similar formats
+        re.compile(rf'[bB]est answer is[^{potential_letters}]*\(([{option_range}])\)[^{potential_letters}]'),
+        re.compile(rf'[bB]est answer is[^{potential_letters}]*\[([{option_range}])\][^{potential_letters}]'),
+        re.compile(rf'[bB]est answer is[^{potential_letters}]*\{{([{option_range}])\}}[^{potential_letters}]'),
+        re.compile(rf'[bB]est answer is[^{potential_letters}]*([{option_range}])\)[^{potential_letters}]'),
+        re.compile(rf'[bB]est answer is[^{potential_letters}]*([{option_range}])[^{letter_and_num}]'),
+        re.compile(rf'[bB]est answer is[^{potential_letters}]*\(([{option_range}])\)'),
+        re.compile(rf'[bB]est answer is[^{potential_letters}]*\[([{option_range}])\]'),
+        re.compile(rf'[bB]est answer is[^{potential_letters}]*\{{([{option_range}])\}}'),
+        re.compile(rf'[bB]est answer is[^{potential_letters}]*([{option_range}])\)'),
+        re.compile(rf'[bB]est answer is[^{potential_letters}]*([{option_range}])$'),
 
         # Matches "correct option is (A)" and similar formats
         re.compile(rf'[cC]orrect option is[^{potential_letters}]*\(([{option_range}])\)[^{potential_letters}]'),
@@ -254,6 +283,18 @@ def extract_answer(completion, option_range="a-eA-E"):
         re.compile(rf'[cC]orrect option is[^{potential_letters}]*([{option_range}])\)'),
         re.compile(rf'[cC]orrect option is[^{potential_letters}]*([{option_range}])$'),
 
+        # Matches "best option is (A)" and similar formats
+        re.compile(rf'[bB]est option is[^{potential_letters}]*\(([{option_range}])\)[^{potential_letters}]'),
+        re.compile(rf'[bB]est option is[^{potential_letters}]*\[([{option_range}])\][^{potential_letters}]'),
+        re.compile(rf'[bB]est option is[^{potential_letters}]*\{{([{option_range}])\}}[^{potential_letters}]'),
+        re.compile(rf'[bB]est option is[^{potential_letters}]*([{option_range}])\)[^{potential_letters}]'),
+        re.compile(rf'[bB]est option is[^{potential_letters}]*([{option_range}])[^{letter_and_num}]'),
+        re.compile(rf'[bB]est option is[^{potential_letters}]*\(([{option_range}])\)'),
+        re.compile(rf'[bB]est option is[^{potential_letters}]*\[([{option_range}])\]'),
+        re.compile(rf'[bB]est option is[^{potential_letters}]*\{{([{option_range}])\}}'),
+        re.compile(rf'[bB]est option is[^{potential_letters}]*([{option_range}])\)'),
+        re.compile(rf'[bB]est option is[^{potential_letters}]*([{option_range}])$'),
+
         # Matches "correct choice is (A)" and similar formats
         re.compile(rf'[cC]orrect choice is[^{potential_letters}]*\(([{option_range}])\)[^{potential_letters}]'),
         re.compile(rf'[cC]orrect choice is[^{potential_letters}]*\[([{option_range}])\][^{potential_letters}]'),
@@ -265,6 +306,18 @@ def extract_answer(completion, option_range="a-eA-E"):
         re.compile(rf'[cC]orrect choice is[^{potential_letters}]*\{{([{option_range}])\}}'),
         re.compile(rf'[cC]orrect choice is[^{potential_letters}]*([{option_range}])\)'),
         re.compile(rf'[cC]orrect choice is[^{potential_letters}]*([{option_range}])$'),
+
+        # Matches "best choice is (A)" and similar formats
+        re.compile(rf'[bB]est choice is[^{potential_letters}]*\(([{option_range}])\)[^{potential_letters}]'),
+        re.compile(rf'[bB]est choice is[^{potential_letters}]*\[([{option_range}])\][^{potential_letters}]'),
+        re.compile(rf'[bB]est choice is[^{potential_letters}]*\{{([{option_range}])\}}[^{potential_letters}]'),
+        re.compile(rf'[bB]est choice is[^{potential_letters}]*([{option_range}])\)[^{potential_letters}]'),
+        re.compile(rf'[bB]est choice is[^{potential_letters}]*([{option_range}])[^{letter_and_num}]'),
+        re.compile(rf'[bB]est choice is[^{potential_letters}]*\(([{option_range}])\)'),
+        re.compile(rf'[bB]est choice is[^{potential_letters}]*\[([{option_range}])\]'),
+        re.compile(rf'[bB]est choice is[^{potential_letters}]*\{{([{option_range}])\}}'),
+        re.compile(rf'[bB]est choice is[^{potential_letters}]*([{option_range}])\)'),
+        re.compile(rf'[bB]est choice is[^{potential_letters}]*([{option_range}])$'),
 
         # Matches "answer is (A)" and similar formats
         re.compile(rf'[aA]nswer is[^{potential_letters}]*\(([{option_range}])\)[^{potential_letters}]'),

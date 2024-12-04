@@ -1,4 +1,9 @@
 # coding=utf-8
+#
+# GNU Affero General Public License v3.0 License
+#
+# PodGPT: An Audio-augmented Large Language Model for Research and Education
+# Copyright (C) 2024 Kolachalama Laboratory at Boston University
 
 import re
 
@@ -171,6 +176,9 @@ def mmlu_format(item, lang='English'):
     :param lang: the language of the prompt
     :return full_question: the formatted question
     """
+    # Check if each one is already a string and only convert it to a string if it’s not
+    item = list(map(lambda i: str(i) if not isinstance(i, str) else i, item))
+
     # Start with the question part
     question = item[0] + "\n"
 

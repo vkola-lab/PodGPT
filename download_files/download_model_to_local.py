@@ -3,16 +3,16 @@
 #
 # GNU Affero General Public License v3.0 License
 #
-# MedPodGPT: A multilingual audio-augmented large language model for medical research and education
+# PodGPT: An Audio-augmented Large Language Model for Research and Education
 # Copyright (C) 2024 Kolachalama Laboratory at Boston University
 #
 # LICENSE OF THE FOLLOWING MODELS
 #
-# LLAMA 2 COMMUNITY LICENSE AGREEMENT
-# https://github.com/facebookresearch/llama/blob/main/LICENSE
-#
 # LLAMA 3 COMMUNITY LICENSE AGREEMENT
 # https://llama.meta.com/llama3/license/
+#
+# LLAMA 3.1 COMMUNITY LICENSE AGREEMENT
+# https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE
 #
 # Mistral LICENSE
 # https://www.apache.org/licenses/LICENSE-2.0

@@ -1,20 +1,23 @@
 # coding=utf-8
 #
-# LICENSE OF THE FOLLOWING MODELS
+# GNU Affero General Public License v3.0 License
 #
-# LLAMA 2 COMMUNITY LICENSE AGREEMENT
-# https://github.com/facebookresearch/llama/blob/main/LICENSE
+# PodGPT: An Audio-augmented Large Language Model for Research and Education
+# Copyright (C) 2024 Kolachalama Laboratory at Boston University
+#
+# LICENSE OF THE FOLLOWING MODELS
 #
 # LLAMA 3 COMMUNITY LICENSE AGREEMENT
 # https://llama.meta.com/llama3/license/
+#
+# LLAMA 3.1 COMMUNITY LICENSE AGREEMENT
+# https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE
 #
 # Mistral LICENSE
 # https://www.apache.org/licenses/LICENSE-2.0
 #
 # GEMMA TERMS OF USE
 # https://ai.google.dev/gemma/terms
-
-import gc
 
 import torch
 from transformers import (
@@ -25,51 +28,6 @@ from transformers import (
 from trl import SFTTrainer
 
 from utils.utils import print_parameters
-
-
-def download_pretrained(config):
-    """
-    Initialize model
-    :param config: the YAML configuration file
-    """
-    model_name = config.get("model_name")
-    device_map = config.get("device_map")
-    hf_read_token = config.get("hf_read_token")
-    save_dir = config.get("save_dir")
-
-    # Load the base model
-    model = AutoModelForCausalLM.from_pretrained(
-        model_name,
-        use_auth_token=hf_read_token,
-        device_map=device_map,
-        torch_dtype=torch.bfloat16,
-    )
-
-    # Load tokenizer
-    tokenizer = AutoTokenizer.from_pretrained(
-        model_name,
-        return_tensors="pt",
-        use_fast=False,
-        use_auth_token=hf_read_token,
-        device_map=device_map,
-    )
-
-    if "llama" in model_name.lower() or "mistralai" in model_name.lower():
-        tokenizer.pad_token = tokenizer.eos_token
-
-    print_parameters(model=model)
-
-    # Save the tokenizer
-    tokenizer.save_pretrained(save_dir)
-    print('Successfully save the tokenizer!')
-
-    # Save the pre-trained model
-    model.save_pretrained(save_dir)
-    print('Successfully save the model!\n\n')
-
-    # Clean the cache
-    gc.collect()
-    torch.cuda.empty_cache()
 
 
 def model_loader(config):
@@ -129,7 +87,6 @@ def trainer_loader(config, model, tokenizer, dataset, num_train_epochs):
     :param num_train_epochs: the number of training epochs
     :return trainer: SFTTrainer
     """
-    model_name = config.get("model_name")
     train_batch_size = config.get("train_batch_size")
     gradient_accumulation_steps = config.get("gradient_accumulation_steps")
     optim = config.get("optim")

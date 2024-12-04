@@ -1,41 +1,23 @@
 # 🚀 Model Inference Usage
-Due to the internal NCCL communication issues on Boston University Shared Computing Cluster (SCC),
-we cannot [release the memory of the distributed GPUs](https://github.com/vllm-project/vllm/issues/1908).
-Thus, we use `inference_pretrain.py` and `inference_single_model.py` for larger models (> 8B) 
-and `inference_sequential.py` for smaller models (2B/7B/8B).
+Here, we use a unified `inference.py` file for model inference.
 
-First, in the project home directory, please copy and paste the inference files,
+First, in the project home directory, please copy and paste the inference.py file,
 ```shell
-cp -r ./inference/inference_sequential.py ./
-cp -r ./inference/inference_large.sh ./
-cp -r ./inference/inference_pretrain.py ./
-cp -r ./inference/inference_single_model.py ./
+cp -r ./inference/inference.py ./
 ```
 
-## 🐣 Single GPU For Smaller Models (2B/7B/8B)
-### inference_sequential.py
+## 🐣 Inference
 **Sequentially** evaluate the performance of multiple checkpoints (models).<br>
-Please note that we use `--eval_pretrain` to indicate whether to evaluate the original pre-trained model.
-```shell
-python inference_sequential.py --eval_pretrain True --id 35166 52749 70332 87915
-```
 
-## 🐥 Distributed GPUs For Larger Models (> 8B)
-**Sequentially** evaluate the performance of the original pre-trained model and all the checkpoints.<br>
-Special Notice: Please change the checkpoint IDs and CUDA_VISIBLE_DEVICES in the `inference_large.sh` file.
 ```shell
-sh inference_large.sh
+python inference.py --mode small --eval_pretrain True --id 35166 52749 70332 87915
 ```
+- `--mode`: whether to evaluate smaller models (2B/7B/8B), larger models (with LoRA), or ChatGPT (small, large, or 
+  chatgpt), the default is small
+- `--eval_pretrain`: whether to evaluate the original pre-trained model (True or False), the default value is True
+- `--id`: a checkpoint id or a list of checkpoint ids that need to be evaluated sequentially 
 
-### inference_pretrain.py
-**Only** evaluate the performance of the original pre-trained model.
-```shell
-python inference_pretrain.py
-```
-
-### inference_single_model.py
-**Only** evaluate the performance of a single checkpoint (model).<br>
-Please note that `--id` is the checkpoint id.
-```shell
-python inference_single_model.py --id 35166
-```
+## 🙋 Special Notice
+1. Please modify the vLLM hyperparameter configurations in the `config_small.yml`, `config_large.yml`, and 
+   `config_quantization.yml` according to your own GPU settings.
+2. Please change the OpenAI API KEY in the `config_chatgpt.yml` file if you wanna evaluate ChatGPT.
