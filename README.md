@@ -117,7 +117,7 @@ spanish_prompt = "Responde directamente con la mejor opción:"
 chinese_prompt = "直接回答最优选项:"
 ```
 
-## 🛠️ Model Inference
+## 🛠 Model Inference
 **Sequentially** evaluate the performance of multiple checkpoints (models).<br>
 Please note that we use `--eval_pretrain` to indicate whether to evaluate the original pre-trained model.
 ```shell
