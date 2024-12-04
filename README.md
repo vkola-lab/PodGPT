@@ -1,8 +1,7 @@
 <h1 align="center">PodGPT</h1>
 <h4 align="center">Benchmarking Multilingual Medical Large Language Models (LLMs)</h4>
 <p align="center">
-  <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v2"> <img width="250px" src="figures/PodGPT.
-png"></a> 
+  <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v2"> <img width="250px" src="figures/PodGPT.png"></a> 
   <br />
   <br />
   <a href="https://img.shields.io/badge/Code%20License-AGPL3.0-green.svg"><img alt="CODE_LICENSE" src="https://img.shields.io/badge/Code%20License-AGPL3.0-green.svg" /></a>
