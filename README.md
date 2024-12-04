@@ -302,7 +302,7 @@ If you find our work useful in your research, please consider citing it in your 
 ```
 
 # 📧 Contact
-**Core Contributor and Maintainer**: <br>
+**Core Contributor and Maintainer** (Equal Contributions): <br>
 - [Shuyue Jia](https://github.com/SuperBruceJia)
 - [Subhrangshu Bit](https://github.com/SubhrangshuBit)
 - [Edward Searls](https://github.com/nsearls-bu)
