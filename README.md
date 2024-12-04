@@ -323,5 +323,5 @@ We always welcome contributions to help make **PodGPT** Library better.
 If you would like to contribute, please submit a [pull request](https://github.com/vkola-lab/PodGPT/pulls).
 
 # 🙌 Acknowledgement
-The success of the **PodGPT** project is a result of collaborative teamwork by a group of members of the 
+The success of the **PodGPT** project is a result of **collaborative teamwork** by a group of members of the 
 [Kolachalama Laboratory](https://vkola-lab.github.io/). The **PodGPT** Library is maintained by the [Kolachalama Laboratory](https://vkola-lab.github.io/) at Boston University.
