@@ -295,7 +295,7 @@ If you find our work useful in your research, please consider citing it in your 
 ```bibtex
 @article {Jia2024podgpt,
 	author = {Jia, Shuyue and Bit, Subhrangshu and Searls, Edward and Lauber, Meagan V. and Claus, Lindsey A. and Fan, Pengrui and Jasodanand, Varuna H. and Veerapaneni, Divya and Wang, William M. and Au, Rhoda and Kolachalama, Vijaya B.},
-	title = {{PodGPT}: An audio-augmented large language model for research and education},
+	title = {{PodGPT}: An Audio-augmented Large Language Model for Research and Education},
 	elocation-id = {2024.07.11.24310304},
 	year = {2024},
 	doi = {10.1101/2024.07.11.24310304},
