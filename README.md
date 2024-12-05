@@ -220,16 +220,13 @@ the [vLLM Distributed Inference and Serving](https://docs.vllm.ai/en/latest/serv
 and [OpenAI Compatible Server](https://docs.vllm.ai/en/latest/serving/openai_compatible_server.html).
 
 # 🎯 Automatic Speech Recognition
-In the [scripts folder](https://github.com/vkola-lab/PodGPT/tree/main/scripts), 
-we provide Automatic Speech Recognition (ASR) service.
+In [this file](https://github.com/vkola-lab/PodGPT/blob/main/scripts/audio2text.py), we provide Automatic Speech Recognition (ASR) service.
 ```shell
 python audio2text.py
 ```
 
 # ⚒️ Dataset Builder
-We used the following codes to pre-process our transcripts and generate training dataset.
-Please check [these lines](https://github.com/vkola-lab/PodGPT/blob/main/scripts/database_builder.py#L236-L242) 
-for different languages support.
+We used the following codes to pre-process our transcripts and generate the training dataset.
 ```shell
 python database_builder.py
 ```
