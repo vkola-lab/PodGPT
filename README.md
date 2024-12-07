@@ -1,5 +1,5 @@
 <h1 align="center">PodGPT</h1>
-<h4 align="center">Benchmarking Multilingual STEMM Large Language Models (LLMs)</h4>
+<h4 align="center">An audio-augmented large language model for research and education</h4>
 <p align="center">
   <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v2"> <img width="250px" src="figures/PodGPT.png"></a> 
   <br />
