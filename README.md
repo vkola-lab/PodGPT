@@ -23,7 +23,7 @@ Check our database [here](https://github.com/vkola-lab/PodGPT/tree/main/benchmar
 [2024.7.11] We open-sourced the [source codes](https://github.com/vkola-lab/PodGPT) of our **PodGPT**: **STEMM LLMs in 
 your pocket** and **benchmarking multilingual STEMM LLMs**.
 
-# 📚 Table of Contents
+# 📚 Table of contents
 - [PodGPT](#-PodGPT)
 - [Installation](#-Installation)
 - [Quick Start](#-Quick-Start)
@@ -61,22 +61,22 @@ Our proposed **PodGPT** computational framework for research and education
 pip install -r requirements.txt
 ```
 
-# 🚀 Quick Start
-## 🐣 Train Lightweight Models
+# 🚀 Quick start
+## 🐣 Train lightweight models
 For lightweight models (2B, 7B, 8B, and 9B), we optimize the entire model. 
 Please check and setup hyperparameters and Hugging Face READ/WRITE Tokens in [config_small.yml](https://github.com/vkola-lab/PodGPT/blob/main/config_small.yml).
 ```shell
 python main_small.py
 ```
 
-## 🐥 Train Heavy Models
+## 🐥 Train heavy models
 For lager and heavy models (>9B), we optimize the Low-rank Adapter (LoRA).
 Please check and setup hyperparameters and Hugging Face READ/WRITE Token in [config_large.yml](https://github.com/vkola-lab/PodGPT/blob/main/config_large.yml).
 ```shell
 python main_large.py
 ```
 
-## 🐤 Train Quantized Large Models
+## 🐤 Train quantized large models
 We also provide support for quantizing larger models, _e.g._, LLaMA 3.1 70B model, using the [GPTQ](https://arxiv.org/abs/2210.17323) algorithm and then optimizing the LoRA.
 ***The large models can be deployed on consumer GPUs after quantization.***
 
@@ -106,12 +106,12 @@ _Special Notice_: <br>
    inference. Please submit a GitHub issue if you cannot solve it. **We should meet all the problems before**
    in terms of single-GPU and distributed-GPU, _e.g._, 4 A100 80G GPUs, settings.
 
-# 📊 Performance Evaluation
+# 📊 Performance evaluation
 All inferences are conducted using the [vLLM engine](https://github.com/vllm-project/vllm).
 We use [inference.py](https://github.com/vkola-lab/PodGPT/blob/main/inference/inference.py) to sequentially evaluate the performance of multiple checkpoints (models).<br>
 Please check [here](https://github.com/vkola-lab/PodGPT/tree/main/inference) for more information.
 
-## 📜 Prompt Format
+## 📜 Prompt format
 We simply use `Directly answer the best option:` instead of `Answer:` to better guide LLMs to generate the best option 
 and to easier extract the best option from the responses.<br>
 Please modify [these lines](https://github.com/vkola-lab/PodGPT/blob/main/utils/benchmark_utils.py#L5-L21) if you wanna try other prompts.
@@ -125,14 +125,14 @@ spanish_prompt = "Responde directamente con la mejor opción:"
 chinese_prompt = "直接回答最优选项:"
 ```
 
-## 🛠 Model Inference
+## 🛠 Model inference
 **Sequentially** evaluate the performance of multiple checkpoints (models).<br>
 Please note that we use `--eval_pretrain` to indicate whether to evaluate the original pre-trained model.
 ```shell
 python inference.py --mode small --eval_pretrain True --id 35166 52749 70332 87915
 ```
 
-## 🤖 OpenAI ChatGPT Support
+## 🤖 OpenAI ChatGPT support
 We also offer support for running OpenAI ChatGPT inference using API.
 Please enter your OpenAI API Key [here](https://github.com/vkola-lab/PodGPT/blob/main/config_chatgpt.yml#L18).
 > [!WARNING]  
@@ -143,7 +143,7 @@ Please enter your OpenAI API Key [here](https://github.com/vkola-lab/PodGPT/blob
 python inference.py --mode chatgpt
 ```
 
-# 📚 Dataset Description
+# 📚 Dataset description
 Please follow our instructions to [transcribe your own podcasts](https://github.com/vkola-lab/PodGPT/blob/main/scripts/audio2text.py) 
 and [build your own dataset](https://github.com/vkola-lab/PodGPT/blob/main/scripts/database_builder.py).
 
@@ -152,8 +152,8 @@ The podcasts data used for the continual pre-training of **PodGPT**:
   <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v2"> <img src="figures/Table-1.png"></a> 
 </p>
 
-# 🏆 Benchmarks and Results
-## Multilingual Benchmarks Description
+# 🏆 Benchmarks and results
+## Multilingual benchmarks
 We utilized a comprehensive set of medical benchmarks from the most widely spoken languages in the world, 
 including **_English_**, **_Mandarin_**, **_French_**, **_Spanish_**, and **_Hindi_**.
 
@@ -199,39 +199,39 @@ including **_English_**, **_Mandarin_**, **_French_**, **_Spanish_**, and **_Hin
 |               |       *MMLU* - Medical Genetics        |        100        |       4        |          [Link](https://huggingface.co/datasets/FreedomIntelligence/MMLU_Hindi)          |  [Paper](https://arxiv.org/abs/2403.03640)  |
 |               |     *MMLU* - Professional Medicine     |        272        |       4        |          [Link](https://huggingface.co/datasets/FreedomIntelligence/MMLU_Hindi)          |  [Paper](https://arxiv.org/abs/2403.03640)  |
 
-## Performance on In-domain Benchmarks
+## Performance on in-domain benchmarks
 <p align="center">
   <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v2"> <img src="figures/Table-2.png"></a> 
 </p>
 
-## Performance of Retrieval-augmented Generation
+## Performance of retrieval-augmented generation
 <p align="center">
   <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v2"> <img src="figures/Table-3.png"></a>
 </p>
 
-## Zero-shot Cross-lingual Performance
+## Zero-shot cross-lingual performance
 <p align="center">
   <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v2"> <img src="figures/Table-4.png"></a> 
 </p>
 
-# 🔥 Real-world Deployment
+# 🔥 Real-world deployment
 For real-world deployment, please refer to 
 the [vLLM Distributed Inference and Serving](https://docs.vllm.ai/en/latest/serving/distributed_serving.html) 
 and [OpenAI Compatible Server](https://docs.vllm.ai/en/latest/serving/openai_compatible_server.html).
 
-# 🎯 Automatic Speech Recognition
+# 🎯 Automatic speech recognition
 In [this file](https://github.com/vkola-lab/PodGPT/blob/main/scripts/audio2text.py), we provide Automatic Speech Recognition (ASR) service.
 ```shell
 python audio2text.py
 ```
 
-# ⚒️ Dataset Builder
+# ⚒️ Dataset builder
 We used the following codes to pre-process our transcripts and generate the training dataset.
 ```shell
 python database_builder.py
 ```
 
-# 🛠️ Upload and Download Models
+# 🛠️ Upload and download models
 In the [scripts folder](https://github.com/vkola-lab/PodGPT/tree/main/scripts), 
 we offer support for both uploading and downloading models.
 
@@ -245,7 +245,7 @@ To download your model or files from Hugging Face repo,
 python download_model.py --repo "shuyuej/DrGemma2B" --repo_type "model" --save_dir "./save_folder"
 ```
 
-# 🖼️ Structure of the Code
+# 🖼️ Structure of the code
 At the root of the project, you will see:
 
 ```text
@@ -295,7 +295,7 @@ If you find our work useful in your research, please consider citing it in your 
 ```bibtex
 @article {Jia2024podgpt,
 	author = {Jia, Shuyue and Bit, Subhrangshu and Searls, Edward and Lauber, Meagan V. and Claus, Lindsey A. and Fan, Pengrui and Jasodanand, Varuna H. and Veerapaneni, Divya and Wang, William M. and Au, Rhoda and Kolachalama, Vijaya B.},
-	title = {{PodGPT}: An Audio-augmented Large Language Model for Research and Education},
+	title = {{PodGPT}: An audio-augmented large language model for research and education},
 	elocation-id = {2024.07.11.24310304},
 	year = {2024},
 	doi = {10.1101/2024.07.11.24310304},
@@ -323,10 +323,8 @@ If you find our work useful in your research, please consider citing it in your 
 
 If you have any questions, please drop us an email at [brucejia@bu.edu](brucejia@bu.edu), [sbit@bu.edu](sbit@bu.edu), and [nsearls@bu.edu](nsearls@bu.edu).
 
-# 🔨 Contribution
-We always welcome contributions to help make **PodGPT** Library better. 
-If you would like to contribute, please submit a [pull request](https://github.com/vkola-lab/PodGPT/pulls).
+# 🔨 Contributions
+We always welcome contributions to help make **PodGPT** better. If you would like to contribute, please submit a [pull request](https://github.com/vkola-lab/PodGPT/pulls).
 
-# 🙌 Acknowledgement
-The success of the **PodGPT** project is a result of **collaborative teamwork** by a group of members of the 
-[Kolachalama Laboratory](https://vkola-lab.github.io/). The **PodGPT** Library is maintained by the [Kolachalama Laboratory](https://vkola-lab.github.io/) at Boston University.
+# 🙌 Acknowledgements
+This repository is maintained by members of the [Kolachalama Laboratory](https://vkola-lab.github.io/).
