@@ -13,6 +13,16 @@ For `quantization.py`, we are using Python [AutoGPTQ](https://github.com/AutoGPT
 python quantization.py "meta-llama/Meta-Llama-3-70B-Instruct" "./gptq_model" --bits 4 --group_size 128 --desc_act 1 --dtype bfloat16 --seqlen 2048 --damp 0.01
 ```
 
+For `quantization_GPTQModel.py`, we are using Python [GPTQModel](https://github.com/ModelCloud/GPTQModel) package to conduct quantization.
+```shell
+pip install -v gptqmodel --no-build-isolation
+```
+
+Then,
+```shell
+python quantization_GPTQModel.py "meta-llama/Llama-3.3-70B-Instruct" "./gptq_model" --bits 4 --group_size 128 --seqlen 2048 --damp 0.01 --desc_act 1 --dtype bfloat16
+```
+
 For `quantization_HF.py`, we are using Hugging Face [transformers](https://github.com/huggingface/transformers) package to conduct quantization.
 ```shell
 python quantization_HF.py --repo "meta-llama/Meta-Llama-3-70B-Instruct" --bits 4 --group_size 128
