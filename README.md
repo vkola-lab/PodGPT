@@ -85,7 +85,17 @@ We can directly use the Hugging Face [transformers](https://github.com/huggingfa
 python quantization_HF.py --repo "meta-llama/Meta-Llama-3.1-70B-Instruct" --bits 4 --group_size 128
 ```
 
-Alternatively, we also provide a quantization script by using the Python [AutoGPTQ](https://github.com/AutoGPTQ/AutoGPTQ) package.
+Or, we enable the Python [GPTQModel](https://github.com/ModelCloud/GPTQModel) package to conduct quantization.
+```shell
+pip install -v gptqmodel --no-build-isolation
+```
+
+Then,
+```shell
+python quantization_GPTQModel.py "meta-llama/Llama-3.3-70B-Instruct" "./gptq_model" --bits 4 --group_size 128 --seqlen 2048 --damp 0.01 --desc_act 1 --dtype bfloat16
+```
+
+Alternatively, we also provide a quantization script using the Python [AutoGPTQ](https://github.com/AutoGPTQ/AutoGPTQ) package.
 ```shell
 python quantization.py "meta-llama/Meta-Llama-3.1-70B-Instruct" "./gptq_model" --bits 4 --group_size 128 --desc_act 1 --dtype bfloat16 --seqlen 2048 --damp 0.01
 ```
