@@ -2,6 +2,7 @@
 First, in the project home directory, please copy and paste these files,
 ```shell
 cp -r ./quantization/quantization.py ./
+cp -r ./quantization/quantization_GPTQModel.py ./
 cp -r ./quantization/quantization_HF.py ./
 cp -r ./quantization/upload_quantized_model.py ./
 ```
