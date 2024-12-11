@@ -118,6 +118,9 @@ def model_loader(config):
             task_type=TaskType.CAUSAL_LM,
         )
     model.add_adapter(lora_config, adapter_name="adapter")
+    # If you wanna load the existing LoRA adapter, please comment the above `model.add_adapter`
+    # And use the `model.load_adapter`
+    # model.load_adapter("./save_folder/YOUR_LORA_CHECKPOINT_FOLDER_PATH")
     model.enable_adapters()
     print_parameters(model=model)
 
