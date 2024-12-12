@@ -24,10 +24,12 @@ def model_initializer(config):
     :return tokenizer: the tokenizer of the pre-trained model
     """
     model_name = config.get("model_name")
+    train_max_len = config.get("train_max_len")
     hf_read_token = config.get("hf_read_token")
     lora_r = config.get("lora_r")
     lora_alpha = config.get("lora_alpha")
     lora_dropout = config.get("lora_dropout")
+    device_map = config.get("device_map")
 
     model = AutoGPTQForCausalLM.from_quantized(
         model_name,
@@ -61,8 +63,18 @@ def model_initializer(config):
     # Load tokenizer
     tokenizer = AutoTokenizer.from_pretrained(
         model_name,
-        use_fast=False,
+        ############################################################
+        # IMPORTANT - Please note that this is for model training
+        # We DON'T need this during performance evaluation
+        model_max_length=train_max_len,
+        padding='longest',
+        padding_side="right",
+        truncation=True,
+        ############################################################
+        return_tensors="pt",
+        # use_fast=False,
         use_auth_token=hf_read_token,
+        device_map=device_map,
     )
     if not tokenizer.pad_token_id:
         tokenizer.pad_token_id = tokenizer.eos_token_id
