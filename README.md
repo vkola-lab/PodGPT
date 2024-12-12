@@ -279,6 +279,7 @@ At the root of the project, you will see:
 │   ├── model_split.py
 │   ├── quantization.py
 │   ├── quantization_HF.py
+│   ├── quantization_GPTQModel.py
 │   └── upload_quantized_model.py
 ├── download_files
 │   ├── download_model_from_hf.py
