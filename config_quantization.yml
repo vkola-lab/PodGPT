@@ -72,9 +72,9 @@ log_save_platform : "tensorboard"
 fp16 : True
 # Whether to use bf16 16-bit (mixed) precision training instead of 32-bit training. Requires Ampere or higher
 # NVIDIA architecture or using CPU (use_cpu) or Ascend NPU. This is an experimental API and it may change.
-# We cannot use bf16 training due to this issue:
+# For the quantized model with the LoRA adapter, we cannot use bf16 training due to this issue caused by triton:
 # AssertionError('First input (bf16) and second input (fp32) must have the same dtype!')
-# https://github.com/huggingface/peft/issues/1249#issuecomment-1855664740
+# https://github.com/unslothai/unsloth/issues/1333#issuecomment-2542106253
 bf16 : False
 
 # Choose which GPU to use
