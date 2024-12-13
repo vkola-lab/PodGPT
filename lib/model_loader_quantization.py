@@ -111,6 +111,8 @@ def trainer_loader(config, model, tokenizer, dataset, num_train_epochs):
     weight_decay = config.get("weight_decay")
     warmup_ratio = config.get("warmup_ratio")
     lr_scheduler_type = config.get("lr_scheduler_type")
+    fp16 = config.get("fp16")
+    bf16 = config.get("bf16")
     save_dir = config.get("save_dir")
     train_max_len = config.get("train_max_len")
     gradient_checkpointing = config.get("gradient_checkpointing")
@@ -132,6 +134,8 @@ def trainer_loader(config, model, tokenizer, dataset, num_train_epochs):
         learning_rate=learning_rate,
         lr_scheduler_type=lr_scheduler_type,
         weight_decay=weight_decay,
+        fp16=fp16,
+        bf16=bf16,
         warmup_ratio=warmup_ratio,
         report_to=log_save_platform,
         remove_unused_columns=False,
