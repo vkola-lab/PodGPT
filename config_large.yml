@@ -43,6 +43,8 @@ epochs : 5
 
 # Optimizer, Learning rate schedule, warm-up ratio
 # paged_adamw_8bit, adamw_torch
+# Please note that we trained all our smaller and quantized models using the `adamw_torch` optimizer
+# except the larger models, due to the computational limit.
 optim : "paged_adamw_8bit"
 lr_scheduler_type : "cosine"
 warmup_ratio : 0.03
