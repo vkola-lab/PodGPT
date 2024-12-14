@@ -36,7 +36,7 @@ your pocket** and **benchmarking multilingual STEMM LLMs**.
   - [OpenAI ChatGPT Support](#-OpenAI-ChatGPT-Support)
 - [Dataset Description](#-Dataset-Description)
 - [Benchmarks and Results](#-Benchmarks-and-Results)
-  - [Benchmarks Description](#Multilingual-Benchmarks-Description)
+  - [Multilingual Benchmarks](#multilingual-benchmarks)
   - [Performance on In-domain Benchmarks](#Performance-on-In-domain-Benchmarks)
   - [Performance of Retrieval-augmented Generation](#Performance-of-Retrieval-augmented-Generation)
   - [Zero-shot Cross-lingual Performance](#Zero-shot-Cross-lingual-Performance)
