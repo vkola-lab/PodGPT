@@ -48,6 +48,9 @@ warmup_ratio : 0.03
 gradient_checkpointing : True
 # Number of update steps to accumulate the gradients
 gradient_accumulation_steps : 1
+# Specify the maximum norm of the gradients for gradient clipping. 
+# Gradient clipping is used to prevent the exploding gradient problem in deep neural networks.
+max_grad_norm : 0.01
 # Initial learning rate
 learning_rate : 0.000005
 # Weight decay to apply to all layers except bias/LayerNorm weights
