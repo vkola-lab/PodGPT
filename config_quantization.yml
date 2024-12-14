@@ -1,5 +1,5 @@
 # Model info
-model_name : "shuyuej/MedLLaMA3-70B-BASE-MODEL-QUANT"
+model_name : "shuyuej/Llama-3.3-70B-Instruct-GPTQ"
 
 # Dataset info
 dataset_hf : "shuyuej/PodGPT-Demo-Data"
