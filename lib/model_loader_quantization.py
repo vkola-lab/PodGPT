@@ -33,6 +33,10 @@ def model_initializer(config):
 
     model = AutoGPTQForCausalLM.from_quantized(
         model_name,
+        # Since we are using the auto-gptq==0.6.0,
+        # We cannot use shard safetensors and here we just use the single 39.8GB single-safetensor checkpoint. 
+        # https://huggingface.co/shuyuej/Llama-3.3-70B-Instruct-GPTQ/tree/f77c1b3864179c38146f12656804b5b3dfd1e2a2
+        revision="f77c1b3",
         use_safetensors=True,
         use_triton=True,
         warmup_triton=False,
@@ -116,6 +120,7 @@ def trainer_loader(config, model, tokenizer, dataset, num_train_epochs):
     save_dir = config.get("save_dir")
     train_max_len = config.get("train_max_len")
     gradient_checkpointing = config.get("gradient_checkpointing")
+    max_grad_norm = config.get("max_grad_norm")
     log_save_platform = config.get("log_save_platform")
     save_strategy = config.get("save_strategy")
     save_steps = config.get("save_steps")
@@ -129,6 +134,7 @@ def trainer_loader(config, model, tokenizer, dataset, num_train_epochs):
         per_device_train_batch_size=train_batch_size,
         gradient_accumulation_steps=gradient_accumulation_steps,
         gradient_checkpointing=gradient_checkpointing,
+        max_grad_norm=max_grad_norm,
         optim=optim,
         logging_steps=logging_steps,
         learning_rate=learning_rate,
