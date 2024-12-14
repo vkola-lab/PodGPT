@@ -47,7 +47,7 @@ your pocket** and **benchmarking multilingual STEMM LLMs**.
 - [Structure of the Code](#-Structure-of-the-Code)
 - [Citation](#-Citation)
 - [Contact](#-Contact)
-- [Contribution](#-Contribution)
+- [Contributions](#-Contributions)
 - [Acknowledgement](#-Acknowledgement)
 
 # ❤️ PodGPT
