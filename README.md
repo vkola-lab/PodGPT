@@ -110,9 +110,17 @@ Lastly, we optimize the LoRA module,
 python main_quantization.py
 ```
 _Quantized Model Training Special Notice_: <br>
-1. **Stable training** of the quantized model with a LoRA adapter is tricky. Here, we provide a solution to this problem.
+1. **Stable training** of the quantized model with a LoRA adapter is tricky.
+   We found the fine-tuned model tends to [**repeat the answer**](https://github.com/tloen/alpaca-lora/issues/467) during the generation process.
+   Here, we provide a solution to this problem.
    Please check our [configurations](https://github.com/vkola-lab/PodGPT/blob/main/config_quantization.yml#L40-L68)
    and [model loader](https://github.com/vkola-lab/PodGPT/blob/main/lib/model_loader_quantization.py).
+   <details>
+       <summary>Here is the training loss of our quantized LLaMA 3.3 70B model</summary>
+       <p align="center">
+           <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v2"> <img src="figures/quantized_model_training_progress.png"></a> 
+       </p>
+   </details>
 3. Check [this solution](https://github.com/AutoGPTQ/AutoGPTQ/issues/509#issuecomment-2274011154) if you cannot successfully start the model training.
 4. Check [this solution](https://github.com/oobabooga/text-generation-webui/issues/4074#issuecomment-1790059935) if your adapters cannot be saved due to PEFT.
 5. There are many unexpected issues for model quantization as well as model training, checkpoint saving, and vLLM 
