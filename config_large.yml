@@ -1,5 +1,9 @@
 # Model info
-model_name : "meta-llama/Meta-Llama-3.1-70B-Instruct"
+# mistralai/Mixtral-8x7B-Instruct-v0.1
+# Link: https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1
+# meta-llama/Llama-3.3-70B-Instruct
+# Link: https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
+model_name : "meta-llama/Llama-3.3-70B-Instruct"
 
 # Dataset info
 dataset_hf : "shuyuej/PodGPT-Demo-Data"
