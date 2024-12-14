@@ -43,7 +43,7 @@ your pocket** and **benchmarking multilingual STEMM LLMs**.
 - [Real-world Deployment](#-Real-world-Deployment)
 - [Automatic Speech Recognition](#-Automatic-Speech-Recognition)
 - [Dataset Builder](#%EF%B8%8F-dataset-builder)
-- [Upload and Download Models](#-Upload-and-Download-Models)
+- [Upload and Download Models](#%EF%B8%8F-upload-and-download-models)
 - [Structure of the Code](#-Structure-of-the-Code)
 - [Citation](#-Citation)
 - [Contact](#-Contact)
