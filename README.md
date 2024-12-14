@@ -44,7 +44,7 @@ your pocket** and **benchmarking multilingual STEMM LLMs**.
 - [Automatic Speech Recognition](#-Automatic-Speech-Recognition)
 - [Dataset Builder](#%EF%B8%8F-dataset-builder)
 - [Upload and Download Models](#%EF%B8%8F-upload-and-download-models)
-- [Structure of the Code](#-Structure-of-the-Code)
+- [Structure of the Code](#%EF%B8%8F-structure-of-the-code)
 - [Citation](#-Citation)
 - [Contact](#-Contact)
 - [Contributions](#-Contributions)
