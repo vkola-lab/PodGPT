@@ -69,8 +69,48 @@ def performance_eval(config, mode, prompts, answers, file_path):
                 # "stop_token_ids":[128001, 128009] to temporarily address the non-stop generation issue.
                 # vLLM does not yet respect generation_config.json.
                 # vLLM team is working on a fix for this https://github.com/vllm-project/vllm/issues/4180
-                stop_token_ids=[128001, 128009],
+                stop_token_ids=[128001, 128004, 128008, 128009],
             )
+            if eval_pretrain:
+                # Initialize vLLM engine
+                llm = LLM(
+                    model=save_dir,
+                    tokenizer=model_name,
+                    # While using the GPTQ quantization, the current vLLM only supports float16, as of Dec. 14th, 2024
+                    dtype='float16',
+                    quantization="GPTQ",
+                    # Acknowledgement: Benjamin Kitor
+                    # https://github.com/vllm-project/vllm/issues/2794
+                    # Reference:
+                    # https://github.com/vllm-project/vllm/issues/1908
+                    distributed_executor_backend="mp",
+                    tensor_parallel_size=num_gpus_vllm,
+                    gpu_memory_utilization=gpu_utilization_vllm,
+                    # Note: We add this only to save the GPU Memories!
+                    max_model_len=max_model_len_vllm,
+                    disable_custom_all_reduce=True,
+                    enable_lora=False,
+                )
+            else:
+                # Initialize vLLM engine
+                llm = LLM(
+                    model=save_dir,
+                    tokenizer=model_name,
+                    # While using the GPTQ quantization, the current vLLM only supports float16, as of Dec. 14th, 2024
+                    dtype='float16',
+                    quantization="GPTQ",
+                    # Acknowledgement: Benjamin Kitor
+                    # https://github.com/vllm-project/vllm/issues/2794
+                    # Reference:
+                    # https://github.com/vllm-project/vllm/issues/1908
+                    distributed_executor_backend="mp",
+                    tensor_parallel_size=num_gpus_vllm,
+                    gpu_memory_utilization=gpu_utilization_vllm,
+                    # Note: We add this only to save the GPU Memories!
+                    max_model_len=max_model_len_vllm,
+                    disable_custom_all_reduce=True,
+                    enable_lora=True,
+                )
         else:
             stop_tokens = stop_token_list()
             # https://github.com/vllm-project/vllm/blob/main/vllm/sampling_params.py#L38-L66
@@ -80,56 +120,49 @@ def performance_eval(config, mode, prompts, answers, file_path):
                 max_tokens=max_new_tokens,
                 stop=stop_tokens
             )
+            if eval_pretrain:
+                # Initialize vLLM engine
+                llm = LLM(
+                    model=save_dir,
+                    tokenizer=model_name,
+                    dtype='bfloat16',
+                    # Acknowledgement: Benjamin Kitor
+                    # https://github.com/vllm-project/vllm/issues/2794
+                    # Reference:
+                    # https://github.com/vllm-project/vllm/issues/1908
+                    distributed_executor_backend="mp",
+                    tensor_parallel_size=num_gpus_vllm,
+                    gpu_memory_utilization=gpu_utilization_vllm,
+                    # Note: We add this only to save the GPU Memories!
+                    max_model_len=max_model_len_vllm,
+                    disable_custom_all_reduce=True,
+                    enable_lora=False,
+                )
+            else:
+                # Initialize vLLM engine
+                llm = LLM(
+                    model=save_dir,
+                    tokenizer=model_name,
+                    dtype='bfloat16',
+                    # Acknowledgement: Benjamin Kitor
+                    # https://github.com/vllm-project/vllm/issues/2794
+                    # Reference:
+                    # https://github.com/vllm-project/vllm/issues/1908
+                    distributed_executor_backend="mp",
+                    tensor_parallel_size=num_gpus_vllm,
+                    gpu_memory_utilization=gpu_utilization_vllm,
+                    # Note: We add this only to save the GPU Memories!
+                    max_model_len=max_model_len_vllm,
+                    disable_custom_all_reduce=True,
+                    enable_lora=True,
+                )
 
-        if eval_pretrain:
-            # Initialize vLLM engine
-            llm = LLM(
-                model=save_dir,
-                tokenizer=model_name,
-                dtype='bfloat16',
-                # Acknowledgement: Benjamin Kitor
-                # https://github.com/vllm-project/vllm/issues/2794
-                # Reference:
-                # https://github.com/vllm-project/vllm/issues/1908
-                distributed_executor_backend="mp",
-                tensor_parallel_size=num_gpus_vllm,
-                gpu_memory_utilization=gpu_utilization_vllm,
-                # Note: We add this only to save the GPU Memories!
-                max_model_len=max_model_len_vllm,
-                disable_custom_all_reduce=True,
-                enable_lora=False,
-            )
-
-            # For the evaluation of the pre-trained model
-            completions = llm.generate(
-                prompts,
-                sampling_params,
-            )
-        else:
-            # Initialize vLLM engine
-            llm = LLM(
-                model=save_dir,
-                tokenizer=model_name,
-                dtype='bfloat16',
-                # Acknowledgement: Benjamin Kitor
-                # https://github.com/vllm-project/vllm/issues/2794
-                # Reference:
-                # https://github.com/vllm-project/vllm/issues/1908
-                distributed_executor_backend="mp",
-                tensor_parallel_size=num_gpus_vllm,
-                gpu_memory_utilization=gpu_utilization_vllm,
-                # Note: We add this only to save the GPU Memories!
-                max_model_len=max_model_len_vllm,
-                disable_custom_all_reduce=True,
-                enable_lora=True,
-            )
-
-            # For the evaluation of the LoRA model
-            completions = llm.generate(
-                prompts,
-                sampling_params,
-                lora_request=LoRARequest("adapter", 1, lora_path)
-            )
+        # For the evaluation of the LoRA model
+        completions = llm.generate(
+            prompts,
+            sampling_params,
+            lora_request=LoRARequest("adapter", 1, lora_path)
+        )
 
         for i, output in enumerate(completions):
             temp_gen = output.outputs[0].text
@@ -137,32 +170,20 @@ def performance_eval(config, mode, prompts, answers, file_path):
         print('Successfully finished generating', len(prompts), 'samples!')
 
     # Evaluating the smaller models
+    # Please take a look at the above quantization codes if you are using a quantized model. 
     elif mode == "small":
         num_gpus_vllm = config.get("num_gpus_vllm")
         gpu_utilization_vllm = config.get("gpu_utilization_vllm")
-
-        if "QUANT" in model_name or "GPTQ" in model_name:
-            sampling_params = SamplingParams(
-                temperature=0,
-                top_p=1,
-                max_tokens=max_new_tokens,
-                # https://huggingface.co/astronomer/Llama-3-8B-Instruct-GPTQ-8-Bit
-                # For loading this model onto vLLM, make sure all requests have
-                # "stop_token_ids":[128001, 128009] to temporarily address the non-stop generation issue.
-                # vLLM does not yet respect generation_config.json.
-                # vLLM team is working on a fix for this https://github.com/vllm-project/vllm/issues/4180
-                stop_token_ids=[128001, 128009],
-            )
-        else:
-            stop_tokens = stop_token_list()
-            # https://github.com/vllm-project/vllm/blob/main/vllm/sampling_params.py#L38-L66
-            sampling_params = SamplingParams(
-                temperature=0,
-                top_p=1,
-                # repetition_penalty=2.0,  # Only for the `Mistral 7B` model on the `Hindi Benchmarks`!
-                max_tokens=max_new_tokens,
-                stop=stop_tokens
-            )
+        
+        stop_tokens = stop_token_list()
+        # https://github.com/vllm-project/vllm/blob/main/vllm/sampling_params.py#L38-L66
+        sampling_params = SamplingParams(
+            temperature=0,
+            top_p=1,
+            # repetition_penalty=2.0,  # Only for the `Mistral 7B` model on the `Hindi Benchmarks`!
+            max_tokens=max_new_tokens,
+            stop=stop_tokens
+        )
 
         llm = LLM(
             model=save_dir,
