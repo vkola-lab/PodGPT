@@ -24,7 +24,7 @@ Check our database [here](https://github.com/vkola-lab/PodGPT/tree/main/benchmar
 your pocket** and **benchmarking multilingual STEMM LLMs**.
 
 # 📚 Table of contents
-- [PodGPT](#-PodGPT)
+- [PodGPT](#PodGPT)
 - [Installation](#-Installation)
 - [Quick Start](#-Quick-Start)
   - [Train Lightweight Models](#-Train-Lightweight-Models)
@@ -50,7 +50,7 @@ your pocket** and **benchmarking multilingual STEMM LLMs**.
 - [Contributions](#-Contributions)
 - [Acknowledgements](#-Acknowledgements)
 
-# ❤️ PodGPT
+# PodGPT
 Our proposed **PodGPT** computational framework for research and education
 <p align="center">
   <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v2"> <img src="figures/PodGPT-Framework.png"></a> 
