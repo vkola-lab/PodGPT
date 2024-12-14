@@ -48,7 +48,7 @@ your pocket** and **benchmarking multilingual STEMM LLMs**.
 - [Citation](#-Citation)
 - [Contact](#-Contact)
 - [Contributions](#-Contributions)
-- [Acknowledgement](#-Acknowledgement)
+- [Acknowledgements](#-Acknowledgements)
 
 # ❤️ PodGPT
 Our proposed **PodGPT** computational framework for research and education
