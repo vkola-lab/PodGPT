@@ -39,7 +39,7 @@ max_new_tokens : 1024
 train_batch_size : 1
 
 # Number of training epochs
-epochs : 5
+epochs : 1
 
 # Optimizer, Learning rate schedule, warm-up ratio
 # paged_adamw_8bit, adamw_torch
