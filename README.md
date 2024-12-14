@@ -42,7 +42,7 @@ your pocket** and **benchmarking multilingual STEMM LLMs**.
   - [Zero-shot Cross-lingual Performance](#Zero-shot-Cross-lingual-Performance)
 - [Real-world Deployment](#-Real-world-Deployment)
 - [Automatic Speech Recognition](#-Automatic-Speech-Recognition)
-- [Dataset Builder](#-Dataset-Builder)
+- [Dataset Builder](#%EF%B8%8F-dataset-builder)
 - [Upload and Download Models](#-Upload-and-Download-Models)
 - [Structure of the Code](#-Structure-of-the-Code)
 - [Citation](#-Citation)
