@@ -24,7 +24,7 @@ Check our database [here](https://github.com/vkola-lab/PodGPT/tree/main/benchmar
 your pocket** and **benchmarking multilingual STEMM LLMs**.
 
 # 📚 Table of contents
-- [PodGPT](#PodGPT)
+- [PodGPT](#podgpt-1)
 - [Installation](#-Installation)
 - [Quick Start](#-Quick-Start)
   - [Train Lightweight Models](#-Train-Lightweight-Models)
