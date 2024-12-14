@@ -91,6 +91,11 @@ def performance_eval(config, mode, prompts, answers, file_path):
                     disable_custom_all_reduce=True,
                     enable_lora=False,
                 )
+                # For the evaluation of the LoRA model
+                completions = llm.generate(
+                    prompts,
+                    sampling_params,
+                )
             else:
                 # Initialize vLLM engine
                 llm = LLM(
@@ -110,6 +115,12 @@ def performance_eval(config, mode, prompts, answers, file_path):
                     max_model_len=max_model_len_vllm,
                     disable_custom_all_reduce=True,
                     enable_lora=True,
+                )
+                # For the evaluation of the LoRA model
+                completions = llm.generate(
+                    prompts,
+                    sampling_params,
+                    lora_request=LoRARequest("adapter", 1, lora_path)
                 )
         else:
             stop_tokens = stop_token_list()
@@ -138,6 +149,11 @@ def performance_eval(config, mode, prompts, answers, file_path):
                     disable_custom_all_reduce=True,
                     enable_lora=False,
                 )
+                # For the evaluation of the LoRA model
+                completions = llm.generate(
+                    prompts,
+                    sampling_params,
+                )
             else:
                 # Initialize vLLM engine
                 llm = LLM(
@@ -156,14 +172,13 @@ def performance_eval(config, mode, prompts, answers, file_path):
                     disable_custom_all_reduce=True,
                     enable_lora=True,
                 )
-
-        # For the evaluation of the LoRA model
-        completions = llm.generate(
-            prompts,
-            sampling_params,
-            lora_request=LoRARequest("adapter", 1, lora_path)
-        )
-
+                # For the evaluation of the LoRA model
+                completions = llm.generate(
+                    prompts,
+                    sampling_params,
+                    lora_request=LoRARequest("adapter", 1, lora_path)
+                )
+                
         for i, output in enumerate(completions):
             temp_gen = output.outputs[0].text
             responses.append(temp_gen)
