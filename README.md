@@ -109,10 +109,13 @@ Lastly, we optimize the LoRA module,
 ```shell
 python main_quantization.py
 ```
-_Special Notice_: <br>
-1. Check [this solution](https://github.com/AutoGPTQ/AutoGPTQ/issues/509#issuecomment-2274011154) if you cannot successfully start the model training.
-2. Check [this solution](https://github.com/oobabooga/text-generation-webui/issues/4074#issuecomment-1790059935) if your adapters cannot be saved due to PEFT.
-3. There are many unexpected issues for model quantization as well as model training, checkpoint saving, and vLLM 
+_Quantized Model Training Special Notice_: <br>
+1. **Stable training** of the quantized model with a LoRA adapter is tricky. Here, we provide a solution to this problem.
+   Please check our [configurations](https://github.com/vkola-lab/PodGPT/blob/main/config_quantization.yml#L40-L68)
+   and [model loader](https://github.com/vkola-lab/PodGPT/blob/main/lib/model_loader_quantization.py).
+3. Check [this solution](https://github.com/AutoGPTQ/AutoGPTQ/issues/509#issuecomment-2274011154) if you cannot successfully start the model training.
+4. Check [this solution](https://github.com/oobabooga/text-generation-webui/issues/4074#issuecomment-1790059935) if your adapters cannot be saved due to PEFT.
+5. There are many unexpected issues for model quantization as well as model training, checkpoint saving, and vLLM 
    inference. Please submit a GitHub issue if you cannot solve it. **We should meet all the problems before**
    in terms of single-GPU and distributed-GPU, _e.g._, 4 A100 80G GPUs, settings.
 
