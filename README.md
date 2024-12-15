@@ -238,6 +238,21 @@ including **_English_**, **_Mandarin_**, **_French_**, **_Spanish_**, and **_Hin
 # 🔥 Real-world deployment
 For real-world deployment, please refer to the [vLLM Distributed Inference and Serving](https://docs.vllm.ai/en/latest/serving/distributed_serving.html) and [OpenAI Compatible Server](https://docs.vllm.ai/en/latest/serving/openai_compatible_server.html).
 
+vLLM can be deployed as a server that implements the OpenAI API protocol. This allows vLLM to be used as a drop-in replacement for applications using OpenAI API. By default, it starts the server at `http://localhost:8000`.
+```shell
+vllm serve shuyuej/Llama-3.3-70B-Instruct-GPTQ \
+    --quantization gptq \
+    --trust-remote-code \
+    --dtype float16 \
+    --max-model-len 4096 \
+    --distributed-executor-backend mp \
+    --pipeline-parallel-size 4 \
+    --api-key token-abc123
+```
+Please check [here](https://docs.vllm.ai/en/stable/models/engine_args.html) if you wanna change `Engine Arguments`.
+
+Since this server is compatible with OpenAI API, you can use it as a drop-in replacement for any applications using OpenAI API. 
+For example, another way to query the server is via the openai python package:
 ```python
 import asyncio
 from openai import AsyncOpenAI
@@ -257,7 +272,10 @@ I will not be enthusiastic and use exclamation points. Just be helpful and extre
 query = "The president of the United States is"
 
 # Initialize the AsyncOpenAI client
-client = AsyncOpenAI()
+client = AsyncOpenAI(
+    base_url="http://localhost:8000/v1",
+    api_key="token-abc123",
+)
 
 
 async def main():
@@ -273,7 +291,7 @@ async def main():
                 "content": query,
             }
         ],
-        max_tokens=4096,
+        max_tokens=2048,
         temperature=0.2,
         top_p=1,
         stream=True,
