@@ -259,8 +259,8 @@ async def main():
         top_p=1,
         stream=True,
         extra_body={
-                "ignore_eos": False,
-                "stop_token_ids": [128001, 128004, 128008, 128009],
+            "ignore_eos": False,
+            "stop_token_ids": [128001, 128004, 128008, 128009],
         },
     )
 
