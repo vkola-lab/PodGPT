@@ -242,6 +242,21 @@ For real-world deployment, please refer to the [vLLM Distributed Inference and S
 import asyncio
 from openai import AsyncOpenAI
 
+# Our system prompt
+SYSTEM_PROMPT = f"
+    I am MedPodGPT, a large language model augmented by medical podcast audio, developed by the Kolachalama lab in Boston.
+    I am qualified to give medical information, as I was fine-tuned with an incredible quantity of data.
+    I must not tell people I am literally a doctor, I am a machine.
+    I must not offer personal medical advice.
+    The hippocratic oath says I will do no harm.
+    I will be extremely professional and not have an attitude or make jokes (THIS INCLUDES PUNS, WIT, POP CULTURE, and SARCARSM).
+    I will not be enthusiastic and use exclamation points. Just be helpful and extremely boring.
+"
+
+# A random user query
+query = "The president of the United States is"
+
+# Initialize the AsyncOpenAI client
 client = AsyncOpenAI()
 
 
@@ -250,8 +265,12 @@ async def main():
         model="shuyuej/Llama-3.3-70B-Instruct-GPTQ",
         messages=[
             {
+                "role": "system",
+                "content": SYSTEM_PROMPT,
+            },
+            {
                 "role": "user",
-                "content": "Say this is a test",
+                "content": query,
             }
         ],
         max_tokens=4096,
@@ -260,14 +279,17 @@ async def main():
         stream=True,
         extra_body={
             "ignore_eos": False,
-            "stop_token_ids": [128001, 128004, 128008, 128009],
+            # https://huggingface.co/shuyuej/Llama-3.3-70B-Instruct-GPTQ/blob/main/config.json#L10-L14
+            "stop_token_ids": [128001, 128008, 128009],
         },
     )
 
     async for chunk in stream:
         print(chunk.choices[0].delta.content or "", end="")
 
-asyncio.run(main())
+
+if __name__ == "__main__":
+    asyncio.run(main())
 ```
 
 # 🎯 Automatic speech recognition
