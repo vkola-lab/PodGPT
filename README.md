@@ -236,9 +236,39 @@ including **_English_**, **_Mandarin_**, **_French_**, **_Spanish_**, and **_Hin
 </p>
 
 # 🔥 Real-world deployment
-For real-world deployment, please refer to 
-the [vLLM Distributed Inference and Serving](https://docs.vllm.ai/en/latest/serving/distributed_serving.html) 
-and [OpenAI Compatible Server](https://docs.vllm.ai/en/latest/serving/openai_compatible_server.html).
+For real-world deployment, please refer to the [vLLM Distributed Inference and Serving](https://docs.vllm.ai/en/latest/serving/distributed_serving.html) and [OpenAI Compatible Server](https://docs.vllm.ai/en/latest/serving/openai_compatible_server.html).
+
+```python
+import asyncio
+from openai import AsyncOpenAI
+
+client = AsyncOpenAI()
+
+
+async def main():
+    stream = await client.chat.completions.create(
+        model="shuyuej/Llama-3.3-70B-Instruct-GPTQ",
+        messages=[
+            {
+                "role": "user",
+                "content": "Say this is a test",
+            }
+        ],
+        max_tokens=4096,
+        temperature=0.2,
+        top_p=1,
+        stream=True,
+        extra_body={
+                "ignore_eos": False,
+                "stop_token_ids": [128001, 128004, 128008, 128009],
+        },
+    )
+
+    async for chunk in stream:
+        print(chunk.choices[0].delta.content or "", end="")
+
+asyncio.run(main())
+```
 
 # 🎯 Automatic speech recognition
 In [this file](https://github.com/vkola-lab/PodGPT/blob/main/scripts/audio2text.py), we provide Automatic Speech Recognition (ASR) service.
