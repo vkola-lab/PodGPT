@@ -241,7 +241,7 @@ including **_English_**, **_Mandarin_**, **_French_**, **_Spanish_**, and **_Hin
 </p>
 
 # 🔥 Real-world deployment
-For real-world deployment, please refer to the [vLLM Distributed Inference and Serving](https://docs.vllm.ai/en/latest/serving/distributed_serving.html) and [OpenAI Compatible Server](https://docs.vllm.ai/en/latest/serving/openai_compatible_server.html).
+For real-world deployment, please refer to the [vLLM Distributed Inference and Serving](https://docs.vllm.ai/en/latest/serving/distributed_serving.html) and [OpenAI Compatible Server](https://docs.vllm.ai/en/latest/serving/openai_compatible_server.html). We provide a deployment script [here](https://github.com/vkola-lab/PodGPT/blob/main/scripts/deployment.py).
 
 vLLM can be deployed as a server that implements the OpenAI API protocol. This allows vLLM to be used as a drop-in replacement for applications using OpenAI API. By default, it starts the server at `http://localhost:8000`.
 ```shell
