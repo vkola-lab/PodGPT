@@ -17,11 +17,11 @@
 It is an online platform for deploying our latest multimodal foundation models for STEMM education and research.
 Please try it out if you are interested!
 
-[2024.7.12] We are releasing a new benchmark encompassing the latest USMLE Step 1, Step 2, Step 3, and Ethics to further advance the filed.
+[2024.7.12] We are releasing a new benchmark encompassing the latest USMLE Step 1, Step 2, Step 3, and Ethics to further advance the field.
 Check our database [here](https://github.com/vkola-lab/PodGPT/tree/main/benchmark/english_usmle).
 
 [2024.7.11] We open-sourced the [source codes](https://github.com/vkola-lab/PodGPT) of our **PodGPT**: **STEMM LLMs in 
-your pocket** and **benchmarking multilingual STEMM LLMs**.
+your pocket** and **benchmarking multilingual STEMM LLMs**. All our codes passed the [Flake8: Your Tool For Style Guide Enforcement](https://flake8.pycqa.org/en/latest/) checking.
 
 # 📚 Table of contents
 - [PodGPT](#podgpt-1)
