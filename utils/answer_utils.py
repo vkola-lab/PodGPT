@@ -374,7 +374,7 @@ def extract_answer(completion, option_range="a-eA-E"):
         re.compile(rf'would be[^{potential_letters}]*\{{([{option_range}])\}}'),
         re.compile(rf'would be[^{potential_letters}]*([{option_range}])\)'),
         re.compile(rf'would be[^{potential_letters}]*([{option_range}])$'),
-        
+
         # Matches "is (A)" and similar formats
         re.compile(
             rf'is[^{potential_letters}]*:+[^{potential_letters}]*\n+[^{potential_letters}]*\(([{option_range}])\)'
@@ -392,7 +392,7 @@ def extract_answer(completion, option_range="a-eA-E"):
             rf'is[^{potential_letters}]*:+[^{potential_letters}]*\n+[^{potential_letters}]*([{option_range}])\)'
         ),
         re.compile(rf'is[^{potential_letters}]*\n+[^{potential_letters}]*([{option_range}])\)'),
-        
+
         # Matches "be (A)" and similar formats
         re.compile(rf'is[^{letter_and_num}]+([{option_range}])\)'),
         re.compile(rf'be[^{letter_and_num}]+([{option_range}])\)'),
@@ -400,7 +400,7 @@ def extract_answer(completion, option_range="a-eA-E"):
         re.compile(rf'[^{letter_and_num}]+([{option_range}])\)[^{potential_letters}]*would'),
         re.compile(rf'[^{letter_and_num}]+([{option_range}])\)[^{potential_letters}]*could'),
         re.compile(rf'[^{letter_and_num}]+([{option_range}])\)[^{potential_letters}]*will'),
-        
+
         # Matches "(A)" followed by any other characters
         re.compile(rf':+[^{letter_and_num}]*([{option_range}])\)[^{potential_letters}]'),
         re.compile(rf':+[^{letter_and_num}]*([{option_range}])\)$'),
@@ -460,7 +460,7 @@ def extract_answer(completion, option_range="a-eA-E"):
     additional_patterns = [
         # Matches "A"
         re.compile(rf"^[^{letter_and_num}]*([{option_range}])[^{letter_and_num}]*$"),
-        
+
         # Matches "(A) is", "[A] is", "{A} is", and similar formats
         re.compile(rf'\(([{option_range}])\)[^{potential_letters}]*is'),
         re.compile(rf'\[([{option_range}])\][^{potential_letters}]*is'),
@@ -472,7 +472,7 @@ def extract_answer(completion, option_range="a-eA-E"):
         ),
         re.compile(rf'^([{option_range}])\)[^{potential_letters}]*is'),
         re.compile(rf'^([{option_range}])[^{letter_and_num}][^{potential_letters}]*is'),
-        
+
         # Matches "(A) would", "[A] would", "{A} would", and similar formats
         re.compile(rf'\(([{option_range}])\)[^{potential_letters}]*would'),
         re.compile(rf'\[([{option_range}])\][^{potential_letters}]*would'),
@@ -484,7 +484,7 @@ def extract_answer(completion, option_range="a-eA-E"):
         ),
         re.compile(rf'^([{option_range}])\)[^{potential_letters}]*would'),
         re.compile(rf'^([{option_range}])[^{letter_and_num}][^{potential_letters}]*would'),
-        
+
         # Matches "(A) could", "[A] could", "{A} could", and similar formats
         re.compile(rf'\(([{option_range}])\)[^{potential_letters}]*could'),
         re.compile(rf'\[([{option_range}])\][^{potential_letters}]*could'),
@@ -496,7 +496,7 @@ def extract_answer(completion, option_range="a-eA-E"):
         ),
         re.compile(rf'^([{option_range}])\)[^{potential_letters}]*could'),
         re.compile(rf'^([{option_range}])[^{letter_and_num}][^{potential_letters}]*could'),
-        
+
         # Matches "(A) will", "[A] will", "{A} will", and similar formats
         re.compile(rf'\(([{option_range}])\)[^{potential_letters}]*will'),
         re.compile(rf'\[([{option_range}])\][^{potential_letters}]*will'),
@@ -508,7 +508,7 @@ def extract_answer(completion, option_range="a-eA-E"):
         ),
         re.compile(rf'^([{option_range}])\)[^{potential_letters}]*will'),
         re.compile(rf'^([{option_range}])[^{letter_and_num}][^{potential_letters}]*will'),
-        
+
         # Matches "option: (A)" and similar formats
         re.compile(rf'[oO]ption:+[^{potential_letters}]*\(([{option_range}])\)'),
         re.compile(rf'[oO]ption:+[^{potential_letters}]*\[([{option_range}])\]'),
@@ -531,7 +531,7 @@ def extract_answer(completion, option_range="a-eA-E"):
             rf'{letter_and_num}]'
         ),
         re.compile(rf'[oO]ption:+[^{potential_letters}]*[^{letter_and_num}]([{option_range}])$'),
-        
+
         # Matches "choice: (A)" and similar formats
         re.compile(rf'[cC]hoice:+[^{potential_letters}]*\(([{option_range}])\)'),
         re.compile(rf'[cC]hoice:+[^{potential_letters}]*\[([{option_range}])\]'),
@@ -554,7 +554,7 @@ def extract_answer(completion, option_range="a-eA-E"):
             rf'{letter_and_num}]'
         ),
         re.compile(rf'[cC]hoice:+[^{potential_letters}]*[^{letter_and_num}]([{option_range}])$'),
-        
+
         # Matches "answer: (A)" and similar formats
         re.compile(rf' is[^{potential_letters}]+\(([{option_range}])\)[^{potential_letters}]'),
         re.compile(rf' is[^{potential_letters}]+\[([{option_range}])\][^{potential_letters}]'),
@@ -580,7 +580,7 @@ def extract_answer(completion, option_range="a-eA-E"):
         re.compile(rf' is[^{potential_letters}]+\{{([{option_range}])\}}'),
         re.compile(rf' is[^{potential_letters}]*[^{letter_and_num}]([{option_range}])\)'),
         re.compile(rf' is[^{letter_and_num}]*([{option_range}])\)'),
-        
+
         # Matches "choice (A)" and similar formats
         re.compile(rf'[cC]hoice[^{potential_letters}]*\(([{option_range}])\)'),
         re.compile(rf'[cC]hoice[^{potential_letters}]*\[([{option_range}])\]'),
@@ -603,7 +603,7 @@ def extract_answer(completion, option_range="a-eA-E"):
             rf'{letter_and_num}]'
         ),
         re.compile(rf'[cC]hoice[^{potential_letters}]*[^{letter_and_num}]([{option_range}])$'),
-        
+
         # Matches "answer (A)" and similar formats
         re.compile(rf'[aA]nswer[^{potential_letters}]*\(([{option_range}])\)'),
         re.compile(rf'[aA]nswer[^{potential_letters}]*\[([{option_range}])\]'),
@@ -625,7 +625,7 @@ def extract_answer(completion, option_range="a-eA-E"):
             rf'{letter_and_num}]'
         ),
         re.compile(rf'[aA]nswer[^{potential_letters}]*[^{letter_and_num}]([{option_range}])$'),
-        
+
         # Matches "option (A)" and similar formats
         re.compile(rf'[Oo]ption[^{potential_letters}]*\(([{option_range}])\)'),
         re.compile(rf'[Oo]ption[^{potential_letters}]*\[([{option_range}])\]'),

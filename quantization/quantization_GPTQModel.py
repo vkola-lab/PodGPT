@@ -138,15 +138,15 @@ def mian(args):
                     )
                 except KeyboardInterrupt:
                     # Handle user interrupt
-                    logger.error(f"Aborted. Will delete {output_dir}")
+                    logger.error("Aborted. Will delete {output_dir}")
                     os.rmdir(output_dir)
                     abort = True
-                except:
+                except Exception:
                     raise
             finally:
                 count += 1
         else:
-            logger.error(f"Aborting - told to stop!")
+            logger.error("Aborting - told to stop!")
             break
 
 

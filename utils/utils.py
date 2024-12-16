@@ -210,7 +210,6 @@ def prompt_template_MMedLM(input=None, language="English"):
     else:
         question = input.split("\nA.")[0]
         options = "\nA." + input.split("\nA.")[1]
-        
         options = options.replace(english_prompt, "")
         options = options.replace(hindi_prompt, "")
         options = options.replace(spanish_prompt, "")

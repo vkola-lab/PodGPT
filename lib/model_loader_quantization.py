@@ -8,7 +8,7 @@
 import os
 
 from transformers import AutoTokenizer, TrainingArguments
-from auto_gptq import AutoGPTQForCausalLM, BaseQuantizeConfig, get_gptq_peft_model
+from auto_gptq import AutoGPTQForCausalLM, get_gptq_peft_model
 from auto_gptq.utils.peft_utils import GPTQLoraConfig
 from peft import TaskType
 from trl import SFTTrainer
@@ -34,7 +34,7 @@ def model_initializer(config):
     model = AutoGPTQForCausalLM.from_quantized(
         model_name,
         # Since we are using the auto-gptq==0.6.0,
-        # We cannot use shard safetensors and here we just use the single 39.8GB single-safetensor checkpoint. 
+        # We cannot use shard safetensors and here we just use the single 39.8GB single-safetensor checkpoint.
         # https://huggingface.co/shuyuej/Llama-3.3-70B-Instruct-GPTQ/tree/f77c1b3864179c38146f12656804b5b3dfd1e2a2
         revision="f77c1b3",
         use_safetensors=True,
@@ -51,7 +51,8 @@ def model_initializer(config):
     model.warmup_triton()
 
     # https://gist.github.com/eusip/de8fadb761741b56d5d9a6232bf979ed#file-oasst-pythia-12b-05-03-2023-py-L68-L87
-    # NOTE: https://github.com/lvwerra/trl/blob/a2749d9e0c96198486b788875eda3b325f76a5c8/examples/sentiment/scripts/gpt-neox-20b_peft/gpt-neo-20b_sentiment_peft.py#L181
+    # https://github.com/lvwerra/trl/blob/a2749d9e0c96198486b788875eda3b325f76a5c8/examples/sentiment/scripts/
+    # gpt-neox-20b_peft/gpt-neo-20b_sentiment_peft.py#L181
     for param in model.parameters():
         # freeze base model's layers
         param.requires_grad = False

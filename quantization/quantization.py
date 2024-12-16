@@ -25,7 +25,6 @@
 
 ####################################################################################
 
-import time
 import os
 import logging
 import argparse
@@ -109,7 +108,6 @@ def quantization(model_dir, output_dir, quantdataset, bits, group_size, desc_act
         raise ValueError(f"Unsupported dtype: {dtype}")
 
     # Load the model with specified quantization settings
-    logger.info(f"Loading model from {model_dir} with trust_remote_code={trust_remote_code} and dtype={torch_dtype}")
     model = AutoGPTQForCausalLM.from_pretrained(
         model_dir,
         quantize_config=quantize_config,
@@ -119,15 +117,10 @@ def quantization(model_dir, output_dir, quantdataset, bits, group_size, desc_act
     )
 
     # Perform the quantization process
-    logger.info(f"Starting quantization to {output_dir} with use_triton={use_triton}")
-    start_time = time.time()
     model.quantize(quantdataset, use_triton=use_triton, batch_size=batch_size)
-    logger.info(f"Time to quantize model at {output_dir} with use_triton={use_triton}: {time.time() - start_time:.2f}")
 
     # Save the quantized model
-    logger.info(f"Saving quantized model to {output_dir}")
     model.save_quantized(output_dir, use_safetensors=True)
-    logger.info("Done.")
 
 
 def mian(args):
@@ -198,12 +191,12 @@ def mian(args):
                     logger.error(f"Aborted. Will delete {output_dir}")
                     os.rmdir(output_dir)
                     abort = True
-                except:
+                except Exception:
                     raise
             finally:
                 count += 1
         else:
-            logger.error(f"Aborting - told to stop!")
+            logger.error("Aborting - told to stop!")
             break
 
 

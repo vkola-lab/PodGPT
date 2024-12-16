@@ -6,12 +6,13 @@
 # PodGPT: An Audio-augmented Large Language Model for Research and Education
 # Copyright (C) 2024 Kolachalama Laboratory at Boston University
 
+import os
 import argparse
+import json
 
 import torch
 from datasets import load_dataset
 from transformers import AutoModelForCausalLM, AutoTokenizer, GPTQConfig
-from huggingface_hub import login
 
 from utils.utils import load_config
 
@@ -104,7 +105,7 @@ def main(repo, bits, group_size, act_order, hf_read_token):
         "weight_map": {key: "model.safetensors" for key in state_dict.keys()},  # Map all weights to a single file
     }
 
-    index_file_path = os.path.join(model_save_path, "model.safetensors.index.json")
+    index_file_path = os.path.join(f"{repo}_{bits}bit", "model.safetensors.index.json")
     with open(index_file_path, "w") as f:
         json.dump(index, f, indent=2)
     print("Saved index file to", index_file_path)
@@ -123,7 +124,7 @@ if __name__ == "__main__":
     # Load the configuration
     config = load_config(file_name="config_quantization.yml")
     hf_read_token = config.get("hf_read_token")
-    
+
     # Conduct the GPTQ quantization
     main(
         config=config,

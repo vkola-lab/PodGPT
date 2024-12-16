@@ -178,18 +178,18 @@ def performance_eval(config, mode, prompts, answers, file_path):
                     sampling_params,
                     lora_request=LoRARequest("adapter", 1, lora_path)
                 )
-                
+
         for i, output in enumerate(completions):
             temp_gen = output.outputs[0].text
             responses.append(temp_gen)
         print('Successfully finished generating', len(prompts), 'samples!')
 
     # Evaluating the smaller models
-    # Please take a look at the above quantization codes if you are using a quantized model. 
+    # Please take a look at the above quantization codes if you are using a quantized model.
     elif mode == "small":
         num_gpus_vllm = config.get("num_gpus_vllm")
         gpu_utilization_vllm = config.get("gpu_utilization_vllm")
-        
+
         stop_tokens = stop_token_list()
         # https://github.com/vllm-project/vllm/blob/main/vllm/sampling_params.py#L38-L66
         sampling_params = SamplingParams(

@@ -90,4 +90,3 @@ if __name__ == "__main__":
     print(yaml.dump(config, default_flow_style=False), '\n\n')
     main(config=config)
     sys.stdout = sys.__stdout__
-    

@@ -98,7 +98,7 @@ def model_loader(config):
             lora_alpha=lora_alpha,
             lora_dropout=lora_dropout,
             bias="none",
-            # Please note that the current vLLM is not supporting 
+            # Please note that the current vLLM is not supporting
             # the modules "w1", "w2", "w3", and "gate" at this point (June 20, 2024)
             target_modules=[
                 "q_proj", "k_proj", "v_proj", "o_proj"
