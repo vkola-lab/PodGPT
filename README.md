@@ -11,6 +11,8 @@
 </p>
 
 # 🎉 Announcements
+[2024.12.16] ![](figures/news.gif) We have released the source code for [**PodGPT with Retrieval-Augmented Generation (RAG)**](https://github.com/vkola-lab/PodGPT/tree/main/rag_pipeline). This powerful pipeline allows our model to ground responses with the latest scientific evidence from top-tier literature, such as _The New England Journal of Medicine_ (NEJM)!
+
 [2024.12.04] ![](figures/news.gif) Our [**PodGPT preprint**](https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v2) is now available online! Feel free to check it out!
 
 [2024.7.14] ![](figures/news.gif) Our AI platform, [**PodGPT**](https://podgpt.org/), is now publicly available!
