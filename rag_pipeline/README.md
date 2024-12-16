@@ -22,3 +22,26 @@ python main.py --mode small --eval_pretrain True
 ```
 1. `--mode`: Evaluate the smaller model or larger model: small or large. The default is "small".
 2. `--eval_pretrain`: Evaluate the original pretrained model: True/False. The default is True.
+
+## 🏞️ Structure of the code
+At the root of this folder, you will see:
+```text
+├── benchmark
+├── config_small.yml
+├── config_large.yml
+├── config_benchmark.yml
+├── main.py
+├── download_model.py
+├── lib
+│   ├── config.py
+│   ├── database.py
+│   ├── evaluation.py
+│   ├── model_loader.py
+│   └── pipeline.py
+└── utils
+    ├── answer_utils.py
+    ├── benchmark_utils.py
+    ├── eval_utils.py
+    ├── vllm_utils.py
+    └── utils.py
+```
