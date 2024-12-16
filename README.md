@@ -77,15 +77,13 @@ python main_large.py
 ```
 
 ## 🐤 Train quantized large models
-We also provide support for quantizing larger models, _e.g._, LLaMA 3.1 70B model, using the [GPTQ](https://arxiv.org/abs/2210.17323) algorithm and then optimizing the LoRA.
+We also provide support for quantizing larger models, _e.g._, the LLaMA 3.3 70B model, using the [GPTQ](https://arxiv.org/abs/2210.17323) algorithm and then optimizing the LoRA.
 ***The large models can be deployed on consumer GPUs after quantization.***
 
-We can directly use the Hugging Face [transformers](https://github.com/huggingface/transformers) package to conduct quantization.
-```shell
-python quantization_HF.py --repo "meta-llama/Meta-Llama-3.1-70B-Instruct" --bits 4 --group_size 128
-```
+> [!IMPORTANT]  
+> Due to the [suspended development of the AutoGPTQ package](https://github.com/vkola-lab/PodGPT/issues/1), we strongly recommend conducting quantization using the [GPTQModel](https://github.com/ModelCloud/GPTQModel) package!
 
-Or, we enable the Python [GPTQModel](https://github.com/ModelCloud/GPTQModel) package to conduct quantization.
+First, install the GPTQModel,
 ```shell
 pip install -v gptqmodel --no-build-isolation
 ```
@@ -95,20 +93,27 @@ Then,
 python quantization_GPTQModel.py "meta-llama/Llama-3.3-70B-Instruct" "./gptq_model" --bits 4 --group_size 128 --seqlen 2048 --damp 0.01 --desc_act 1 --dtype bfloat16
 ```
 
-Alternatively, we also provide a quantization script using the Python [AutoGPTQ](https://github.com/AutoGPTQ/AutoGPTQ) package.
+Alternatively, we can use the Hugging Face [transformers](https://github.com/huggingface/transformers) package to do the quantization.
+```shell
+python quantization_HF.py --repo "meta-llama/Meta-Llama-3.1-70B-Instruct" --bits 4 --group_size 128
+```
+
+Lastly, we provide a quantization script based on the Python [AutoGPTQ](https://github.com/AutoGPTQ/AutoGPTQ) package.<br>
+Please use the `pip install auto-gptq==0.6.0 --no-build-isolation` to install the AutoGPTQ. 
 ```shell
 python quantization.py "meta-llama/Meta-Llama-3.1-70B-Instruct" "./gptq_model" --bits 4 --group_size 128 --desc_act 1 --dtype bfloat16 --seqlen 2048 --damp 0.01
 ```
 
-Then, we need to upload the model to Hugging Face, for example,
+After the quantization process, you can upload the quantized model to your Hugging Face, for example,
 ```shell
-python upload_quantized_model.py --repo "shuyuej/MedLLaMA3-70B-BASE-MODEL-QUANT" --folder_path "./gptq_model"
+python upload_quantized_model.py --repo "shuyuej/Llama-3.3-70B-Instruct-GPTQ" --folder_path "./gptq_model"
 ```
 
-Lastly, we optimize the LoRA module,
+Finally, we optimize the LoRA adapter,
 ```shell
 python main_quantization.py
 ```
+
 _Quantized Model Training Special Notice_: <br>
 1. **Stable training** of the quantized model with a LoRA adapter is tricky.
    We found the fine-tuned model tends to [**repeat the answer**](https://github.com/tloen/alpaca-lora/issues/467) during the generation process.
