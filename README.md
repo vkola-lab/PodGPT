@@ -21,8 +21,7 @@ Give it a try and explore its potential!
 [2024.7.12] We are excited to announce the release of a new benchmark covering the latest USMLE Step 1, Step 2, Step 3, and Ethics, aimed at advancing research in the field. 
 Explore our database [here](https://github.com/vkola-lab/PodGPT/tree/main/benchmark/english_usmle).
 
-[2024.7.11] We have open-sourced the [**PodGPT source code**](https://github.com/vkola-lab/PodGPT), featuring **STEMM LLMs in Your Pocket** and **Benchmarking Multilingual STEMM LLMs**.  
-All our code has successfully passed [**Flake8: Your Tool for Style Guide Enforcement**](https://flake8.pycqa.org/en/latest/) checks. Check it out and enjoy!
+[2024.7.11] We have open-sourced the [**PodGPT source code**](https://github.com/vkola-lab/PodGPT), featuring **STEMM LLMs in Your Pocket** and **Benchmarking Multilingual STEMM LLMs**. All our code has successfully passed [**Flake8: Your Tool for Style Guide Enforcement**](https://flake8.pycqa.org/en/latest/) checks. Check it out and enjoy!
 
 # 📚 Table of contents
 - [PodGPT](#podgpt-1)
