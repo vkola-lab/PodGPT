@@ -6,7 +6,7 @@ bitsandbytes==0.41.1
 huggingface-hub==0.23.3
 jsonlines==4.0.0
 pandas
-protobuf==3.20.1
+protobuf
 sentencepiece==0.2.0
 tensorboard
 tensorboardX
