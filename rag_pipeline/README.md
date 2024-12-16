@@ -8,7 +8,7 @@ pip install flask-sqlalchemy
 ```
 
 ## 📖 Download your fine-tuned checkpoints
-All your checkpints will be saved to `./save_folder` by default.
+All your checkpoints will be saved to `./save_folder` by default.
 ```bash
 python download_model.py --repo "shuyuej/gemma-2b-it-2048"
 ```
@@ -21,7 +21,7 @@ python download_model.py --repo "shuyuej/gemma-2b-it-2048"
 python main.py --mode small --eval_pretrain True
 ```
 1. `--mode`: Evaluate the smaller model or larger model: small or large. The default is "small".
-2. `--eval_pretrain`: Evaluate the original pretrained model: True/False. The default is True.
+2. `--eval_pretrain`: Evaluate the original pre-trained model: True/False. The default is True.
 
 ## 🏞️ Structure of the code
 At the root of this folder, you will see:
