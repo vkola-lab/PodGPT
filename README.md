@@ -13,9 +13,8 @@
 # 🎉 Announcements
 [2024.12.04] ![](figures/news.gif) Our [**PodGPT preprint**](https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v2) is available online! Please check it!
 
-[2024.7.14] ![](figures/news.gif) Our AI Platform [**PodGPT**](https://podgpt.org/) is publicly available. 
-It is an online platform for deploying our latest multimodal foundation models for STEMM education and research.
-Please try it out if you are interested!
+[2024.7.14] ![](figures/news.gif) Our AI Platform [**PodGPT**](https://podgpt.org/) is publicly available. Currently, we have deployed our latest checkpoint: **PodGPT v0.1**!
+It is an online platform for deploying our latest multimodal foundation models for STEMM education and research. Please try it out if you are interested!
 
 [2024.7.12] We are releasing a new benchmark encompassing the latest USMLE Step 1, Step 2, Step 3, and Ethics to further advance the field.
 Check our database [here](https://github.com/vkola-lab/PodGPT/tree/main/benchmark/english_usmle).
