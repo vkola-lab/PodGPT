@@ -1,0 +1,51 @@
+#
+# BENCHMARKS AND CREDITS
+#
+# English Benchmarks
+# MedQA-USMLE
+# We conducted performance evaluation on the MedQA-USMLE Benchmark
+# Notice: We use the 4-option version of the dataset
+# Paper: What Disease does this Patient Have? A Large-scale Open Domain Question Answering Dataset from Medical Exams
+# Link: https://arxiv.org/abs/2009.13081
+# Database and Codes: https://github.com/jind11/MedQA
+#
+# MedMCQA
+# We conducted performance evaluation on the MedMCQA Benchmark
+# Paper: MedMCQA : A Large-scale Multi-Subject Multi-Choice Dataset for Medical domain Question Answering
+# Link: https://arxiv.org/abs/2203.14371
+# Homepage: https://medmcqa.github.io/
+# Database and Codes: https://github.com/MedMCQA/MedMCQA
+#
+# PubMedQA
+# We conducted performance evaluation on the PubMedQA Benchmark
+# Paper: PubMedQA: A Dataset for Biomedical Research Question Answering
+# Link: https://arxiv.org/abs/1909.06146
+# Homepage: https://pubmedqa.github.io/
+# Database and Codes: https://github.com/pubmedqa/pubmedqa
+#
+# MedExpQA English
+# We conducted performance evaluation on the MedExpQA (English) Benchmark
+# Paper: MedExpQA: Multilingual Benchmarking of Large Language Models for Medical Question Answering
+# Link: https://arxiv.org/abs/2404.05590
+# Database and Codes: https://huggingface.co/datasets/HiTZ/MedExpQA
+#
+# MMLU Medicine Subset
+# We conducted performance evaluation on medicine-related 6 databases
+# anatomy_test, clinical_knowledge_test, college_biology_test
+# college_medicine_test, medical_genetics_test, professional_medicine_test
+# Paper: Measuring Massive Multitask Language Understanding
+# Link: https://arxiv.org/abs/2009.03300
+# Database and Codes: https://www.kaggle.com/datasets/lizhecheng/mmlu-dataset
+
+# English Benchmarks
+english_medicine_medqa : "./benchmark/english_medqa/MedQA_USMLE_test.jsonl"
+english_medicine_pubmedqa : "./benchmark/english_pubmedqa/PubMedQA_test.json"
+english_medicine_medmcqa : "./benchmark/english_medmcqa/MedMCQA_test.json"
+english_medicine_medexpqa : "./benchmark/english_medexpqa/test.en.casimedicos.rag.jsonl"
+# MMLU Medicine (6)
+english_mmlu_medicine_anatomy : "./benchmark/english_mmlu/medicine/anatomy_test.csv"
+english_mmlu_medicine_clinical_knowledge : "./benchmark/english_mmlu/medicine/clinical_knowledge_test.csv"
+english_mmlu_medicine_college_biology : "./benchmark/english_mmlu/medicine/college_biology_test.csv"
+english_mmlu_medicine_college_medicine : "./benchmark/english_mmlu/medicine/college_medicine_test.csv"
+english_mmlu_medicine_medical_genetics : "./benchmark/english_mmlu/medicine/medical_genetics_test.csv"
+english_mmlu_medicine_professional_medicine : "./benchmark/english_mmlu/medicine/professional_medicine_test.csv"

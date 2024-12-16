@@ -1,0 +1,33 @@
+# Model info
+# google/gemma-2b-it
+# Link: https://huggingface.co/google/gemma-2b-it
+# google/gemma-7b-it
+# Link: https://huggingface.co/google/gemma-7b-it
+# meta-llama/Meta-Llama-3-8B-Instruct
+# Link: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
+model_name : "google/gemma-2b-it"
+
+# This is my Hugging Face `read` and `write` tokens. Please replace it to yours.
+# `read` token: for downloading models
+# `write` token: for uploading your models to Hugging Face
+# For your information: https://huggingface.co/settings/tokens
+hf_read_token : "YOUR_HUGGING_FACE_READ_TOKEN"  # Hugging Face `read` Token
+hf_write_token : "YOUR_HUGGING_FACE_WRITE_TOKEN"  # Hugging Face `write` Token
+
+# Evaluate the original pre-trained model's performance
+eval_pretrain : True
+
+# Saving path
+result_dir : "./results"
+save_dir : "./save_folder"
+
+# The number of generated tokens
+max_new_tokens : 1024
+
+# Choose which GPU to use
+device_map : "auto"
+
+# The number of GPUs and GPU utilization for the vLLM Engine
+# https://docs.vllm.ai/en/latest/serving/distributed_serving.html
+num_gpus_vllm : 1
+gpu_utilization_vllm : 0.75
