@@ -254,7 +254,12 @@ Please check [here](https://docs.vllm.ai/en/stable/models/engine_args.html) if y
 Since this server is compatible with OpenAI API, you can use it as a drop-in replacement for any applications using OpenAI API. 
 For example, another way to query the server is via the openai python package:
 ```python
+#!/usr/bin/env python
+# coding=utf-8
+
+import time
 import asyncio
+
 from openai import AsyncOpenAI
 
 # Our system prompt
@@ -268,9 +273,6 @@ SYSTEM_PROMPT = f"""
     I will not be enthusiastic and use exclamation points. Just be helpful and extremely boring.
 """
 
-# A random user query
-query = "The president of the United States is"
-
 # Initialize the AsyncOpenAI client
 client = AsyncOpenAI(
     base_url="http://localhost:8000/v1",
@@ -278,7 +280,13 @@ client = AsyncOpenAI(
 )
 
 
-async def main():
+async def main(message):
+    """
+    Streaming responses with async usage and "await" with each API call:
+    Reference: https://github.com/openai/openai-python?tab=readme-ov-file#streaming-responses
+    :param message: The user query
+    """
+    start_time = time.time()
     stream = await client.chat.completions.create(
         model="shuyuej/Llama-3.3-70B-Instruct-GPTQ",
         messages=[
@@ -288,7 +296,7 @@ async def main():
             },
             {
                 "role": "user",
-                "content": query,
+                "content": message,
             }
         ],
         max_tokens=2048,
@@ -302,13 +310,39 @@ async def main():
         },
     )
 
+    print(f"The user's query is\n {message}\n  ")
+    print("The model's response is\n")
     async for chunk in stream:
         print(chunk.choices[0].delta.content or "", end="")
+    print(f"\nInference time: {time.time() - start_time:.2f} seconds\n")
+    print("=" * 100)
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    # Some random user queries
+    prompts = [
+        "Hello, my name is",
+        "The president of the United States is",
+        "The capital of France is",
+        "The future of AI is",
+        "Can you tell me more about Bruce Lee?",
+        "What are the differences between DNA and RNA?",
+        "What is dementia and Alzheimer's disease?",
+        "Tell me the differences between Alzheimer's disease and dementia"
+    ]
+    
+    # Conduct model inference
+    for message in prompts:
+        asyncio.run(main(message=message))
+        print("\n\n")
 ```
+
+<details>
+    <summary>Here is a demo of the real-world model inference and deployment</summary>
+    <p align="center">
+        <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v2"> <img src="figures/inference_demo.gif"></a>
+    </p>
+</details>
 
 # 🎯 Automatic speech recognition
 In [this file](https://github.com/vkola-lab/PodGPT/blob/main/scripts/audio2text.py), we provide Automatic Speech Recognition (ASR) service.
