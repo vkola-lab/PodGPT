@@ -79,7 +79,6 @@ def performance_eval(config, mode, prompts, answers, file_path):
                     quantization="GPTQ",
                     # Acknowledgement: Benjamin Kitor
                     # https://github.com/vllm-project/vllm/issues/2794
-                    # Reference:
                     # https://github.com/vllm-project/vllm/issues/1908
                     distributed_executor_backend="mp",
                     tensor_parallel_size=num_gpus_vllm,
@@ -105,7 +104,6 @@ def performance_eval(config, mode, prompts, answers, file_path):
                     quantization="GPTQ",
                     # Acknowledgement: Benjamin Kitor
                     # https://github.com/vllm-project/vllm/issues/2794
-                    # Reference:
                     # https://github.com/vllm-project/vllm/issues/1908
                     distributed_executor_backend="mp",
                     tensor_parallel_size=num_gpus_vllm,
@@ -138,7 +136,6 @@ def performance_eval(config, mode, prompts, answers, file_path):
                     dtype='bfloat16',
                     # Acknowledgement: Benjamin Kitor
                     # https://github.com/vllm-project/vllm/issues/2794
-                    # Reference:
                     # https://github.com/vllm-project/vllm/issues/1908
                     distributed_executor_backend="mp",
                     tensor_parallel_size=num_gpus_vllm,
@@ -162,7 +159,6 @@ def performance_eval(config, mode, prompts, answers, file_path):
                     dtype='bfloat16',
                     # Acknowledgement: Benjamin Kitor
                     # https://github.com/vllm-project/vllm/issues/2794
-                    # Reference:
                     # https://github.com/vllm-project/vllm/issues/1908
                     distributed_executor_backend="mp",
                     tensor_parallel_size=num_gpus_vllm,

@@ -119,7 +119,6 @@ def performance_eval(config, mode, prompts, answers, documents, file_path):
                     dtype='bfloat16',
                     # Acknowledgement: Benjamin Kitor
                     # https://github.com/vllm-project/vllm/issues/2794
-                    # Reference:
                     # https://github.com/vllm-project/vllm/issues/1908
                     distributed_executor_backend="mp",
                     tensor_parallel_size=num_gpus_vllm,
@@ -130,12 +129,8 @@ def performance_eval(config, mode, prompts, answers, documents, file_path):
                     enable_lora=False,
                 )
 
-            # For the evaluation of the pre-trained model
-            completions = llm.generate(
-                prompts,
-                sampling_params,
-            )
-
+            # Get the model's responses
+            completions = llm.generate(prompts, sampling_params)
             for i, output in enumerate(completions):
                 temp_gen = output.outputs[0].text
                 responses.append(temp_gen)
@@ -158,8 +153,7 @@ def performance_eval(config, mode, prompts, answers, documents, file_path):
                 tokenizer=model_name,
                 dtype='bfloat16',
                 # Acknowledgement: Benjamin Kitor
-                # Link: https://github.com/vllm-project/vllm/issues/2794
-                # Reference:
+                # https://github.com/vllm-project/vllm/issues/2794
                 # https://github.com/vllm-project/vllm/issues/1908
                 distributed_executor_backend="mp",
                 tensor_parallel_size=num_gpus_vllm,
@@ -167,10 +161,9 @@ def performance_eval(config, mode, prompts, answers, documents, file_path):
                 disable_custom_all_reduce=True,
                 enable_lora=False
             )
-            completions = llm.generate(
-                prompts,
-                sampling_params,
-            )
+
+            # Get the model's responses
+            completions = llm.generate(prompts, sampling_params)
             for i, output in enumerate(completions):
                 temp_gen = output.outputs[0].text
                 responses.append(temp_gen)
@@ -243,7 +236,7 @@ def performance_eval(config, mode, prompts, answers, documents, file_path):
         print('Successfully save all the output.')
 
         # Delete the llm object and free the memory
-        # Acknowledgement: https://github.com/vllm-project/vllm/issues/1908#issuecomment-2461174904
+        # https://github.com/vllm-project/vllm/issues/1908#issuecomment-2461174904
         destroy_model_parallel()
         destroy_distributed_environment()
         del llm.llm_engine.model_executor
@@ -311,7 +304,6 @@ def performance_eval(config, mode, prompts, answers, documents, file_path):
                     dtype='bfloat16',
                     # Acknowledgement: Benjamin Kitor
                     # https://github.com/vllm-project/vllm/issues/2794
-                    # Reference:
                     # https://github.com/vllm-project/vllm/issues/1908
                     distributed_executor_backend="mp",
                     tensor_parallel_size=num_gpus_vllm,
@@ -322,13 +314,12 @@ def performance_eval(config, mode, prompts, answers, documents, file_path):
                     enable_lora=True,
                 )
 
-            # For the evaluation of the LoRA model
+            # Get the model's responses
             completions = llm.generate(
                 prompts,
                 sampling_params,
                 lora_request=LoRARequest("adapter", 1, lora_path)
             )
-
             for i, output in enumerate(completions):
                 temp_gen = output.outputs[0].text
                 responses.append(temp_gen)
@@ -352,8 +343,7 @@ def performance_eval(config, mode, prompts, answers, documents, file_path):
                 tokenizer=model_name,
                 dtype='bfloat16',
                 # Acknowledgement: Benjamin Kitor
-                # Link: https://github.com/vllm-project/vllm/issues/2794
-                # Reference:
+                # https://github.com/vllm-project/vllm/issues/2794
                 # https://github.com/vllm-project/vllm/issues/1908
                 distributed_executor_backend="mp",
                 tensor_parallel_size=num_gpus_vllm,
@@ -361,10 +351,9 @@ def performance_eval(config, mode, prompts, answers, documents, file_path):
                 disable_custom_all_reduce=True,
                 enable_lora=False
             )
-            completions = llm.generate(
-                prompts,
-                sampling_params,
-            )
+
+            # Get the model's responses
+            completions = llm.generate(prompts, sampling_params)
             for i, output in enumerate(completions):
                 temp_gen = output.outputs[0].text
                 responses.append(temp_gen)
@@ -437,7 +426,7 @@ def performance_eval(config, mode, prompts, answers, documents, file_path):
         print('Successfully save all the output.')
 
         # Delete the llm object and free the memory
-        # Acknowledgement: https://github.com/vllm-project/vllm/issues/1908#issuecomment-2461174904
+        # https://github.com/vllm-project/vllm/issues/1908#issuecomment-2461174904
         destroy_model_parallel()
         destroy_distributed_environment()
         del llm.llm_engine.model_executor
