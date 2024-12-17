@@ -54,7 +54,6 @@ def performance_eval(config, mode, prompts, answers, file_path):
     responses = []
     # Evaluating the larger models
     if mode == "large":
-        lora_path = config.get("lora_path")
         num_gpus_vllm = config.get("num_gpus_vllm")
         gpu_utilization_vllm = config.get("gpu_utilization_vllm")
         max_model_len_vllm = config.get("max_model_len_vllm")
@@ -97,6 +96,9 @@ def performance_eval(config, mode, prompts, answers, file_path):
                     sampling_params,
                 )
             else:
+                # Get the LoRA adapter path
+                lora_path = config.get("lora_path")
+                
                 # Initialize vLLM engine
                 llm = LLM(
                     model=save_dir,
@@ -155,6 +157,9 @@ def performance_eval(config, mode, prompts, answers, file_path):
                     sampling_params,
                 )
             else:
+                # Get the LoRA adapter path
+                lora_path = config.get("lora_path")
+                
                 # Initialize vLLM engine
                 llm = LLM(
                     model=save_dir,
