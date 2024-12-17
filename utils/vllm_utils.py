@@ -69,7 +69,7 @@ def performance_eval(config, mode, prompts, answers, file_path):
                 # vLLM team is working on a fix for this https://github.com/vllm-project/vllm/issues/4180
                 stop_token_ids=[128001, 128004, 128008, 128009],
             )
-            if eval_pretrain:
+            if eval_pretrain:  # Evaluate the original pre-trained model, no need LoRA
                 # Initialize vLLM engine
                 llm = LLM(
                     model=save_dir,
@@ -90,11 +90,9 @@ def performance_eval(config, mode, prompts, answers, file_path):
                     enable_lora=False,
                 )
                 # For the evaluation of the LoRA model
-                completions = llm.generate(
-                    prompts,
-                    sampling_params,
-                )
-            else:
+                completions = llm.generate(prompts, sampling_params)
+
+            else:  # Evaluate our fine-tuned model, need LoRA
                 # Get the LoRA adapter path
                 lora_path = config.get("lora_path")
 
@@ -132,7 +130,7 @@ def performance_eval(config, mode, prompts, answers, file_path):
                 max_tokens=max_new_tokens,
                 stop=stop_tokens
             )
-            if eval_pretrain:
+            if eval_pretrain:  # Evaluate the original pre-trained model, no need LoRA
                 # Initialize vLLM engine
                 llm = LLM(
                     model=save_dir,
@@ -151,11 +149,9 @@ def performance_eval(config, mode, prompts, answers, file_path):
                     enable_lora=False,
                 )
                 # For the evaluation of the LoRA model
-                completions = llm.generate(
-                    prompts,
-                    sampling_params,
-                )
-            else:
+                completions = llm.generate(prompts, sampling_params)
+
+            else:  # Evaluate our fine-tuned model, need LoRA
                 # Get the LoRA adapter path
                 lora_path = config.get("lora_path")
 
@@ -183,6 +179,7 @@ def performance_eval(config, mode, prompts, answers, file_path):
                     lora_request=LoRARequest("adapter", 1, lora_path)
                 )
 
+        # Get the model's responses
         for i, output in enumerate(completions):
             temp_gen = output.outputs[0].text
             responses.append(temp_gen)
@@ -203,7 +200,6 @@ def performance_eval(config, mode, prompts, answers, file_path):
             max_tokens=max_new_tokens,
             stop=stop_tokens
         )
-
         llm = LLM(
             model=save_dir,
             tokenizer=model_name,
@@ -218,10 +214,7 @@ def performance_eval(config, mode, prompts, answers, file_path):
             disable_custom_all_reduce=True,
             enable_lora=False
         )
-        completions = llm.generate(
-            prompts,
-            sampling_params,
-        )
+        completions = llm.generate(prompts, sampling_params)
         for i, output in enumerate(completions):
             temp_gen = output.outputs[0].text
             responses.append(temp_gen)
