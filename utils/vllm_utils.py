@@ -52,7 +52,7 @@ def performance_eval(config, mode, prompts, answers, file_path):
 
     responses = []
     # Evaluating the larger models
-    if mode == "large":
+    if mode == "large" or mode == "quant":
         num_gpus_vllm = config.get("num_gpus_vllm")
         gpu_utilization_vllm = config.get("gpu_utilization_vllm")
         max_model_len_vllm = config.get("max_model_len_vllm")
@@ -67,12 +67,12 @@ def performance_eval(config, mode, prompts, answers, file_path):
                 # "stop_token_ids":[128001, 128009] to temporarily address the non-stop generation issue.
                 # vLLM does not yet respect generation_config.json.
                 # vLLM team is working on a fix for this https://github.com/vllm-project/vllm/issues/4180
-                stop_token_ids=[128001, 128004, 128008, 128009],
+                stop_token_ids=[128001, 128008, 128009],
             )
             if eval_pretrain:  # Evaluate the original pre-trained model, no need LoRA
                 # Initialize vLLM engine
                 llm = LLM(
-                    model=save_dir,
+                    model=model_name,
                     tokenizer=model_name,
                     # While using the GPTQ quantization, the current vLLM only supports float16, as of Dec. 14th, 2024
                     dtype='float16',
@@ -97,7 +97,7 @@ def performance_eval(config, mode, prompts, answers, file_path):
 
                 # Initialize vLLM engine
                 llm = LLM(
-                    model=save_dir,
+                    model=model_name,
                     tokenizer=model_name,
                     # While using the GPTQ quantization, the current vLLM only supports float16, as of Dec. 14th, 2024
                     dtype='float16',
@@ -131,7 +131,7 @@ def performance_eval(config, mode, prompts, answers, file_path):
             if eval_pretrain:  # Evaluate the original pre-trained model, no need LoRA
                 # Initialize vLLM engine
                 llm = LLM(
-                    model=save_dir,
+                    model=model_name,
                     tokenizer=model_name,
                     dtype='bfloat16',
                     # Acknowledgement: Benjamin Kitor
@@ -154,7 +154,7 @@ def performance_eval(config, mode, prompts, answers, file_path):
 
                 # Initialize vLLM engine
                 llm = LLM(
-                    model=save_dir,
+                    model=model_name,
                     tokenizer=model_name,
                     dtype='bfloat16',
                     # Acknowledgement: Benjamin Kitor

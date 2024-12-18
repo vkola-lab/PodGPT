@@ -47,7 +47,7 @@ if __name__ == "__main__":
     # python inference.py --mode small --download True --eval_pretrain True --id 35166 52749 70332 87915
     parser = ArgumentParser(description='User arguments')
     parser.add_argument("--mode", type=str, default="small",
-                        help="Evaluate the smaller model or larger model or ChatGPT: small/large/chatgpt.")
+                        help="Evaluate the smaller model or larger model or ChatGPT: small/large/quant/chatgpt.")
     parser.add_argument("--eval_pretrain", type=bool, default=True,
                         help="Evaluate the original pretrained model: True/False")
     parser.add_argument("--id", type=int, nargs="+", default=[],
@@ -56,10 +56,12 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # Load and merge the configuration
-    if args.mode == "small":
+    if args.mode == "small":  # Evaluate the smaller models
         config = load_config(file_name="config_small.yml")
-    elif args.mode == "large":
+    elif args.mode == "large":  # Evaluate the larger models
         config = load_config(file_name="config_large.yml")
+    elif args.mode == "quant":  # Evaluate the quantized models
+        config = load_config(file_name="config_quantization.yml")
     else:
         config = load_config(file_name="config_chatgpt.yml")
     benchmark_config = load_config(file_name="config_benchmark.yml")

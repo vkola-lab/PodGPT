@@ -109,6 +109,7 @@ def download_pretrained_model(config):
     # Since there are PAD tokens in the latest LLMs, such as LLaMA 3.3
     # We are now using "if not tokenizer.pad_token_id" instead of
     # directly using "tokenizer.pad_token = tokenizer.eos_token"
+    # https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/blob/main/tokenizer_config.json#L2062
     if not tokenizer.pad_token_id:
         tokenizer.pad_token_id = tokenizer.eos_token_id
     # if "llama" in model_name.lower() or "mistralai" in model_name.lower():

@@ -240,9 +240,6 @@ def evaluation(config, mode="small", eval_pretrain=False, checkpoint_id=None):
 
     # Evaluating the larger models
     if mode == "large":
-        print("Start to download the original pre-trained model and tokenizer!")
-        download_pretrained_model(config=config)
-
         # Initialize vLLM engine
         if eval_pretrain:
             # Set checkpoint path

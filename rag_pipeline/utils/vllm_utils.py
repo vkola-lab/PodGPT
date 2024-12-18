@@ -83,11 +83,11 @@ def performance_eval(config, mode, prompts, answers, documents, file_path):
                     # "stop_token_ids":[128001, 128009] to temporarily address the non-stop generation issue.
                     # vLLM does not yet respect generation_config.json.
                     # vLLM team is working on a fix for this https://github.com/vllm-project/vllm/issues/4180
-                    stop_token_ids=[128001, 128004, 128008, 128009],
+                    stop_token_ids=[128001, 128008, 128009],
                 )
                 # Initialize vLLM engine
                 llm = LLM(
-                    model=save_dir,
+                    model=model_name,
                     tokenizer=model_name,
                     dtype='float16',
                     quantization="GPTQ",
@@ -114,7 +114,7 @@ def performance_eval(config, mode, prompts, answers, documents, file_path):
                 )
                 # Initialize vLLM engine
                 llm = LLM(
-                    model=save_dir,
+                    model=model_name,
                     tokenizer=model_name,
                     dtype='bfloat16',
                     # Acknowledgement: Benjamin Kitor
@@ -269,10 +269,10 @@ def performance_eval(config, mode, prompts, answers, documents, file_path):
                     # "stop_token_ids":[128001, 128009] to temporarily address the non-stop generation issue.
                     # vLLM does not yet respect generation_config.json.
                     # vLLM team is working on a fix for this https://github.com/vllm-project/vllm/issues/4180
-                    stop_token_ids=[128001, 128004, 128008, 128009],
+                    stop_token_ids=[128001, 128008, 128009],
                 )
                 llm = LLM(
-                    model=save_dir,
+                    model=model_name,
                     tokenizer=model_name,
                     dtype='float16',
                     quantization="GPTQ",
@@ -299,7 +299,7 @@ def performance_eval(config, mode, prompts, answers, documents, file_path):
                 )
                 # Initialize vLLM engine
                 llm = LLM(
-                    model=save_dir,
+                    model=model_name,
                     tokenizer=model_name,
                     dtype='bfloat16',
                     # Acknowledgement: Benjamin Kitor
