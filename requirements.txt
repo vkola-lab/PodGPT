@@ -1,5 +1,5 @@
 transformers
-trl
+trl==0.12.0
 peft
 accelerate
 bitsandbytes
