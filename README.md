@@ -76,7 +76,6 @@ For example, if your path is `/projectnb/vkolagrp/`: <br>
 	
 
 Please change `/projectnb/vkolagrp/` to your own path. After running the commands, all your Transformers models and datasets will be saved in the paths you defined.
-
 </details>
 
 # 🚀 Quick start
@@ -152,8 +151,19 @@ _Quantized Model Training Special Notice_: <br>
 
 # 📊 Performance evaluation
 All inferences are conducted using the [vLLM engine](https://github.com/vllm-project/vllm).
-We use [inference.py](https://github.com/vkola-lab/PodGPT/blob/main/inference/inference.py) to sequentially evaluate the performance of multiple checkpoints (models).<br>
+We use [inference.py](https://github.com/vkola-lab/PodGPT/blob/main/inference/inference.py) to sequentially evaluate the performance of multiple checkpoints (models).
 Please check [here](https://github.com/vkola-lab/PodGPT/tree/main/inference) for more information.
+
+<details>
+<summary>To enable vLLM distributed inference, run the following command in your terminal:</summary>
+
+	
+	export VLLM_WORKER_MULTIPROC_METHOD=spawn
+	
+
+Please note that this command is **unnecessary** if you are using a **single GPU** for inference. It is only required for **distributed inference** across multiple GPUs.<br>
+For **multi-GPU inference** and **CUDA memory release**, please check [**this solution**](https://github.com/vllm-project/vllm/issues/1908#issuecomment-2238320273) for detailed guidance.
+</details>
 
 ## 📜 Prompt format
 We simply use `Directly answer the best option:` instead of `Answer:` to better guide LLMs to generate the best option 
