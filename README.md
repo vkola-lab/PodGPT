@@ -63,6 +63,22 @@ Our proposed **PodGPT** computational framework for research and education
 pip install -r requirements.txt
 ```
 
+<details>
+<summary>To set up the Transformers and Triton saving path, run the following commands in your terminal:</summary>
+
+For example, if your path is `/projectnb/vkolagrp/`: <br>
+
+	
+	export TRANSFORMERS_CACHE=/projectnb/vkolagrp/.cache
+	export HF_HOME=/projectnb/vkolagrp/.cache
+	export HF_DATASETS_CACHE=/projectnb/vkolagrp/.cache
+	export TRITON_CACHE_DIR=/projectnb/vkolagrp/triton/.triton
+	
+
+Please change `/projectnb/vkolagrp/` to your own path. After running the commands, all your Transformers models and datasets will be saved in the paths you defined.
+
+</details>
+
 # 🚀 Quick start
 ## 🐣 Train lightweight models
 For lightweight models (2B, 7B, 8B, and 9B), we optimize the entire model. 
