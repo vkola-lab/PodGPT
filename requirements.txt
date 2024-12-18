@@ -17,5 +17,5 @@ fraction
 PyYAML
 typing_extensions
 jsonlines==4.0.0
-openai==0.28
+openai
 auto-gptq==0.6.0
