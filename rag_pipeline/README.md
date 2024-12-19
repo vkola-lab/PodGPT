@@ -5,6 +5,7 @@ In addition to the [**PodGPT dependencies**](https://github.com/vkola-lab/PodGPT
 ```bash
 pip install pgvector
 pip install flask-sqlalchemy
+pip install psycopg2
 ```
 
 ## 📖 Download your fine-tuned checkpoints
