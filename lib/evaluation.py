@@ -250,14 +250,14 @@ def evaluation(config, mode="small", eval_pretrain=False, checkpoint_id=None):
             config['lora_path'] = "./save_folder/" + checkpoint_path
 
         # Load the tokenizer
-        # Since there is no prompt template for Mixtral MoE, we will use `Mistral-7B-Instruct-v0.3` prompt template
-        if "Mixtral-8x" in model_name:
-            tokenizer = AutoTokenizer.from_pretrained("mistralai/Mistral-7B-Instruct-v0.3")
-        else:
-            tokenizer = AutoTokenizer.from_pretrained(model_name)
+        tokenizer = AutoTokenizer.from_pretrained(model_name)
 
     # Evaluating the smaller models
     elif mode == "small":
+        # Download the original pre-trained smaller models
+        # Please note that we don't need to download the larger models
+        # Since we use the LoRA adapter for the larger models
+        # We can directly use vLLM to load the larger base model through its "model_name"
         print("Start to download the original pre-trained model and tokenizer!")
         download_pretrained_model(config=config)
 
