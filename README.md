@@ -134,8 +134,8 @@ python main_quantization.py
 _Quantized Model Training Special Notice_: <br>
 1. **Stable training** of the quantized model with a LoRA adapter is tricky.
    We found the fine-tuned model tends to [**repeat the answer**](https://github.com/tloen/alpaca-lora/issues/467) during the generation process.
-   Here, we provide a solution to this problem.
-   Please check our [configurations](https://github.com/vkola-lab/PodGPT/blob/main/config_quantization.yml#L40-L68)
+   Here, we believe we have fundamentally solved this problem. For details, please check [this GitHub solution](https://github.com/tloen/alpaca-lora/issues/467#issuecomment-2543999067).
+   Also, please check our [configurations](https://github.com/vkola-lab/PodGPT/blob/main/config_quantization.yml#L40-L68)
    and [model loader](https://github.com/vkola-lab/PodGPT/blob/main/lib/model_loader_quantization.py).
    <details>
        <summary>Here is the training loss of our quantized LLaMA 3.3 70B model</summary>
