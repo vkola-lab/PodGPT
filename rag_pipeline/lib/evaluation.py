@@ -59,8 +59,6 @@ def evaluation(config, mode="small"):
 
     # Evaluating the larger models
     if mode == "large":
-        download_pretrained_model(config=config)
-
         # Load the tokenizer
         # Since there is no prompt template for Mixtral MoE, we will use `Mistral-7B-Instruct-v0.3` prompt template
         if "Mixtral-8x" in model_name:
