@@ -94,7 +94,7 @@ python main_large.py
 ```
 
 > [!IMPORTANT]  
-> After completing training, many LoRA adapters will be saved. By default, the `model_max_length` will be set to `train_max_len`, as seen [here](https://github.com/vkola-lab/PodGPT/blob/main/lib/model_loader_large.py#L63C9-L63C25). To ensure proper inference with vLLM, open the `tokenizer_config.json` file in the checkpoint folder and reset the `model_max_length` to match the original value of your base model.
+> After completing training, many LoRA adapters will be saved. By default, the `model_max_length` will be set to `train_max_len`, as seen [here](https://github.com/vkola-lab/PodGPT/blob/main/lib/model_loader_large.py#L63). To ensure proper inference with vLLM, open the `tokenizer_config.json` file in the checkpoint folder and reset the `model_max_length` to match the original value of your base model.
 
 > This step is crucial because the vLLM engine will use the adapter's tokenizer instead of the base model's tokenizer.
 
