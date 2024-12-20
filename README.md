@@ -94,9 +94,9 @@ python main_large.py
 ```
 
 > [!IMPORTANT]  
-> After completing training, many LoRA adapters will be saved. By default, the `model_max_length` will be set to `train_max_len`, as seen [here](https://github.com/vkola-lab/PodGPT/blob/main/lib/model_loader_large.py#L63). To ensure proper inference with vLLM, open the `tokenizer_config.json` file in the checkpoint folder and reset the `model_max_length` to match the original value of your base model.
+> After completing training, many LoRA adapters will be saved. By default, the `model_max_length` will be set to `train_max_len` in your codes, as seen [here](https://github.com/vkola-lab/PodGPT/blob/main/lib/model_loader_large.py#L63). To ensure proper inference with vLLM, open the `tokenizer_config.json` file in the checkpoint folder and reset the `model_max_length` to match the original value of your base model.
 
-> This step is crucial because the vLLM engine will use the adapter's tokenizer instead of the base model's tokenizer.
+> This step is crucial because the vLLM engine uses the adapter's tokenizer instead of the base model's tokenizer. If not properly adjusted, the vLLM engine may truncate the input based on the `model_max_length` specified during training, potentially limiting the model's performance during inference while there are longer inputs.
 
 ## 🐤 Train quantized large models
 We also provide support for quantizing larger models, _e.g._, the LLaMA 3.3 70B model, using the [GPTQ](https://arxiv.org/abs/2210.17323) algorithm and then optimizing the LoRA.
@@ -104,9 +104,9 @@ We also provide support for quantizing larger models, _e.g._, the LLaMA 3.3 70B 
 
 > [!IMPORTANT]  
 > 1. Due to the [suspended development of the AutoGPTQ package](https://github.com/vkola-lab/PodGPT/issues/1), we strongly recommend conducting quantization using the [GPTQModel](https://github.com/ModelCloud/GPTQModel) package!<br>
-> 2. After completing training, many LoRA adapters will be saved. By default, the `model_max_length` will be set to `train_max_len`, as seen [here](https://github.com/vkola-lab/PodGPT/blob/main/lib/model_loader_quantization.py#L74). To ensure proper inference with vLLM, open the `tokenizer_config.json` file in the checkpoint folder and reset the `model_max_length` to match the original value of your base model.
+> 2. After completing training, many LoRA adapters will be saved. By default, the `model_max_length` will be set to `train_max_len` in your codes, as seen [here](https://github.com/vkola-lab/PodGPT/blob/main/lib/model_loader_quantization.py#L74). To ensure proper inference with vLLM, open the `tokenizer_config.json` file in the checkpoint folder and reset the `model_max_length` to match the original value of your base model.
 
-> This step is crucial because the vLLM engine will use the adapter's tokenizer instead of the base model's tokenizer.
+> This step is crucial because the vLLM engine uses the adapter's tokenizer instead of the base model's tokenizer. If not properly adjusted, the vLLM engine may truncate the input based on the `model_max_length` specified during training, potentially limiting the model's performance during inference while there are longer inputs.
 
 
 First, install the GPTQModel,
