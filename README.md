@@ -300,7 +300,7 @@ vllm serve shuyuej/Llama-3.3-70B-Instruct-GPTQ \
     --pipeline-parallel-size 4 \
     --api-key token-abc123
 ```
-Please check [here](https://docs.vllm.ai/en/stable/models/engine_args.html) if you wanna change `Engine Arguments`.
+Please check [here](https://docs.vllm.ai/en/latest/usage/engine_args.html) if you wanna change `Engine Arguments`.
 
 Since this server is compatible with OpenAI API, you can use it as a drop-in replacement for any applications using OpenAI API. 
 For example, another way to query the server is via the openai python package:
