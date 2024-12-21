@@ -37,6 +37,8 @@ Explore our database [here](https://github.com/vkola-lab/PodGPT/tree/main/benchm
   - [Model Inference](#-Model-Inference)
   - [OpenAI ChatGPT Support](#-OpenAI-ChatGPT-Support)
 - [Dataset Description](#-Dataset-Description)
+  - [Continual Pre-training Dataset](#Continual-pre-training-dataset)
+  - [Retrieval-augmented Generation (RAG) Database](#Retrieval-augmented-generation-database)
 - [Benchmarks and Results](#-Benchmarks-and-Results)
   - [Multilingual Benchmarks](#multilingual-benchmarks)
   - [Performance on In-domain Benchmarks](#Performance-on-In-domain-Benchmarks)
