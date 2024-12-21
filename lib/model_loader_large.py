@@ -70,9 +70,11 @@ def model_loader(config):
         use_auth_token=hf_read_token,
         device_map=device_map,
     )
-    if "llama" in model_name.lower() or "mistralai" in model_name.lower():
-        tokenizer.pad_token = tokenizer.eos_token
-
+    # if "llama" in model_name.lower() or "mistralai" in model_name.lower():
+    #     tokenizer.pad_token = tokenizer.eos_token
+    if not tokenizer.pad_token_id:
+        tokenizer.pad_token_id = tokenizer.eos_token_id
+        
     # LoRA configuration
     # `google/gemma-2b-it`:
     # https://huggingface.co/google/gemma-2b-it/blob/main/model.safetensors.index.json
