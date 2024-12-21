@@ -289,6 +289,9 @@ including **_English_**, **_Mandarin_**, **_French_**, **_Spanish_**, and **_Hin
 # 🔥 Real-world deployment
 For real-world deployment, please refer to the [vLLM Distributed Inference and Serving](https://docs.vllm.ai/en/latest/serving/distributed_serving.html) and [OpenAI Compatible Server](https://docs.vllm.ai/en/latest/serving/openai_compatible_server.html). We provide a deployment script [here](https://github.com/vkola-lab/PodGPT/blob/main/scripts/deployment.py).
 
+> [!NOTE]  
+> The vLLM version we are using is `0.6.2`. Please check [this version](https://github.com/vllm-project/vllm/releases/tag/v0.6.2).
+
 vLLM can be deployed as a server that implements the OpenAI API protocol. This allows vLLM to be used as a drop-in replacement for applications using OpenAI API. By default, it starts the server at `http://localhost:8000`.
 ```shell
 vllm serve shuyuej/Llama-3.3-70B-Instruct-GPTQ \
@@ -301,6 +304,21 @@ vllm serve shuyuej/Llama-3.3-70B-Instruct-GPTQ \
     --api-key token-abc123
 ```
 Please check [here](https://docs.vllm.ai/en/latest/usage/engine_args.html) if you wanna change `Engine Arguments`.
+
+If you would like to deploy your LoRA adapter, please refer to the [vLLM documentation](https://docs.vllm.ai/en/latest/usage/lora.html#serving-lora-adapters) for a detailed guide. 
+It provides step-by-step instructions on how to serve LoRA adapters effectively in a vLLM environment.
+```shell
+vllm serve shuyuej/Llama-3.3-70B-Instruct-GPTQ \
+    --quantization gptq \
+    --trust-remote-code \
+    --dtype float16 \
+    --max-model-len 4096 \
+    --distributed-executor-backend mp \
+    --pipeline-parallel-size 4 \
+    --api-key token-abc123 \
+    --enable-lora \
+    --lora-modules adapter=checkpoint-18640
+```
 
 Since this server is compatible with OpenAI API, you can use it as a drop-in replacement for any applications using OpenAI API. 
 For example, another way to query the server is via the openai python package:
