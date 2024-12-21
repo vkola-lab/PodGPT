@@ -69,8 +69,10 @@ def model_loader(config):
 
     # Since there is no `pad_token` in the LLaMA and Mistral models
     # Normally, we set the `eos_token` as the `pad_token`
-    if "llama" in model_name.lower() or "mistralai" in model_name.lower():
-        tokenizer.pad_token = tokenizer.eos_token
+    # if "llama" in model_name.lower() or "mistralai" in model_name.lower():
+    #     tokenizer.pad_token = tokenizer.eos_token
+    if not tokenizer.pad_token_id:
+        tokenizer.pad_token_id = tokenizer.eos_token_id
 
     print_parameters(model=model)
 
