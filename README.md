@@ -210,9 +210,16 @@ python inference.py --mode chatgpt
 Please follow our instructions to [transcribe your own podcasts](https://github.com/vkola-lab/PodGPT/blob/main/scripts/audio2text.py) 
 and [build your own dataset](https://github.com/vkola-lab/PodGPT/blob/main/scripts/database_builder.py).
 
+## Continual pre-training dataset
 The podcasts data used for the continual pre-training of **PodGPT**:
 <p align="center">
-  <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v2"> <img src="figures/Table-1.png"></a> 
+  <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v2"> <img src="figures/Table-1.jpg"></a> 
+</p>
+
+## Retrieval-augmented generation database
+Scientific literature used for retrieval-augmented generation (RAG):
+<p align="center">
+  <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v2"> <img src="figures/Table-2.jpg"></a> 
 </p>
 
 # 🏆 Benchmarks and results
@@ -264,17 +271,17 @@ including **_English_**, **_Mandarin_**, **_French_**, **_Spanish_**, and **_Hin
 
 ## Performance on in-domain benchmarks
 <p align="center">
-  <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v2"> <img src="figures/Table-2.png"></a> 
+  <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v2"> <img src="figures/Table-3.jpg"></a> 
 </p>
 
 ## Performance of retrieval-augmented generation
 <p align="center">
-  <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v2"> <img src="figures/Table-3.png"></a>
+  <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v2"> <img src="figures/Table-4.jpg"></a>
 </p>
 
 ## Zero-shot cross-lingual performance
 <p align="center">
-  <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v2"> <img src="figures/Table-4.png"></a> 
+  <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v2"> <img src="figures/Table-5.jpg"></a> 
 </p>
 
 # 🔥 Real-world deployment
