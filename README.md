@@ -305,8 +305,10 @@ vllm serve shuyuej/Llama-3.3-70B-Instruct-GPTQ \
 ```
 Please check [here](https://docs.vllm.ai/en/latest/usage/engine_args.html) if you wanna change `Engine Arguments`.
 
-If you would like to deploy your LoRA adapter, please refer to the [vLLM documentation](https://docs.vllm.ai/en/latest/usage/lora.html#serving-lora-adapters) for a detailed guide. 
-It provides step-by-step instructions on how to serve LoRA adapters effectively in a vLLM environment.
+If you would like to deploy your LoRA adapter, please refer to the [vLLM documentation](https://docs.vllm.ai/en/latest/usage/lora.html#serving-lora-adapters) for a detailed guide.<br>
+It provides step-by-step instructions on how to serve LoRA adapters effectively in a vLLM environment.<br>
+**We have also shared our trained LoRA adapter** [here](https://huggingface.co/shuyuej/Public-Shared-LoRA-for-Llama-3.3-70B-Instruct-GPTQ). Please download it manually if needed.
+
 ```shell
 vllm serve shuyuej/Llama-3.3-70B-Instruct-GPTQ \
     --quantization gptq \
