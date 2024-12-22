@@ -1,4 +1,5 @@
-# PodGPT with retrieval-augmented generation (RAG)
+# PodRAG
+PodGPT with Retrieval-augmented Generation (RAG)
 
 ## 💻 Installation
 In addition to the [**PodGPT dependencies**](https://github.com/vkola-lab/PodGPT/blob/main/requirements.txt), please make sure to install the following packages:
