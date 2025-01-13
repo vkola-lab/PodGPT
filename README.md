@@ -1,6 +1,6 @@
 <h1 align="center">PodGPT</h1>
 <h4 align="center">An audio-augmented large language model for research and education</h4>
-<p align="center">
+<p align="center" id="top">
   <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v2"> <img width="250px" src="figures/PodGPT.png"></a> 
   <br />
   <br />
@@ -533,3 +533,7 @@ We always welcome contributions to help make **PodGPT** better. If you would lik
 
 # 🙌 Acknowledgements
 This repository is maintained by members of the [Kolachalama Laboratory](https://vkola-lab.github.io/).
+
+<p align="right">
+  <a href="#top">⬆️ Back to Top</a>
+</p>
