@@ -4,102 +4,256 @@
 #
 # PodGPT: An Audio-augmented Large Language Model for Research and Education
 # Copyright (C) 2024 Kolachalama Laboratory at Boston University
+#
+# LLMs INFERENCE ACKNOWLEDGEMENT
+# vLLM - Easy, fast, and cheap LLM serving for everyone
+# https://github.com/vllm-project/vllm
+#
+# LICENSE OF THE INFERENCE ENGINE
+# Apache 2.0 License
+# https://github.com/vllm-project/vllm/blob/main/LICENSE
 
-import re
 import gc
-import math
+import time
+import json
 import contextlib
 
+import openai
 import torch
-import pandas as pd
+import ray
+from vllm import LLM, SamplingParams
+from vllm.lora.request import LoRARequest
 from vllm.distributed.parallel_state import (
     destroy_model_parallel,
     destroy_distributed_environment,
 )
 
-from lib.pipeline import Pipeline
-from utils.vllm_utils import performance_eval
-from utils.utils import *
-from utils.benchmark_utils import *
+from utils.answer_utils import *
 
 
-# Pre-defined prompts references
-# Leaderboard: https://huggingface.co/spaces/openlifescienceai/open_medical_llm_leaderboard
-# Language Model Evaluation Harness: https://github.com/EleutherAI/lm-evaluation-harness
-# Notice 1: We use `"Directly answer the best option:"` instead of `Answer:`
-# to better guide LLMs to generate the best option and to easier extract the best option from the responses
-prompt_w_doc = "Directly answer the best option with explanations:"
-prompt_wo_doc = "Directly answer the best option:"
-
-
-def eval(config, mode, rag, tokenizer, file_path, data_path, batch_size=32):
+def performance_eval(config, mode, prompts, answers, documents, file_path):
     """
-    Performance Evaluation on your database
+    Generate responses by vLLM and conduct performance evaluation
     :param config: the configuration file
-    :param mode: either "podgpt" or "chatgpt"
-    :param rag: whether to use the RAG database and pipeline
-    :param tokenizer: the tokenizer
+    :param mode: one of "podgpt" or "chatgpt"
+        "podgpt": Evaluate PodGPT
+        "chatgpt": Evaluate the OpenAI ChatGPT
+    :param prompts: prompted questions
+    :param answers: ground truth answers
+    :param documents: the related documents to the query
     :param file_path: save file path and file name
-    :param data_path: testing dataset path
-    :param batch_size: number of queries to process in each batch
     """
-    prompts = []
-    answers = []
-    documents = []
+    # Load some configurations
+    model_name = config.get("model_name")
+    max_new_tokens = config.get("max_new_tokens")
 
-    # Read all items from the dataset
-    items = []
-    csv = pd.read_csv(data_path, header=None)
-    if rag:
-        # Initialize the pipeline
-        rag_pipeline = Pipeline()
+    # Set responses as a list
+    responses = []
 
-        # Split the data into batches
-        for index, item in csv.iterrows():
-            items.append(item)
-        num_batches = math.ceil(len(items) / batch_size)
+    # Set the main file path
+    main_file_path = file_path
+    if mode == "podgpt":
+        eval_pretrain = config.get("eval_pretrain")
+        num_gpus_vllm = config.get("num_gpus_vllm")
+        gpu_utilization_vllm = config.get("gpu_utilization_vllm")
+        max_model_len_vllm = config.get("max_model_len_vllm")
 
-        for batch_idx in range(num_batches):
-            batch_items = items[batch_idx * batch_size:(batch_idx + 1) * batch_size]
-            batch_queries = [database_format(item) for item in batch_items]  # Extract queries
+        # Evaluate the original baseline model
+        if eval_pretrain:
+            start_t = time.time()
+            file_path = main_file_path + "baseline.json"
 
-            # Batch retrieve documents
-            batch_documents = rag_pipeline.retrieve_documents(
-                original_text=[
-                    re.sub(r'A\..*', '', query, flags=re.DOTALL).strip() for query in batch_queries
-                ]
+            sampling_params = SamplingParams(
+                temperature=0,
+                top_p=1,
+                max_tokens=max_new_tokens,
+                # https://huggingface.co/astronomer/Llama-3-8B-Instruct-GPTQ-8-Bit
+                # For loading this model onto vLLM, make sure all requests have
+                # "stop_token_ids":[128001, 128009] to temporarily address the non-stop generation issue.
+                # vLLM does not yet respect generation_config.json.
+                # vLLM team is working on a fix for this https://github.com/vllm-project/vllm/issues/4180
+                stop_token_ids=[128001, 128008, 128009],
+            )
+            # Initialize vLLM engine
+            llm = LLM(
+                model=model_name,
+                tokenizer=model_name,
+                dtype='float16',
+                quantization="GPTQ",
+                # Acknowledgement: Benjamin Kitor
+                # https://github.com/vllm-project/vllm/issues/2794
+                # Reference:
+                # https://github.com/vllm-project/vllm/issues/1908
+                distributed_executor_backend="mp",
+                tensor_parallel_size=num_gpus_vllm,
+                gpu_memory_utilization=gpu_utilization_vllm,
+                # Note: We add this only to save the GPU Memories!
+                max_model_len=max_model_len_vllm,
+                disable_custom_all_reduce=True,
+                enable_lora=False,
             )
 
-            for query, document, item in zip(batch_queries, batch_documents, batch_items):
-                rag_query = rag_formatting(original_text=query, documents=document)
-                if document:
-                    temp_ins = prompt_template(tokenizer=tokenizer, input=rag_query + prompt_w_doc)
-                else:
-                    temp_ins = prompt_template(tokenizer=tokenizer, input=rag_query + prompt_wo_doc)
+            # Get the model's responses
+            completions = llm.generate(prompts, sampling_params)
+            for i, output in enumerate(completions):
+                temp_gen = output.outputs[0].text
+                responses.append(temp_gen)
+            print('Successfully finished generating', len(prompts), 'samples!')
 
-                prompts.append(temp_ins)  # Collect prompts
-                answers.append(item[5])  # Collect answers
-                documents.append(document)  # Collect documents
+        # Evaluate our PodGPT
+        else:
+            lora_path = config.get("lora_path")
+            file_path = main_file_path + "PodGPT" + ".json"
+
+            sampling_params = SamplingParams(
+                temperature=0,
+                top_p=1,
+                max_tokens=max_new_tokens,
+                # https://huggingface.co/astronomer/Llama-3-8B-Instruct-GPTQ-8-Bit
+                # For loading this model onto vLLM, make sure all requests have
+                # "stop_token_ids":[128001, 128009] to temporarily address the non-stop generation issue.
+                # vLLM does not yet respect generation_config.json.
+                # vLLM team is working on a fix for this https://github.com/vllm-project/vllm/issues/4180
+                stop_token_ids=[128001, 128008, 128009],
+            )
+            llm = LLM(
+                model=model_name,
+                tokenizer=model_name,
+                dtype='float16',
+                quantization="GPTQ",
+                # Acknowledgement: Benjamin Kitor
+                # https://github.com/vllm-project/vllm/issues/2794
+                # Reference:
+                # https://github.com/vllm-project/vllm/issues/1908
+                distributed_executor_backend="mp",
+                tensor_parallel_size=num_gpus_vllm,
+                gpu_memory_utilization=gpu_utilization_vllm,
+                # Note: We add this only to save the GPU Memories!
+                max_model_len=max_model_len_vllm,
+                disable_custom_all_reduce=True,
+                enable_lora=True,
+            )
+
+            # Get the model's responses
+            completions = llm.generate(
+                prompts,
+                sampling_params,
+                lora_request=LoRARequest("adapter", 1, lora_path)
+            )
+            for i, output in enumerate(completions):
+                temp_gen = output.outputs[0].text
+                responses.append(temp_gen)
+            print('Successfully finished generating', len(prompts), 'samples!')
+
+    # Evaluating the OpenAI ChatGPT
+    elif mode == "chatgpt":
+        model_name = config.get("model_name")
+        file_path = main_file_path + model_name + ".json"
+        openai_api_key = config.get("openai_api_key")
+        openai.api_key = openai_api_key
+
+        # Please note that we are prompting a single question at a time, instead of a batch of questions.
+        # If you wanna use batch processing, please refer to
+        # https://github.com/meta-math/MetaMath/blob/main/code_for_generating_data/code/utils/parallel_utils.py
+        for prompt in prompts:
+            attempts = 0
+            max_attempts = 100
+            result = None
+            while attempts < max_attempts:
+                try:
+                    message = openai.ChatCompletion.create(
+                        model=model_name,
+                        messages=[
+                            {"role": "user", "content": prompt}
+                        ],
+                        temperature=0,
+                        max_tokens=max_new_tokens,
+                    )
+                    result = message['choices'][0]['message']['content']
+                    # print("Received response:", result)
+                    # print("Operation successful.")
+                    break  # Exit the loop on success
+
+                except Exception as e:
+                    print(f"Attempt {attempts + 1} failed due to error: {e}")
+                    result = None
+                    print("Retrying in 10 seconds...")
+                    time.sleep(10)
+                    attempts += 1
+
+            if result is None:
+                responses.append("No response")
+            else:
+                responses.append(result)
+
+        print('Successfully finished generating', len(responses), 'samples!')
+
     else:
-        for index, item in csv.iterrows():
-            # Get the question
-            question = database_format(item=item)
-            temp_ins = prompt_template(tokenizer=tokenizer, input=question + prompt_wo_doc)
-            prompts.append(temp_ins)
+        responses = None
 
-            # Get the label answer
-            temp_ans = item[5]
-            answers.append(temp_ans)
-            documents.append(None)
+    acc = []
+    all_out = []  # Save all the model's responses
+    invalid_out = []  # Only save the invalid responses
+    for idx, (prompt, document, response, answer) in enumerate(zip(prompts, documents, responses, answers)):
+        # Special Notice:
+        # option_range="a-dA-D" means options A, B, C, D
+        # option_range="a-eA-E" means options A, B, C, D, E
+        option_range = "a-dA-D"  # 4 Options
+        prediction = extract_answer(completion=response, option_range=option_range)
+        if prediction is None:
+            response = response_with_option(prompt=prompt, response=response)
+            prediction = extract_answer(completion=response, option_range=option_range)
 
-    # Release the GPU cache
-    del rag_pipeline
-    destroy_model_parallel()
-    destroy_distributed_environment()
-    with contextlib.suppress(AssertionError):
-        torch.distributed.destroy_process_group()
-    gc.collect()
-    torch.cuda.empty_cache()
+        if prediction is not None:
+            acc.append(prediction == answer)
+            temp = {
+                'prompt': prompt,
+                'retrieved document': document,
+                'response': response,
+                'extracted answer': prediction,
+                'answer': answer
+            }
+            all_out.append(temp)
+        else:
+            acc.append(False)
+            temp = {
+                'prompt': prompt,
+                'retrieved document': document,
+                'response': response,
+                'extracted answer': prediction,
+                'answer': answer
+            }
+            all_out.append(temp)
+            invalid_out.append(temp)
 
-    # Performance evaluation
-    performance_eval(config, mode, prompts, answers, documents, file_path)
+    accuracy = sum(acc) / len(acc)
+    end_t = time.time()
+    elapsed_t = end_t - start_t
+    print(f"Finished performance evaluation in {elapsed_t:.2f} seconds")
+
+    # Print the length of the invalid output and the accuracy
+    print('Invalid output length:', len(invalid_out), ', Testing length:', len(acc), ', Accuracy:', accuracy)
+
+    # Save the invalid output in a JSON file
+    with open(file_path.replace('.json', '_invalid_responses.json'), 'w', encoding='utf-8') as file:
+        json.dump(invalid_out, file, ensure_ascii=False, indent=4)
+    print('Successfully save the invalid output.')
+
+    # Save all the responses in a JSON file
+    with open(file_path.replace('.json', '_all_responses.json'), 'w', encoding='utf-8') as file:
+        json.dump(all_out, file, ensure_ascii=False, indent=4)
+    print('Successfully save all the output.')
+
+    if mode == "podgpt":
+        # Delete the llm object and free the memory
+        # https://github.com/vllm-project/vllm/issues/1908#issuecomment-2461174904
+        destroy_model_parallel()
+        destroy_distributed_environment()
+        del llm.llm_engine.model_executor
+        del llm
+        with contextlib.suppress(AssertionError):
+            torch.distributed.destroy_process_group()
+        gc.collect()
+        torch.cuda.empty_cache()
+        ray.shutdown()
+        print("Successfully delete the llm pipeline and free the GPU memory.\n\n\n\n")
