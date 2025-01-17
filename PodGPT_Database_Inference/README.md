@@ -30,11 +30,13 @@ Please note that for the answer extraction codes, we will use regular expression
 
 ## 🚀 Inference and benchmarking
 ```bash
-python main.py --mode podgpt --rag True --eval_pretrain True
+python main.py --mode podgpt --rag True --eval_pretrain False
 ```
 1. `--mode`: Evaluate PodGPT or ChatGPT: `podgpt`/`chatgpt`. The default is `podgpt`.
 2. `--rag`: Whether to use RAG database and pipeline: `True`/`False`. The default is `True`.
-2. `--eval_pretrain`: Evaluate the original pre-trained model: `True`/`False`. The default is `True`.
+3. `--eval_pretrain`: Evaluate the original pre-trained model: `True`/`False`. The default is `True`.<br>
+   Please note that if you set `--eval_pretrain` to `True`, the original pre-trained model will be evaluated.<br>
+   If you set `--eval_pretrain` to `False`, the PodGPT model will be evaluated.<br>
 
 ## 🏞️ Structure of the code
 At the root of this folder, you will see:
