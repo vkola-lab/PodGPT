@@ -17,7 +17,7 @@ from datetime import datetime
 from huggingface_hub import login
 
 from lib.evaluation import evaluation
-from utils.utils import CustomStream, load_config
+from utils.utils import CustomStream, load_config, str2bool
 
 
 def main(config, args):
@@ -40,7 +40,7 @@ if __name__ == "__main__":
     # python main.py --mode small --eval_pretrain True
     parser = ArgumentParser(description='User arguments')
     parser.add_argument("--mode", type=str, default="small")
-    parser.add_argument("--eval_pretrain", type=bool, default=True)
+    parser.add_argument("--eval_pretrain", type=str2bool, default=True)
     args = parser.parse_args()
 
     # Load and merge the configuration
