@@ -5,13 +5,10 @@
 # PodGPT: An Audio-augmented Large Language Model for Research and Education
 # Copyright (C) 2024 Kolachalama Laboratory at Boston University
 
-import gc
 import yaml
-import contextlib
+import argparse
 
-import torch
 from sqlalchemy import select
-from transformers import AutoModelForCausalLM, AutoTokenizer
 
 from lib.database import get_session, PMCMetadata
 
@@ -135,3 +132,14 @@ def prompt_template(tokenizer=None, input=None):
     )
 
     return prompt
+
+
+def str2bool(v):
+    if isinstance(v, bool):
+        return v
+    if v.lower() in ("yes", "true", "t", "1"):
+        return True
+    elif v.lower() in ("no", "false", "f", "0"):
+        return False
+    else:
+        raise argparse.ArgumentTypeError("Boolean value expected.")
