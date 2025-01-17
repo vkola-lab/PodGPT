@@ -11,7 +11,7 @@
 </p>
 
 # 🎉 Announcements
-[2025.01.17] ![](figures/news.gif) We provide evaluation scripts to assess the performance of PodGPT and PodGPT with RAG on your custom database. For more information, visit [our evaluation codes](https://github.com/vkola-lab/PodGPT/tree/main/PodGPT_Database_Inference) and explore the detailed tutorials!
+[2025.01.17] ![](figures/news.gif) We provide evaluation scripts to assess the performance of the **Baseline**, **PodGPT**, **PodGPT with RAG**, and **OpenAI ChatGPT**, on your custom database. For more information, visit [our evaluation codes](https://github.com/vkola-lab/PodGPT/tree/main/PodGPT_Database_Inference) and explore the detailed tutorials!
 
 [2024.12.16] ![](figures/news.gif) We have released the source code for [**PodGPT with Retrieval-Augmented Generation (RAG)**](https://github.com/vkola-lab/PodGPT/tree/main/rag_pipeline). This powerful pipeline allows our model to ground responses with the latest scientific evidence from top-tier literature, such as _The New England Journal of Medicine_ (NEJM)! All our code has successfully passed [Flake8: Your Tool for Style Guide Enforcement](https://flake8.pycqa.org/en/latest/) checks, ensuring the highest quality and adherence to coding standards.
 
