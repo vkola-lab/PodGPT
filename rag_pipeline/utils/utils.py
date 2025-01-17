@@ -229,3 +229,29 @@ def prompt_template(tokenizer=None, input=None):
     )
 
     return prompt
+
+
+def str2bool(v):
+    """
+    Convert a string or boolean input into a boolean value.
+
+    This function is useful when parsing command-line arguments where
+    boolean flags might be passed as strings (e.g., "true", "false").
+
+    :param v: The input value to be converted. Can be a string or boolean.
+    :return: A boolean value corresponding to the input.
+    :raises argparse.ArgumentTypeError: If the input string does not match any valid boolean representations.
+    """
+    # Check if the input is already a boolean, and return it as-is
+    if isinstance(v, bool):
+        return v
+
+    # Convert string input to lowercase and check for "truthy" values
+    if v.lower() in ("yes", "true", "t", "1"):
+        return True
+    # Check for "falsy" values
+    elif v.lower() in ("no", "false", "f", "0"):
+        return False
+    # Raise an error for invalid boolean representations
+    else:
+        raise argparse.ArgumentTypeError("Boolean value expected.")
