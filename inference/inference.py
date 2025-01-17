@@ -17,7 +17,7 @@ from datetime import datetime
 from huggingface_hub import login
 
 from lib.evaluation import evaluation
-from utils.utils import CustomStream, load_config
+from utils.utils import CustomStream, load_config, str2bool
 
 
 def main(config, args):
@@ -44,11 +44,11 @@ def main(config, args):
 
 if __name__ == "__main__":
     # Example Usage:
-    # python inference.py --mode small --download True --eval_pretrain True --id 35166 52749 70332 87915
+    # python inference.py --mode small --eval_pretrain True --id 35166 52749 70332 87915
     parser = ArgumentParser(description='User arguments')
     parser.add_argument("--mode", type=str, default="small",
                         help="Evaluate the smaller model or larger model or ChatGPT: small/large/quant/chatgpt.")
-    parser.add_argument("--eval_pretrain", type=bool, default=True,
+    parser.add_argument("--eval_pretrain", type=str2bool, default=True,
                         help="Evaluate the original pretrained model: True/False")
     parser.add_argument("--id", type=int, nargs="+", default=[],
                         help="Checkpoint IDs (You can input more IDs "
