@@ -47,6 +47,7 @@ def performance_eval(config, mode, prompts, answers, documents, file_path):
     # Load some configurations
     model_name = config.get("model_name")
     max_new_tokens = config.get("max_new_tokens")
+    start_t = time.time()
 
     # Set responses as a list
     responses = []
@@ -61,7 +62,6 @@ def performance_eval(config, mode, prompts, answers, documents, file_path):
 
         # Evaluate the original baseline model
         if eval_pretrain:
-            start_t = time.time()
             file_path = main_file_path + "baseline.json"
 
             sampling_params = SamplingParams(
