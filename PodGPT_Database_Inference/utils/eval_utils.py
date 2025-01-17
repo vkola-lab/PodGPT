@@ -6,10 +6,11 @@
 # Copyright (C) 2024 Kolachalama Laboratory at Boston University
 
 import re
+import gc
 import math
-import json
+import contextlib
 
-import jsonlines
+import torch
 import pandas as pd
 from vllm.distributed.parallel_state import (
     destroy_model_parallel,
@@ -83,7 +84,7 @@ def eval(config, mode, rag, tokenizer, file_path, data_path, batch_size=32):
         for index, item in csv.iterrows():
             # Get the question
             question = database_format(item=item)
-            temp_ins = prompt_template(tokenizer=tokenizer, input=question)
+            temp_ins = prompt_template(tokenizer=tokenizer, input=question + prompt_wo_doc)
             prompts.append(temp_ins)
 
             # Get the label answer
