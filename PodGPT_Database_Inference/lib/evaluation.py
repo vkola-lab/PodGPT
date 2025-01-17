@@ -7,6 +7,8 @@
 
 import os
 
+from transformers import AutoTokenizer
+
 from utils.eval_utils import *
 
 
