@@ -13,10 +13,14 @@
 # Apache 2.0 License
 # https://github.com/vllm-project/vllm/blob/main/LICENSE
 
+import gc
 import time
 import json
+import contextlib
 
 import openai
+import torch
+from huggingface_hub import snapshot_download
 import ray
 from vllm import LLM, SamplingParams
 from vllm.lora.request import LoRARequest
@@ -25,7 +29,6 @@ from vllm.distributed.parallel_state import (
     destroy_distributed_environment,
 )
 
-from utils.utils import *
 from utils.answer_utils import *
 
 
@@ -97,8 +100,11 @@ def performance_eval(config, mode, prompts, answers, documents, file_path):
                 temp_gen = output.outputs[0].text
                 responses.append(temp_gen)
             print('Successfully finished generating', len(prompts), 'samples!')
+
+        # Evaluate our PodGPT
         else:
             lora_path = config.get("lora_path")
+            podgpt_lora = snapshot_download(repo_id=lora_path)
             file_path = main_file_path + "PodGPT" + ".json"
 
             sampling_params = SamplingParams(
@@ -134,7 +140,7 @@ def performance_eval(config, mode, prompts, answers, documents, file_path):
             completions = llm.generate(
                 prompts,
                 sampling_params,
-                lora_request=LoRARequest("adapter", 1, lora_path)
+                lora_request=LoRARequest("adapter", 1, podgpt_lora)
             )
             for i, output in enumerate(completions):
                 temp_gen = output.outputs[0].text
