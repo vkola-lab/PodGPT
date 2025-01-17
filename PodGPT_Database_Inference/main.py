@@ -17,7 +17,7 @@ from datetime import datetime
 from huggingface_hub import login
 
 from lib.evaluation import evaluation
-from utils.utils import CustomStream, load_config
+from utils.utils import CustomStream, load_config, str2bool
 
 
 def main(config, args):
@@ -41,9 +41,9 @@ if __name__ == "__main__":
     parser = ArgumentParser(description='User arguments')
     parser.add_argument("--mode", type=str, default="podgpt",
                         help="Evaluate either `podgpt` or `chatgpt`")
-    parser.add_argument("--rag", type=bool, default=True,
+    parser.add_argument("--rag", type=str2bool, default=True,
                         help="Whether to evaluate the PodGPT with RAG")
-    parser.add_argument("--eval_pretrain", type=bool, default=True,
+    parser.add_argument("--eval_pretrain", type=str2bool, default=True,
                         help="Whether to evaluate the original baseline model of PodGPT")
     args = parser.parse_args()
 
