@@ -6,11 +6,12 @@
 ##################################################################
 
 # Model info
-# https://platform.openai.com/docs/models
-# gpt-3.5-turbo-0125 (The latest GPT-3.5 Turbo model, as of June 24th, 2024)
-# gpt-4-0613 (The latest GPT-4 model, as of June 24th, 2024)
-# gpt-4o-2024-05-13 (The latest GPT-4o model, as of June 24th, 2024)
-model_name : "gpt-4-0613"
+# https://platform.openai.com/docs/models#current-model-aliases
+# gpt-3.5-turbo-0125 (The latest GPT-3.5 Turbo model, as of January 17th, 2025)
+# gpt-4-turbo-2024-04-09 (The latest GPT-4 model, as of January 17th, 2025)
+# gpt-4o-2024-08-06 (The latest GPT-4o model, as of January 17th, 2025)
+# o1-2024-12-17 (The latest o1 model, as of January 17th, 2025)
+model_name : "gpt-4o-2024-08-06"
 
 # OpenAI API Key
 # This is my OpenAI API Key. Please replace it to yours.
