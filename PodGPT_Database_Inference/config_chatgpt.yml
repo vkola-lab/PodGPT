@@ -1,0 +1,25 @@
+##################### IMPORTANT NOTICE ###########################
+#
+# PLEASE NOTE THAT CHATGPT API IS EXTREMELY EXPENSIVE !!!!!!
+# PLEASE ONLY USE IT IF YOUR SUPERVISOR HAS A BUDGET FOR IT!
+#
+##################################################################
+
+# Model info
+# https://platform.openai.com/docs/models
+# gpt-3.5-turbo-0125 (The latest GPT-3.5 Turbo model, as of June 24th, 2024)
+# gpt-4-0613 (The latest GPT-4 model, as of June 24th, 2024)
+# gpt-4o-2024-05-13 (The latest GPT-4o model, as of June 24th, 2024)
+model_name : "gpt-4-0613"
+
+# OpenAI API Key
+# This is my OpenAI API Key. Please replace it to yours.
+# For your information: https://platform.openai.com/settings/profile?tab=api-keys
+openai_api_key : "YOUR_OPENAI_API_KEY"
+max_new_tokens : 1024
+
+# Saving path
+result_dir : "./results"
+response_dir : "./Pretrain-Results"
+save_dir : "./save_folder"
+data_save_dir : "./save_folder/data"

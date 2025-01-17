@@ -1,0 +1,29 @@
+# Model info
+model_name : "shuyuej/Llama-3.3-70B-Instruct-GPTQ"
+lora_path : "shuyuej/Public-Shared-LoRA-for-Llama-3.3-70B-Instruct-GPTQ"
+
+# This is my Hugging Face `read` and `write` tokens. Please replace it to yours.
+# `read` token: for downloading models
+# `write` token: for uploading your models to Hugging Face
+# For your information: https://huggingface.co/settings/tokens
+hf_read_token : "YOUR_HUGGING_FACE_READ_TOKEN"  # Hugging Face `read` Token
+hf_write_token : "YOUR_HUGGING_FACE_WRITE_TOKEN"  # Hugging Face `write` Token
+
+# Evaluate the original pre-trained model's performance
+eval_pretrain : True
+
+# Saving path
+result_dir : "./results"
+save_dir : "./save_folder"
+
+# The number of generated tokens
+max_new_tokens : 1024
+
+# Choose which GPU to use
+device_map : "auto"
+
+# The number of GPUs and GPU utilization for the vLLM Engine
+# https://docs.vllm.ai/en/latest/serving/distributed_serving.html
+num_gpus_vllm : 4
+gpu_utilization_vllm : 0.95
+max_model_len_vllm : 2048
