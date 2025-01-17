@@ -20,13 +20,21 @@ To prepare your own database, please make sure you have:
 2. `options`: we have four options (A, B, C, and D) in our demo database, from `column B` to `column E`.
 3. `answer`: The ground truth answer is located in the fifth column (`column F`) of our demo database.
 
+### Tutorials:
+If you have more `options` or you want to change the prompt format, you need to modify
+1. `database_format` function in the [benchmark_utils.py](https://github.com/vkola-lab/PodGPT/blob/main/PodGPT_Database_Inference/utils/benchmark_utils.py)
+2. `ground truth answer` extraction in the [eval_utils.py](https://github.com/vkola-lab/PodGPT/blob/main/PodGPT_Database_Inference/utils/eval_utils.py#L80-L91)
+3. The range of your options `option_range` in the [vllm_utils.py](https://github.com/vkola-lab/PodGPT/blob/main/PodGPT_Database_Inference/utils/vllm_utils.py#L197)
+
+Please note that for the answer extraction codes, we will use regular expression to extract the best option from the model's responses, for example, extract `B` from `The most likely cause of this patient's symptoms is:\n\nB. Cholesterol embolization\n\nExplanation:\nThe patient's presentation with decreased urinary output, malaise, and mottled, reticulated purplish discoloration of the feet (livedo reticularis) after a recent cardiac catheterization with stenting suggests a systemic embolic phenomenon. The laboratory findings of elevated serum creatinine (4.2 mg/dL) and the presence of intravascular spindle-shaped vacuoles on renal biopsy are consistent with cholesterol embolization. Cholesterol embolization, also known as atheroembolism, can occur after invasive vascular procedures, such as cardiac catheterization, and can cause renal dysfunction, skin lesions, and other systemic symptoms. The presence of eosinophilia (11% eosinophils) also supports this diagnosis, as it is a common finding in patients with cholesterol embolization.\n\nThe other options are less likely:\nA. Renal papillary necrosis is typically associated with analgesic abuse, diabetes, or sickle cell disease, and is not directly related to the patient's recent cardiac catheterization.\nC. Eosinophilic granulomatosis with polyangiitis (Churg-Strauss syndrome) is a systemic vasculitis that can cause renal dysfunction and eosinophilia, but it is typically associated with a history of asthma, eosinophilia, and other systemic symptoms, which are not mentioned in the case.\nD. Polyarteritis nodosa is a systemic vasculitis that can cause renal dysfunction and skin lesions, but it is typically associated with a history of hypertension, kidney disease, and other systemic symptoms, which are not mentioned in the case. Additionally, the presence of intravascular spindle-shaped vacuoles on renal biopsy is more consistent with cholesterol embolization than polyarteritis nodosa.`.
+
 ## 🚀 Inference and benchmarking
 ```bash
 python main.py --mode podgpt --rag True --eval_pretrain True
 ```
-1. `--mode`: Evaluate PodGPT or ChatGPT: podgpt/chatgpt. The default is "podgpt".
-2. `--rag`: Whether to use RAG database and pipeline: True/False. The default is True.
-2. `--eval_pretrain`: Evaluate the original pre-trained model: True/False. The default is True.
+1. `--mode`: Evaluate PodGPT or ChatGPT: `podgpt`/`chatgpt`. The default is `podgpt`.
+2. `--rag`: Whether to use RAG database and pipeline: `True`/`False`. The default is `True`.
+2. `--eval_pretrain`: Evaluate the original pre-trained model: `True`/`False`. The default is `True`.
 
 ## 🏞️ Structure of the code
 At the root of this folder, you will see:
