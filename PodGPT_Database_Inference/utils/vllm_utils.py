@@ -104,6 +104,7 @@ def performance_eval(config, mode, prompts, answers, documents, file_path):
         # Evaluate our PodGPT
         else:
             lora_path = config.get("lora_path")
+            # https://docs.vllm.ai/en/latest/features/lora.html
             podgpt_lora = snapshot_download(repo_id=lora_path)
             file_path = main_file_path + "PodGPT" + ".json"
 
@@ -133,14 +134,14 @@ def performance_eval(config, mode, prompts, answers, documents, file_path):
                 # Note: We add this only to save the GPU Memories!
                 max_model_len=max_model_len_vllm,
                 disable_custom_all_reduce=True,
-                enable_lora=True,
+                enable_lora=True,  # Enable the LoRA adapter
             )
 
             # Get the model's responses
             completions = llm.generate(
                 prompts,
                 sampling_params,
-                lora_request=LoRARequest("adapter", 1, podgpt_lora)
+                lora_request=LoRARequest("adapter", 1, podgpt_lora)  # Load the PodGPT LoRA to the base model
             )
             for i, output in enumerate(completions):
                 temp_gen = output.outputs[0].text
