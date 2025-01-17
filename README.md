@@ -311,8 +311,12 @@ If you would like to deploy your LoRA adapter, please refer to the [vLLM documen
 It provides step-by-step instructions on how to serve LoRA adapters effectively in a vLLM environment.<br>
 **We have also shared our trained LoRA adapter** [here](https://huggingface.co/shuyuej/Public-Shared-LoRA-for-Llama-3.3-70B-Instruct-GPTQ). Please download it manually if needed.
 ```shell
+git lfs install
 git clone https://huggingface.co/shuyuej/Public-Shared-LoRA-for-Llama-3.3-70B-Instruct-GPTQ
 ```
+> [!NOTE]  
+> To download the safetensors using `git clone`, ensure you initialize Git LFS with `git lfs install`. If you encounter the error "git: 'lfs' is not a git command," refer to [this StackOverflow issue](https://stackoverflow.com/questions/48734119/git-lfs-is-not-a-git-command-unclear) for troubleshooting.
+
 Then, use the vLLM to serve the base model with the LoRA adapter by including the `--enable-lora` flag and specifying `--lora-modules`:
 ```shell
 vllm serve shuyuej/Llama-3.3-70B-Instruct-GPTQ \
