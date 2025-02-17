@@ -204,8 +204,8 @@ def performance_eval(config, mode, prompts, answers, documents, file_path):
         option_range = "a-dA-D"  # 4 Options
         prediction = extract_answer(completion=response, option_range=option_range)
         if prediction is None:
-            response = response_with_option(prompt=prompt, response=response)
-            prediction = extract_answer(completion=response, option_range=option_range)
+            temp_response = response_with_option(prompt=prompt, response=response)
+            prediction = extract_answer(completion=temp_response, option_range=option_range)
 
         if prediction is not None:
             acc.append(prediction == answer)
