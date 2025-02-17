@@ -10,7 +10,7 @@ sentencepiece
 tensorboard
 tensorboardX
 torch
-vllm
+vllm==0.6.2
 vllm-flash-attn
 nltk
 fraction
