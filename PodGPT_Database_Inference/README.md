@@ -21,8 +21,9 @@ To prepare your own database, please make sure you have:
 3. `answer`: The ground truth answer is located in the fifth column (`column F`) of our demo database.
 
 ### Tutorials:
-1. Please change the CSV file name to yours in the [config_benchmark.yml file](https://github.com/vkola-lab/PodGPT/blob/main/PodGPT_Database_Inference/config_benchmark.yml#L2)
-2. If you have more `options` or you want to change the prompt format, you need to modify
+1. First, please use your own 🤗 Hugging Face [READ and WRITE](https://huggingface.co/settings/tokens) tokens in the [config_podgpt.yml file](https://github.com/vkola-lab/PodGPT/blob/main/PodGPT_Database_Inference/config_podgpt.yml#L9-L10).
+2. Please change the CSV file name to yours in the [config_benchmark.yml file](https://github.com/vkola-lab/PodGPT/blob/main/PodGPT_Database_Inference/config_benchmark.yml#L2).
+3. If you have more `options` or you want to change the prompt format, you need to modify
    - `database_format` function in the [benchmark_utils.py](https://github.com/vkola-lab/PodGPT/blob/main/PodGPT_Database_Inference/utils/benchmark_utils.py)
    - `ground truth answer` extraction in the eval_utils.py ([this line](https://github.com/vkola-lab/PodGPT/blob/main/PodGPT_Database_Inference/utils/eval_utils.py#L81) and [this line](https://github.com/vkola-lab/PodGPT/blob/main/PodGPT_Database_Inference/utils/eval_utils.py#L101))
    - The range of your options `option_range` in the [vllm_utils.py](https://github.com/vkola-lab/PodGPT/blob/main/PodGPT_Database_Inference/utils/vllm_utils.py#L204)
