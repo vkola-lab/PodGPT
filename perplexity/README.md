@@ -12,8 +12,8 @@ Dataset: [https://springernature.figshare.com/collections/A_dataset_of_simulated
 ## 🚀 Calculate perplexity
 1. Please download PodGPT models via our script: [https://github.
 com/vkola-lab/PodGPT/blob/main/download_files/download_model_from_hf.py](https://github.com/vkola-lab/PodGPT/blob/main/download_files/download_model_from_hf.py).
-2. Use your own Hugging Face Read token in the [calculate_perplexity.py](calculate_perplexity.py) file.
-3. Run the following scripts to evaluate the specific model:
+2. Modify [this line](https://github.com/vkola-lab/PodGPT/blob/main/perplexity/calculate_perplexity.py#L233) to use your own Hugging Face Read token.
+4. Run the following scripts to evaluate the specific model:
 
 ```shell
 # Evaluate the baseline models
@@ -41,4 +41,4 @@ python calculate_perplexity.py --evaluate PodGPT--model meta-llama/Llama-3.3-70B
 ```
 
 ## ⛏️ Issues
-1. As indicated in [this issue](https://github.com/huggingface/transformers/issues/29250), a `BOS` token is required to calculate perplexity for the Gemma 7B model. The solution can be found [here](https://github.com/huggingface/transformers/issues/29250#issuecomment-1966149282).
+1. As indicated in [this issue](https://github.com/huggingface/transformers/issues/29250), a `BOS` token is required to calculate perplexity for the Gemma 7B model. The solution can be found [here](https://github.com/huggingface/transformers/issues/29250#issuecomment-1966149282). Please be sure to uncomment [this line](https://github.com/vkola-lab/PodGPT/blob/main/perplexity/calculate_perplexity.py#L148) while evaluating the Gemma 7B model.
