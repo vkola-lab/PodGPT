@@ -1,7 +1,7 @@
 # Perplexity Calculation
 Evaluate PodGPT and baseline using the Perplexity metric
 
-## 📖 Prepare your own database
+## 📖 Download dataset
 Download the audio and transcripts from the Objective Structured Clinical Examination (OSCE)-formatted medical conversational dataset:
 
 Paper: [A dataset of simulated patient-physician medical interviews with a focus on respiratory cases](https://www.nature.com/articles/s41597-022-01423-1)
