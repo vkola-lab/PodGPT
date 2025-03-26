@@ -4,14 +4,12 @@ Evaluate PodGPT and baseline using the Perplexity metric
 ## 📖 Prepare your own database
 Download the audio and transcripts from the Objective Structured Clinical Examination (OSCE)-formatted medical conversational dataset:
 
-Paper: [A dataset of simulated patient-physician medical interviews with a focus on respiratory cases
-](https://www.nature.com/articles/s41597-022-01423-1)
+Paper: [A dataset of simulated patient-physician medical interviews with a focus on respiratory cases](https://www.nature.com/articles/s41597-022-01423-1)
 
 Dataset: [https://springernature.figshare.com/collections/A_dataset_of_simulated_patient-physician_medical_interviews_with_a_focus_on_respiratory_cases/5545842/1](https://springernature.figshare.com/collections/A_dataset_of_simulated_patient-physician_medical_interviews_with_a_focus_on_respiratory_cases/5545842/1)
 
 ## 🚀 Calculate perplexity
-1. Please download PodGPT models via our script: [https://github.
-com/vkola-lab/PodGPT/blob/main/download_files/download_model_from_hf.py](https://github.com/vkola-lab/PodGPT/blob/main/download_files/download_model_from_hf.py).
+1. Please download PodGPT models via our script: [https://github.com/vkola-lab/PodGPT/blob/main/download_files/download_model_from_hf.py](https://github.com/vkola-lab/PodGPT/blob/main/download_files/download_model_from_hf.py).
 2. Modify [this line](https://github.com/vkola-lab/PodGPT/blob/main/perplexity/calculate_perplexity.py#L233) to use your own Hugging Face Read token.
 4. Run the following scripts to evaluate the specific model:
 
