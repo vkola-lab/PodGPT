@@ -32,7 +32,7 @@ python download_model_from_hf.py shuyuej/PodGPT-v0.1
 python calculate_perplexity.py --evaluate PodGPT --model shuyuej/Llama-3.3-70B-Instruct-GPTQ --lora True --id 18912 37824 56736 75648 94560
 
 python download_model_from_hf.py shuyuej/Mixtral-8x7B-Instruct-v0.1-2048
-python calculate_perplexity.py --evaluate PodGPT --model mistralai/Mixtral-8x7B-Instruct-v0.1 --lora True -id 20481 40962 61443 81924 102405
+python calculate_perplexity.py --evaluate PodGPT --model mistralai/Mixtral-8x7B-Instruct-v0.1 --lora True --id 20481 40962 61443 81924 102405
 
 python download_model_from_hf.py shuyuej/Llama-3.3-70B-Instruct-2048
 python calculate_perplexity.py --evaluate PodGPT--model meta-llama/Llama-3.3-70B-Instruct --lora True --id 18640
