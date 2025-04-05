@@ -163,7 +163,7 @@ class Pipeline:
             else:
                 # Score and sort documents by relevance
                 ranked_result = self.dense_encoder.score_relevance(query, formatted_docs)
-                sorted(ranked_result, key=lambda x: x['score'], reverse=True)
+                ranked_result = sorted(ranked_result, key=lambda x: x['score'], reverse=True)
                 ranked_results.append(ranked_result)
 
         return ranked_results
