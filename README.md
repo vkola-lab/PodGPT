@@ -318,6 +318,15 @@ git clone https://huggingface.co/shuyuej/Public-Shared-LoRA-for-Llama-3.3-70B-In
 ```
 > [!NOTE]  
 > To download the safetensors using `git clone`, ensure you initialize Git LFS with `git lfs install`. If you encounter the error "git: 'lfs' is not a git command," refer to [this StackOverflow issue](https://stackoverflow.com/questions/48734119/git-lfs-is-not-a-git-command-unclear) for troubleshooting.
+> Alternatively, you can manually download the `git-lfs`:
+```
+$ wget https://github.com/git-lfs/git-lfs/releases/download/v3.2.0/git-lfs-linux-amd64-v3.2.0.tar.gz
+$ tar -xzf git-lfs-linux-amd64-v3.2.0.tar.gz
+
+Download the LoRA model from Huggig Face to your folder:
+$ /git-lfs-3.2.0/git-lfs install
+$ /git-lfs-3.2.0/git-lfs clone https://huggingface.co/shuyuej/Public-Shared-LoRA-for-Llama-3.3-70B-Instruct-GPTQ
+```
 
 Then, use the vLLM to serve the base model with the LoRA adapter by including the `--enable-lora` flag and specifying `--lora-modules`:
 ```shell
@@ -330,7 +339,7 @@ vllm serve shuyuej/Llama-3.3-70B-Instruct-GPTQ \
     --pipeline-parallel-size 4 \
     --api-key token-abc123 \
     --enable-lora \
-    --lora-modules adapter=Public-Shared-LoRA-for-Llama-3.3-70B-Instruct-GPTQ/checkpoint-18640
+    --lora-modules adapter=Public-Shared-LoRA-for-Llama-3.3-70B-Instruct-GPTQ
 ```
 
 Since this server is compatible with OpenAI API, you can use it as a drop-in replacement for any applications using OpenAI API. 
