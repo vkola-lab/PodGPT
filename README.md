@@ -518,15 +518,13 @@ If you find our work useful in your research, please consider citing it in your 
 
 ```bibtex
 @article {Jia2024podgpt,
-	author = {Jia, Shuyue and Bit, Subhrangshu and Searls, Edward and Lauber, Meagan V. and Claus, Lindsey A. and Fan, Pengrui and Jasodanand, Varuna H. and Veerapaneni, Divya and Wang, William M. and Au, Rhoda and Kolachalama, Vijaya B.},
+	author = {Jia S, Bit S, Searls E, Lauber MV, Claus LA, Fan P, Jasodanand VH, Veerapaneni D, Wang WM, Au R, Kolachalama VB.},
 	title = {{PodGPT}: An audio-augmented large language model for research and education},
-	elocation-id = {2024.07.11.24310304},
-	year = {2024},
-	doi = {10.1101/2024.07.11.24310304},
-	publisher = {Cold Spring Harbor Laboratory Press},
-	URL = {https://www.medrxiv.org/content/early/2024/11/27/2024.07.11.24310304},
-	eprint = {https://www.medrxiv.org/content/early/2024/11/27/2024.07.11.24310304.full.pdf},
-	journal = {medRxiv}
+	year = {2025},
+	doi = {[10.1101/2024.07.11.24310304](https://doi.org/10.1038/s44385-025-00022-0)},
+	journal = {npj Biomedical Innovations},
+	volume = 2,
+	number = 26,
 }
 ```
 
