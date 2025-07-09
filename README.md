@@ -11,6 +11,8 @@
 </p>
 
 # 🎉 Announcements
+[2025.07.07] ![](figures/news.gif) Our **PodGPT** manuscript is finally published in npj Biomedical Innovations. Link to the [paper](https://www.nature.com/articles/s44385-025-00022-0).
+
 [2025.04.01] ![](figures/news.gif) We share our codes to evaluate **PodGPT** and **baseline** using the Perplexity metric on a conversational dialogue dataset. Feel free to explore [our codes](https://github.com/vkola-lab/PodGPT/tree/main/perplexity) if you're interested!
 
 [2025.01.17] ![](figures/news.gif) We provide evaluation scripts to assess the performance of the **Baseline**, **PodGPT**, **PodGPT with RAG**, and **OpenAI ChatGPT**, on your custom database. For more information, visit [our evaluation codes](https://github.com/vkola-lab/PodGPT/tree/main/PodGPT_Database_Inference) and explore the detailed tutorials!
